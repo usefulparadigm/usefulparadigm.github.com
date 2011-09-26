@@ -1,6 +1,6 @@
 ---
 layout: post
-style: text
+style: markdown
 title: 사이트 리뉴얼 안내
 ---
 
