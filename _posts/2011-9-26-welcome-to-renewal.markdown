@@ -1,7 +1,7 @@
 ﻿---
 layout: post
 style: text
-title: 999_post_example
+title: 사이트 리뉴얼 안내
 ---
 
 # 사이트 리뉴얼 중입니다.
