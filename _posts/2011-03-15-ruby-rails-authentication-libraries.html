@@ -1,0 +1,24 @@
+---
+layout: post
+title: 루비/레일스 인증처리 라이브러리
+excerpt: 루비/레일스 기반 웹 개발에서 사용할 수 있는 대표적인 오픈소스 인증 라이브러리를 몇 가지 소개합니다.
+---
+
+<p>
+<img class="right" title="authentication" src="http://farm6.static.flickr.com/5219/5528988262_da728c673d_m.jpg" alt="" width="240" height="159" />사용자 인증(Authentication)은 한마디로 사용자 본인이 맞는지를 확인하는 절차다. 웹의 경우, 상태를 유지하지 않는 HTTP 프토토콜의 특성에 기인하여 다양한 인증방식이 존재하지만, 우리가 통상적으로 사용하는 방식은 ID와 비밀번호를 입력하도록 하는 로그인 폼을 보이고 그 폼에 사용자 자신의 신원 정보를 채우도록 해서 인증을 처리하게 된다. 얼핏 간단해 보이는 처리이지만, 사실 웹 개발을 할 때에 이 인증만큼 다양한 '변종'이 존재하는 영역도 드물 것이다. 루비/레일스로 개발을 하는 경우도 마찬가지다. 한 가지 표준 라이브러리가 있어 "이것만 있으면 끝!" 해 버리면 좋겠지만 현실은 그렇지가 못하다. 아래에서 루비/레일스를 이용한 웹 개발에 있어 대표적으로 사용할 수 있는 몇 가지 인증 라이브러리를 소개한다.</p>
+
+<ul>
+	<li><a class="external" title="https://github.com/technoweenie/restful-authentication" href="https://github.com/technoweenie/restful-authentication">restful-authentication</a> 원래 authentication-fu 라는 이름으로 있다가, 레일스가 REST 기반으로 변경되면서 restful-authentication으로 업그레이드되었다. 가장 단순하면서도 커스터마이징에 너그러운 라이브러리로, 지금도 많이 쓰이고 있다.</li>
+	<li><a class="external" title="https://github.com/thoughtbot/clearance" href="https://github.com/thoughtbot/clearance">clearance</a> 재미있는 작품들을 많이 내기로 유명한 thoughtbot의 작품으로, 이메일과 비밀번호 인증만 필요한 경우라면 이보다 더 쉬울 순 없다.</li>
+	<li><a class="external" title="https://github.com/binarylogic/authlogic" href="https://github.com/binarylogic/authlogic">authlogic</a> 인증을 모델(model) 객체 수준으로 끌어올린 멋진 라이브러리이다. 다양한 설정 옵션을 지원하면서도 사용하기가 어렵지 않다.</li>
+	<li><a class="external" title="https://github.com/plataformatec/devise" href="https://github.com/plataformatec/devise">devise</a> 요즘 가장 "인기있는" 인증 라이브러리로 사용하기 쉽고 플러그인을 통한 확장이 용이하다. rack 기반 인증모듈인 warden에 기반한다.</li>
+	<li><a class="external" title="https://github.com/intridea/omniauth" href="https://github.com/intridea/omniauth">omniauth</a> intridea 에서 만든 이 작품은 영역이 조금 다르다. 통상적인 인증이 아닌 OpenID나 Twitter/Facebook 같은 소위 '서드파티3rd party' 인증을 처리한다.</li>
+	<li><a class="external" title="https://github.com/NoamB/sorcery" href="https://github.com/NoamB/sorcery">socery</a> 마지막으로 소개할 라이브러리는 신예다. 이전 라이브러리들의 장점을 모두 합했다고 하며 oauth 인증까지 지원한다. 아직 버전이 낮지만 완성도는 높다.</li>
+</ul>
+
+<p>대부분의 오픈소스 영역이 그렇지만, 특히 루비/레일스가 재미있는 부분은 이렇게 서로 영감과 아이디어를 주고 받으면서 계속해서 새로운 제품들이 등장하고 또 등장하고 한다는 점이다. 내년 이 맘때는 또 어떤 라이브러리들이 어떤 아이디어를 갖고 나올지 기대되는 이유다.</p>
+
+<h3>참고자료:</h3>
+<ul>
+	<li><a href="http://ruby-toolbox.com/categories/rails_authentication.html">http://ruby-toolbox.com/categories/rails_authentication.html</a></li>
+</ul>

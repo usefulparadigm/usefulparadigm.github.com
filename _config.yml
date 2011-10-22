@@ -1,8 +1,8 @@
 # MUST EDIT BELOW
-sitename: Useful Paradigm       #Your site title
-tagline: Web 2.0 Services & Solutions  #You should always have a tagline
+sitename: 유스풀패러다임       #Your site title
+tagline: Web 2.0 Software Service & Solutions  #You should always have a tagline
 url: http://usefulparadigm.com   #URL Please
-ga: UA-XXXXX-X              #Google Analytics ID
+ga: UA-16954113-1              #Google Analytics ID
 sitemap: GOOGLEWEBMASTER    #Google webmaster verification code
 # END
 # CHOOSE YOUR PREFERENCE
@@ -10,4 +10,4 @@ pygments:    true
 markdown:    maruku
 permalink:   pretty
 # END
-exclude: LICENSE, README.markdown, Rakefile
+exclude: LICENSE, README.markdown, Rakefile, Gemfile, Gemfile.lock

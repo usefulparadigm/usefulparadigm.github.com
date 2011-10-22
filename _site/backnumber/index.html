@@ -1,92 +1,160 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="google-site-verification" content="GOOGLEWEBMASTER">
-	<link href="http://your.site.comatom.xml" rel="alternate" title="the_minimum | themes for jekyll" type="application/atom+xml">
-	<link rel="stylesheet" media="all" href="/css/master.css">
-	<link rel="stylesheet" media="all" href="/css/mediaqueries.css">
-	<script src="/js/modernizr.js"></script>
 	
-		<title>the_minimum | themes for jekyll</title>
+		<title>유스풀패러다임 | Web 2.0 Software Service & Solutions</title>
 		<meta name="description" content="">
 	
+	<meta name="google-site-verification" content="GOOGLEWEBMASTER">
+	<link href="http://usefulparadigm.com/atom.xml" rel="alternate" title="유스풀패러다임 News Feed" type="application/atom+xml">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+	<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css">
+  <link href="/css/prettify.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+	
+	<script src="http://www.google.com/jsapi"></script>
+	<script>
+	 google.load( "webfont", "1" );
+	 google.setOnLoadCallback(function() {
+	  WebFont.load({ custom: {
+	   families: [ "NanumGothic" ],
+	   urls: [ "http://fontface.kr/NanumGothic/css" ]
+	  }});
+	 });
+	</script>
+	
+  <!-- Le fav and touch icons -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/ico/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/ico/bootstrap-apple-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/bootstrap-apple-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/bootstrap-apple-114x114.png"> -->
+
+	<!-- <script type="text/javascript" src="http://platform.twitter.com/anywhere.js?id=toQ06a8ImPvLRZz20yjZQ&v=1"></script> -->
+	<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=sjoonk"></script>
 </head>
 
 <body class="home">
-	<div id="page">
-				<header id="head">
-		<div class="head_inner">
-			<ul>
-				<li class="logo"><a href="/">the_minimum</a></li>
-				<li class="tagline">themes for jekyll</li>
-			</ul>
-		</div>
-		</header><!-- id="head" -->
+	<div id="page" class="container">
+		<div id="header" class="row">
+	<h1 id="logo"><a href='/'>유스풀패러다임</a></h1>
+	<em class="tagline">Web 2.0 Software Service & Solutions</em>
+</div>
 
-		<div id="main" role="main">
-			<div class="main_inner">
-				<article class="the_article">
-				<div class="article_inner">
-					<div class="content"><h1>Backnumber</h1>
+		<div id="main" role="main" class="row">
+			<div id="primary" class="span10">
+		    <ul class="tabs">
+			    <!-- <li class="active"><a href="#">Home</a></li> -->
+			    <li class="active"><a class="active" href="#home">Home</a></li>
+			    <li><a href="#twitter">Twitter</a></li>
+			    <li><a href="#facebook">Facebook</a></li>
+		    </ul>
+				<div class="pill-content">
+					<div class="active" id="home">
+						<div class="content"><h1>Backnumber</h1>
 <nav>
 <ul class="posts">
 	
 	<li>
-	<a href="/2011/01/06/999-post-example/" class="h3">999_post_example</a>
+	<a href="/2010/07/20/facebook-app-tutorial/" class="h3">페이스북 앱 개발 가이드</a>
 	<small>
-		<date>06 Jan 2011</date>
-	</small>
-	</li>
-	
-	<li>
-	<a href="/2011/01/05/999-post-example/" class="h3">999_post_example</a>
-	<small>
-		<date>05 Jan 2011</date>
-	</small>
-	</li>
-	
-	<li>
-	<a href="/2011/01/04/999-post-example/" class="h3">999_post_example</a>
-	<small>
-		<date>04 Jan 2011</date>
-	</small>
-	</li>
-	
-	<li>
-	<a href="/2011/01/03/999-post-example/" class="h3">999_post_example</a>
-	<small>
-		<date>03 Jan 2011</date>
-	</small>
-	</li>
-	
-	<li>
-	<a href="/2011/01/02/999-post-example/" class="h3">999_post_example</a>
-	<small>
-		<date>02 Jan 2011</date>
-	</small>
-	</li>
-	
-	<li>
-	<a href="/2011/01/01/999-post-example/" class="h3">999_post_example</a>
-	<small>
-		<date>01 Jan 2011</date>
+		<date>20 Jul 2010</date>
 	</small>
 	</li>
 	
 </ul>
 </nav>
 </div>
-				</div>
-				</article>
-			</div>
+					</div>
+					<div id="twitter">
+						<div id="tokpot_container"></div>
+						<script type="text/javascript" src="http://tokpot.com/widget/v1/bootstrap.js"></script>
+						<script type="text/javascript">
+							Tokpot.init({
+								site_key: '67ecfcdc68', 
+								options: {
+									width: '100%', 
+									title: '트위터 계정으로 로그인한 후 글을 남겨 주세요.', 
+									per_page: 5, 
+									hidden_tag: '@usefulparadigm'
+								}
+							});
+						</script>
+					</div>	
+					<div id="facebook">
+						<div class="fb-comments" data-href="usefulparadigm.com" data-num-posts="5" data-width="580"></div>
+					</div>	
+				</div><!-- pill-content -->
+			</div>	
+			<div id="sub" class="span6">
+				<h4>about</h4>
+<p class="justify">
+  <strong><a href="/">유스풀패러다임</a></strong>은
+	진화하는 웹 및 인터넷 기술에 기반하여 보다 많은 사람들에게 보다 유용한 인터넷 서비스와 솔루션을 제공하는 징검다리가 되고자 합니다.
+</p>
+
+<a href="https://twitter.com/usefulparadigm" class="twitter-follow-button">Follow @twitterapi</a>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>	
+
+<h4>business area</h4>
+<ul>
+	<li>
+		웹2.0 소프트웨어 서비스 개발
+	</li>
+	<li>
+		웹 개발 컨설팅 / 코디네이션
+	</li>
+	<li>
+		오픈소스 기술지원
+	</li>
+</ul>	
+
+<h4>service & solutions</h4>
+<ul id="services" class="unstyled">
+<li>
+<a title="platanustree" style="margin-left: 10px;" href="/pltree">
+<img width="140" height="30" src="/img/sub/pltree.gif" alt="platanustree">
+</a>
+</li>		
+<li>
+<a title="tokpot" style="margin-left: 10px;" href="/tokpot">
+<img width="60" height="40" src="/img/sub/tokpot.gif" alt="tokpot">
+</a>
+</li>
+<li>
+<a title="TeamupBox" href="/teamupbox">
+<img width="180" height="45" src="/img/sub/teamupbox.gif" alt="TeamupBox">
+</a>
+</li>
+<li style="margin: 2px 0 0 10px;">
+	<a title="jigso" href="https://github.com/usefulparadigm/jigso">
+		<img width="110" height="38" src="/img/sub/jigso.png" alt="jigso">
+	</a>
+</li>
+<li>
+<a title="zi2" href="/zi2">
+<img width="70" height="35" src="/img/sub/zi2.gif" alt="zi2">
+</a>
+</li>
+</ul>
+
+<h4>contact</h4>
+<p>
+	<a href='http://usefulparadigm.com'>유스풀패러다임</a>
+	110-702 서울 종로구 공평동 100 제일은행본점빌딩 2044호
+	<span>T.</span> (02) 720 5059
+	<a href='mailto:contact@usefulparadigm.com'>contact@usefulparadigm.com</a>
+</p>
+			</div>	
 		</div><!-- id="main" -->
 		<footer id="foot">
-<div class="foot_inner">
+	<p>&copy; Useful Paradigm, 2007-2011.</p>
+<!-- <div class="foot_inner">
 	<div class="hasGrid">
 		<div class="left alpha grid-6"><h4>about</h4>
 <p>
@@ -107,15 +175,31 @@ And of course, this site is powerd by <a href="https://github.com/mojombo/jekyll
 </ul>
 </div>
 	</div>
-</div>
-</footer><!-- id="foot" -->
+</div> -->
+</footer>
 
 	</div><!-- id="page" -->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=279724202051145";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<!-- <script src="http://cdn.jquerytools.org/1.2.5/all/jquery.tools.min.js"></script> -->
+<!-- <script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script> -->
+<script src="/js/prettify.js"></script>
+<script>$(function () { prettyPrint() })</script>
+<script src="/js/libs/bootstrap-tabs.js"></script>
+<script src="/js/libs/jquery.biggerlink.js"></script>
+<script src="/js/application.js"></script>
 <!-- You may want to stats with your blog if not you should erase this file and remove inculude link from 
 You don't need to edit this file, you can set your ID at _config.yml -->
-<script>
-	var _gaq = [['_setAccount', 'UA-XXXXX-X'], ['_trackPageview']];
+<!-- <script>
+	var _gaq = [['_setAccount', 'UA-16954113-1'], ['_trackPageview']];
 	(function(d, t) {
 		var g = d.createElement(t),
         s = d.getElementsByTagName(t)[0];
@@ -123,6 +207,18 @@ You don't need to edit this file, you can set your ID at _config.yml -->
 		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
 		s.parentNode.insertBefore(g, s);
 	})(document, 'script');
+</script> -->
+
+<script type="text/javascript">
+     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+   </script>
+   
+   <script type="text/javascript">
+   try {
+     var pageTracker = _gat._getTracker("UA-16954113-1");
+     pageTracker._trackPageview();
+   } catch(err) {}
 </script>
 
 

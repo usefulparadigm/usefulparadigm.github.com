@@ -6,82 +6,57 @@
 		http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 <url>
-  <loc>http://your.site.com/2011/09/26/welcome-to-renewal/</loc>
+  <loc>http://usefulparadigm.com/2011/07/28/using-sass-and-compass-in-wordpress/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/16/001-post-example/</loc>
+  <loc>http://usefulparadigm.com/2011/07/22/integrating-wordpress-with-opengraph/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/15/999-post-example/</loc>
+  <loc>http://usefulparadigm.com/2011/06/21/oss-social-networking-solutions-for-enterprise/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/14/999-post-example/</loc>
+  <loc>http://usefulparadigm.com/2011/03/18/productive-css-development-tools/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/13/999-post-example/</loc>
+  <loc>http://usefulparadigm.com/2011/03/15/ruby-rails-authentication-libraries/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/12/999-post-example/</loc>
+  <loc>http://usefulparadigm.com/2011/03/10/facebook-app-guide-2011-share/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/11/999-post-example/</loc>
+  <loc>http://usefulparadigm.com/2011/03/09/accessing-yozm-api-using-oauth/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/10/999-post-example/</loc>
+  <loc>http://usefulparadigm.com/2011/03/08/customizing-wordpress-theme/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/09/999-post-example/</loc>
+  <loc>http://usefulparadigm.com/2010/11/09/tokpot-beta-open-notice/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/07/999-post-example/</loc>
+  <loc>http://usefulparadigm.com/2010/09/25/generate-rails2-app-in-rails3/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 
 <url>
-  <loc>http://your.site.com/2011/01/06/999-post-example/</loc>
-  <lastmod>2011-01-30T05:06:30+00:00</lastmod>
-</url>
-
-<url>
-  <loc>http://your.site.com/2011/01/05/999-post-example/</loc>
-  <lastmod>2011-01-30T05:06:30+00:00</lastmod>
-</url>
-
-<url>
-  <loc>http://your.site.com/2011/01/04/999-post-example/</loc>
-  <lastmod>2011-01-30T05:06:30+00:00</lastmod>
-</url>
-
-<url>
-  <loc>http://your.site.com/2011/01/03/999-post-example/</loc>
-  <lastmod>2011-01-30T05:06:30+00:00</lastmod>
-</url>
-
-<url>
-  <loc>http://your.site.com/2011/01/02/999-post-example/</loc>
-  <lastmod>2011-01-30T05:06:30+00:00</lastmod>
-</url>
-
-<url>
-  <loc>http://your.site.com/2011/01/01/999-post-example/</loc>
+  <loc>http://usefulparadigm.com/2010/07/20/facebook-app-tutorial/</loc>
   <lastmod>2011-01-30T05:06:30+00:00</lastmod>
 </url>
 

@@ -1,0 +1,59 @@
+---
+layout: post
+title: WordPress에서 Sass/Compass 사용하기
+excerpt: Sass와 Compass는 CSS 개발의 생산성을 높여주는 개발 도구로서, 개발 환경에 상관없이 모든 프론트 웹 개발에서 사용될 수 있습니다. WordPress 테마를 개발할 때 Sass와 Compass를 한번 사용해 보세요.
+thumbnail: http://farm7.static.flickr.com/6021/5983951868_144fa6837d_m.jpg
+---
+
+<p>이전에도 한번 <a title="CSS 개발의 생산성을 높이는 도구들" href="http://usefulparadigm.com/2011/03/18/productive-css-development-tools/">소개</a>한 것처럼 <a href="http://sass-lang.com/">Sass</a>와 <a href="http://compass-style.org/">Compass</a>는 CSS 개발의 생산성을 높여주는 유용한 도구들이다. 부연하자면, Sass는 <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_">변수(variable)</a>, <a href="http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins">믹스인(mixins)</a> 같은 개념들을 통해 CSS를 모듈화시켜 코드의 재활용성을 높여주는 반면, Compass는 이런 Sass의 강력한 기능들을 플러그인 형태의 확장 구조로 다시 한번 추상화 시킴으로써 HTML5/CSS3 같은 복잡한 최신 CSS 개발 환경에서도 쉽고 일관되게 CSS 개발을 가능하게 도와주는 강력한 개발 도구(authoring framework) 인 셈이다.</p>
+
+<a title="View 'compass-css-framework' on Flickr.com" href="http://www.flickr.com/photos/60489948@N04/5983951868"><img class="alignright" style="margin: 10px;" title="compass-css-framework" src="http://farm7.static.flickr.com/6021/5983951868_144fa6837d_m.jpg" border="0" alt="compass-css-framework" width="240" height="150" /></a>
+
+
+<p>Sass와 Compass는 주로 루비/레일스 커뮤니티에서 공유되고 사용되는 것으로 알려져 있지만 반드시 루비 환경에서만 동작하는 건 아니다. 실은 특정 개발 환경에 중립적이기 때문에 오히려 루비가 아닌 다른 환경에서도 그 진가를 발휘하는 좋은 CSS 개발 도구라  할 것이다. 예컨대 WordPress 의 테마(theme)를 개발할 때도 이 Sass/Compass 콤비네이션을 활용할 수 있다. 여기서 간단히 그 방법을 소개한다.</p>
+
+<h3>기본 전제</h3>
+<ol>
+	<li>Sass/Compass는 이미 설치되었다고 가정한다. (설치에 관해서는 여기를 참조)</li>
+	<li>작업할 워드프레스 테마 디렉터리가 이미 만들어져 있다고 가정한다.</li>
+</ol>
+
+<h3>단계별 절차</h3>
+<p>워드프레스 테마의 루트 디렉터리에서 다음과 같은 compass 명령으로 설정파일을 하나 생성한다.</p>
+<blockquote>$ compass config --css-dir=.</blockquote>
+
+<p>디폴트로 이 파일은 config/compass.rb 로 생성되는데, 이 파일을 열어 보면 다음과 같이 기본적인 설정이 선언되어 있다. (물론 설정값은 프로젝트에 맞게 조정할 수 있다)</p>
+
+<pre>
+http_path = "/"
+css_dir = "."
+sass_dir = "sass"
+images_dir = "images"
+javascripts_dir = "javascripts"
+</pre>
+
+<p>이제 위의 설정에 맞게 테마 프로젝트의 디렉터리 경로들을 조정했다면 sass 디렉터리를 하나 주가하고, 그 속에 sass파일을 하나 만들자. 여기서는 style.scss 라고 하였고, 그 속에 다음과 같이 간단하게 몇 줄의 코드를 추가해 보았다. (참고로 여기 코드는 어디까지나 샘플이며, 실제 프로젝트에서는 조금 더 모듈화가 필요할 것이다. 자세한 내용은 <a href="http://compass-style.org/help/tutorials/best_practices/">Comass BestPractice 문서</a>를 참조)</p>
+
+<pre class="prettyprint">
+@import "compass";
+
+#box {
+  text-align: justify;
+  background-color: #dedede;
+  @include border-radius();
+}
+</pre>
+
+<p>위의 코드를 간단하게 설명하자면, 우선 1행에서 <a href="http://compass-style.org/reference/compass/">compass 모듈</a>을 로드한다. 이 모듈은 compass의 기본 모듈인데, 그 속에는 CSS3 처리나 타이포그래피(typography), 기타 각종 유틸리티 모듈들이 포함되어 있기 때문에 프로젝트에서는 별도의 CSS 코딩 없이 바로 이 모듈에서 미리 만들어 제공하고 있는 CSS 코드들을 활용할 수 있는 것이다. 예를 들어, 위의 sass 파일에서는 6행에서 ID가 #box인 DOM 문서 객체에 대해 border-radius() 라는 믹스인을 적용하고 있다. 이 단 한 줄의 코드 삽입만으로 모든 CSS3 지원 브라우저에서 호환되는 둥근모서리 스타일링이 간단하게 처리된다.</p>
+
+<p>방금 전까지 작성한 파일은 CSS 가 아닌 sass/scss 파일이었다. 그렇다면 이제 이 파일을 브라우저가 인식할 수 있는 CSS로 컴파일하는 일만 남았다. compass에서 제공하는 다음 명령을 띄워 놓으면 sass 파일의 변경을 자동으로 감지하여 css 파일로 컴파일시켜준다.</p>
+
+<blockquote>$ compass watch</blockquote>
+
+<p>이제 브라우저에서 확인해 보면 방금전 우리가 만든 style.scss 파일이 컴파일 되어 자동으로 style.css 파일이 생성된 것을 확인할 수 있을 것이다. 나머지 작업들은 통상적인 워드프레스 테마 개발 과정을 따르면 된다.</p>
+
+<h3>참고자료</h3>
+<ul>
+	<li><a href="http://wynnnetherland.com/blog/sass-up-your-wordpress-themes-with-compass">compass-wordpress 라는 루비 젬을 이용하는 방법에 대한 소개 자료</a></li>
+	<li><a href="http://adamstacoviak.com/posts/using-rake-rsync-for-wordpress-deployment/">rake + rsync 를 이용한 테마 프로젝트의 배포</a></li>
+</ul>

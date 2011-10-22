@@ -3,20 +3,25 @@ layout: home
 title: _layouts
 desctiption: this is where your meta description for top page.
 ---
-<nav>
-<ul class="posts">
-	{% for post in site.posts limit:10 %}
-	<li class="article-link">
-	<a href="{{ post.url }}" class="h3">{{ post.title }}</a>
-	<small>
-		<date>{{ post.date | date_to_string }}</date>
-	</small>
+
+<ul class="posts unstyled">
+	{% for post in site.posts limit:5 %}
+	<li class="entry clearfix bigger">
+		{% if post.thumbnail %}
+			<img class="thumbnail" src="{{ post.thumbnail }}" width="90">
+		{% endif %}	
+		<h4 class="title">
+			<a href="{{ post.url }}">{{ post.title }}</a>
+			<small>
+				<date>{{ post.date | date_to_string }}</date>
+			</small>
+		</h4>	
+		<p clsss="excerpt">{{ post.excerpt }}</p>
 	</li>
-	{% if forloop.length == 10 %}
+	{% if forloop.length == 5 %}
 		{% if forloop.last == true %}
-			<li class="backnumber"><a href="/backnumber/" class="btn" title="backnumber">Backnumber</a></li>
+			<!-- <li class="backnumber"><a href="/backnumber/" title="backnumber">Backnumber</a></li> -->
 		{% endif %}
 	{% endif %}
 	{% endfor %}
 </ul>
-</nav>
