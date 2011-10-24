@@ -64,7 +64,6 @@ a:hover { color: green; }
   width: 330px;
 }
 
-
 .content {
 	margin: 0 0 0 0.5em;
 }
@@ -89,6 +88,12 @@ a:hover { color: green; }
 .entry img.thumbnail { width: 90px; height: 60px; float: left; padding: 0.5em 1em 0.5em 0; }
 /*.entry p a { color: #666; }
 */
+
+.about {
+	border-radius: 3px;
+	padding: 10px;
+	background-color: #ededed;
+}
 
 #services li {
   height: 40px;
