@@ -40,8 +40,9 @@ pre.prettyprint {
   word-wrap: break-word;
 }
 
-a, a:visited { color: #679a01; }
+/*a, a:visited { color: #679a01; }
 a:hover { color: green; }
+*/
 
 #header {
 	position: relative;
