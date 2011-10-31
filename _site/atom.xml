@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>유스풀패러다임 | Web 2.0 Software Service & Solutions</title>
+ <link href="http://usefulparadigm.com/atom.xml" rel="self"/>
+ <link href="http://usefulparadigm.com"/>
+ <updated>2011-10-31T17:48:03+09:00</updated>
+ <id>http://layouts.studiomohawk.com/</id>
+
+ 
+ <entry>
+   <title>루비 기반 오픈소스 CMS 솔루션들</title>
+   <link href="http://usefulparadigm.com/2011/10/31/ruby-based-opensource-cms-solutions/"/>
+   <updated>2011-10-31T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2011/10/31/ruby-based-opensource-cms-solutions</id>
+   <content type="html">&lt;p&gt;요즘 웹사이트나 블로그 만드는 일은 더 이상 별로 어려운 작업이 아니다. 불과 몇 년 전만 하더라도 조금 근사한 수준의 사이트를 만들 경우 비싼 비용을 지불하고 또 전문 업체에 의뢰하는 경우가 많았지만 최근에는 굳이 그럴 필요가 많이 없어졌다. 이제 누구든 손쉽고 빠르게 자신의 웹사이트나 블로그를 만들고 지우고 할 수 있는 세상이 된 것이다.&lt;/p&gt;
+
+&lt;p&gt;이렇게 된 데에는 여러 이유가 있겠지만 그 중 쉽게 콘텐츠를 만들어 웹 상에 올릴 수 있게 도와주는 좋은 콘텐츠 관리 도구(Content Management System) 들이 많이 출시된 것도 직접적인 원인 중 하나일 것이다.&lt;/p&gt;
+
+&lt;p&gt;소스가 공개된 콘텐츠 관리 도구 중 대표적인 것으로는 &lt;a href='http://wordpress.org/'&gt;WordPress&lt;/a&gt;, &lt;a href='http://drupal.org/'&gt;Drupal&lt;/a&gt;, &lt;a href='http://www.xpressengine.com/'&gt;XE&lt;/a&gt;, &lt;a href='http://www.joomla.org/'&gt;Zoomla&lt;/a&gt; 등이 있겠지만, 이들 도구/솔루션에 대해서는 이미 많은 곳에서 자세히 소개하고 있기에 여기서는 루비 기반의 오픈소스 CMS 도구를 몇 가지 소개해 본다.&lt;/p&gt;
+
+&lt;h3 id='radiant'&gt;Radiant&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://radiantcms.org/'&gt;Radiant CMS&lt;/a&gt;는 루비 기반 CMS 중에서는 비교적 오랜 축에 속한다. 간단한 관리자 화면을 통해 페이지와 레이아웃을 관리할 수 있기 때문에 간단한 웹페이지나 사이트를 만드는데 좋다. 루비온레일스 프레임워크 기반으로 확장(extention) 시스템을 제공한다. 현재 버전은 0.9.0로 MIT 라이선스를 따른다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Radiant' src='http://radiantcms.org/images/screenshot.jpg' /&gt;&lt;/p&gt;
+
+&lt;h3 id='refinerycms'&gt;RefineryCMS&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://refinerycms.com/'&gt;Refinery CMS&lt;/a&gt; 역시 루비온레일스 프레임워크 기반에서 작동하며 주로 루비온레일스 기반 애플리케이션에 CMS 기능을 추가하는 용도로 사용하기 쉽게 설계되었다. 콘텐츠는 WYSIWYG 에디터를 통해 쉽게 편집할 수 있게 되어 있으며 간단한 관리자 UI를 제공한다. &amp;#8220;Engine&amp;#8221; 이라는 이름의 확장 플러그인 기반에서는 제법 많은 확장 모듈들을 제공하고 있다. 현재 버전은 1.0.8이며 MIT 라이선스를 따른다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Refinery' src='http://refinerycms.com/images/refinery-screenshot.png?1290654959' /&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>WordPress에서 Sass/Compass 사용하기</title>
+   <link href="http://usefulparadigm.com/2011/07/28/using-sass-and-compass-in-wordpress/"/>
+   <updated>2011-07-28T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2011/07/28/using-sass-and-compass-in-wordpress</id>
+   <content type="html">&lt;p&gt;이전에도 한번 &lt;a title=&quot;CSS 개발의 생산성을 높이는 도구들&quot; href=&quot;http://usefulparadigm.com/2011/03/18/productive-css-development-tools/&quot;&gt;소개&lt;/a&gt;한 것처럼 &lt;a href=&quot;http://sass-lang.com/&quot;&gt;Sass&lt;/a&gt;와 &lt;a href=&quot;http://compass-style.org/&quot;&gt;Compass&lt;/a&gt;는 CSS 개발의 생산성을 높여주는 유용한 도구들이다. 부연하자면, Sass는 &lt;a href=&quot;http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#variables_&quot;&gt;변수(variable)&lt;/a&gt;, &lt;a href=&quot;http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins&quot;&gt;믹스인(mixins)&lt;/a&gt; 같은 개념들을 통해 CSS를 모듈화시켜 코드의 재활용성을 높여주는 반면, Compass는 이런 Sass의 강력한 기능들을 플러그인 형태의 확장 구조로 다시 한번 추상화 시킴으로써 HTML5/CSS3 같은 복잡한 최신 CSS 개발 환경에서도 쉽고 일관되게 CSS 개발을 가능하게 도와주는 강력한 개발 도구(authoring framework) 인 셈이다.&lt;/p&gt;
+
+&lt;a title=&quot;View 'compass-css-framework' on Flickr.com&quot; href=&quot;http://www.flickr.com/photos/60489948@N04/5983951868&quot;&gt;&lt;img class=&quot;alignright&quot; style=&quot;margin: 10px;&quot; title=&quot;compass-css-framework&quot; src=&quot;http://farm7.static.flickr.com/6021/5983951868_144fa6837d_m.jpg&quot; border=&quot;0&quot; alt=&quot;compass-css-framework&quot; width=&quot;240&quot; height=&quot;150&quot; /&gt;&lt;/a&gt;
+
+
+&lt;p&gt;Sass와 Compass는 주로 루비/레일스 커뮤니티에서 공유되고 사용되는 것으로 알려져 있지만 반드시 루비 환경에서만 동작하는 건 아니다. 실은 특정 개발 환경에 중립적이기 때문에 오히려 루비가 아닌 다른 환경에서도 그 진가를 발휘하는 좋은 CSS 개발 도구라  할 것이다. 예컨대 WordPress 의 테마(theme)를 개발할 때도 이 Sass/Compass 콤비네이션을 활용할 수 있다. 여기서 간단히 그 방법을 소개한다.&lt;/p&gt;
+
+&lt;h3&gt;기본 전제&lt;/h3&gt;
+&lt;ol&gt;
+	&lt;li&gt;Sass/Compass는 이미 설치되었다고 가정한다. (설치에 관해서는 여기를 참조)&lt;/li&gt;
+	&lt;li&gt;작업할 워드프레스 테마 디렉터리가 이미 만들어져 있다고 가정한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3&gt;단계별 절차&lt;/h3&gt;
+&lt;p&gt;워드프레스 테마의 루트 디렉터리에서 다음과 같은 compass 명령으로 설정파일을 하나 생성한다.&lt;/p&gt;
+&lt;blockquote&gt;$ compass config --css-dir=.&lt;/blockquote&gt;
+
+&lt;p&gt;디폴트로 이 파일은 config/compass.rb 로 생성되는데, 이 파일을 열어 보면 다음과 같이 기본적인 설정이 선언되어 있다. (물론 설정값은 프로젝트에 맞게 조정할 수 있다)&lt;/p&gt;
+
+&lt;pre&gt;
+http_path = &quot;/&quot;
+css_dir = &quot;.&quot;
+sass_dir = &quot;sass&quot;
+images_dir = &quot;images&quot;
+javascripts_dir = &quot;javascripts&quot;
+&lt;/pre&gt;
+
+&lt;p&gt;이제 위의 설정에 맞게 테마 프로젝트의 디렉터리 경로들을 조정했다면 sass 디렉터리를 하나 주가하고, 그 속에 sass파일을 하나 만들자. 여기서는 style.scss 라고 하였고, 그 속에 다음과 같이 간단하게 몇 줄의 코드를 추가해 보았다. (참고로 여기 코드는 어디까지나 샘플이며, 실제 프로젝트에서는 조금 더 모듈화가 필요할 것이다. 자세한 내용은 &lt;a href=&quot;http://compass-style.org/help/tutorials/best_practices/&quot;&gt;Comass BestPractice 문서&lt;/a&gt;를 참조)&lt;/p&gt;
+
+&lt;pre class=&quot;prettyprint&quot;&gt;
+@import &quot;compass&quot;;
+
+#box {
+  text-align: justify;
+  background-color: #dedede;
+  @include border-radius();
+}
+&lt;/pre&gt;
+
+&lt;p&gt;위의 코드를 간단하게 설명하자면, 우선 1행에서 &lt;a href=&quot;http://compass-style.org/reference/compass/&quot;&gt;compass 모듈&lt;/a&gt;을 로드한다. 이 모듈은 compass의 기본 모듈인데, 그 속에는 CSS3 처리나 타이포그래피(typography), 기타 각종 유틸리티 모듈들이 포함되어 있기 때문에 프로젝트에서는 별도의 CSS 코딩 없이 바로 이 모듈에서 미리 만들어 제공하고 있는 CSS 코드들을 활용할 수 있는 것이다. 예를 들어, 위의 sass 파일에서는 6행에서 ID가 #box인 DOM 문서 객체에 대해 border-radius() 라는 믹스인을 적용하고 있다. 이 단 한 줄의 코드 삽입만으로 모든 CSS3 지원 브라우저에서 호환되는 둥근모서리 스타일링이 간단하게 처리된다.&lt;/p&gt;
+
+&lt;p&gt;방금 전까지 작성한 파일은 CSS 가 아닌 sass/scss 파일이었다. 그렇다면 이제 이 파일을 브라우저가 인식할 수 있는 CSS로 컴파일하는 일만 남았다. compass에서 제공하는 다음 명령을 띄워 놓으면 sass 파일의 변경을 자동으로 감지하여 css 파일로 컴파일시켜준다.&lt;/p&gt;
+
+&lt;blockquote&gt;$ compass watch&lt;/blockquote&gt;
+
+&lt;p&gt;이제 브라우저에서 확인해 보면 방금전 우리가 만든 style.scss 파일이 컴파일 되어 자동으로 style.css 파일이 생성된 것을 확인할 수 있을 것이다. 나머지 작업들은 통상적인 워드프레스 테마 개발 과정을 따르면 된다.&lt;/p&gt;
+
+&lt;h3&gt;참고자료&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://wynnnetherland.com/blog/sass-up-your-wordpress-themes-with-compass&quot;&gt;compass-wordpress 라는 루비 젬을 이용하는 방법에 대한 소개 자료&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://adamstacoviak.com/posts/using-rake-rsync-for-wordpress-deployment/&quot;&gt;rake + rsync 를 이용한 테마 프로젝트의 배포&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>WordPress와 페이스북 OpenGraph 연동하기</title>
+   <link href="http://usefulparadigm.com/2011/07/22/integrating-wordpress-with-opengraph/"/>
+   <updated>2011-07-22T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2011/07/22/integrating-wordpress-with-opengraph</id>
+   <content type="html">&lt;p&gt;&lt;img class=&quot;left&quot; style=&quot;margin: 10px;&quot; title=&quot;facebook-wordpress&quot; src=&quot;/img/uploads/2011/07/99-150x150.jpg&quot; alt=&quot;&quot; width=&quot;100&quot; height=&quot;100&quot; /&gt;페이스북 &lt;a href=&quot;https://developers.facebook.com/docs/opengraph/&quot;&gt;OpenGraph 프로토콜&lt;/a&gt;은 웹 상의 콘텐츠를 페이스북 속 소셜 그래프(social graph)와 연결할 때 사용하는 일종의 메타 데이터(meta data)라고 할 수 있다. 이 프로토콜을 사용하게 되면 웹 상의 어떤 콘텐츠에 대한 메타 정보들, 예를 들면 제목이라든지 URL, 또는 썸네일 이미지나 설명 같은 것들을 그대로 페이스북으로 전달할 수가 있는데, 실제 이런 정보의 전달은 사용자가 웹 페이지에 있는 &quot;&quot;좋아요(Like)&quot; 버튼을 클릭할 때 일어나게 된다. 이 때 페이스북은 전달받은 URL의 페이지를 읽어서 OpenGraph 프로토콜에 맞는 메타데이터 정보가 있는지를 검사하게 되고, 있을 경우 이들 정보를 사용자의 프로파일(담벼락)  등에서 표시할 때 사용하게 된다(그림1).&lt;/p&gt;
+
+&lt;p&gt;뿐만 아니라 이렇게 OpenGraph를 통해 연결된 웹사이트의 콘텐츠가 업데이트될 경우 그 업데이트 정보가 해당 콘텐츠를 좋아요(Like)한 사용자에게 곧바로 알려지기 때문에 마치 실시간으로 PUSH를 보내는 것과 같은 기능을 만들어 낼 수도 있다. OpenGraph 프로토콜에 대한 자세한 내용은 페이스북 개발자 문서를 참고하길 바라며, 이 글에서는 이런 페이스북 OpenGraph 프로토콜을 오픈소스 CMS툴인 워드프레스(WordPress)에서 사용하는 방법만 간단히 소개한다.&lt;/p&gt;
+
+&lt;img class=&quot;alignnone&quot; title=&quot;OpenGraph Protocol&quot; src=&quot;https://developers.facebook.com/images/devsite/open-graph.png&quot; alt=&quot;&quot; width=&quot;587&quot; height=&quot;157&quot; /&gt;
+[그림1] OpenGraph 프로토콜 소개
+
+&lt;p&gt;워드프레스에서 OpenGraph 프로토콜을 사용하는 것은 다른 통상적인 웹사이트에서 OpenGraph를 사용하는 것과 전혀 다를 것이 없다. 통상적으로 어떤 웹사이트에 OpenGraph 프로토콜을 적용하려면 다음과 같은 절차를 거치게 된다.&lt;/p&gt;
+
+&lt;ol&gt;
+	&lt;li&gt;웹페이지의 &amp;lt;head&amp;gt; 영역에 페이스북 OpenGraph에서 필요로 하는 일련의 메타 태그를 삽입한다. 이 때 각각의 페이지마다 달라지는 정보들(예: 제목, URL, 썸네일, 설명 등)은 그에 맞게 동적으로 처리해 준다.&lt;/li&gt;
+	&lt;li&gt;페이스북에서 제공하는 Like 버튼과 같은 플러그인을 웹페이지에 추가한다.&lt;/li&gt;
+	&lt;li&gt;페이스북 개발자 페이지에 들어가서 웹사이트를 등록하고 app_id를 받아서 앞서 OpenGraph 메타 태그에 적어 준다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;이렇게 해서 만들어진 통상적인 OpenGraph 태그의 구조는 아래와 같다. (자세한 설명은 &lt;a href=&quot;https://developers.facebook.com/docs/reference/plugins/like/&quot;&gt;페이스북 문서&lt;/a&gt; 참조)&lt;/p&gt;
+
+&lt;script src=&quot;https://gist.github.com/1099227.js?file=gistfile1.html&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;워드프레스라서 달라지는 점이 있다면 이 메타 태그들을 워드프레스의 템플릿 페이지(통상적으로는 header.php) 에 삽입한다는 정도일 것이다.&lt;/p&gt;
+
+&lt;h4&gt;참고자료&lt;/h4&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;OpenGraph 프로토콜을 적용한 후에는 페이스북에서 제공하는 &lt;a href=&quot;http://developers.facebook.com/tools/lint/&quot;&gt;URL Lint 도구&lt;/a&gt;를 이용하여 페이지에 OpenGraph 프로토콜이 제대로 설정되었는지 확인하는 것이 좋다.&lt;/li&gt;
+	&lt;li&gt;Like 버튼 플러그인을 직접 적용하지 않고 &lt;a href=&quot;http://developers.facebook.com/tools/lint/&quot;&gt;AddThis&lt;/a&gt; 같은 소셜 버튼 위젯과 함께 사용해도 무방하다.&lt;/li&gt;
+	&lt;li&gt;워드프레스 플러그인 중에는 페이스북 OpenGraph 데이터를 직접 내장시켜 주는 여러 종류의 플러그인들이 이미 나와 있다. 이들 중 하나를 사용하면 위의 작업을 직접하는 수고를 덜 수 있어 편리하다. 그 중 &lt;a href=&quot;http://wordpress.org/extend/plugins/ogp/&quot;&gt;Open Graph Pro&lt;/a&gt;를 추천함.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>기업용으로 활용가능한 오픈소스 SNS 솔루션들</title>
+   <link href="http://usefulparadigm.com/2011/06/21/oss-social-networking-solutions-for-enterprise/"/>
+   <updated>2011-06-21T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2011/06/21/oss-social-networking-solutions-for-enterprise</id>
+   <content type="html">&lt;p&gt;
+&lt;img src=&quot;/img/uploads/2011/06/social-network.jpg&quot; class=&quot;right&quot; /&gt;
+
+트위터나 페이스북 같은 소셜 네트워킹 서비스의 인기와 효용성에 힘입어 기업에서도 이런 솔루션들을 도입하여 조직 내부에서 수평적이고 자유로운 커뮤니케이션 문화를 조성하고 보다 격의없고 창의성 있는 생각과 아이디어를 조직원들 간에 서로 공유하려는 움직임들이 생겨나고 있다. 해외에서는 이미 오래 전에 yammer 같은 기업용 SNS 서비스들이 출시되어 인기를 끌었고, 국내에서도 몇몇 업체들이 기업용 SNS 솔루션을 만들어 제공 중이다. 또한 작년부터 주로 대기업을 중심으로 하여 사내 SNS 서비스를 구축한 사례들이 등장하고 올해에는 공공기관에서도 이런 사내 SNS망을 구축하여 사용하는 움직임이 보인다. 기업 또는 조직 내에서 소셜 네트워킹을 구축하여 사내의 새로운 문화로 정착시키려는 움직임은 향후에도 계속 확산될 것으로 보인다.&lt;/p&gt;
+
+&lt;p&gt;기업용 SNS를 위해 가장 많이 사용하는 서비스는 아마도 &lt;a href=&quot;https://www.yammer.com/&quot;&gt;야머(yammer)&lt;/a&gt;일 것이다. 알다시피 yammer는 이메일 주소를 식별코드로 사용하여 같은 이메일 도메인을 사용하는 사람들만의 네트워크를 형성해 주고 그 속에서 소셜 네트워킹을 할 수 있게 만들어주는 서비스이다. 국내에서도 이미 많은 기업과 공공기관에서 도입해서 사용 중인 서비스이기도 하다.&lt;/p&gt;
+
+&lt;img class=&quot;left&quot; style=&quot;margin: 10px;&quot; title=&quot;yammericon.jpg&quot; src=&quot;/img/uploads/2011/06/yammericon1.jpg&quot; border=&quot;0&quot; alt=&quot;Yammericon&quot; width=&quot;126&quot; height=&quot;126&quot; /&gt;
+
+&lt;p&gt;그런데 이런 &quot;호스팅 방식&quot;의 서비스에서는 종종 보안과 관련된 우려가 제기되곤 한다. 물론 yammer 같은 서비스는 이런 사용자들의 우려를 감안하여 보안에 많은 신경을 쓰고 있지만, 그래도 &quot;DMZ&quot; 안에서 돌아가는 것과 밖에서 돌아가는 것 간에는 최소한 사용자들이 인식하는 심리적인 안정감에서라도 차이가 날 수 있다. 그래서 이런 호스팅 방식의 서비스를 쓰는 기관들도 종종 보안을 위해 별도의 솔루션을 가져가기도 한다.&lt;/p&gt;
+
+&lt;p&gt;여기서 소개할 솔루션들은 이런 경우에 사용할 수 있는 오픈소스 SNS 솔루션들이다. 이미 검색엔진으로 검색해보면 헤아릴 수도 없을 만큼 많은 솔루션들이 시장에 출시되어 있고, 또 그 중에서 오픈소스 형태로 제공되는 솔루션들도 많은 것이 사실이다. 너무 많아 오히려 선택하기가 어려울 지경이라고 해야 할 것이다. 물론 &quot;SNS&quot; 라고 하는 것이 별로 &quot;만들기 어려운&quot; 솔루션도 아닌데다 사내 인트라넷 등 타 시스템과의 연동도 필요한 부분이 있고 또 조직 문화의 문제도 있는 탓에 직접 구축해서 사용하는 경우도 많겠지만, 지금 소개할 몇 가지 솔루션들도 기업용 SNS를 구축할 경우에 검토해 볼만 할 것이라 생각한다.&lt;/p&gt;
+
+&lt;h3&gt;1. StatusNet&lt;/h3&gt;
+
+&lt;p&gt;첫번째로 소개할 솔루션은 &lt;a href=&quot;http://status.net/&quot;&gt;StatusNet&lt;/a&gt;이다. 이미 &lt;a href=&quot;http://identi.ca/&quot;&gt;identi.ca&lt;/a&gt; 라는 서비스에서 실전 서비스를 하고 있고, 스마트폰과 데스크탑용 앱도 가지고 있는 이 SNS 솔루션은 &lt;a href=&quot;http://ostatus.org/&quot;&gt;oStatus&lt;/a&gt;라는 표준 스펙을 따르는 분산형 SNS(Federated SNS)이기도 하다. 트위터와 유사하 마이크로 블로깅(microblogging)을 기본으로 하지만 그룹을 생성할 수도 있고 메신저와의 연동도 가능한 장점이 있다. 분산형 SNS이기 때문에 여러 SNS 간에 서로 연결될 수도 있는 것도 장점이라 하겠다. PHP/MySQL 기반이며 현재 버전은 0.9.7로 곧 1.0 버전이 나올 예정인 이 솔루션은 &lt;a href=&quot;http://www.gnu.org/licenses/agpl.html&quot;&gt;AGPL&lt;/a&gt; 라이선스를 따른다.&lt;/p&gt;
+
+&lt;img title=&quot;statusnet.png&quot; src=&quot;/img/uploads/2011/06/statusnet2.png&quot; border=&quot;0&quot; alt=&quot;Statusnet&quot; width=&quot;600&quot; height=&quot;187&quot; /&gt;
+
+&lt;h3&gt;2. Diaspora&lt;/h3&gt;
+
+&lt;p&gt;다음으로 소개할 솔루션은 &lt;a href=&quot;https://joindiaspora.com/&quot;&gt;디아스포라(diaspora)&lt;/a&gt;라고 하는 SNS 솔루션이다. StatusNet과 마찬가지로 역시 분산형 SNS를 표방하는 이 솔루션은 얼마 전 페이스북의 창업자 마크 쥬커버그로부터 지원금을 받아 화제가 되기도 했던 솔루션인데, 작년 가을에 알파버전을 오픈하면서 서비스를 개시했다. 특히 이 솔루션은 애스팩(aspect) 이라는 그룹 기능을 두어 그룹 간에서만 서로 커뮤니케이션을 하는 방법을 지원하기 때문에 사내에서도 어느 정도의 프라이버시 수준을 유지할 수 있는 장점이 있다. Ruby on Rails 기반이며, &lt;a href=&quot;http://www.gnu.org/licenses/agpl.html&quot;&gt;AGPL&lt;/a&gt; 라이선스를 따른다.&lt;/p&gt;
+
+&lt;img title=&quot;diaspora.png&quot; src=&quot;/img/uploads/2011/06/diaspora.png&quot; border=&quot;0&quot; alt=&quot;Diaspora&quot; width=&quot;600&quot; height=&quot;164&quot; /&gt;
+
+&lt;h3&gt;3. 기타&lt;/h3&gt;
+
+&lt;p&gt;기존의 인트라넷이나 사이트를 가지고 있는 조직에서 소셜 기능을 추가하고 싶다면 &lt;a href=&quot;http://www.elgg.org/index.php&quot;&gt;elgg&lt;/a&gt; 같은 SNS 엔진(engine)을 검토해 보는 것도 좋겠다. 페이스북 같은 플랫폼이 만들어진다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://buddypress.org/&quot;&gt;버디프레스(BuddyPress)&lt;/a&gt;는 오픈소스 블로깅 솔루션인 워드프레스(WordPress)에 호감이 있는 조직이라면 관심을 가져볼만한 솔루션이다. 이 솔루션은 WordPress의 플러그인 형태로 제공되는 솔루션으로 워드프레스의 강력한 확장성을 잘 보여주는 솔루션이라 할 것이다.&lt;/p&gt;
+
+&lt;p&gt;마지막으로, Ruby on Rails 기반 솔루션을 두어 가지 소개하고 끝을 맺기로 한다. StatusNet과 같은 oStatus 프로토콜을 사용하면서도 RoR로 된 솔루션을 찾는다면 &lt;a href=&quot;http://rstat.us/&quot;&gt;rStat.us&lt;/a&gt; 가 답이 될 수도 있다. 정확하게 SNS 만을 겨냥한 것은 아니지만, 작은 조직이나 팀 단위에서 프로젝트 관리도 하고 마이크로블로깅 기반 커뮤니케이션도 함께 할 수 있는 솔루션을 찾는다면 &lt;a href=&quot;http://teambox.com/&quot;&gt;팀박스(Teambox)&lt;/a&gt;도 고려해 볼만 한다.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>CSS 개발의 생산성을 높이는 도구들</title>
+   <link href="http://usefulparadigm.com/2011/03/18/productive-css-development-tools/"/>
+   <updated>2011-03-18T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2011/03/18/productive-css-development-tools</id>
+   <content type="html">&lt;p&gt;&lt;img class=&quot;attachment right&quot; src=&quot;http://farm6.static.flickr.com/5219/5535334248_eacd7eede0_m.jpg&quot; alt=&quot;&quot; width=&quot;240&quot; height=&quot;120&quot; /&gt;CSS는 웹사이트 디자인에 사용하는 도구다. 개념도 복잡하지 않고 문법도 간단하기 때문에 Box 모델이나 플로팅(floating) 같은 몇 가지 기본 개념만 익히고 나면 약간의 코딩 만으로 웹사이트에 멋진 비주얼 요소를 집어넣을 수가 있다. 그렇지만 매번 웹사이트를 만들 때마다 일일이 처음부터 CSS 작업을 하는 일은 경우에 따라서는 제법 성가시고 품이 많이 가는 일이기도 하다. 특히 IE의 비정상적인 작동을 바로잡기 위한 핵(Hack) 까지 고려한다면 더욱 그렇다. CSS 개발의 생산성을 높여주는 몇 가지 도구들에 대해 알아보자.&lt;/p&gt;
+
+&lt;h3&gt;1. CSS 프레임워크&lt;/h3&gt;
+&lt;p&gt;CSS 프레임워크(framework)는 미리 만들어 놓은 일종의 CSS 모듈이다. CSS 프레임워크를 사용하면 페이지의 기본 레이아웃에서부터 타이포그라피, 폼 디자인, 버튼 등 많은 부분의 디자인을 &quot;날로 먹을 수&quot;가 있다. 물론 모든 &quot;프레임워크&quot;가 그러하듯, CSS 프레임워크도 언제나 &quot;최선&quot;의 선택인 것은 아니며, 어떤 디자이너나 개발자들은 CSS 프레임워크 자체에 거부감을 가지기도 한다. 그렇지만 CSS 프레임워크가 개발 생산성을 높여줄 수 있다는 점에서는 이론의 여지가 없다. 그만큼 그 종류도 다양하기 때문에 오히려 어떤 것을 선택하느냐가 더 고민이 되는 경우가 많지만, 몇 가지 대표적인 것들만 소개하면 다음과 같다.&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;http://960.gs/&quot; href=&quot;http://960.gs/&quot;&gt;960 Grid System&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;http://www.blueprintcss.org/&quot; href=&quot;http://www.blueprintcss.org/&quot;&gt;Blueprint&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;http://elasticss.com/&quot; href=&quot;http://elasticss.com/&quot;&gt;Elastic CSS Framework&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;http://developer.yahoo.com/yui/grids/&quot; href=&quot;http://developer.yahoo.com/yui/grids/&quot;&gt;YUI Grid CSS&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;http://lessframework.com/&quot; href=&quot;http://lessframework.com/&quot;&gt;Less Framework&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;이들 중 대부분의 CSS 프레임워크는 소위 &quot;그리드(grid) 디자인&quot;에 기반하지만, 자바스크립트와 함께 사용하여 UI 효과를 내는 것들도 있고, 또 최근에는 HTML5/CSS3를 이용한 CSS 프레임워크들이 많이 등장하고 있다.&lt;/p&gt;
+
+&lt;h3&gt;2. SASS와 LESS&lt;/h3&gt;
+&lt;p&gt;SASS와 LESS는 일종의 CSS 전처리기(pre-processor)다. 조금 더 간단하고 구조화된 문법으로 코드를 작성하면 자동으로 CSS 파일을 생성해 주기 때문에 CSS 개발의 생산성을 폰이는 데에 꼭 필요한 도구이기도 하다. 특히 믹스인(Mixin)이라는 개념은 일종의 '모듈'을 만드는 것으로서, CSS 코드 재활용을 높이고 생산성을 높여주는 좋은 개념이다. SASS는 루비(ruby) 언어로 작성되었고, 그래서 주로 루비/레일스 프로젝트에서 많이 사용되지만 반드시 그래야 하는 건 아니다.&lt;/p&gt;
+
+&lt;p&gt;LESS(앞서 소개한 Less Framework과는 별개)도 SASS와 개념은 유사하지만, CSS파일의 생성이 자바스크립트 파서(parser)를 통해 클라이언트 측에서 이루어진다는 점에서, 서버측에서 컴파일이 이루어지는 SASS와 구별된다. 물론 LESS는 Node.js 환경에서도 작동한다. 이들 도구의 홈페이지는 각각 다음과 같다.&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;SASS &lt;a href=&quot;http://sass-lang.com/&quot;&gt;http://sass-lang.com/&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;LESS &lt;a href=&quot;http://lesscss.org/&quot;&gt;http://lesscss.org/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;3. Compass&lt;/h3&gt;
+
+&lt;p&gt;마지막으로 소개할 도구는 일종의 CSS 개발 자동화 도구인 Compass다. 이 도구를 이용하면 앞서 소개한 CSS Framework를 명령행에서 바로 설치할 수도 있고, SASS 컴파일을 자동화 시킬 수도 있으며, 무엇보다도 SASS와 결합하여 CSS의 구성요소를 모듈단위로 쪼개서 SASS 모듈의 재활용성을 높이는 역할을 하는, 일종의 메타(meta) CSS 프레임워크라 할 수 있다. Compass의 사용법은 &lt;a class=&quot;external&quot; title=&quot;http://compass-style.org/&quot; href=&quot;http://compass-style.org/&quot;&gt;Compass 사이트&lt;/a&gt;에 자세히 소개되어 있으니 참조하면 된다.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>루비/레일스 인증처리 라이브러리</title>
+   <link href="http://usefulparadigm.com/2011/03/15/ruby-rails-authentication-libraries/"/>
+   <updated>2011-03-15T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2011/03/15/ruby-rails-authentication-libraries</id>
+   <content type="html">&lt;p&gt;
+&lt;img class=&quot;right&quot; title=&quot;authentication&quot; src=&quot;http://farm6.static.flickr.com/5219/5528988262_da728c673d_m.jpg&quot; alt=&quot;&quot; width=&quot;240&quot; height=&quot;159&quot; /&gt;사용자 인증(Authentication)은 한마디로 사용자 본인이 맞는지를 확인하는 절차다. 웹의 경우, 상태를 유지하지 않는 HTTP 프토토콜의 특성에 기인하여 다양한 인증방식이 존재하지만, 우리가 통상적으로 사용하는 방식은 ID와 비밀번호를 입력하도록 하는 로그인 폼을 보이고 그 폼에 사용자 자신의 신원 정보를 채우도록 해서 인증을 처리하게 된다. 얼핏 간단해 보이는 처리이지만, 사실 웹 개발을 할 때에 이 인증만큼 다양한 '변종'이 존재하는 영역도 드물 것이다. 루비/레일스로 개발을 하는 경우도 마찬가지다. 한 가지 표준 라이브러리가 있어 &quot;이것만 있으면 끝!&quot; 해 버리면 좋겠지만 현실은 그렇지가 못하다. 아래에서 루비/레일스를 이용한 웹 개발에 있어 대표적으로 사용할 수 있는 몇 가지 인증 라이브러리를 소개한다.&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;https://github.com/technoweenie/restful-authentication&quot; href=&quot;https://github.com/technoweenie/restful-authentication&quot;&gt;restful-authentication&lt;/a&gt; 원래 authentication-fu 라는 이름으로 있다가, 레일스가 REST 기반으로 변경되면서 restful-authentication으로 업그레이드되었다. 가장 단순하면서도 커스터마이징에 너그러운 라이브러리로, 지금도 많이 쓰이고 있다.&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;https://github.com/thoughtbot/clearance&quot; href=&quot;https://github.com/thoughtbot/clearance&quot;&gt;clearance&lt;/a&gt; 재미있는 작품들을 많이 내기로 유명한 thoughtbot의 작품으로, 이메일과 비밀번호 인증만 필요한 경우라면 이보다 더 쉬울 순 없다.&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;https://github.com/binarylogic/authlogic&quot; href=&quot;https://github.com/binarylogic/authlogic&quot;&gt;authlogic&lt;/a&gt; 인증을 모델(model) 객체 수준으로 끌어올린 멋진 라이브러리이다. 다양한 설정 옵션을 지원하면서도 사용하기가 어렵지 않다.&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;https://github.com/plataformatec/devise&quot; href=&quot;https://github.com/plataformatec/devise&quot;&gt;devise&lt;/a&gt; 요즘 가장 &quot;인기있는&quot; 인증 라이브러리로 사용하기 쉽고 플러그인을 통한 확장이 용이하다. rack 기반 인증모듈인 warden에 기반한다.&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;https://github.com/intridea/omniauth&quot; href=&quot;https://github.com/intridea/omniauth&quot;&gt;omniauth&lt;/a&gt; intridea 에서 만든 이 작품은 영역이 조금 다르다. 통상적인 인증이 아닌 OpenID나 Twitter/Facebook 같은 소위 '서드파티3rd party' 인증을 처리한다.&lt;/li&gt;
+	&lt;li&gt;&lt;a class=&quot;external&quot; title=&quot;https://github.com/NoamB/sorcery&quot; href=&quot;https://github.com/NoamB/sorcery&quot;&gt;socery&lt;/a&gt; 마지막으로 소개할 라이브러리는 신예다. 이전 라이브러리들의 장점을 모두 합했다고 하며 oauth 인증까지 지원한다. 아직 버전이 낮지만 완성도는 높다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;대부분의 오픈소스 영역이 그렇지만, 특히 루비/레일스가 재미있는 부분은 이렇게 서로 영감과 아이디어를 주고 받으면서 계속해서 새로운 제품들이 등장하고 또 등장하고 한다는 점이다. 내년 이 맘때는 또 어떤 라이브러리들이 어떤 아이디어를 갖고 나올지 기대되는 이유다.&lt;/p&gt;
+
+&lt;h3&gt;참고자료:&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://ruby-toolbox.com/categories/rails_authentication.html&quot;&gt;http://ruby-toolbox.com/categories/rails_authentication.html&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>페이스북 소셜 앱 개발 가이드 자료</title>
+   <link href="http://usefulparadigm.com/2011/03/10/facebook-app-guide-2011-share/"/>
+   <updated>2011-03-10T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2011/03/10/facebook-app-guide-2011-share</id>
+   <content type="html">&lt;p&gt;2011.2.18 &lt;a href=&quot;http://www.bizdeli.com/socialAPP/index.asp&quot;&gt;소셜 앱 개발 성공 전략 컨퍼런스 2011&lt;/a&gt;에서 발표한 &quot;&lt;strong&gt;페이스북에서의 소셜 앱 개발 가이드&lt;/strong&gt;&quot; 발표자료를 공유합니다.&lt;/p&gt;
+
+&lt;div style=&quot;width: 425px;&quot;&gt;&lt;strong style=&quot;display: block; margin: 12px 0 4px;&quot;&gt;&lt;a title=&quot;페이스북 소셜 앱 개발 가이드 2011&quot; href=&quot;http://www.slideshare.net/usefulparadigm/010218&quot;&gt;페이스북 소셜 앱 개발 가이드 2011&lt;/a&gt;&lt;/strong&gt;&lt;object id=&quot;__sse7211982&quot; width=&quot;425&quot; height=&quot;355&quot;&gt;&lt;param name=&quot;movie&quot; value=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=010218-110309205605-phpapp01&amp;amp;stripped_title=010218&amp;amp;userName=usefulparadigm&quot; /&gt;&lt;param name=&quot;allowFullScreen&quot; value=&quot;true&quot; /&gt;&lt;param name=&quot;allowScriptAccess&quot; value=&quot;always&quot; /&gt;&lt;embed type=&quot;application/x-shockwave-flash&quot; width=&quot;425&quot; height=&quot;355&quot; src=&quot;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=010218-110309205605-phpapp01&amp;amp;stripped_title=010218&amp;amp;userName=usefulparadigm&quot; allowfullscreen=&quot;true&quot; allowscriptaccess=&quot;always&quot; name=&quot;__sse7211982&quot;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/div&gt;
+&lt;div id=&quot;__ss_7211982&quot; style=&quot;width: 425px;&quot;&gt;
+&lt;div style=&quot;padding: 5px 0 12px;&quot;&gt;View more &lt;a href=&quot;http://www.slideshare.net/&quot;&gt;presentations&lt;/a&gt; from &lt;a href=&quot;http://www.slideshare.net/usefulparadigm&quot;&gt;usefulparadigm&lt;/a&gt;.&lt;/div&gt;
+&lt;/div&gt;
+&lt;script src=&quot;http://b.scorecardresearch.com/beacon.js?c1=7&amp;amp;c2=7400849&amp;amp;c3=1&amp;amp;c4=&amp;amp;c5=&amp;amp;c6=&quot;&gt;&lt;/script&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>OAuth 인증으로 다음 요즘 API 액세스하기</title>
+   <link href="http://usefulparadigm.com/2011/03/09/accessing-yozm-api-using-oauth/"/>
+   <updated>2011-03-09T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2011/03/09/accessing-yozm-api-using-oauth</id>
+   <content type="html">&lt;img class=&quot;right&quot; title=&quot;361332bf.jpg&quot; src=&quot;http://usefulparadigm.springnote.com/pages/7375981/attachments/4724285&quot; alt=&quot;361332bf.jpg&quot; width=&quot;222&quot; height=&quot;96&quot; /&gt;
+&lt;p&gt;최근 들어 국내에서도 오픈 API 접근 시에 인증 표준인 OAuth를 적용하는 서비스들이 하나 둘 생겨나고 있다. &lt;a class=&quot;external&quot; title=&quot;http://oauth.net/&quot; href=&quot;http://oauth.net/&quot;&gt;OAuth&lt;/a&gt;는 이미 Facebook이나 Twitter, Google, Yahoo 같은 글로벌 인터넷 서비스에서는 제법 오래 전부터 적용되어 오고 있었지만, 국내에서 OAuth 서비스 제공자를 찾기는 쉽지 않았는데, 이제 다음이나 네이트 같은 대형 포털 사이트에서 OAuth를 적용하기 시작한 것은 반가운 일이 아닐 수 없다.  다음(Daum)에서 제공하는 OAuth 서비스에 대해 간단히 알아보고 이를 이용하여 다음의 SNS 서비스인 &lt;a class=&quot;external&quot; title=&quot;http://yozm.daum.net/&quot; href=&quot;http://yozm.daum.net/&quot;&gt;요즘(yozm&lt;/a&gt;) API에 접근해 보자.&lt;/p&gt;
+
+&lt;p&gt;Daum은 OAuth 1.0을 지원하며 아래 URL로 접근 가능하다.&lt;/p&gt;
+
+&lt;dl&gt;
+	&lt;dt&gt;Request 토큰 URL&lt;/dt&gt;
+	&lt;dd&gt;&lt;a href=&quot;https://apis.daum.net/oauth/requestToken&quot;&gt;https://apis.daum.net/oauth/requestToken&lt;/a&gt;&lt;/dd&gt;
+	&lt;dd&gt;request 토큰 요청시 oauth_callback 값이 컨슈머의&lt;strong&gt;Callback 경로&lt;/strong&gt;와 동일해야 합니다.&lt;/span&gt;&lt;/dd&gt;
+	&lt;dt&gt;사용자 인증 URL&lt;/dt&gt;
+	&lt;dd&gt;&lt;a href=&quot;https://apis.daum.net/oauth/authorize&quot;&gt;https://apis.daum.net/oauth/authorize&lt;/a&gt;&lt;/dd&gt;
+	&lt;dt&gt;Access 토큰 URL&lt;/dt&gt;
+	&lt;dd&gt;&lt;a href=&quot;https://apis.daum.net/oauth/accessToken&quot;&gt;https://apis.daum.net/oauth/accessToken&lt;/a&gt;&lt;/dd&gt;
+	&lt;dt&gt;서명 메소드는 HMAC-SHA1만 지원됩니다.&lt;/span&gt;&lt;/dt&gt;
+&lt;/dl&gt;
+
+&lt;h3&gt;OAuth dance&lt;/h3&gt;
+
+&lt;p&gt;OAuth 인증 절차는 흔히 &quot;OAuth dance&quot;라고 부르는, 아래 그림과 같은 3단계의 인증 절차를 거친다.&lt;/p&gt;
+
+&lt;img class=&quot;attachment&quot; title=&quot;OAuth.JPG&quot; src=&quot;http://usefulparadigm.springnote.com/pages/7375981/attachments/4724205&quot; alt=&quot;OAuth.JPG&quot; width=&quot;575&quot; height=&quot;431&quot; /&gt;
+&lt;p&gt;* 출처: 다음 튜토리얼 자료&lt;/p&gt;
+
+&lt;h3&gt;Yozm API 액세스하기&lt;/h3&gt;
+
+&lt;p&gt;OAuth 인증을 거쳐 액세스 토큰(access token)을 획득했다면 이제 오픈 API에 접근할 수 있다. 예를 들어, 인증을 &quot;수락&quot;한 본인의 요즘(yozm) 개인 정보를 얻어오려면 다음 URL로 REST 호출하면 된다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://apis.daum.net/yozm/v1_0/user/show.xml&quot;&gt;http://apis.daum.net/yozm/v1_0/user/show.xml&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3&gt;참고자료:&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;OAuth 소개 &lt;a href=&quot;http://oauth.net/documentation/getting-started/&quot;&gt;http://oauth.net/documentation/getting-started/&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;다음 OAuth 서비스 &lt;a href=&quot;https://apis.daum.net/oauth/main/welcome&quot;&gt;https://apis.daum.net/oauth/main/welcome&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;yozm 사용자 정보보기 &lt;a href=&quot;http://dna.daum.net/apis/yozm/ShowUser&quot;&gt;http://dna.daum.net/apis/yozm/ShowUser&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>워드프레스 테마 커스터마이징:  두 가지 방법</title>
+   <link href="http://usefulparadigm.com/2011/03/08/customizing-wordpress-theme/"/>
+   <updated>2011-03-08T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2011/03/08/customizing-wordpress-theme</id>
+   <content type="html">&lt;img class=&quot;right&quot; title=&quot;download.blog&quot; src=&quot;/img/uploads/2011/03/download.blog_-300x267.png&quot; alt=&quot;&quot; width=&quot;180&quot; height=&quot;160&quot; /&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://wordpress.org/&quot;&gt;WordPress&lt;/a&gt;는 이미 블로깅(blogging) 도구라는 이미지에서 벗어나 멋진 CMS 플랫폼으로 자리매김한지 오래다. 그리고 이렇게 WordPress가 멋진 플랫폼으로 발전하게 된 데는 뭐니뭐니해도 유연한 확장성을 갖춘 테마(theme) 시스템이 큰 견인차 역할을 해 왔다. WordPress에서 테마를 변경하는데는 크게 두 가지 방법이 있다.&lt;/p&gt;
+
+&lt;h3&gt;첫 번째 방법: 테마 템플릿 수정하기&lt;/h3&gt;
+
+&lt;p&gt;첫 번째 방법은 테마 템플릿 파일 자체를 수정하는 것이다. 여기에는 기존의 다른 테마를 가져다가 수정하거나 아니면 아예 처음부터 새로 테마 시스템을 개발하는 것을 포함한다. WordPress의 테마 작성법에 대해서는 너무 많은 사용법과 문서들이 나와 있기 때문에 여기서는 따로 다루지 않기로 한다.&lt;/p&gt;
+
+&lt;h3&gt;두 번째 방법: 테마 상속하기&lt;/h3&gt;
+
+&lt;p&gt;워드프레스 2.7 버전부터 새로 도입된 이 방식은 말 그대로 어떤 테마를 상속하는 방법이다. 예를 들어, A라는 테마가 있다고 하면 이 테마를 그대로 사용하고 그 중 커스터마이징이 필요한 부분만 부분 수정하는 방식으로 테마를 변경하는 것이다. 이럴 경우 두 개의 테마 간에는 일종의 부모-자식 관계가 성립하며, 따라서 원래의 테마를 부모 테마(mother theme)라 부르고, 부모 테마로부터 상속받은 테마를 자식 테마(chile theme)라고 부른다.&lt;/p&gt;
+
+&lt;p&gt;자식 테마를 만드는 방법은 간단하다. 새로운 테마 디렉터리를 하나 생성한 다음 sytle.css 파일의 주석에 Theme 값으로 부모 테마 디렉터리의 이름을 지정해 주면 끝이다. 예를 들면 다음과 같다.&lt;/p&gt;
+&lt;pre&gt;/*
+Theme Name:     Twenty Ten Child
+Theme URI:      http: //example.com/
+Description:    Child theme for the Twenty Ten theme
+Author:         Your name here
+Author URI:     http: //example.com/about/
+Template:       twentyten
+Version:        0.1.0
+*/
+&lt;/pre&gt;
+
+&lt;p&gt;이제 이 테마는 고맙게도 부모 테마(여기서는 twentyten)의 모든 것을 물러 받는다. 그 다음 부터는 맘에 들지 않는 부분만 고치면 그만이다. 예를 들면, CSS 스타일의 일정 부분만 고칠 수도 있고, 부모 템플릿 파일 중 필요한 부분만 변경할 수도 있다.&lt;/p&gt;
+
+&lt;p&gt;둘 중 어느 방법을 사용하느냐는 물론 상황에 따라 다르다. 경우에 따라서는 아예 새로 테마를 작성하는 첫 번째 방식이 더 효과적일 때도 있다. 그렇지만, 메인 테마를 그대로 두고 필요한 부분만 개선하는 두 번째 방법은, 메인 테마를 계속 유지하면서 자식 테마만 조금씩 변경하면서 운영할 때 아주 효과적인 방법이다.&lt;/p&gt;
+
+&lt;h3&gt;참고자료:&lt;/h3&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://codex.wordpress.org/Child_Themes&quot;&gt;http://codex.wordpress.org/Child_Themes&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;메인 테마로 사용하기 좋은 Theme Framework
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://themeshaper.com/thematic/&quot;&gt;Thematic, A WordPress Theme Framework&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://notesblog.com/&quot;&gt;Notes Blog Core Theme&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>톡팟tokpot 서비스 베타 오픈</title>
+   <link href="http://usefulparadigm.com/2010/11/09/tokpot-beta-open-notice/"/>
+   <updated>2010-11-09T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2010/11/09/tokpot-beta-open-notice</id>
+   <content type="html">&lt;p&gt;유스풀패러다임의 새 웹서비스인 톡팟tokpot 을 오픈하였습니다.&lt;/p&gt;
+
+&lt;p&gt;톡팟tokpot은 트위터twitter 기반 게시판 위젯widget 서비스입니다. 톡팟을 이용하면 여러분 사이트나 블로그에 간단하게 트위터 기반 게시판을 붙여 넣을 수 있습니다.&lt;/p&gt;
+
+&lt;a href=&quot;http://tokpot.com&quot;&gt;&lt;img class=&quot;aligncenter size-full wp-image-60&quot; title=&quot;tokpot&quot; src=&quot;/img/uploads/2010/11/tokpot.jpg&quot; alt=&quot;&quot; width=&quot;500&quot; height=&quot;491&quot; /&gt;&lt;/a&gt;
+
+&lt;p&gt;톡팟은 특히 이런 분들께 유용합니다.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;나만의 브랜드를 가진 홈페이지나 블로그를 운영하면서 방문객들이 트위터로 이동하지 않고 내 사이트 내에서 소통을 이어가고자 할 때.&lt;/li&gt;
+&lt;li&gt;사업체 또는 공공단체, 학교 등 홈페이지 속에서 트위터로 대화를 주고 받고자 할 때.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;아직 베타 버전이라 부족한 부분이 있지만, 사용자들의 피드백을 받아 꾸준히 업데이트해 나갈 계획입니다.&lt;/p&gt;
+
+&lt;p&gt;많은 관심과 격려 부탁 드립니다.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>레일스3 환경에서 레일스2 애플리케이션 생성하기</title>
+   <link href="http://usefulparadigm.com/2010/09/25/generate-rails2-app-in-rails3/"/>
+   <updated>2010-09-25T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2010/09/25/generate-rails2-app-in-rails3</id>
+   <content type="html">&lt;img class=&quot;right&quot; title=&quot;from-rails2&quot; src=&quot;/img/uploads/2010/09/download3-0.png&quot; alt=&quot;&quot; width=&quot;144&quot; height=&quot;153&quot; /&gt;
+
+&lt;p&gt;최근 레일스가 버전 3으로 업그레이드되면서 프레임워크 안팎으로 &lt;a href=&quot;http://edgeguides.rubyonrails.org/3_0_release_notes.html&quot;&gt;기존의 버전 업그레이드와는 차원이 다른 많은 변화&lt;/a&gt;가 생겼다. 레일스가 Merb와 합병한다는 소식을 공개한 것이 지난 2008년 말. 그 후로 약 2년간 거의 4,000회의 커밋과 250여 명의 커미터가 함께 한 ‘리팩터링 대장정’. 그래서인지 &lt;a href=&quot;http://accidentaltechnologist.com/ruby-on-rails/to-rails-3-or-not-to-rails-3-that-is-the-question/&quot;&gt;혹자&lt;/a&gt;는 이를 두고 마치 예전 마이크로소프트가 ASP에서 ASP.NET으로 갈아 탔을 때의 느낌을 연상하기도 하지만, 결과야 좀 더 두고 볼 일.&lt;/p&gt;
+
+&lt;p&gt;업그레이드에 따른 가장 큰 이슈는 물론 기존의 레일스 애플리케이션을 새 버전으로 업그레이드시키는  것이겠지만, 경우에 따라서는 이미 레일스3을 설치하고서 갑자기 이전 버전의 레일스 애플리케이션을 생성해야 할 경우도 생긴다.  문제는 레일스3에서는 애플리케이션 생성 명령이 변경되어 기존의 rails 명령이 그대로 작동하지 않는 것.&lt;/p&gt;
+
+&lt;p&gt;두 가지 방법이 있다.&lt;/p&gt;
+
+&lt;h3 id=&quot;_1__rvm__&quot;&gt;방법 1 - RVM을 이용하는 방법&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://rvm.beginrescueend.com/&quot;&gt;RVM&lt;/a&gt;을 사용 중이라면 간단하게 루비 VM을 전환하여 레일스 환경을 변경할 수 있다.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 루비 1.9.2에서 레일스 3 사용하기
+$ rvm install 1.9.2
+$ rvm 1.9.2
+$ rails new app-name
+
+# 다시 이전 버전(레일스 2)으로 돌리기
+$ rvm system
+$ rails app-name&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;_2__bundler__&quot;&gt;방법 2 - Bundler를 이용하는 방법&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://gembundler.com/&quot;&gt;Bundler&lt;/a&gt;를 이용하면 굳이 RVM을 사용하지 않고도 간단하게 이전 버전의 레일스 애플리케이션을 생성할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;1) 새 프로젝트 디렉터리를 만든다.&lt;/p&gt;
+
+&lt;p&gt;2) Gemfile을 만들고 다음과 같이 생성할 레일스 버전을 준다.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;gem &quot;rails&quot;, &quot;2.3.8&quot;
+gem &quot;sqlite3-ruby&quot;, :require =&amp;gt; &quot;sqlite3&quot;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3)  다음 bundle 명령을 차례로 수행.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ bundle install
+$ bundle exec rails .&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>페이스북 앱 개발 가이드</title>
+   <link href="http://usefulparadigm.com/2010/07/20/facebook-app-tutorial/"/>
+   <updated>2010-07-20T00:00:00+09:00</updated>
+   <id>http://usefulparadigm.com/2010/07/20/facebook-app-tutorial</id>
+   <content type="html">&lt;p&gt;&lt;img class=&quot;right&quot; title=&quot;logo-f8-150x123&quot; src=&quot;/img/uploads/2010/07/logo-f8-150x123.gif&quot; alt=&quot;&quot; width=&quot;150&quot; height=&quot;123&quot; /&gt;&lt;/a&gt;Facebook과 연동한 웹 개발 방식은 크게 두 종류로 나눌 수 있다. 하나는 기존의 웹 사이트와 페이스북을 연동하는  Facebook Connect 방식의 웹 개발이고, 다른 하나는 페이스북 페이지 내에 사이트를 내장시키는 Facebook  Canvas App 방식이다. Facebook Canvas App은 다시 내장 방식으로 IFrame을 사용하냐 혹은 페이스북에서  제공하는 FBML을 사용하냐에 따라 IFrame Canvas와 FBML Canvas로 나눌 수도 있다.&lt;/p&gt;
+
+&lt;p&gt;Facebook은 잘 정리된 개발문서와 개발자 지원 페이지를 제공하고 있고, 또한 위에서 소개한 각각의  개발 방식에 맞춰 여러 종류의 개발 언어로 작성된 SDK를 제공하기 때문에 어떤 개발환경을 사용하든 손쉽게 페이북과 연동되는 웹  애플리케이션/서비스를 개발할 수 있다.&lt;/p&gt;
+
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://developers.facebook.com/&quot;&gt;Facebook 개발자 페이지&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://developers.facebook.com/docs/&quot;&gt;Facebook 개발 문서&lt;/a&gt;&lt;/li&gt;
+	&lt;li&gt;Facebook SDKs: &lt;a href=&quot;http://developers.facebook.com/docs/reference/javascript/&quot;&gt;JavaScript&lt;/a&gt;, &lt;a href=&quot;http://github.com/facebook/php-sdk/&quot;&gt;PHP&lt;/a&gt;, &lt;a href=&quot;http://github.com/facebook/python-sdk/&quot;&gt;Python&lt;/a&gt;, &lt;a href=&quot;http://github.com/facebook/facebook-iphone-sdk/&quot;&gt;iPhone&lt;/a&gt;, &lt;a href=&quot;http://github.com/facebook/facebook-android-sdk&quot;&gt;Android&lt;/a&gt;, &lt;a href=&quot;http://github.com/facebook/csharp-sdk&quot;&gt;C#&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;open_graph_api_oauth&quot;&gt;Open Graph API와 OAuth&lt;/h3&gt;
+&lt;p&gt;최근 페이스북은 기존의 &lt;a href=&quot;http://developers.facebook.com/docs/reference/rest/&quot;&gt;REST 방식의 API&lt;/a&gt;를 버리고 &lt;a href=&quot;http://opengraphprotocol.org/&quot;&gt;Open Graph&lt;/a&gt;라는 오픈 프로토콜에 기반한 API로 서비스 접근 방식을 변경하였다. 또한 서비스 인증(authentication &amp;amp; authorization)도 오픈 표준인 &lt;a href=&quot;http://wiki.oauth.net/OAuth-2&quot;&gt;OAuth2&lt;/a&gt;를 채용함으로써 이전보다 훨씬 표준적인 개발 방식으로 접근할 수 있는 길을 열어 놓고 있다.&lt;/p&gt;
+
+&lt;p&gt;특히 Facebook JavaScript SDK와 FBML의 클라이언트 확장인 XFBML을 이용하게  되면 기존의 Facebook Connect 이나 IFrame Canvas 방식의 Facebook App의 성능도 향상시킬 수 있게  되었다.&lt;/p&gt;
+
+&lt;h3 id=&quot;facebook_app__&quot;&gt;Facebook App 개발 절차&lt;/h3&gt;
+&lt;p&gt;Facebook App의 개발 절차를 간략히 정리하면 아래 단계와 같다. 자세한 내용은 페이스북 개발문서를 참조.&lt;/p&gt;
+&lt;ol&gt;
+	&lt;li&gt;Facebook 개발자 페이지에서 &lt;a href=&quot;http://www.facebook.com/developers/createapp.php&quot;&gt;새 App을 추가&lt;/a&gt;한다.&lt;/li&gt;
+	&lt;li&gt;Facebook JavaScript SDK를 페이지에 추가한다.&lt;/li&gt;
+	&lt;li&gt;OAuth access_token으로 Graph API를 액세스한다.&lt;/li&gt;
+	&lt;li&gt;FBML/XFBML, FQL을 적절히 이용한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;_facebook_app&quot;&gt;루비/레일스와 Facebook App&lt;/h3&gt;
+&lt;p&gt;아쉽게도 아직 페이스북에서 루비/레일스 개발자들을 위한 공식 SDK는 제공하지 않는다. 그렇지만 이미 루비 커뮤니티에서는 페이스북 개발을 지원하는 많은 라이브러리와 도구들이 나와 있다. 대표적인 것은 다음과 같다.&lt;/p&gt;
+&lt;ul&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/mmangino/facebooker&quot;&gt;Facebooker&lt;/a&gt;: Rails 플러그인. 가장 오래되고 사용자 기반이 넓지만 Old REST 방식이며 다소 무겁다는 단점이 있다.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/mmangino/facebooker2&quot;&gt;Facebooker2&lt;/a&gt;: 기존 Facebooker를 새 API에 맞게 리모델링한 것으로, Graph API 라이브러리인 &lt;a href=&quot;http://github.com/mmangino/mogli&quot;&gt;mogli&lt;/a&gt;를 기반으로 한다.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/tmm1/sinbook&quot;&gt;sinbook&lt;/a&gt;: Sinatra 확장 라이브러리. 300줄 정도의 적은 코드로 되어 있으며, Old REST API 방식.&lt;/li&gt;
+	&lt;li&gt;&lt;a href=&quot;http://github.com/arsduo/koala&quot;&gt;Koala&lt;/a&gt;: 새 API 기반이며 Connect과 App 개발 모드 모두를 지원한다. 주목할만한 신예 라이브러리.&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ 
+</feed>

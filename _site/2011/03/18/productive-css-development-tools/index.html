@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	
+		<title>CSS 개발의 생산성을 높이는 도구들 | 유스풀패러다임</title>
+		<meta name="description" content="CSS는 웹사이트 디자인에 사용하는 도구다. 개념도 복잡하지 않고 문법도 간단하기 때문에 Box 모델이나 플로팅(floating) 같은 몇 가지 기본 개념만 익히고 나면 약간의 코딩 만으로 웹사이트에...">
+	
+	<meta name="google-site-verification" content="KyE-PMrb9__CwHMsFc2fM_b1ecWeTs3P5SKZwvcFTaA">
+	<link href="http://feeds.feedburner.com/usefulparadigm" rel="alternate" title="유스풀패러다임 News Feed" type="application/atom+xml">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+	<!-- <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css"> -->
+  <link href="/css/bootstrap.css" rel="stylesheet">
+  <link href="/css/prettify.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+	
+	<!-- <script src="http://www.google.com/jsapi"></script>
+	<script>
+	 google.load( "webfont", "1" );
+	 google.setOnLoadCallback(function() {
+	  WebFont.load({ custom: {
+	   families: [ "NanumGothic" ],
+	   urls: [ "http://fontface.kr/NanumGothic/css" ]
+	  }});
+	 });
+	</script> -->
+	
+  <!-- Le fav and touch icons -->
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="assets/ico/favicon.ico">
+  <link rel="apple-touch-icon" href="assets/ico/bootstrap-apple-57x57.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="assets/ico/bootstrap-apple-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="assets/ico/bootstrap-apple-114x114.png"> -->
+
+	<!-- <script type="text/javascript" src="http://platform.twitter.com/anywhere.js?id=toQ06a8ImPvLRZz20yjZQ&v=1"></script> -->
+	<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+	<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=sjoonk"></script>
+</head>
+
+<body class="post">
+	<div id="page" class="container">
+		<div id="header" class="row">
+	<h1 id="logo"><a href='/'>유스풀패러다임</a></h1>
+	<em class="tagline">Web 2.0 Software Service & Solutions</em>
+</div>
+
+		<div id="main" role="main" class="row">
+			<div id="primary" class="span10">
+		    <ul class="tabs">
+			    <li class="active"><a href="/#home">Home</a></li>
+			    <li><a href="/#twitter">Twitter</a></li>
+			    <li><a href="/#facebook">Facebook</a></li>
+		    </ul>
+
+				<header class="hd_article">
+					<h2>CSS 개발의 생산성을 높이는 도구들
+						<small class="meta">
+							<date title="2011-03-18T00:00:00+09:00">
+								<!-- <span class="published">Published: </span> -->
+								<span class="day">18</span>
+								<span class="month"><abbr>Mar</abbr></span>
+								<span class="year">2011</span>
+							</date>
+						</small>
+					</h2>
+				</header>
+
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+				<a class="addthis_button_tweet"></a>
+				<a class="addthis_button_google_plusone"></a>
+				<!--a class="addthis_counter addthis_pill_style"></a-->
+				</div>
+				<!-- AddThis Button END -->
+
+				<article class="the_article">
+				<div class="article_inner">
+					<div class="content"><p><img class="attachment right" src="http://farm6.static.flickr.com/5219/5535334248_eacd7eede0_m.jpg" alt="" width="240" height="120" />CSS는 웹사이트 디자인에 사용하는 도구다. 개념도 복잡하지 않고 문법도 간단하기 때문에 Box 모델이나 플로팅(floating) 같은 몇 가지 기본 개념만 익히고 나면 약간의 코딩 만으로 웹사이트에 멋진 비주얼 요소를 집어넣을 수가 있다. 그렇지만 매번 웹사이트를 만들 때마다 일일이 처음부터 CSS 작업을 하는 일은 경우에 따라서는 제법 성가시고 품이 많이 가는 일이기도 하다. 특히 IE의 비정상적인 작동을 바로잡기 위한 핵(Hack) 까지 고려한다면 더욱 그렇다. CSS 개발의 생산성을 높여주는 몇 가지 도구들에 대해 알아보자.</p>
+
+<h3>1. CSS 프레임워크</h3>
+<p>CSS 프레임워크(framework)는 미리 만들어 놓은 일종의 CSS 모듈이다. CSS 프레임워크를 사용하면 페이지의 기본 레이아웃에서부터 타이포그라피, 폼 디자인, 버튼 등 많은 부분의 디자인을 "날로 먹을 수"가 있다. 물론 모든 "프레임워크"가 그러하듯, CSS 프레임워크도 언제나 "최선"의 선택인 것은 아니며, 어떤 디자이너나 개발자들은 CSS 프레임워크 자체에 거부감을 가지기도 한다. 그렇지만 CSS 프레임워크가 개발 생산성을 높여줄 수 있다는 점에서는 이론의 여지가 없다. 그만큼 그 종류도 다양하기 때문에 오히려 어떤 것을 선택하느냐가 더 고민이 되는 경우가 많지만, 몇 가지 대표적인 것들만 소개하면 다음과 같다.</p>
+
+<ul>
+	<li><a class="external" title="http://960.gs/" href="http://960.gs/">960 Grid System</a></li>
+	<li><a class="external" title="http://www.blueprintcss.org/" href="http://www.blueprintcss.org/">Blueprint</a></li>
+	<li><a class="external" title="http://elasticss.com/" href="http://elasticss.com/">Elastic CSS Framework</a></li>
+	<li><a class="external" title="http://developer.yahoo.com/yui/grids/" href="http://developer.yahoo.com/yui/grids/">YUI Grid CSS</a></li>
+	<li><a class="external" title="http://lessframework.com/" href="http://lessframework.com/">Less Framework</a></li>
+</ul>
+
+<p>이들 중 대부분의 CSS 프레임워크는 소위 "그리드(grid) 디자인"에 기반하지만, 자바스크립트와 함께 사용하여 UI 효과를 내는 것들도 있고, 또 최근에는 HTML5/CSS3를 이용한 CSS 프레임워크들이 많이 등장하고 있다.</p>
+
+<h3>2. SASS와 LESS</h3>
+<p>SASS와 LESS는 일종의 CSS 전처리기(pre-processor)다. 조금 더 간단하고 구조화된 문법으로 코드를 작성하면 자동으로 CSS 파일을 생성해 주기 때문에 CSS 개발의 생산성을 폰이는 데에 꼭 필요한 도구이기도 하다. 특히 믹스인(Mixin)이라는 개념은 일종의 '모듈'을 만드는 것으로서, CSS 코드 재활용을 높이고 생산성을 높여주는 좋은 개념이다. SASS는 루비(ruby) 언어로 작성되었고, 그래서 주로 루비/레일스 프로젝트에서 많이 사용되지만 반드시 그래야 하는 건 아니다.</p>
+
+<p>LESS(앞서 소개한 Less Framework과는 별개)도 SASS와 개념은 유사하지만, CSS파일의 생성이 자바스크립트 파서(parser)를 통해 클라이언트 측에서 이루어진다는 점에서, 서버측에서 컴파일이 이루어지는 SASS와 구별된다. 물론 LESS는 Node.js 환경에서도 작동한다. 이들 도구의 홈페이지는 각각 다음과 같다.</p>
+
+<ul>
+	<li>SASS <a href="http://sass-lang.com/">http://sass-lang.com/</a></li>
+	<li>LESS <a href="http://lesscss.org/">http://lesscss.org/</a></li>
+</ul>
+
+<h3>3. Compass</h3>
+
+<p>마지막으로 소개할 도구는 일종의 CSS 개발 자동화 도구인 Compass다. 이 도구를 이용하면 앞서 소개한 CSS Framework를 명령행에서 바로 설치할 수도 있고, SASS 컴파일을 자동화 시킬 수도 있으며, 무엇보다도 SASS와 결합하여 CSS의 구성요소를 모듈단위로 쪼개서 SASS 모듈의 재활용성을 높이는 역할을 하는, 일종의 메타(meta) CSS 프레임워크라 할 수 있다. Compass의 사용법은 <a class="external" title="http://compass-style.org/" href="http://compass-style.org/">Compass 사이트</a>에 자세히 소개되어 있으니 참조하면 된다.</p>
+</div>
+				</div>
+				</article>
+
+				<!-- AddThis Button BEGIN -->
+				<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_preferred_2"></a>
+				<a class="addthis_button_preferred_3"></a>
+				<a class="addthis_button_preferred_4"></a>
+				<a class="addthis_button_compact"></a>
+				<a class="addthis_counter addthis_bubble_style"></a>
+				</div>
+				<!-- AddThis Button END -->
+
+				<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'usefulparadigm'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+			</div>
+			<div id="sub" class="span6">
+				<h4>about</h4>
+<p class="about justify">
+  <strong><a href="/">유스풀패러다임</a></strong>은
+	진화하는 웹 및 인터넷 기술에 기반하여 보다 많은 사람들에게 보다 유용한 인터넷 서비스와 솔루션을 제공하는 징검다리가 되고자 합니다.
+</p>
+
+<a href="https://twitter.com/usefulparadigm" class="twitter-follow-button">Follow @twitterapi</a>
+<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>	
+
+<h4>business area</h4>
+<ul>
+	<li>
+		웹2.0 소프트웨어 서비스 개발
+	</li>
+	<li>
+		웹 개발 컨설팅 / 코디네이션
+	</li>
+	<li>
+		오픈소스 기술지원
+	</li>
+</ul>	
+
+<h4>service & solutions</h4>
+<ul id="services" class="unstyled">
+<li>
+<a title="platanustree" style="margin-left: 10px;" href="/pltree">
+<img width="140" height="30" src="/img/sub/pltree.gif" alt="platanustree">
+</a>
+</li>		
+<li>
+<a title="tokpot" style="margin-left: 10px;" href="/tokpot">
+<img width="60" height="40" src="/img/sub/tokpot.gif" alt="tokpot">
+</a>
+</li>
+<li>
+<a title="TeamupBox" href="/teamupbox">
+<img width="180" height="45" src="/img/sub/teamupbox.gif" alt="TeamupBox">
+</a>
+</li>
+<li style="margin: 2px 0 0 10px;">
+	<a title="jigso" href="http://jigso.heroku.com">
+		<img width="110" height="38" src="/img/sub/jigso.png" alt="jigso">
+	</a>
+</li>
+<li>
+<a title="zi2" href="/zi2">
+<img width="70" height="35" src="/img/sub/zi2.gif" alt="zi2">
+</a>
+</li>
+</ul>
+
+<h4>contact</h4>
+<p>
+	<a href='http://usefulparadigm.com'>유스풀패러다임</a>
+	110-702 서울 종로구 공평동 100 제일은행본점빌딩 2044호
+	<span>T.</span> (02) 720 5059
+	<a href='mailto:contact@usefulparadigm.com'>contact@usefulparadigm.com</a>
+</p>
+			</div>	
+		</div><!-- id="main" -->
+		<!-- <nav class="pagenation">
+		<ul>
+		
+			<li class="before left"><a rel="prev" href="/2011/03/15/ruby-rails-authentication-libraries/" class="btn" title="View 루비/레일스 인증처리 라이브러리">Before</a></li>
+		
+		
+			<li class="next right"><a rel="next" href="/2011/06/21/oss-social-networking-solutions-for-enterprise/" class="btn" title="View 기업용으로 활용가능한 오픈소스 SNS 솔루션들">Next</a></li>
+		
+		</ul>
+		</nav> -->
+		<footer id="foot">
+	<p>&copy; Useful Paradigm, 2007-2011.</p>
+<!-- <div class="foot_inner">
+	<div class="hasGrid">
+		<div class="left alpha grid-6"><h4>about</h4>
+<p>
+_layouts is a theme gallary for Jekyll powered websites. Themes are created by me, Yuya Saito who is an web designer/frontend developer in Tokyo, Japan.<br>
+Unless otherwise noted, themes here are all MIT licenced which means you can do whatever you want as long as you don't sue me. <br>
+You can read more detail on my github repository.<br>
+And of course, this site is powerd by <a href="https://github.com/mojombo/jekyll">jekyll</a>.<br>
+</p>
+</div>
+		<div class="right omega grid-6"><h4>if you like what i've done</h4>
+<ul>
+	<li>Follow me at <a href="http://forrst.com/people/studiomohawk" rel="me">Forrest</a></li>
+    <li>Or <a href="http://twitter.com/#!/cssradar" rel="me">Twitter</a></li>
+</ul>
+<h4>contact</h4>
+<ul>
+	<li><a href="http://twitter.com/#!/cssradar" rel="me">cssradar@twitter</a></li>
+</ul>
+</div>
+	</div>
+</div> -->
+</footer>
+
+	</div><!-- id="page" -->
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=279724202051145";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<!-- <script src="http://cdn.jquerytools.org/1.2.5/all/jquery.tools.min.js"></script> -->
+<!-- <script src="http://autobahn.tablesorter.com/jquery.tablesorter.min.js"></script> -->
+<script src="/js/prettify.js"></script>
+<script>$(function () { prettyPrint() })</script>
+<script src="/js/libs/bootstrap-tabs.js"></script>
+<script src="/js/libs/jquery.biggerlink.js"></script>
+<script src="/js/application.js"></script>
+<!-- You may want to stats with your blog if not you should erase this file and remove inculude link from 
+You don't need to edit this file, you can set your ID at _config.yml -->
+<!-- <script>
+	var _gaq = [['_setAccount', 'UA-16954113-1'], ['_trackPageview']];
+	(function(d, t) {
+		var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+		g.async = true;
+		g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		s.parentNode.insertBefore(g, s);
+	})(document, 'script');
+</script> -->
+
+<script type="text/javascript">
+     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+   </script>
+   
+   <script type="text/javascript">
+   try {
+     var pageTracker = _gat._getTracker("UA-16954113-1");
+     pageTracker._trackPageview();
+   } catch(err) {}
+</script>
+
+
+</body>
+</html>
