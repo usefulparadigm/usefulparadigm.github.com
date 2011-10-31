@@ -7,7 +7,7 @@ sitemap: KyE-PMrb9__CwHMsFc2fM_b1ecWeTs3P5SKZwvcFTaA    #Google webmaster verifi
 # END
 # CHOOSE YOUR PREFERENCE
 pygments:    true
-markdown:    maruku
+markdown:    redcarpet
 permalink:   pretty
 # END
 exclude: LICENSE, README.markdown, Rakefile, Gemfile, Gemfile.lock, CNAME
