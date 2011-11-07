@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
 <head>
 	<meta charset="utf-8">
 	{% case page.layout %}
@@ -9,6 +11,7 @@
 	{% when 'post' %}
 		<title>{{ page.title }} | {{ site.sitename }}</title>
 		<meta name="description" content="{{ content | strip_html | truncatewords: 25 }}">
+		{% include og.html %}
 	{% else %}
 		<title>{{ page.title }} | {{ site.sitename }}</title>
 		<meta name="description" content="{{ page.desctiption }}">
