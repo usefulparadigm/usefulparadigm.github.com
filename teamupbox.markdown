@@ -1,6 +1,10 @@
 ---
 layout: page
 title: 팀업박스
+sitemap:
+  priority: 0.7
+  changefreq: monthly
+  lastmod: 2011-09-29T00:00:00+09:00
 ---
 
 ![teamupbox](/img/sub/teamupbox.gif)
