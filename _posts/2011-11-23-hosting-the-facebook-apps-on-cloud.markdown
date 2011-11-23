@@ -49,6 +49,11 @@ EC2 스택이 새로 생성되고 Facebook PHP SDK 등 관련된 파일이 셋�
 
 ![AWS 설치 완료](http://farm8.staticflickr.com/7144/6387729251_2bacf6544d_z.jpg)
 
+이 때 사용된 페이스북 앱의 소스코드는 다음 URL에서 확인할 수 있다.
+
+* [http://aws-facebook.s3.amazonaws.com/aws-facebook-php-v1.tar.gz](http://aws-facebook.s3.amazonaws.com/aws-facebook-php-v1.tar.gz)
+
+
 ### 참고자료
 
 * [Facebook and Heroku](http://blog.heroku.com/archives/2011/9/15/facebook/)
