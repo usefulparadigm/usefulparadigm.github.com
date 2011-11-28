@@ -9,6 +9,6 @@ fg_admins: 1042269033
 # CHOOSE YOUR PREFERENCE
 pygments:    true
 markdown:    redcarpet
-permalink:   pretty
+permalink:   /:year/:month/:day/:title/
 # END
 exclude: LICENSE, README.markdown, Rakefile, Gemfile, Gemfile.lock, CNAME
