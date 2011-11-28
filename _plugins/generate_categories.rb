@@ -20,7 +20,6 @@ module Jekyll
 
   class CategoryGenerator < Generator
     safe true
-    priority :high
     
     def generate(site)
       if site.layouts.key? 'category_index'

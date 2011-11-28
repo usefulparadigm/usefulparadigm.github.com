@@ -1,3 +1,5 @@
 .DS_Store
-_site
+_site/*
+!_site/categories/
+!_site/categories/*
 _posts/*.draft.*
