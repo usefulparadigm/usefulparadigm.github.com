@@ -1,6 +1,7 @@
 ---
 layout: page
 title: zi2
+permalink: /zi2/
 sitemap:
   priority: 0.7
   changefreq: monthly

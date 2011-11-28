@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 톡팟
+permalink: /tokpot/
 sitemap:
   priority: 0.7
   changefreq: monthly

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 플라타너스트리
+permalink: /pltree/
 sitemap:
   priority: 0.7
   changefreq: monthly

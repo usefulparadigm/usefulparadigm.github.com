@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 팀업박스
+permalink: /teamupbox/
 sitemap:
   priority: 0.7
   changefreq: monthly
