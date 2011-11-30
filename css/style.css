@@ -19,6 +19,16 @@ img.right { padding: 0 0 8px 8px; }
 
 /* Layout */
 
+/*body:before {
+    background: none repeat scroll 0 0 #555;
+    content: "";
+    display: block;
+    height: 10px;
+    overflow: hidden;
+    position: relative;
+}
+*/
+
 body {
   font: 14px/1.5 "NanumGothic", gulim, Verdana, AppleGothic, Sans-serif;
 }
