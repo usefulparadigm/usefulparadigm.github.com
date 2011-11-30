@@ -56,7 +56,7 @@ EC2 스택이 새로 생성되고 Facebook PHP SDK 등 관련된 파일이 셋�
 
 ### Google App Engine에 호스팅하기
 
-Facebook 캔버스 앱이라고 해서 구글 앱 엔진에 앱을 호스팅하는데 달라지는 점은 전혀 없다. 통상적인 Google App Engine(GAE) 사용 절차에 따라 앱을 개발하여 배포하고 페이스북 개발자 페이지에서 앱 URL을 등록해 주면 된다. 다만 GAE가 현재 Python, Java, Go 언어만을 지원하기 때문에 PHP로 된 앱은 배포할 수 없다. 페이스북 개발자 문서에서 GAE에 Python 기반 Facebook Canvas App을 만드는 튜토리얼이 소개되어 있으니 자료로 참조하면 좋을 것이다.
+Facebook 캔버스 앱이라고 해서 구글 앱 엔진에 앱을 호스팅하는데 달라지는 점은 전혀 없다. 통상적인 Google App Engine(GAE) 사용 절차에 따라 앱을 개발하여 배포하고 페이스북 개발자 페이지에서 앱 URL을 등록해 주면 된다. 다만 GAE가 현재 Python, Java, Go 언어만을 지원하기 때문에 PHP로 된 앱은 배포할 수 없다. 페이스북 개발자 문서에서 GAE에 Python 기반 Facebook Canvas App을 만드는 [튜토리얼](https://developers.facebook.com/docs/samples/canvas/)이 소개되어 있으니 자료로 참조하면 좋을 것이다.
 
 ![Sample Canvas App](https://developers.facebook.com/attachment/canvas-sample-main-app.png)
 
