@@ -46,19 +46,9 @@ category: facebook
 **Updated(2011/12/13)** 최근 페이스북이 앱 페이지(앱 프로파일 페이지)를 [없애기로 결정](https://developers.facebook.com/blog/post/611/)함에 따라 이제 신규로 생성하는 앱은 
 위와 같은 방식으로 페이지에 앱을 추가할 수 없게 되었다. 대신 페이스북에서는 다음과 같은 스크립트를 앱의 소스코드에 추가함으로써 "내 페이지에 추가하기" 기능을 쉽게 구현할 수 있도록 해 놓고 있다.
 
-<pre>
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:og="http://ogp.me/ns#"
-      xmlns:fb="http://www.facebook.com/2008/fbml">
-<body>
-  <a href="#" onclick=window.open("http://www.facebook.com/dialog/pagetab?
-  app_id=YOUR_APP_ID&next=YOUR_URL","PageTab","width=500,height=200");>
-  Dialog</a>
-</body>
-</html>
-</pre>  
+<script src="https://gist.github.com/1470762.js?file=gistfile1.txt"></script>
 
-물론 직접 링크를 호출하는 방식으로도 가능하다. 브라우저의 URL 창에 다음 주소를 입력하면 된다.
+물론 직접 링크를 호출하는 방식으로도 가능하다. 브라우저의 URL 창에 다음 주소를 입력하면 예전과 같은 페이지에 추가하기 대화창이 나온다.
 
 <pre>
 http://www.facebook.com/dialog/pagetab?app_id=YOUR_APP_ID&next=http://facebook.com
