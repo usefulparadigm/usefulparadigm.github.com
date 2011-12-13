@@ -43,10 +43,10 @@ category: facebook
 
 ![내 페이지에 추가](http://farm8.staticflickr.com/7023/6417418693_b9dbf419b5_z.jpg)
 
-*** Updated(2011/12/13)** 최근 페이스북이 앱 페이지(앱 프로파일 페이지)를 [없애기로 결정](https://developers.facebook.com/blog/post/611/)함에 따라 이제 신규로 생성하는 앱은 
+**Updated(2011/12/13)** 최근 페이스북이 앱 페이지(앱 프로파일 페이지)를 [없애기로 결정](https://developers.facebook.com/blog/post/611/)함에 따라 이제 신규로 생성하는 앱은 
 위와 같은 방식으로 페이지에 앱을 추가할 수 없게 되었다. 대신 페이스북에서는 다음과 같은 스크립트를 앱의 소스코드에 추가함으로써 "내 페이지에 추가하기" 기능을 쉽게 구현할 수 있도록 해 놓고 있다.
 
-<pre class="prettyprint">
+<pre>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://ogp.me/ns#"
       xmlns:fb="http://www.facebook.com/2008/fbml">
