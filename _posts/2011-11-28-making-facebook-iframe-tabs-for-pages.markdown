@@ -43,7 +43,29 @@ category: facebook
 
 ![내 페이지에 추가](http://farm8.staticflickr.com/7023/6417418693_b9dbf419b5_z.jpg)
 
+*** Updated(2011/12/13)** 최근 페이스북이 앱 페이지(앱 프로파일 페이지)를 [없애기로 결정](https://developers.facebook.com/blog/post/611/)함에 따라 이제 신규로 생성하는 앱은 
+위와 같은 방식으로 페이지에 앱을 추가할 수 없게 되었다. 대신 페이스북에서는 다음과 같은 스크립트를 앱의 소스코드에 추가함으로써 "내 페이지에 추가하기" 기능을 쉽게 구현할 수 있도록 해 놓고 있다.
+
+<pre class="prettyprint">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="http://www.facebook.com/2008/fbml">
+<body>
+  <a href="#" onclick=window.open("http://www.facebook.com/dialog/pagetab?
+  app_id=YOUR_APP_ID&next=YOUR_URL","PageTab","width=500,height=200");>
+  Dialog</a>
+</body>
+</html>
+</pre>  
+
+물론 직접 링크를 호출하는 방식으로도 가능하다. 브라우저의 URL 창에 다음 주소를 입력하면 된다.
+
+<pre>
+http://www.facebook.com/dialog/pagetab?app_id=YOUR_APP_ID&next=http://facebook.com
+</pre>
+
 ### 참고자료
 
 * [Introducing iframe Tabs for Pages](https://developers.facebook.com/blog/post/462/) (Facebook 개발자 블로그) 
 * [Page Tab Tutorial](https://developers.facebook.com/docs/appsonfacebook/pagetabs/) (Facebook 개발자 문서)
+* [Add Page Tab Dialog](https://developers.facebook.com/docs/reference/dialogs/add_to_page/) (facebook 개발자 문서)
