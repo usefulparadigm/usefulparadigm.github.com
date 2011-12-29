@@ -54,7 +54,7 @@ category: facebook
 http://www.facebook.com/dialog/pagetab?app_id=YOUR_APP_ID&next=http://facebook.com
 </pre>
 
-**문서화되지 않은 방법** 또는 다음 URL을 호출하여도 탭 추가가 가능하다.
+**문서화되지 않은 방법**: 또는 다음 URL을 호출하여도 탭 추가가 가능하다.
 
 <pre>
 https://www.facebook.com/add.php?api_key=YOUR_APP_ID&pages
