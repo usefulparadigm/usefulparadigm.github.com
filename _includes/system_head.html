@@ -11,11 +11,11 @@
 	{% when 'post' %}
 		<title>{{ page.title }} | {{ site.sitename }}</title>
 		<meta name="description" content="{{ content | strip_html | truncatewords: 25 }}">
-		{% include og.html %}
 	{% else %}
 		<title>{{ page.title }} | {{ site.sitename }}</title>
 		<meta name="description" content="{{ page.desctiption }}">
 	{% endcase %}
+	{% include og.html %}
 	<meta name="google-site-verification" content="{{ site.sitemap }}">
 	<link href="http://feeds.feedburner.com/usefulparadigm" rel="alternate" title="{{ site.sitename }} News Feed" type="application/atom+xml">
 
