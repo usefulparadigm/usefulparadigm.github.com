@@ -1,7 +1,19 @@
-<meta property="og:title" content="{{ page.title }}" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
-<meta property="og:image" content="{{ page.thumbnail }}" />
-<meta property="og:site_name" content="{{ site.sitename }}" />
+{% case page.layout %}
+{% when 'home' %}
+	<meta property="og:title" content="{{ site.sitename }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ site.url }}" />
+	<meta property="og:image" content="http://usefulparadigm.com/img/logo.jpg" />
+	<meta property="og:site_name" content="{{ site.sitename }}" />
+	<meta property="og:description" content="{{ site.tagline }}" />
+{% else %}
+	<meta property="og:title" content="{{ page.title }}" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+	<meta property="og:image" content="{{ page.thumbnail }}" />
+	<meta property="og:site_name" content="{{ site.sitename }}" />
+	<meta property="og:description" content="{{ page.excerpt }}" />
+{% endcase %}
 <meta property="fb:admins" content="{{ site.fg_admins }}" />
-<meta property="og:description" content="{{ page.excerpt }}" />
+
+
