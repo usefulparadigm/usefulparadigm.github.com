@@ -75,9 +75,12 @@ a:hover { color: green; }
   width: 330px;
 }
 
+.content, .entry {
+	color: #333;
+}
+
 .content {
 	margin: 0 0 0 0.5em;
-	color: #333;
 }
 .content p {
   font-size: 14px;
