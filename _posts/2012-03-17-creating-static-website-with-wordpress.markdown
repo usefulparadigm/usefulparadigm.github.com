@@ -39,9 +39,11 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 ![](http://farm8.staticflickr.com/7179/6842956928_534f6980f9_z.jpg)
 
+또한 워드프레스는 유연한 **페이지 템플릿** 기능을 제공하기 때문에 원한다면 각각의 페이지마다 다른 페이지 템플릿을 만들어 적용할 수 있다는 점도 참고하면 좋을 것이다.
+
 ### '새소식' 페이지 추가하기
 
-아무리 페이지 중심의 정적인 웹사이트라고는 해도 포스트가 없다면 방문작들에게 별 재미가 없을 것이다. 매번 똑같은 페이지만 보일 바에야 굳이 워드프레스를 사용할 이유가 어디 있을까. 메인 메뉴에 "새소식" 메뉴를 하나 추가하고 이 곳에는 새로운 포스트들이 올라오게 해보자. "새소식"이라는 제목으로 새 페이지를 하나 만들자. 이 때 내용에는 아무 것도 쓰지 말고 그냥 빈 채로 둔다.
+아무리 페이지 중심의 정적인 웹사이트라고는 해도 포스트가 없다면 방문자들에게 별 재미가 없을 것이다. 매번 똑같은 페이지만 보일 바에야 굳이 워드프레스를 사용할 이유가 어디 있을까. 메인 메뉴에 "새소식" 메뉴를 하나 추가하고 이 곳에는 새로운 포스트들이 올라오게 해보자. "새소식"이라는 제목으로 새 페이지를 하나 만들자. 이 때 내용에는 아무 것도 쓰지 말고 그냥 빈 채로 둔다.
 
 ![](http://farm8.staticflickr.com/7205/6842957128_ff6c073316.jpg)
 
@@ -61,7 +63,9 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 ### 다른 방법들
 
-지금까지는 워드프레스의 페이지 기능을 사용하여 정적인 웹사이트를 만드는 법을 알아 보았다. 그렇지만 워드프레스에서 웹사이트를 만들 때 꼭 이 방법만을 사용해야 하는 건 아니다. 경우에 따라서는 기존 블로그 스타일을 유지하면서도 얼마든지 웹사이트 "스럽게" 보이는  사이트를 만들 수도 있다. 그 대표적인 방법이 매거진(magazine) 스타일의 테마와 같은, 적합한 용도의 테마를 사용하는 것이다. 아래는 상용 워드프레스 테마 중 하나인 [PageLines](http://www.pagelines.com/showcase/genres/magazine/)의 데모 화면들인데, 보다시피 블로그라기 보다는 훨씬 더 웹사이트에 가까워 보인다.
+지금까지는 워드프레스의 페이지 기능을 사용하여 정적인 웹사이트를 만드는 법을 알아 보았다. 그렇지만 워드프레스에서 웹사이트를 만들 때 꼭 이 방법만을 사용해야 하는 건 아니다. 앞서는 워드프레스에서 기본으로 제공하는 프론트페이지 설정 기능을 이용하였지만, 이 밖에 index.php 템플릿 파일을 직접 수정(권장하진 않는다)하거나 홈페이지용 템플릿인 home.php 파일을 추가하는 방식으로도 가능하다. 
+
+또한 경우에 따라서는 기존 블로그 스타일을 유지하면서도 얼마든지 웹사이트 "스럽게" 보이는  사이트를 만들 수도 있다. 그 대표적인 방법이 매거진(magazine) 스타일의 테마와 같은, 적합한 용도의 테마를 사용하는 것이다. 아래는 상용 워드프레스 테마 중 하나인 [PageLines](http://www.pagelines.com/showcase/genres/magazine/)의 데모 화면들인데, 보다시피 블로그라기 보다는 훨씬 더 웹사이트에 가까워 보인다.
 
 ![](http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_z.jpg)
 
@@ -73,11 +77,13 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 * [How to Build a Website with WordPress](http://wpsitebuilding.com/how-to-build-a-website-with-wordpress)
 * [Creating a Static Front Page](http://codex.wordpress.org/Creating_a_Static_Front_Page)
+* [WordPress CMS Plugins](http://digwp.com/2012/01/wordpress-cms-plugins/)
 
 **웹사이트 만들 때 사용하기 좋은 테마들**
 
 * [Genesis Framework](http://www.studiopress.com/themes/genesis)
 * [PageLines](http://www.pagelines.com/)
+* [Thematic](http://wordpress.org/extend/themes/thematic)
 * 기타 각종 유/무료 테마들은 구글 등 검색엔진에서 "[wordpress magazine theme](https://www.google.co.kr/search?q=wordpress+magazine+theme)"이나 "[wordpress website theme](https://www.google.co.kr/search?q=wordpress+magazine+theme)" 등의 검색어로 검색하면 쉽게 찾을 수 있다 
 
 **웹사이트에서 사용하면 좋을 유용한 플러그인들**
@@ -85,3 +91,9 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 * [WP-CMS Post Control](http://wordpress.org/extend/plugins/wp-cms-post-control/) 관리자 페이지를 CMS 용도에 맞게 수정
 * [My Page Order](http://wordpress.org/extend/plugins/my-page-order/) 드래그드롭 방식으로 페이지 정렬
 * [Fold Page List](http://www.webspaceworks.com/resources/wordpress/30/) 중첩 페이지 목록 표시
+* [Page Links To](http://wordpress.org/extend/plugins/page-links-to/) 워드프레스 페이지에서 외부 URL 링크
+* [PageMash](http://wordpress.org/extend/plugins/pagemash/) 드래그드롭으로 페이지 구조 관리
+* [Flutter](http://wordpress.org/extend/plugins/fresh-page/) 커스텀 페이지 패널 작성
+* [Pods CMS](http://podscms.org/) 범용 워드프레스 CMS 확장
+* [Rich Text Widget](http://wordpress.org/extend/plugins/rich-text-widget/) 위젯에 리치 텍스트 추가
+* [Exec-PHP](http://wordpress.org/extend/plugins/exec-php/) 페이지나 포스트 속에서 php 코드 사용
