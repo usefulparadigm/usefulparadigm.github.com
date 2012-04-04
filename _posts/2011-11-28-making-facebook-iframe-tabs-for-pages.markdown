@@ -60,6 +60,7 @@ http://www.facebook.com/dialog/pagetab?app_id=YOUR_APP_ID&next=http://facebook.c
 https://www.facebook.com/add.php?api_key=YOUR_APP_ID&pages
 </pre>
 
+**Updated(2012/03/16)** 최근 페이스북이 앱페이지(앱 커뮤니티 페이지)의 관리자 메뉴 속에 *앱을 페이지에 추가하기* 메뉴를 추가했다. 앱페이지를 만들었다면 이 메뉴 기능을 이용해도 된다. [자세한 내용](https://www.facebook.com/photo.php?fbid=407581229256851&set=a.365001673514807.110147.352249658123342&type=1)
 
 ### 참고자료
 
