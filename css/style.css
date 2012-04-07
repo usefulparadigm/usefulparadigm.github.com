@@ -120,3 +120,5 @@ a:hover { color: green; }
   padding: 5px 0;
   border-bottom: 1px dashed #dcdcdc;
 }
+
+.page ol li strong { color: green; }
