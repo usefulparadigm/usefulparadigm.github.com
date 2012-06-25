@@ -29,9 +29,17 @@ img.right { padding: 0 0 8px 8px; }
 }
 */
 
+@font-face {
+    font-family: 'NanumGothic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('NanumGothic'), url('//commondatastorage.googleapis.com/fontfacekr-fonts/NanumGothic.woff') format('woff');
+}
+
 body {
 /*  font: 14px/1.5 Helvetica, Verdana, AppleGothic, Sans-serif;
 */
+	font-family: NanumGothic;
 }
 
 pre.prettyprint {
