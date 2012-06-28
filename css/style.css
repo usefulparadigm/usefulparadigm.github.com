@@ -30,17 +30,19 @@ img.right { padding: 0 0 8px 8px; }
 */
 
 @font-face {
-    font-family: 'NanumGothic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('NanumGothic'), url('//commondatastorage.googleapis.com/fontfacekr-fonts/NanumGothic.woff') format('woff');
+  font-family: 'NanumGothic';
+  src: url('//commondatastorage.googleapis.com/fontfacekr-fonts/NanumGothic.eot');
+  src: local('☺'),
+		url('//commondatastorage.googleapis.com/fontfacekr-fonts/NanumGothic.woff') format('woff'),
+		url('//commondatastorage.googleapis.com/fontfacekr-fonts/NanumGothic.ttf') format('truetype');
 }
 
 body {
 /*  font: 14px/1.5 Helvetica, Verdana, AppleGothic, Sans-serif;
 */
-	font-family: NanumGothic;
 }
+
+h1, h2, h3, h4, h5, h6 { font-family: NanumGothic; }
 
 pre.prettyprint {
   background-color: #f5f5f5;
