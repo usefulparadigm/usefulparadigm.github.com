@@ -52,6 +52,12 @@ sitemap:
 
 #### 서비스 문의 및 신청
 
-전화 또는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 문의바라며, 
-신청은 <a href="mailto:contact@usefulparadigm.com">이메일</a>을 통해서만 받습니다.
+문의는 전화, 댓글 또는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로, 
+신청은 아래 버튼을 꾸욱~ 눌러 양식을 작성해 주세요!
 
+<p>
+	<a href="https://docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" class="btn info various fancybox.iframe">서비스 신청</a>
+</p>
+<hr />
+
+<!-- <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" width="760" height="721" frameborder="0" marginheight="0" marginwidth="0">로드 중...</iframe> -->
