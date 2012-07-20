@@ -132,3 +132,6 @@ a:hover { color: green; }
 }
 
 .page ol li strong { color: green; }
+
+.bg.ask.wordpress { background: url(/img/bg_ask_wordpress.png) no-repeat right 50px; }
+.bg.ask.facebook { background: url(/img/bg_ask_facebook.png) no-repeat right 50px; }
