@@ -6,8 +6,8 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 ---
 
 <div class="alert-message block-message info">
-	<strong>워드프레스 웹사이트 무료로 제작지원해 드립니다.</strong> 
-	지금 <a href="/wordpress-hosting">신청</a>하세요!
+	<strong>워드프레스 웹사이트 무료로 제작지원해 드립니다!</strong> 
+	<a href="/wordpress-hosting">바로가기</a>
 </div>	
 
 워드프레스의 인기가 높다. 그래서인지 요즘은 국내에서도 워드프레스를 이용하여 웹사이트를 구축하려는 시도들이 늘고  있다. 그런데 워드프레스는 원래 블로깅 도구로 출발한 탓에 웹사이트와 어울리는 디자인을 만들려면 조금 "손질"이 필요하다. 워드프레스를 블로그로 사용하는 방법은 이미 널리 알려져 있기 때문에 여기서는 워드프레스를 이용하여 웹사이트(흔히 기업이나 단체에서 "홈페이지"라 부르는)를 만드는 법을 소개하려 한다.

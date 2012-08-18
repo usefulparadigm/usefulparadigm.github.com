@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 워드프레스 홈페이지/웹사이트 무료 제작지원
+title: 워드프레스 홈페이지/웹사이트 제작지원
 permalink: /wordpress-hosting/
 thumbnail: http://farm8.staticflickr.com/7003/6834042221_e1ab360fc7_m.jpg
 excerpt: 워드프레스 기반 유스풀패러다임에서는 워드프레스 기술지원 서비스를 제공합니다. 워드프레스 기반으로 홈페이지를 제작하거나 블로그를 운영하실 분들은 문의 주세요.
@@ -10,7 +10,7 @@ sitemap:
   lastmod: 2012-07-31T00:00:00+09:00
 ---
 
-## 워드프레스 홈페이지/웹사이트 무료 제작지원
+# 워드프레스 홈페이지/웹사이트 제작지원
 
 <div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
 <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ko">트윗하기</a>
@@ -18,8 +18,14 @@ sitemap:
 
 <img src="http://farm8.staticflickr.com/7003/6834042221_e1ab360fc7_m.jpg" class="right" style="float: right;" />
 
+## 무료 제작지원
 
-[유스풀패러다임](/)에서는 세계적으로 인기있는 오픈소스 콘텐츠 관리 도구(CMS)인 [WordPress](http://wordpress.org/)에 대한 기술 및 제작 지원 서비스를 제공해 드리고 있습니다.
+[WordPress](http://wordpress.org/)는 세계적으로 인기있는 오픈소스 콘텐츠 관리 도구(CMS)로서 누구든 무료로 다운로드 받아 쉽게 설치하여 사용할 수 있습니다.
+
+그러나 국내에 아직 자료도 많지 않은데다 기술적인 문제 등으로 인해 좋은 기능을 제대로 활용하지 못하고 계신 분들이 많습니다.
+
+[유스풀패러다임](/)에서는 이런 분들을 위해 워드프레스에 대한 제작 및 기술지원을 무료로 제공해 드리고 있습니다.
+
 
 #### 서비스 개요
 
@@ -28,7 +34,7 @@ sitemap:
 * 워드프레스 설치 및 제작에 관한 상담
 * 웹호스팅 환경(서버)에 설치 및 기본 설정
 * 테마(theme) 적용 및 간단한 커스터마이징
-* 각종 플러그인(plugin) 설치 및 설정
+* 주요 플러그인 설치 및 설정
 * 페이스북 등 소셜네트워크(SNS) 연동
 
 #### 전부 무료인가요?
@@ -47,16 +53,39 @@ sitemap:
 #### 누구를 대상으로 하나요?
 
 워드프레스로 홈페이지 또는 웹사이트를 구축하려는 개인 또는 단체를 대상으로 합니다.  
-(개인창업, 스타트업, 자영업자, 소상공인, 공공/비영리단체, 사회적기업, 기초자치단체 등)-->
+(개인창업, 스타트업, 자영업자, 소상공인, 공공/비영리단체, 사회적기업, 기초자치단체 등)
 
 #### 서비스 문의 및 신청
 
 문의는 전화, 댓글 또는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 해 주시고, <br/>
-서비스 신청은 아래 신청 버튼을 눌러 양식을 작성해 주세요!
+서비스 신청은 아래 신청 버튼을 눌러 양식을 작성해 주세요!-->
 
-<div class="center">
-	<a href="https://docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" class="btn info various fancybox.iframe">서비스 신청하기</a>
+<div class="center-no">
+	<a href="https://docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" class="btn info various fancybox.iframe">무료 제작지원 서비스 신청하기</a>
 </div>
-<hr />
+<hr/>
+
+## 프리미엄 서비스
+
+[유스풀패러다임](/)에서는 워드프레스 제작과 관련하여 다음 서비스들을 제공합니다.
+
+* 워드프레스 테마 제작
+* 워드프레스 기술 컨설팅(고급)
+* 워드프레스 사이트 호스팅 및 운영
+* 워드프레스 최적화(optimization)
+
+#### 서비스 문의
+
+문의는 전화 또는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 해 주세요!
+
+<!-- <div class="alert-message block-message">
+<h5>관련자료:</h5>
+<ul>
+	<li><a href="/2012/03/17/creating-static-website-with-wordpress/">워드프레스로 웹사이트 만들기</a></li>
+	<li><a href="/2012/08/13/wordpress-website-builidng-guide-2012/">워드프레스 웹사이트 제작 가이드</a></li>
+</ul>	
+</div>	 -->
+
+<hr/>
 
 <!-- <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" width="760" height="721" frameborder="0" marginheight="0" marginwidth="0">로드 중...</iframe> -->
