@@ -8,7 +8,7 @@ fg_admins: 1042269033
 # END
 # CHOOSE YOUR PREFERENCE
 pygments: true
-markdown: kramdown # redcarpet
+markdown: kramdown
 permalink: /:year/:month/:day/:title/
 # END
 exclude: LICENSE, README.markdown, Rakefile, Gemfile, Gemfile.lock, CNAME

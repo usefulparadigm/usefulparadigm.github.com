@@ -67,7 +67,8 @@ sitemap:
 <div class="center-no">
 	<a href="https://docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" class="btn info various fancybox.iframe">무료 제작지원 서비스 신청하기</a>
 </div>
-<hr/>
+
+---
 
 ## 프리미엄 서비스
 
