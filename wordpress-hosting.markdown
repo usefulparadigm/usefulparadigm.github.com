@@ -7,7 +7,7 @@ excerpt: 워드프레스 기반 유스풀패러다임에서는 워드프레스 �
 sitemap:
   priority: 1
   changefreq: weekly
-  lastmod: 2012-07-31T00:00:00+09:00
+  lastmod: 2012-08-20T00:00:00+09:00
 ---
 
 # 워드프레스 홈페이지/웹사이트 제작지원
@@ -22,10 +22,14 @@ sitemap:
 
 [WordPress](http://wordpress.org/)는 세계적으로 인기있는 오픈소스 콘텐츠 관리 도구(CMS)로서 누구든 무료로 다운로드 받아 쉽게 설치하여 사용할 수 있습니다.
 
+###### 관련자료:
+
+* [워드프레스로 웹사이트 만들기](/2012/03/17/creating-static-website-with-wordpress/)
+* [워드프레스 웹사이트 제작 가이드](/2012/08/13/wordpress-website-builidng-guide-2012/)
+
 그러나 국내에 아직 자료도 많지 않은데다 기술적인 문제 등으로 인해 좋은 기능을 제대로 활용하지 못하고 계신 분들이 많습니다.
 
 [유스풀패러다임](/)에서는 이런 분들을 위해 워드프레스에 대한 제작 및 기술지원을 무료로 제공해 드리고 있습니다.
-
 
 #### 서비스 개요
 
@@ -78,14 +82,4 @@ sitemap:
 
 문의는 전화 또는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 해 주세요!
 
-<!-- <div class="alert-message block-message">
-<h5>관련자료:</h5>
-<ul>
-	<li><a href="/2012/03/17/creating-static-website-with-wordpress/">워드프레스로 웹사이트 만들기</a></li>
-	<li><a href="/2012/08/13/wordpress-website-builidng-guide-2012/">워드프레스 웹사이트 제작 가이드</a></li>
-</ul>	
-</div>	 -->
-
-<hr/>
-
-<!-- <iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" width="760" height="721" frameborder="0" marginheight="0" marginwidth="0">로드 중...</iframe> -->
+---

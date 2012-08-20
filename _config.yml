@@ -7,8 +7,8 @@ sitemap: KyE-PMrb9__CwHMsFc2fM_b1ecWeTs3P5SKZwvcFTaA    #Google webmaster verifi
 fg_admins: 1042269033
 # END
 # CHOOSE YOUR PREFERENCE
-pygments:    true
-markdown:    redcarpet
-permalink:   /:year/:month/:day/:title/
+pygments: true
+markdown: kramdown # redcarpet
+permalink: /:year/:month/:day/:title/
 # END
 exclude: LICENSE, README.markdown, Rakefile, Gemfile, Gemfile.lock, CNAME
