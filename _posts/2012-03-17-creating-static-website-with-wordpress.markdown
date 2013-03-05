@@ -6,10 +6,10 @@ excerpt: 요즘은 국내에서도 워드프레스를 이용해 웹사이트를 
 thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 ---
 
-<div class="alert-message block-message info">
+<!-- <div class="alert-message block-message info">
 	<strong>워드프레스 웹사이트 무료로 제작지원해 드립니다!</strong> 
 	<a href="/wordpress-hosting">바로가기</a>
-</div>	
+</div>	 -->
 
 워드프레스의 인기가 높다. 그래서인지 요즘은 국내에서도 워드프레스를 이용하여 웹사이트를 구축하려는 시도들이 늘고  있다. 그런데 워드프레스는 원래 블로깅 도구로 출발한 탓에 웹사이트와 어울리는 디자인을 만들려면 조금 "손질"이 필요하다. 워드프레스를 블로그로 사용하는 방법은 이미 널리 알려져 있기 때문에 여기서는 워드프레스를 이용하여 웹사이트(흔히 기업이나 단체에서 "홈페이지"라 부르는)를 만드는 법을 소개하려 한다.
 
@@ -17,7 +17,7 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 ![](http://farm8.staticflickr.com/7052/6989080573_161ed78b7b_z.jpg)
 
-###웹사이트 모드로 변신!
+## 웹사이트 모드로 변신!
 
 이렇게 워드프레스를 웹사이트로 사용하기 위해서는 몇 가지 기본적인 설정을 해 주어야 한다. 워드프레스가 설치된 상태에서 관리자 페이지의 Settings > Reading 메뉴로 가면 다음과 같이 프론트 페이지 표시를 어떻게 할건지 하는 부분이 나온다. 
 
@@ -25,7 +25,7 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 기본값은 최근 포스트들을 나열하는 방식으로 설정되어 있는데, 블로그라면 이 방식이 적합하다. 그렇지만 웹사이트로 만든다고 하면 정적 페이지(static page)로 설정해 주어야 한다. 옵션 값을 변경하고 프론트 페이지(Front Page) 선택하는 부분에서 Sample Page를 선택한 다음 저장하면 이제 워드프레스가 "블로그 모드"에서 "웹사이트 모드"로 변경된다(일부 테마는 테마 자체에서 이 기능을 활성화시키기도 한다). 참고로 여기 Sample Page는 워드프레스가 그야말로 샘플로 넣어 둔 테스트용 페이지로, 나중에 다른 것으로 바꿀 것이다.
 
-###테마 선택하기
+## 테마 선택하기
 
 워드프레스의 힘은 테마에서 나온다. 어떤 테마를 선택하냐에 따라 워드프레스는 각양각색의 모양새를 만들어 내기 때문이다. 따라서 웹사이트의 용도에 맞는(또는 고객의 요구사항에 부합하는) 적합한 테마를 선택하는 것이 중요하다. 테마는 [WordPress Themes](http://wordpress.org/extend/themes/)에서 무료 테마를 검색해도 좋고 [themeforest](http://themeforest.net/)나 [StudioPress](http://www.studiopress.com/) 같은 유료 테마 사이트를 이용해도 된다. 여기서는 워드프레스의 2010년 기본 테마인 [Twenty Ten](http://wordpress.org/extend/themes/twentyten)을 사용하기로 하겠다. 
 
@@ -33,7 +33,7 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 ![](http://farm8.staticflickr.com/7048/6989080743_cf6547db87_z.jpg)
 
-###포스트 vs. 페이지
+## 포스트 vs. 페이지
 
 워드프레스에서 만들어 낼 수 있는 콘텐츠에는 여러 가지가 있지만 크게는 **포스트(post)**와 **페이지(page)**로 나눌 수 있다. 포스트는 '블로그 포스트' 처럼 말 그대로 계속 새로운 내용으로 채워 나가는 콘텐츠를 만들 때 사용하는 반면, 페이지는 한번 만들어 두면 잘 변하지 않는 콘텐츠에 주로 사용한다. 웹사이트에서 흔히 볼 수 있는 회사소개 페이지나 컨택 페이지 같은 "페이지"들이 바로 워드프레스에서 말하는 그 "페이지"다. 블로그에서는 주로 "포스트"가 중심이 되지만, 정적인 콘텐츠들이 많은 웹사이트에서는 페이지의 비중이 높아진다. 페이지를 만들고 페이지를 커스터마이징 해야 할 일이 많아진다는 말이다.
 
@@ -47,7 +47,7 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 또한 워드프레스는 유연한 **페이지 템플릿** 기능을 제공하기 때문에 원한다면 각각의 페이지마다 다른 페이지 템플릿을 만들어 적용할 수 있다는 점도 참고하면 좋을 것이다.
 
-### '새소식' 페이지 추가하기
+## '새소식' 페이지 추가하기
 
 아무리 페이지 중심의 정적인 웹사이트라고는 해도 포스트가 없다면 방문자들에게 별 재미가 없을 것이다. 매번 똑같은 페이지만 보일 바에야 굳이 워드프레스를 사용할 이유가 어디 있을까. 메인 메뉴에 "새소식" 메뉴를 하나 추가하고 이 곳에는 새로운 포스트들이 올라오게 해보자. "새소식"이라는 제목으로 새 페이지를 하나 만들자. 이 때 내용에는 아무 것도 쓰지 말고 그냥 빈 채로 둔다.
 
@@ -57,7 +57,7 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 ![](http://farm8.staticflickr.com/7201/6989081037_7fdb762048_z.jpg)
 
-###'블로그' 흔적 지우기
+## '블로그' 흔적 지우기
 
 그런데 여기 한 가지 문제가 있다. 원래 워드프레스의 많은 부분이 블로그를 전제로 구성되어 있는 탓에, 워드프레스를 웹사이트 모드로 전환하면 여기저기 조금 어색한 부분들이 생기게 된다. 예를 들어 앞서 만든 메인 페이지에 댓글은 굳이 필요가 없다. 마찬가지로 컨택 페이지나 회사소개 페이지 같은 곳에서도 굳이 댓글을 달게 할 필요는 없을 것이다.  
 
@@ -67,7 +67,7 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 이 밖에도 처리해야 할 일들이 많이 있다. 예를 들면, 워드프레스의 기본 기능인 카테고리(category)나 태그(tag) 기능도 조금 더 웹사이트에 맞춰 변경해 주어야 하고, 페이지의 URL 들도 웹사이트에 맞게 조정해 주는 것이 좋다. 관리자용 대시보드의 경우도 불필요한 것들은 제거해 주어서 글을 작성하는 사람들이 조금 더 편하게 입력할 수 있게 해 주는 것이 좋고, 필요한 위젯이나 플러그인들도 설치해 주어야 한다. 참고자료에 몇 가지 도움이 되는 플러그인들을 소개하였으니 참고하면 좋을 것이다.
 
-### 다른 방법들
+## 다른 방법들
 
 지금까지는 워드프레스의 페이지 기능을 사용하여 정적인 웹사이트를 만드는 법을 알아 보았다. 그렇지만 워드프레스에서 웹사이트를 만들 때 꼭 이 방법만을 사용해야 하는 건 아니다. 앞서는 워드프레스에서 기본으로 제공하는 프론트페이지 설정 기능을 이용하였지만, 이 밖에 index.php 템플릿 파일을 직접 수정(권장하진 않는다)하거나 홈페이지용 템플릿인 home.php 파일을 추가하는 방식으로도 가능하다. 
 
@@ -77,22 +77,22 @@ thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 
 이상으로 워드프레스를 웹사이트 용도도 사용하는 방법을 간단하게 소개했다. 지금까지 살펴 본 것만으로도 워드프레스가 얼마나 자유롭게 변형이 가능한 강력한 도구인지 가늠이 되었을 것이다. 그렇지만 이게 전부가 아니다. 차라리 맛보기 정도라고 불러야 맞을 것이다. 이 밖에도 워드프레스를 용도에 맞게 변경해서 사용할 수 있는 방법들은 헤아릴 수 없을 정도로 많다. 한마디로 "Sky is the limit" 이다.
 
-###참고자료
+## 참고자료
 
-**참고문서**
+### 참고문서
 
 * [How to Build a Website with WordPress](http://wpsitebuilding.com/how-to-build-a-website-with-wordpress)
 * [Creating a Static Front Page](http://codex.wordpress.org/Creating_a_Static_Front_Page)
 * [WordPress CMS Plugins](http://digwp.com/2012/01/wordpress-cms-plugins/)
 
-**웹사이트 만들 때 사용하기 좋은 테마들**
+### 웹사이트 만들 때 사용하기 좋은 테마들
 
 * [Genesis Framework](http://www.studiopress.com/themes/genesis)
 * [PageLines](http://www.pagelines.com/)
 * [Thematic](http://wordpress.org/extend/themes/thematic)
 * 기타 각종 유/무료 테마들은 구글 등 검색엔진에서 "[wordpress magazine theme](https://www.google.co.kr/search?q=wordpress+magazine+theme)"이나 "[wordpress website theme](https://www.google.co.kr/search?q=wordpress+magazine+theme)" 등의 검색어로 검색하면 쉽게 찾을 수 있다 
 
-**웹사이트에서 사용하면 좋을 유용한 플러그인들**
+### 웹사이트에서 사용하면 좋을 유용한 플러그인들
 
 * [WP-CMS Post Control](http://wordpress.org/extend/plugins/wp-cms-post-control/) 관리자 페이지를 CMS 용도에 맞게 수정
 * [My Page Order](http://wordpress.org/extend/plugins/my-page-order/) 드래그드롭 방식으로 페이지 정렬

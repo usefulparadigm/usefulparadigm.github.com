@@ -2,6 +2,7 @@
 layout: page
 title: 톡팟
 permalink: /tokpot/
+group: listable
 sitemap:
   priority: 0.7
   changefreq: monthly

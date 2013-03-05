@@ -1,7 +1,9 @@
 ---
 layout: page
 title: zi2
+hide_title: true
 permalink: /zi2/
+group: listable
 sitemap:
   priority: 0.7
   changefreq: monthly

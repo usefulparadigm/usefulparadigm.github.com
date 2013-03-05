@@ -4,13 +4,12 @@ title: 워드프레스 홈페이지/웹사이트 제작지원
 permalink: /wordpress-hosting/
 thumbnail: http://farm8.staticflickr.com/7003/6834042221_e1ab360fc7_m.jpg
 excerpt: 워드프레스 기반 유스풀패러다임에서는 워드프레스 기술지원 서비스를 제공합니다. 워드프레스 기반으로 홈페이지를 제작하거나 블로그를 운영하실 분들은 문의 주세요.
+group: listable
 sitemap:
   priority: 1
   changefreq: weekly
   lastmod: 2012-08-20T00:00:00+09:00
 ---
-
-# 워드프레스 홈페이지/웹사이트 제작지원
 
 <div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
 <a href="https://twitter.com/share" class="twitter-share-button" data-lang="ko">트윗하기</a>
@@ -22,7 +21,7 @@ sitemap:
 
 [WordPress](http://wordpress.org/)는 세계적으로 인기있는 오픈소스 콘텐츠 관리 도구(CMS)로서 누구든 무료로 다운로드 받아 쉽게 설치하여 사용할 수 있습니다.
 
-###### 관련자료:
+### 관련자료:
 
 * [워드프레스로 웹사이트 만들기](/2012/03/17/creating-static-website-with-wordpress/)
 * [워드프레스 웹사이트 제작 가이드](/2012/08/13/wordpress-website-builidng-guide-2012/)
@@ -31,7 +30,7 @@ sitemap:
 
 [유스풀패러다임](/)에서는 이런 분들을 위해 워드프레스에 대한 제작 및 기술지원을 무료로 제공해 드리고 있습니다.
 
-#### 서비스 개요
+## 서비스 개요
 
 다음 서비스를 무료로 제공합니다.
 
@@ -41,7 +40,7 @@ sitemap:
 * 주요 플러그인 설치 및 설정
 * 페이스북 등 소셜네트워크(SNS) 연동
 
-#### 전부 무료인가요?
+## 전부 무료인가요?
 
 비용이 발생하는 부분에 대해서는 **실비**(실제 들어간 비용)를 받습니다.
 
@@ -80,8 +79,7 @@ sitemap:
 * 워드프레스 사이트 호스팅 및 운영
 * 워드프레스 최적화(optimization)
 
-#### 서비스 문의
+## 서비스 문의
 
 문의는 전화 또는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 해 주세요!
 
----

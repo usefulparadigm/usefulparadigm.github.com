@@ -6,15 +6,16 @@ permalink: /:year/:month/:day/:title
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME"]
 auto: true
 pygments: true
+markdown: kramdown
 
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
 title : 유스풀패러다임
-tagline: Yet Another Web Software Factory
+tagline: Yet Another Software Factory on Web
 author :
-  name : Name Lastname
-  email : blah@email.test
+  name : Sukjoon Kim
+  email : sjoonk@gmail.com
   github : usefulparadigm
   twitter : usefulparadigm
   facebook: usefulparadigm.soft
@@ -74,6 +75,7 @@ JB :
   #
   archive_path: /archive.html
   categories_path : /categories.html
+  pages_path : /pages.html
   tags_path : /tags.html
   atom_path : /atom.xml
   rss_path : /rss.xml

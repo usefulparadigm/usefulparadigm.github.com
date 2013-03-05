@@ -17,7 +17,7 @@ category: facebook
 여기서는 별도 솔루션을 사용하지 않고, 직접 만드는 방법을 소개한다. 
 기존 솔루션의 종류나 사용법에 대해서는 페이스북에서 "static html" 또는 "static iframe"으로 검색하면 자세한 목록을 얻을 수 있다.
 
-### 1. 페이스북 앱 등록하기
+## 1. 페이스북 앱 등록하기
 
 페이스북 Page Tab도 일종의 페이스북 앱(App) 이기 때문에 아주 간단한 탭이라도 [Facebook 개발자 사이트](https://developers.facebook.com/apps)에 접속, 앱을 등록하는 절차를 거쳐야 한다. 만들려고 하는 것이 페이지 탭이기 때문에 **페이지 탭** 메뉴를
 활성화시킨 다음, 탭과 연결할 사이트(통상적으로는 이벤트 페이지가 될 것이다)의 페이지 URL을 등록해 주면 된다. 이 때 유의해야 할 점은,
@@ -25,7 +25,7 @@ category: facebook
 
 ![페이스북 앱 등록](http://farm8.staticflickr.com/7010/6417314635_181d61878b_z.jpg)
 
-### 2. 콘텐츠 페이지 만들기
+## 2. 콘텐츠 페이지 만들기
 
 앱 등록을 하였으면 실제 페이지 탭 속에 들어갈 콘텐츠 페이지를 만들어야 한다. 콘텐츠 페이지는 사용자가 페이지에서 탭을 클릭할 경우 보여지는 페이지이며, 실제로는 페이스북 페이지 내에서 iframe으로 렌더링(rendering)되기 때문에, 어떠한 HTML페이지든 상관없이 가능하다.
 다만 통상적으로 이 페이지에는 페이스북의 각종 플러그인들을 얹혀 사용하는 경우가 많기 때문에 간단한 템플릿을 하나 작성해 두고 재사용하면
@@ -37,7 +37,7 @@ category: facebook
 이 때 APP_ID를 앞서 등록한 페이스북 APP ID로 채우는 것을 잊지 말자.
 만약 담벼락에 올리기나 댓글 처럼 추가 플러그인이 필요한 경우는 [페이스북 플러그인 페이지](https://developers.facebook.com/docs/plugins/)에서 코드를 가져다 붙이면 된다. 
 
-### 3. 페이지에 탭 추가하기
+## 3. 페이지에 탭 추가하기
 
 마지막은 페이스북 페이지에 방금 제작한 탭을 추가하는 것이다. 앱 등록 페이지 좌측 하단에 있는 관련 링크 중에서 **앱 페이지 보기**를 클릭하면 방금 생성한 앱의 페이지가 표시되는데, 이 앱 페이지의 좌측에 있는 **내 페이지에 추가** 메뉴를 클릭하여 추가하고 싶은 페이지를 선택하면 해당 페이지에 방금 생성한 탭이 추가된 것을 확인할 수 있을 것이다.
 
@@ -50,19 +50,15 @@ category: facebook
 
 물론 직접 링크를 호출하는 방식으로도 가능하다. 브라우저의 URL 창에 다음 주소를 입력하면 예전과 같은 페이지에 추가하기 대화창이 나온다.
 
-<pre>
-http://www.facebook.com/dialog/pagetab?app_id=YOUR_APP_ID&next=http://facebook.com
-</pre>
+	http://www.facebook.com/dialog/pagetab?app_id=YOUR_APP_ID&next=http://facebook.com
 
 **문서화되지 않은 방법**: 또는 다음 URL을 호출하여도 탭 추가가 가능하다.
 
-<pre>
-https://www.facebook.com/add.php?api_key=YOUR_APP_ID&pages
-</pre>
+	https://www.facebook.com/add.php?api_key=YOUR_APP_ID&pages
 
 **Updated(2012/03/16)** 최근 페이스북이 앱페이지(앱 커뮤니티 페이지)의 관리자 메뉴 속에 *앱을 페이지에 추가하기* 메뉴를 추가했다. 앱페이지를 만들었다면 이 메뉴 기능을 이용해도 된다. [자세한 내용](https://www.facebook.com/photo.php?fbid=407581229256851&set=a.365001673514807.110147.352249658123342&type=1)
 
-### 참고자료
+## 참고자료
 
 * [Introducing iframe Tabs for Pages](https://developers.facebook.com/blog/post/462/) (Facebook 개발자 블로그) 
 * [Page Tab Tutorial](https://developers.facebook.com/docs/appsonfacebook/pagetabs/) (Facebook 개발자 문서)

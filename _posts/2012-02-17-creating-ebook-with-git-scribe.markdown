@@ -15,7 +15,7 @@ thumbnail: http://farm8.staticflickr.com/7070/6890389633_851a7a1384_t.jpg
 이 글에서는 [git-scribe](https://github.com/schacon/git-scribe)라는 간단한 오픈소스 전자책 저작도구을 사용하여 전자책을 직접 한번 만들어 보기로 하겠다.
 
 
-### 설치하기 
+## 설치하기 
 
 git-scribe는 루비 젬이다. 따라서 당연히 [루비](http://www.ruby-lang.org/ko/)가 설치되어 있어야 하며, 또한 [git](http://git-scm.com/)을 데이터 저장소로 사용하는 관계로 git도 설치되어 있어야한다. 이 두 프로그램은 많은 사용자들의 컴퓨터에 이미 설치되어 있는 경우가 많고 또 설치 방법도 비교적 간단하기 때문에 여기서 따로 설명은 생략한다. 이 밖에도 몇 가지 추가적인 라이브러리를 설치해야 하는데, 필요한 라이브러리들은 각각 다음과 같다.
 
@@ -36,7 +36,7 @@ git-scribe는 루비 젬이다. 따라서 당연히 [루비](http://www.ruby-lan
 	$ brew install https://raw.github.com/adamv/homebrew-alt/master/non-free/kindlegen.rb
 
 	
-### 책 만들기
+## 책 만들기
 
 자, 이제 준비가 끝났으면 책을 한번 만들어 보기로 하자. 터미널을 열어 책을 쓸 디렉터리를 하나 만들자. 디렉터리명이 mybook이라면 다음과 같이 명령을 주면 된다.
 
@@ -48,7 +48,7 @@ git-scribe는 루비 젬이다. 따라서 당연히 [루비](http://www.ruby-lan
 
 파일을 열어보면 샘플로 작성된 문서가 있을테니 그 문서를 참조하여 글을 작성하면 될 것이다. 파일명에서 알 수 있듯 git-scribe는 AsciiDoc 이라는 문서 포맷을 사용한다. AsciiDoc 사용법은 [AsciiDoc 홈페이지](http://www.methods.co.nz/asciidoc/)나 또는 [AsciiDoc cheatsheet](http://powerman.name/doc/asciidoc)을 참고하면 된다.
 
-### 전자책 파일로 변환하기
+## 전자책 파일로 변환하기
 
 책을 다 만들었다면 이제 전자책으로 변환하는 일만 남았다. 역시 간단하다. 터미널에서 다음 명령만 주면 된다. (중괄호 속의 단어 중 필요한 것 하나만 선택하면 된다. 예를 들어, epub 포맷으로 만들고 싶다면 `git scribe gen epub` 와 같은 식으로 주면 된다는 말이다)
 
