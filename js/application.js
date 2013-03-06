@@ -3,8 +3,8 @@
 */
 
 $(function() {
-	$('.bigger').biggerlink();
-	$('.tabs').tabs();
+	// $('.bigger').biggerlink();
+	// $('.tabs').tabs();
 
 	$(".various").fancybox({
 		// maxWidth	: 800,

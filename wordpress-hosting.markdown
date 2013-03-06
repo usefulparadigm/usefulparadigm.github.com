@@ -5,15 +5,13 @@ permalink: /wordpress-hosting/
 thumbnail: http://farm8.staticflickr.com/7003/6834042221_e1ab360fc7_m.jpg
 excerpt: 워드프레스 기반 유스풀패러다임에서는 워드프레스 기술지원 서비스를 제공합니다. 워드프레스 기반으로 홈페이지를 제작하거나 블로그를 운영하실 분들은 문의 주세요.
 group: listable
+shares: true
+disqus: true
 sitemap:
   priority: 1
   changefreq: weekly
   lastmod: 2012-08-20T00:00:00+09:00
 ---
-
-<div class="fb-like" data-send="false" data-width="450" data-show-faces="false"></div>
-<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ko">트윗하기</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 
 <img src="http://farm8.staticflickr.com/7003/6834042221_e1ab360fc7_m.jpg" class="right" style="float: right;" />
 
@@ -49,8 +47,7 @@ sitemap:
 3. **도메인 비용** (도메인은 직접 구입하셔야 합니다)
 4. **테마 제작비** (새로 테마를 처음부터 직접 제작할 경우)
 5. **디자인비** (별도 디자인이 들어갈 경우의 디자인 외주 비용. 직접 처리할 경우는 무료)
-6. **엉뚱한 사용** (워드프레스를 쇼핑몰, 뉴스/매거진, 리뷰, 공동구매, 메타블로그, 채용사이트 등 <br/>
-통상적 용도 이외로 사용하고자 할 때 들어가는 커스터마이징 비용)
+6. **엉뚱한 사용** (워드프레스를 쇼핑몰, 뉴스/매거진, 리뷰, 공동구매, 메타블로그, 채용사이트 등 통상적 용도 이외로 사용하고자 할 때)
 
 <!--
 #### 누구를 대상으로 하나요?
@@ -63,9 +60,9 @@ sitemap:
 문의는 전화, 댓글 또는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 해 주시고, <br/>
 서비스 신청은 아래 신청 버튼을 눌러 양식을 작성해 주세요!-->
 
-<div class="center-no">
-	<a href="https://docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" class="btn info various fancybox.iframe">무료 제작지원 서비스 신청하기</a>
-</div>
+<p>
+	<a href="https://docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" class="button itunes various fancybox.iframe">무료 제작지원 서비스 신청하기</a>
+</p>
 
 ---
 
@@ -81,5 +78,5 @@ sitemap:
 
 ## 서비스 문의
 
-문의는 전화 또는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 해 주세요!
+프리미엄 서비스 문의는 <a href="mailto:contact@usefulparadigm.com">이메일</a> 또는 아래 댓글로 남겨 주세요!
 

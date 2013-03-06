@@ -4,6 +4,8 @@ title: zi2
 hide_title: true
 permalink: /zi2/
 group: listable
+shares: true
+disqus: true
 sitemap:
   priority: 0.7
   changefreq: monthly
@@ -32,3 +34,4 @@ zi2는 현재 업그레이드에 대한 지원이 이루어지고 있지 않습�
 </table>
 
 제품에 대한 문의나 기술지원은 아래 댓글로 남기시거나 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 보내 주세요.
+

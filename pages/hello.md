@@ -2,6 +2,7 @@
 layout: page
 title: Hello
 permalink: /hello/
+<!-- group: listable -->
 ---
 
-Bingo!!
+빙고 빙고 빙고!!!

@@ -14,8 +14,8 @@ markdown: kramdown
 title : 유스풀패러다임
 tagline: Yet Another Software Factory on Web
 author :
-  name : Sukjoon Kim
-  email : sjoonk@gmail.com
+  name : Useful Paradigm
+  email : contact@usefulparadigm.com
   github : usefulparadigm
   twitter : usefulparadigm
   facebook: usefulparadigm.soft
@@ -105,7 +105,7 @@ JB :
   analytics :
     provider : google 
     google : 
-        tracking_id : 'UA-123-12'
+        tracking_id : 'UA-16954113-1'
     getclicky :
       site_id : 
     mixpanel :

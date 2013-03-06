@@ -8,6 +8,10 @@
 
 	{{ content }}
 
+	<p>
+		{% include shares.html %}
+	</p>	
+
 	<footer>
     <section>
   		{% unless page.tags == empty %}
@@ -34,5 +38,5 @@
     </p>
 	</footer>
 
-	{% include JB/comments %}
+	{% include disqus.html %}
 </article>
