@@ -23,7 +23,7 @@ description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅
 </ul>	
 
 
-## Recent Post
+## Recent Posts
 
 <ul class="posts">
   {% for post in site.posts limit:5 %}
