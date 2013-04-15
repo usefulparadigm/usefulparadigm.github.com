@@ -1,7 +1,7 @@
 ---
 layout: post
 title: git-scribe로 전자책 만들기
-categories: ruby
+category: ruby
 excerpt: 킨들, 아이패드, 갤럭시탭과 같은 스마트 기기의 보급이 늘어남에 따라 전자책 시장이 커지고 있습니다. 애플의 iBooks Author와 같은 전자책 저작도구들도 여럿 출시되어 이제 "누구나 책을 만들 수 있는" 시대에 접어들고 있는데요. git-scribe라는 오픈소스 저작도구를 사용하면 아주 간단하게 pdf나 epub, mobi 형식의 전자책을 만들 수 있습니다.
 thumbnail: http://farm8.staticflickr.com/7070/6890389633_851a7a1384_t.jpg
 ---
