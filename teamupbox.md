@@ -1,6 +1,6 @@
 ---
-layout: page
-title: TeamupBox
+layout: post
+title: 팀업박스
 permalink: /teamupbox/
 group: listable
 shares: true
