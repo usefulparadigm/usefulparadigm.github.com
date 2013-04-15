@@ -1,14 +1,15 @@
-{% unless page.hide_title %}
-<h1>{{ page.title }}</h1>
-{% endunless %}
+<article class="page">
+	{% unless page.hide_title %}
+	<h1>{{ page.title }}</h1>
+	{% endunless %}
 
-{{ content }}
+	{{ content }}
 
-{% if page.shares %}
-<p>{% include shares.html %}</p>	
-{% endif %}
+	{% if page.shares %}
+	<p>{% include shares.html %}</p>	
+	{% endif %}
 
-{% if page.disqus %}
-{% include disqus.html %}
-{% endif %}
-
+	{% if page.disqus %}
+	{% include disqus.html %}
+	{% endif %}
+</article>
