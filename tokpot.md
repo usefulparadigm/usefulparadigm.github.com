@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: 톡팟
 permalink: /tokpot/
 group: listable
