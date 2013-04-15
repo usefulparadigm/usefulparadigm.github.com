@@ -1,0 +1,44 @@
+---
+layout: post
+title: "워드프레스 테마 커스터마이징:  두 가지 방법"
+category: wordpress
+---
+
+<img class="right" title="download.blog" src="/img/uploads/2011/03/download.blog_-300x267.png" alt="" width="180" height="160" />
+
+<p><a href="http://wordpress.org/">WordPress</a>는 이미 블로깅(blogging) 도구라는 이미지에서 벗어나 멋진 CMS 플랫폼으로 자리매김한지 오래다. 그리고 이렇게 WordPress가 멋진 플랫폼으로 발전하게 된 데는 뭐니뭐니해도 유연한 확장성을 갖춘 테마(theme) 시스템이 큰 견인차 역할을 해 왔다. WordPress에서 테마를 변경하는데는 크게 두 가지 방법이 있다.</p>
+
+<h3>첫 번째 방법: 테마 템플릿 수정하기</h3>
+
+<p>첫 번째 방법은 테마 템플릿 파일 자체를 수정하는 것이다. 여기에는 기존의 다른 테마를 가져다가 수정하거나 아니면 아예 처음부터 새로 테마 시스템을 개발하는 것을 포함한다. WordPress의 테마 작성법에 대해서는 너무 많은 사용법과 문서들이 나와 있기 때문에 여기서는 따로 다루지 않기로 한다.</p>
+
+<h3>두 번째 방법: 테마 상속하기</h3>
+
+<p>워드프레스 2.7 버전부터 새로 도입된 이 방식은 말 그대로 어떤 테마를 상속하는 방법이다. 예를 들어, A라는 테마가 있다고 하면 이 테마를 그대로 사용하고 그 중 커스터마이징이 필요한 부분만 부분 수정하는 방식으로 테마를 변경하는 것이다. 이럴 경우 두 개의 테마 간에는 일종의 부모-자식 관계가 성립하며, 따라서 원래의 테마를 부모 테마(mother theme)라 부르고, 부모 테마로부터 상속받은 테마를 자식 테마(chile theme)라고 부른다.</p>
+
+<p>자식 테마를 만드는 방법은 간단하다. 새로운 테마 디렉터리를 하나 생성한 다음 sytle.css 파일의 주석에 Theme 값으로 부모 테마 디렉터리의 이름을 지정해 주면 끝이다. 예를 들면 다음과 같다.</p>
+<pre>/*
+Theme Name:     Twenty Ten Child
+Theme URI:      http: //example.com/
+Description:    Child theme for the Twenty Ten theme
+Author:         Your name here
+Author URI:     http: //example.com/about/
+Template:       twentyten
+Version:        0.1.0
+*/
+</pre>
+
+<p>이제 이 테마는 고맙게도 부모 테마(여기서는 twentyten)의 모든 것을 물러 받는다. 그 다음 부터는 맘에 들지 않는 부분만 고치면 그만이다. 예를 들면, CSS 스타일의 일정 부분만 고칠 수도 있고, 부모 템플릿 파일 중 필요한 부분만 변경할 수도 있다.</p>
+
+<p>둘 중 어느 방법을 사용하느냐는 물론 상황에 따라 다르다. 경우에 따라서는 아예 새로 테마를 작성하는 첫 번째 방식이 더 효과적일 때도 있다. 그렇지만, 메인 테마를 그대로 두고 필요한 부분만 개선하는 두 번째 방법은, 메인 테마를 계속 유지하면서 자식 테마만 조금씩 변경하면서 운영할 때 아주 효과적인 방법이다.</p>
+
+<h3>참고자료:</h3>
+<ul>
+	<li><a href="http://codex.wordpress.org/Child_Themes">http://codex.wordpress.org/Child_Themes</a></li>
+	<li>메인 테마로 사용하기 좋은 Theme Framework
+<ul>
+	<li><a href="http://themeshaper.com/thematic/">Thematic, A WordPress Theme Framework</a></li>
+	<li><a href="http://notesblog.com/">Notes Blog Core Theme</a></li>
+</ul>
+</li>
+</ul>
