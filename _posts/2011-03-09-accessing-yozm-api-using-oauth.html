@@ -1,0 +1,41 @@
+---
+layout: post
+title: OAuth 인증으로 다음 요즘 API 액세스하기
+category: web development
+---
+
+<img class="right" title="361332bf.jpg" src="http://hueniverse.com/wp-content/uploads/2009/09/OAuth-Shine-300x298.png" alt="361332bf.jpg" width="150" height="149" />
+<p>최근 들어 국내에서도 오픈 API 접근 시에 인증 표준인 OAuth를 적용하는 서비스들이 하나 둘 생겨나고 있다. <a class="external" title="http://oauth.net/" href="http://oauth.net/">OAuth</a>는 이미 Facebook이나 Twitter, Google, Yahoo 같은 글로벌 인터넷 서비스에서는 제법 오래 전부터 적용되어 오고 있었지만, 국내에서 OAuth 서비스 제공자를 찾기는 쉽지 않았는데, 이제 다음이나 네이트 같은 대형 포털 사이트에서 OAuth를 적용하기 시작한 것은 반가운 일이 아닐 수 없다.  다음(Daum)에서 제공하는 OAuth 서비스에 대해 간단히 알아보고 이를 이용하여 다음의 SNS 서비스인 <a class="external" title="http://yozm.daum.net/" href="http://yozm.daum.net/">요즘(yozm</a>) API에 접근해 보자.</p>
+
+<p>Daum은 OAuth 1.0을 지원하며 아래 URL로 접근 가능하다.</p>
+
+<dl>
+	<dt>Request 토큰 URL</dt>
+	<dd><a href="https://apis.daum.net/oauth/requestToken">https://apis.daum.net/oauth/requestToken</a></dd>
+	<dd>request 토큰 요청시 oauth_callback 값이 컨슈머의<strong>Callback 경로</strong>와 동일해야 합니다.</span></dd>
+	<dt>사용자 인증 URL</dt>
+	<dd><a href="https://apis.daum.net/oauth/authorize">https://apis.daum.net/oauth/authorize</a></dd>
+	<dt>Access 토큰 URL</dt>
+	<dd><a href="https://apis.daum.net/oauth/accessToken">https://apis.daum.net/oauth/accessToken</a></dd>
+	<dt>서명 메소드는 HMAC-SHA1만 지원됩니다.</span></dt>
+</dl>
+
+<h3>OAuth dance</h3>
+
+<p>OAuth 인증 절차는 흔히 "OAuth dance"라고 부르는, 아래 그림과 같은 3단계의 인증 절차를 거친다.</p>
+
+<img class="attachment" title="OAuth.JPG" src="https://dddz3g.bay.livefilestore.com/y1pXkudtRCpXWKlL9RBS9m3Zb7M7A2TAmkJku4Nv8_cRYuzpH0JHhV4Ani8oJaM3bmayMrhsiLexbKVlY-5kVKckIXlHhfubs5p/oauth-dance.jpg?psid=1" alt="OAuth.JPG" width="259" height="194" />
+<p>* 출처: 다음 튜토리얼 자료</p>
+
+<h3>Yozm API 액세스하기</h3>
+
+<p>OAuth 인증을 거쳐 액세스 토큰(access token)을 획득했다면 이제 오픈 API에 접근할 수 있다. 예를 들어, 인증을 "수락"한 본인의 요즘(yozm) 개인 정보를 얻어오려면 다음 URL로 REST 호출하면 된다.</p>
+
+<p><a href="http://apis.daum.net/yozm/v1_0/user/show.xml">http://apis.daum.net/yozm/v1_0/user/show.xml</a></p>
+
+<h3>참고자료:</h3>
+<ul>
+	<li>OAuth 소개 <a href="http://oauth.net/documentation/getting-started/">http://oauth.net/documentation/getting-started/</a></li>
+	<li>다음 OAuth 서비스 <a href="https://apis.daum.net/oauth/main/welcome">https://apis.daum.net/oauth/main/welcome</a></li>
+	<li>yozm 사용자 정보보기 <a href="http://dna.daum.net/apis/yozm/ShowUser">http://dna.daum.net/apis/yozm/ShowUser</a></li>
+</ul>

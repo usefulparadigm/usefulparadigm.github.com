@@ -1,0 +1,40 @@
+---
+layout: post
+title: 기업용으로 활용가능한 오픈소스 SNS 솔루션들
+excerpt: 시중에 출시되어 있는 많은 소셜 네트워킹(SNS) 솔루션들 중 기업이나 공공기관, 학교, 비영리단체 등 조직 내부에서 사용할 수 있는 오픈소스 기반 SNS 솔루션들을 몇 가지 소개합니다.
+thumbnail: /img/uploads/2011/06/social-network.jpg
+category: oss
+---
+
+<p>
+<img src="/img/uploads/2011/06/social-network.jpg" class="right" />
+
+트위터나 페이스북 같은 소셜 네트워킹 서비스의 인기와 효용성에 힘입어 기업에서도 이런 솔루션들을 도입하여 조직 내부에서 수평적이고 자유로운 커뮤니케이션 문화를 조성하고 보다 격의없고 창의성 있는 생각과 아이디어를 조직원들 간에 서로 공유하려는 움직임들이 생겨나고 있다. 해외에서는 이미 오래 전에 yammer 같은 기업용 SNS 서비스들이 출시되어 인기를 끌었고, 국내에서도 몇몇 업체들이 기업용 SNS 솔루션을 만들어 제공 중이다. 또한 작년부터 주로 대기업을 중심으로 하여 사내 SNS 서비스를 구축한 사례들이 등장하고 올해에는 공공기관에서도 이런 사내 SNS망을 구축하여 사용하는 움직임이 보인다. 기업 또는 조직 내에서 소셜 네트워킹을 구축하여 사내의 새로운 문화로 정착시키려는 움직임은 향후에도 계속 확산될 것으로 보인다.</p>
+
+<p>기업용 SNS를 위해 가장 많이 사용하는 서비스는 아마도 <a href="https://www.yammer.com/">야머(yammer)</a>일 것이다. 알다시피 yammer는 이메일 주소를 식별코드로 사용하여 같은 이메일 도메인을 사용하는 사람들만의 네트워크를 형성해 주고 그 속에서 소셜 네트워킹을 할 수 있게 만들어주는 서비스이다. 국내에서도 이미 많은 기업과 공공기관에서 도입해서 사용 중인 서비스이기도 하다.</p>
+
+<img class="left" style="margin: 10px;" title="yammericon.jpg" src="/img/uploads/2011/06/yammericon1.jpg" border="0" alt="Yammericon" width="126" height="126" />
+
+<p>그런데 이런 "호스팅 방식"의 서비스에서는 종종 보안과 관련된 우려가 제기되곤 한다. 물론 yammer 같은 서비스는 이런 사용자들의 우려를 감안하여 보안에 많은 신경을 쓰고 있지만, 그래도 "DMZ" 안에서 돌아가는 것과 밖에서 돌아가는 것 간에는 최소한 사용자들이 인식하는 심리적인 안정감에서라도 차이가 날 수 있다. 그래서 이런 호스팅 방식의 서비스를 쓰는 기관들도 종종 보안을 위해 별도의 솔루션을 가져가기도 한다.</p>
+
+<p>여기서 소개할 솔루션들은 이런 경우에 사용할 수 있는 오픈소스 SNS 솔루션들이다. 이미 검색엔진으로 검색해보면 헤아릴 수도 없을 만큼 많은 솔루션들이 시장에 출시되어 있고, 또 그 중에서 오픈소스 형태로 제공되는 솔루션들도 많은 것이 사실이다. 너무 많아 오히려 선택하기가 어려울 지경이라고 해야 할 것이다. 물론 "SNS" 라고 하는 것이 별로 "만들기 어려운" 솔루션도 아닌데다 사내 인트라넷 등 타 시스템과의 연동도 필요한 부분이 있고 또 조직 문화의 문제도 있는 탓에 직접 구축해서 사용하는 경우도 많겠지만, 지금 소개할 몇 가지 솔루션들도 기업용 SNS를 구축할 경우에 검토해 볼만 할 것이라 생각한다.</p>
+
+<h3>1. StatusNet</h3>
+
+<p>첫번째로 소개할 솔루션은 <a href="http://status.net/">StatusNet</a>이다. 이미 <a href="http://identi.ca/">identi.ca</a> 라는 서비스에서 실전 서비스를 하고 있고, 스마트폰과 데스크탑용 앱도 가지고 있는 이 SNS 솔루션은 <a href="http://ostatus.org/">oStatus</a>라는 표준 스펙을 따르는 분산형 SNS(Federated SNS)이기도 하다. 트위터와 유사하 마이크로 블로깅(microblogging)을 기본으로 하지만 그룹을 생성할 수도 있고 메신저와의 연동도 가능한 장점이 있다. 분산형 SNS이기 때문에 여러 SNS 간에 서로 연결될 수도 있는 것도 장점이라 하겠다. PHP/MySQL 기반이며 현재 버전은 0.9.7로 곧 1.0 버전이 나올 예정인 이 솔루션은 <a href="http://www.gnu.org/licenses/agpl.html">AGPL</a> 라이선스를 따른다.</p>
+
+<img title="statusnet.png" src="/img/uploads/2011/06/statusnet2.png" border="0" alt="Statusnet" width="600" height="187" />
+
+<h3>2. Diaspora</h3>
+
+<p>다음으로 소개할 솔루션은 <a href="https://joindiaspora.com/">디아스포라(diaspora)</a>라고 하는 SNS 솔루션이다. StatusNet과 마찬가지로 역시 분산형 SNS를 표방하는 이 솔루션은 얼마 전 페이스북의 창업자 마크 쥬커버그로부터 지원금을 받아 화제가 되기도 했던 솔루션인데, 작년 가을에 알파버전을 오픈하면서 서비스를 개시했다. 특히 이 솔루션은 애스팩(aspect) 이라는 그룹 기능을 두어 그룹 간에서만 서로 커뮤니케이션을 하는 방법을 지원하기 때문에 사내에서도 어느 정도의 프라이버시 수준을 유지할 수 있는 장점이 있다. Ruby on Rails 기반이며, <a href="http://www.gnu.org/licenses/agpl.html">AGPL</a> 라이선스를 따른다.</p>
+
+<img title="diaspora.png" src="/img/uploads/2011/06/diaspora.png" border="0" alt="Diaspora" width="600" height="164" />
+
+<h3>3. 기타</h3>
+
+<p>기존의 인트라넷이나 사이트를 가지고 있는 조직에서 소셜 기능을 추가하고 싶다면 <a href="http://www.elgg.org/index.php">elgg</a> 같은 SNS 엔진(engine)을 검토해 보는 것도 좋겠다. 페이스북 같은 플랫폼이 만들어진다.</p>
+
+<p><a href="http://buddypress.org/">버디프레스(BuddyPress)</a>는 오픈소스 블로깅 솔루션인 워드프레스(WordPress)에 호감이 있는 조직이라면 관심을 가져볼만한 솔루션이다. 이 솔루션은 WordPress의 플러그인 형태로 제공되는 솔루션으로 워드프레스의 강력한 확장성을 잘 보여주는 솔루션이라 할 것이다.</p>
+
+<p>마지막으로, Ruby on Rails 기반 솔루션을 두어 가지 소개하고 끝을 맺기로 한다. StatusNet과 같은 oStatus 프로토콜을 사용하면서도 RoR로 된 솔루션을 찾는다면 <a href="http://rstat.us/">rStat.us</a> 가 답이 될 수도 있다. 정확하게 SNS 만을 겨냥한 것은 아니지만, 작은 조직이나 팀 단위에서 프로젝트 관리도 하고 마이크로블로깅 기반 커뮤니케이션도 함께 할 수 있는 솔루션을 찾는다면 <a href="http://teambox.com/">팀박스(Teambox)</a>도 고려해 볼만 한다.</p>
