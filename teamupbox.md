@@ -1,7 +1,6 @@
 ---
 layout: page
 title: 팀업박스
-permalink: /teamupbox/
 group: listable
 shares: true
 disqus: true
