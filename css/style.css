@@ -403,7 +403,7 @@ img.right { padding: 0 0 8px 8px; }
 
 /* Layout */
 
-/*h1, h2, h3, h4, h5, h6*/ .title, .about { font-family: NanumGothic; }
+/*h1, h2, h3, h4, h5, h6*/ .title, .about { font-family: 'Nanum Gothic'; }
 
 pre.prettyprint {
   background-color: #f5f5f5;
@@ -456,7 +456,6 @@ section.main { text-align: justify; }
 	border-radius: 3px;
 	padding: 10px;
 	background-color: #ededed;
-	font-family: 'Nanum Gothic';
 }
 
 
