@@ -7,6 +7,7 @@ sitemap:
   changefreq: monthly
   lastmod: 2011-09-29T00:00:00+09:00
 ---
+Bingo!
 
 ![tokpot](/img/sub/tokpot.gif)
 
