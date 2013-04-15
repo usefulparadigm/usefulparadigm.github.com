@@ -5,7 +5,7 @@ permalink: /:year/:month/:day/:title
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
 auto: true
-markdown: kramdown
+markdown: rdiscount
 safe: true
 pygments: true
 lsi: false
