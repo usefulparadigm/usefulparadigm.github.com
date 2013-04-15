@@ -1,6 +1,7 @@
 ---
 layout: page
-title: 톡팟
+title: "톡팟"
+permalink: /tokpot/
 group: listable
 shares: true
 disqus: true
