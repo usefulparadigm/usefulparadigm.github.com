@@ -1,6 +1,7 @@
 ---
 layout: page
 title: 톡팟
+permalink: /tokpot/
 ---
 
 ![tokpot](/img/sub/tokpot.gif)
