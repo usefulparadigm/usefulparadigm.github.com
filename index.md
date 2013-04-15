@@ -10,7 +10,7 @@ description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅
 </p>
 
 
-<h2>Services & Solutions</h2>
+## Services & Solutions
 
 <ul>
 	<li>웹서비스 개발/ 컨설팅</li>
@@ -21,7 +21,7 @@ description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅
 </ul>	
 
 
-<h2>Recent Posts</h2>
+## Recent Posts
 
 <ul class="posts">
   {% for post in site.posts limit:5 %}
@@ -30,7 +30,7 @@ description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅
   {% endfor %}
 </ul>
 
-<h2>Contact</h2>
+## Contact
 
 <p>
 110-702 서울 종로구 공평동 100 스탠다드차타드은행본점빌딩 2044호<br/>
