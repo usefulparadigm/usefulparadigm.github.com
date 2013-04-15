@@ -1,5 +1,6 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+/*@import url(//fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);*/
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css); 
 
 body {
   padding:50px;
@@ -456,6 +457,7 @@ section.main { text-align: justify; }
 	border-radius: 3px;
 	padding: 10px;
 	background-color: #ededed;
+	font-family: NanumGothic;
 }
 
 
