@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+	<title>git-scribe로 전자책 만들기 | 유스풀패러다임</title>
+
+    
+    <meta name="author" content="Useful Paradigm">
+
+	<meta name="google-site-verification" content="KyE-PMrb9__CwHMsFc2fM_b1ecWeTs3P5SKZwvcFTaA">
+	<meta name="msvalidate.01" content="E0A6CD63C809E00257EA5B66D60EFFA7" />
+	<meta name="bitly-verification" content="4e3dc2895796"/>
+	<link href="http://feeds.feedburner.com/usefulparadigm" rel="alternate" title=" News Feed" type="application/atom+xml">
+   
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pygment_trac.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </head>
+  <body>
+	  <div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) {return;}
+	    js = d.createElement(s); js.id = id;
+	    js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=279724202051145";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="wrapper">
+      <header class="main">
+        <hgroup>
+          <h1 id="logo"><a href="/">유스풀패러다임</a></h1>
+          
+          <h2 id="tagline">Yet Another Software Factory on Web</h2>
+          
+        </hgroup>
+        <ul class="buttons">
+          <li><a href="http://github.com/usefulparadigm/" rel="me">Code <strong>GitHub</strong></a></li>
+          <li><a href="http://www.facebook.com/usefulparadigm.soft/" rel="me">Connect <strong>Facebook</strong></a></li>
+          <li><a href="http://twitter.com/usefulparadigm/" rel="me">Follow <strong>Twitter</strong></a></li>
+        </ul>
+      </header>
+      <section class="main">
+        <article class="post">
+	<header>
+		<h1>git-scribe로 전자책 만들기</h1>
+		<p>Published on <time datetime="2012-02-17T00:00:00+09:00" pubdate>
+			February 17, 2012
+		</time></p>
+	</header>
+
+	<p><img src="http://farm8.staticflickr.com/7070/6890389633_851a7a1384_m.jpg" class="right" /></p>
+
+<p>요즘 전자책 시장이 다시 활기를 띠고 있는 듯한 느낌이다. 아마존이나 애플, 구글 등 세계적인 IT기업들이 전자책 시장에 뛰어들어 속속 멋진 제품들을 쏟아내고 있고, 국내에서도 여러 업체들이 전자책 단말기부터 전자책 유통 플랫폼, 전자책 콘텐츠에 이르는 여러 가지 아이디어와 상품들을 출시하고 있다.</p>
+
+<p>게다가 아이패드나 갤럭시탭 등 스마트 기기의 보급과 정부의 디지털 교과서 정책 등이 맞물려 앞으로도 계속해서 전자책 시장은 그 규모가 커지리라는 사실을 누구나 예상할 수 있다. 특히 최근에는 애플이 iBooks Author라는 전자책 저작 도구를 만들어 무료로 배포함으로써 이제 명실공히 “누구든 책을 출간할 수 있는 시대”의 서막을 열었다. 물론 아직도 가야할 길은 멀지만 그렇다고 무작정 기다릴 수만은 없는 일.</p>
+
+<p>이 글에서는 <a href="https://github.com/schacon/git-scribe">git-scribe</a>라는 간단한 오픈소스 전자책 저작도구을 사용하여 전자책을 직접 한번 만들어 보기로 하겠다.</p>
+
+<h2 id="section">설치하기</h2>
+
+<p>git-scribe는 루비 젬이다. 따라서 당연히 <a href="http://www.ruby-lang.org/ko/">루비</a>가 설치되어 있어야 하며, 또한 <a href="http://git-scm.com/">git</a>을 데이터 저장소로 사용하는 관계로 git도 설치되어 있어야한다. 이 두 프로그램은 많은 사용자들의 컴퓨터에 이미 설치되어 있는 경우가 많고 또 설치 방법도 비교적 간단하기 때문에 여기서 따로 설명은 생략한다. 이 밖에도 몇 가지 추가적인 라이브러리를 설치해야 하는데, 필요한 라이브러리들은 각각 다음과 같다.</p>
+
+<ul>
+  <li>asciidoc : 소스문서 작성을 위해 필요</li>
+  <li>xsltproc : 소스문서의 html 변환을 위해 필요</li>
+  <li>a2x : epub 파일 생성을 위해 필요</li>
+  <li>source-highlight : 소스코드 구문 강조(syntax highlight)를 위해 필요</li>
+  <li>fop : PDF 파일 생성을 위해 필요</li>
+  <li>kindlegen : mobi  파일 생성을 위해 필요</li>
+</ul>
+
+<p>우선 터미널에서 아래 명령으로 이들 라이브러리가 설치되어 있는지 확인하자.</p>
+
+<pre><code>$ git scribe check asciidoc - ok xsltproc - ok a2x - ok highlighting - ok fop - ok
+</code></pre>
+
+<p>설치되어 있지 않다면 설치해야 한다. 맥을 사용하고 있고 <a href="http://mxcl.github.com/homebrew/">Homebrew</a>가 설치되어 있다면 다음과 같이 간단한 명령만으로 쉽게 설치할 수 있을 것이다.</p>
+
+<pre><code>$ brew install asciidoc source-highlight fop
+$ brew install https://raw.github.com/adamv/homebrew-alt/master/non-free/kindlegen.rb
+</code></pre>
+
+<h2 id="section-1">책 만들기</h2>
+
+<p>자, 이제 준비가 끝났으면 책을 한번 만들어 보기로 하자. 터미널을 열어 책을 쓸 디렉터리를 하나 만들자. 디렉터리명이 mybook이라면 다음과 같이 명령을 주면 된다.</p>
+
+<pre><code>$ git scribe init mybook
+</code></pre>
+
+<p>이제 mybook이라는 디렉터리가 생성되는데, 이 디렉터리에 들어가 보면 필요한 몇 개의 파일과 디렉터리들이 이미 만들어져 있음을 확인할 수 있을 것이다. 이것으로 끝이다. 이것으로 책을 쓸 모든 준비는 끝이 났다. 이제 책 “쓰는” 일만 남았다. </p>
+
+<p>그렇다면 책은 어디에다 써야 할까? 디렉터리 구조를 들여다 보면 이미 book 이라는 이름의 디렉터리가 만들어져 있는 것을 확인할 수 있을 것이다. 이 디렉터리가 책을 담을 곳이다. 이 디렉터리 속에 보면  book.asc 라는 파일이 있는데 이 파일이 모든 책의 시작점이 된다. 마치 웹사이트에서 index.html 파일이 시작점이 되는 것과 마찬가지다. </p>
+
+<p>파일을 열어보면 샘플로 작성된 문서가 있을테니 그 문서를 참조하여 글을 작성하면 될 것이다. 파일명에서 알 수 있듯 git-scribe는 AsciiDoc 이라는 문서 포맷을 사용한다. AsciiDoc 사용법은 <a href="http://www.methods.co.nz/asciidoc/">AsciiDoc 홈페이지</a>나 또는 <a href="http://powerman.name/doc/asciidoc">AsciiDoc cheatsheet</a>을 참고하면 된다.</p>
+
+<h2 id="section-2">전자책 파일로 변환하기</h2>
+
+<p>책을 다 만들었다면 이제 전자책으로 변환하는 일만 남았다. 역시 간단하다. 터미널에서 다음 명령만 주면 된다. (중괄호 속의 단어 중 필요한 것 하나만 선택하면 된다. 예를 들어, epub 포맷으로 만들고 싶다면 <code>git scribe gen epub</code> 와 같은 식으로 주면 된다는 말이다)</p>
+
+<pre><code>$ git scribe gen [site|html|pdf|epub|mobi|all]
+</code></pre>
+
+<p>이제 output 디렉터리를 열어보면 요청한 전자책 포맷대로 파일이 생성되어 있음을 확인할 수 있을 것이다.</p>
+
+<p>전자책 출간을 축하드린다!</p>
+
+
+	<p>
+		<div class="fb-like" data-send="false" data-width="280" data-show-faces="false"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ko">트윗하기</a>
+
+	</p>	
+
+	<footer>
+    <section>
+  		
+    </section>
+
+    <section>
+      
+        <h1>Categories:</h1>
+        <ul>
+        
+        
+
+ 
+	<li><a href="/categories.html#-ref">
+		 <span></span>
+	</a></li>
+
+
+        </ul>
+      
+    </section>
+
+    <p class="gotop">
+      <a href="#page">Back to Top</a>
+    </p>
+	</footer>
+
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'usefulparadigm'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</article>
+
+      </section>
+      <aside>
+        <nav>
+          <ul>
+			<li><a href="/archive.html">Archive</a></li>
+			<li><a href="/categories.html">Categories</a></li>
+			<li><a href="/wordpress-hosting/">워드프레스 제작지원 신청</a></li>
+          </ul>
+        </nav>
+        <!-- <ul>
+          <li class="contact"><a href="mailto:contact@usefulparadigm.com">contact@usefulparadigm.com</a></li>
+        </ul> -->
+      </aside>
+      <footer class="main">
+        <p><small>
+			Powered by <a href="http://pages.github.com/">GitHub Pages</a>. 
+			Themed with <a href="http://github.com/orderedlist/minimal/">minimal</a>. 
+		</small></p>
+      </footer>
+    </div>
+    <script src="/js/scale.fix.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
+	<script src="/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="/js/application.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16954113-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>

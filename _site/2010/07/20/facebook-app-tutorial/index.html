@@ -1,0 +1,180 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+	<title>페이스북 앱 개발 가이드 | 유스풀패러다임</title>
+
+    
+    <meta name="author" content="Useful Paradigm">
+
+	<meta name="google-site-verification" content="KyE-PMrb9__CwHMsFc2fM_b1ecWeTs3P5SKZwvcFTaA">
+	<meta name="msvalidate.01" content="E0A6CD63C809E00257EA5B66D60EFFA7" />
+	<meta name="bitly-verification" content="4e3dc2895796"/>
+	<link href="http://feeds.feedburner.com/usefulparadigm" rel="alternate" title=" News Feed" type="application/atom+xml">
+   
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pygment_trac.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </head>
+  <body>
+	  <div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) {return;}
+	    js = d.createElement(s); js.id = id;
+	    js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=279724202051145";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="wrapper">
+      <header class="main">
+        <hgroup>
+          <h1 id="logo"><a href="/">유스풀패러다임</a></h1>
+          
+          <h2 id="tagline">Yet Another Software Factory on Web</h2>
+          
+        </hgroup>
+        <ul class="buttons">
+          <li><a href="http://github.com/usefulparadigm/" rel="me">Code <strong>GitHub</strong></a></li>
+          <li><a href="http://www.facebook.com/usefulparadigm.soft/" rel="me">Connect <strong>Facebook</strong></a></li>
+          <li><a href="http://twitter.com/usefulparadigm/" rel="me">Follow <strong>Twitter</strong></a></li>
+        </ul>
+      </header>
+      <section class="main">
+        <article class="post">
+	<header>
+		<h1>페이스북 앱 개발 가이드</h1>
+		<p>Published on <time datetime="2010-07-20T00:00:00+09:00" pubdate>
+			July 20, 2010
+		</time></p>
+	</header>
+
+	<p><img class="right" title="logo-f8-150x123" src="/img/uploads/2010/07/logo-f8-150x123.gif" alt="" width="150" height="123" /></a>Facebook과 연동한 웹 개발 방식은 크게 두 종류로 나눌 수 있다. 하나는 기존의 웹 사이트와 페이스북을 연동하는  Facebook Connect 방식의 웹 개발이고, 다른 하나는 페이스북 페이지 내에 사이트를 내장시키는 Facebook  Canvas App 방식이다. Facebook Canvas App은 다시 내장 방식으로 IFrame을 사용하냐 혹은 페이스북에서  제공하는 FBML을 사용하냐에 따라 IFrame Canvas와 FBML Canvas로 나눌 수도 있다.</p>
+
+<p>Facebook은 잘 정리된 개발문서와 개발자 지원 페이지를 제공하고 있고, 또한 위에서 소개한 각각의  개발 방식에 맞춰 여러 종류의 개발 언어로 작성된 SDK를 제공하기 때문에 어떤 개발환경을 사용하든 손쉽게 페이북과 연동되는 웹  애플리케이션/서비스를 개발할 수 있다.</p>
+
+<ul>
+	<li><a href="http://developers.facebook.com/">Facebook 개발자 페이지</a></li>
+	<li><a href="http://developers.facebook.com/docs/">Facebook 개발 문서</a></li>
+	<li>Facebook SDKs: <a href="http://developers.facebook.com/docs/reference/javascript/">JavaScript</a>, <a href="http://github.com/facebook/php-sdk/">PHP</a>, <a href="http://github.com/facebook/python-sdk/">Python</a>, <a href="http://github.com/facebook/facebook-iphone-sdk/">iPhone</a>, <a href="http://github.com/facebook/facebook-android-sdk">Android</a>, <a href="http://github.com/facebook/csharp-sdk">C#</a></li>
+</ul>
+
+<h3 id="open_graph_api_oauth">Open Graph API와 OAuth</h3>
+<p>최근 페이스북은 기존의 <a href="http://developers.facebook.com/docs/reference/rest/">REST 방식의 API</a>를 버리고 <a href="http://opengraphprotocol.org/">Open Graph</a>라는 오픈 프로토콜에 기반한 API로 서비스 접근 방식을 변경하였다. 또한 서비스 인증(authentication &amp; authorization)도 오픈 표준인 <a href="http://wiki.oauth.net/OAuth-2">OAuth2</a>를 채용함으로써 이전보다 훨씬 표준적인 개발 방식으로 접근할 수 있는 길을 열어 놓고 있다.</p>
+
+<p>특히 Facebook JavaScript SDK와 FBML의 클라이언트 확장인 XFBML을 이용하게  되면 기존의 Facebook Connect 이나 IFrame Canvas 방식의 Facebook App의 성능도 향상시킬 수 있게  되었다.</p>
+
+<h3 id="facebook_app__">Facebook App 개발 절차</h3>
+<p>Facebook App의 개발 절차를 간략히 정리하면 아래 단계와 같다. 자세한 내용은 페이스북 개발문서를 참조.</p>
+<ol>
+	<li>Facebook 개발자 페이지에서 <a href="http://www.facebook.com/developers/createapp.php">새 App을 추가</a>한다.</li>
+	<li>Facebook JavaScript SDK를 페이지에 추가한다.</li>
+	<li>OAuth access_token으로 Graph API를 액세스한다.</li>
+	<li>FBML/XFBML, FQL을 적절히 이용한다.</li>
+</ol>
+
+<h3 id="_facebook_app">루비/레일스와 Facebook App</h3>
+<p>아쉽게도 아직 페이스북에서 루비/레일스 개발자들을 위한 공식 SDK는 제공하지 않는다. 그렇지만 이미 루비 커뮤니티에서는 페이스북 개발을 지원하는 많은 라이브러리와 도구들이 나와 있다. 대표적인 것은 다음과 같다.</p>
+<ul>
+	<li><a href="http://github.com/mmangino/facebooker">Facebooker</a>: Rails 플러그인. 가장 오래되고 사용자 기반이 넓지만 Old REST 방식이며 다소 무겁다는 단점이 있다.</li>
+	<li><a href="http://github.com/mmangino/facebooker2">Facebooker2</a>: 기존 Facebooker를 새 API에 맞게 리모델링한 것으로, Graph API 라이브러리인 <a href="http://github.com/mmangino/mogli">mogli</a>를 기반으로 한다.</li>
+	<li><a href="http://github.com/tmm1/sinbook">sinbook</a>: Sinatra 확장 라이브러리. 300줄 정도의 적은 코드로 되어 있으며, Old REST API 방식.</li>
+	<li><a href="http://github.com/arsduo/koala">Koala</a>: 새 API 기반이며 Connect과 App 개발 모드 모두를 지원한다. 주목할만한 신예 라이브러리.</li>
+</ul>
+
+	<p>
+		<div class="fb-like" data-send="false" data-width="280" data-show-faces="false"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ko">트윗하기</a>
+
+	</p>	
+
+	<footer>
+    <section>
+  		
+    </section>
+
+    <section>
+      
+        <h1>Categories:</h1>
+        <ul>
+        
+        
+
+ 
+	<li><a href="/categories.html#-ref">
+		 <span></span>
+	</a></li>
+
+
+        </ul>
+      
+    </section>
+
+    <p class="gotop">
+      <a href="#page">Back to Top</a>
+    </p>
+	</footer>
+
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'usefulparadigm'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</article>
+
+      </section>
+      <aside>
+        <nav>
+          <ul>
+			<li><a href="/archive.html">Archive</a></li>
+			<li><a href="/categories.html">Categories</a></li>
+			<li><a href="/wordpress-hosting/">워드프레스 제작지원 신청</a></li>
+          </ul>
+        </nav>
+        <!-- <ul>
+          <li class="contact"><a href="mailto:contact@usefulparadigm.com">contact@usefulparadigm.com</a></li>
+        </ul> -->
+      </aside>
+      <footer class="main">
+        <p><small>
+			Powered by <a href="http://pages.github.com/">GitHub Pages</a>. 
+			Themed with <a href="http://github.com/orderedlist/minimal/">minimal</a>. 
+		</small></p>
+      </footer>
+    </div>
+    <script src="/js/scale.fix.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
+	<script src="/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="/js/application.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16954113-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>

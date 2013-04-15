@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+	<title>클라우드 기반에 Facebook App 호스팅하기 | 유스풀패러다임</title>
+
+    
+    <meta name="author" content="Useful Paradigm">
+
+	<meta name="google-site-verification" content="KyE-PMrb9__CwHMsFc2fM_b1ecWeTs3P5SKZwvcFTaA">
+	<meta name="msvalidate.01" content="E0A6CD63C809E00257EA5B66D60EFFA7" />
+	<meta name="bitly-verification" content="4e3dc2895796"/>
+	<link href="http://feeds.feedburner.com/usefulparadigm" rel="alternate" title=" News Feed" type="application/atom+xml">
+   
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pygment_trac.css">
+    <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </head>
+  <body>
+	  <div id="fb-root"></div>
+	  <script>(function(d, s, id) {
+	    var js, fjs = d.getElementsByTagName(s)[0];
+	    if (d.getElementById(id)) {return;}
+	    js = d.createElement(s); js.id = id;
+	    js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=279724202051145";
+	    fjs.parentNode.insertBefore(js, fjs);
+	  }(document, 'script', 'facebook-jssdk'));</script>
+
+    <div class="wrapper">
+      <header class="main">
+        <hgroup>
+          <h1 id="logo"><a href="/">유스풀패러다임</a></h1>
+          
+          <h2 id="tagline">Yet Another Software Factory on Web</h2>
+          
+        </hgroup>
+        <ul class="buttons">
+          <li><a href="http://github.com/usefulparadigm/" rel="me">Code <strong>GitHub</strong></a></li>
+          <li><a href="http://www.facebook.com/usefulparadigm.soft/" rel="me">Connect <strong>Facebook</strong></a></li>
+          <li><a href="http://twitter.com/usefulparadigm/" rel="me">Follow <strong>Twitter</strong></a></li>
+        </ul>
+      </header>
+      <section class="main">
+        <article class="post">
+	<header>
+		<h1>클라우드 기반에 Facebook App 호스팅하기</h1>
+		<p>Published on <time datetime="2011-11-23T00:00:00+09:00" pubdate>
+			November 23, 2011
+		</time></p>
+	</header>
+
+	<p>최근 페이스북이 클라우드 플랫폼인 <a href="https://developers.facebook.com/blog/post/558/">Heroku를 자사의 애플리케이션 배포 플랫폼에 추가</a>함에 따라 이제 페이스북 개발자들은 별도의 호스팅 절차 없이도 간단하게 페이스북 앱(
+<a href="https://developers.facebook.com/docs/guides/web/">웹사이트</a> 방식이든 
+<a href="https://developers.facebook.com/docs/guides/canvas/">캔버스앱</a>이든)을 개발할 수 있게 되었다.</p>
+
+<p>물론 굳이 이런 밀겹합(deep integration) 방식을 사용하지 않더라도 페이스북 앱을 장착할 수 있는 다양한 클라우드 기반들이 이미
+많이 존재한다. 클라우드 기반에서 페이스북 앱을 호스팅할 수 있는 몇 가지 방안을 소개한다.</p>
+
+<h3 id="heroku-">Heroku에 호스팅하기</h3>
+
+<p>가장 간단한 방법은 페이스북 앱 등록 페이지에서 제공하는 클라우드 서비스를 이용하는 방법이다. 이 때 클라우드 서비스를 추가하면 실제로는 클라우드 기반 앱 플랫폼인 Heroku와 연동된다. Heroku는 이전에는 루비 기반 앱만 호스팅할 수 있었지만 최근 Java, PHP, Node.js 등 다양한 개발 언어를 지원하는 ‘<a href="http://blog.heroku.com/archives/2011/8/3/polyglot_platform/">Polyglot Platform</a>‘으로 전환하였다.</p>
+
+<p>Facebook 앱 등록 페이지에서 호스팅 서비스 추가를 클릭하면 다음과 같이 페이스북 앱 개발 시에 사용할 언어를 선택하는 옵션이 나오고 이 때 적절한 언어를 선택하고 나서 클릭하면 바로 디폴트 앱이 생성되는 것을 확인할 수 있다. </p>
+
+<p><img src="http://farm7.staticflickr.com/6230/6386632221_cb4f3140e5.jpg" alt="클라우드 서비스 추가하기" /></p>
+
+<p>다음과 같이 디폴트 앱이 생성되어 브라우저에 보여진다.</p>
+
+<p><img src="http://farm7.staticflickr.com/6043/6386632457_e6722f4eb3_z.jpg" alt="페이스북 디폴트 앱" /></p>
+
+<p>이제 다시 페이스북 앱 등록 페이지로 와서 보면 페이스북 앱과 연동된 클라우드 서비스의 Hosting URL이 등록된 것을 확인할 수 있을 것이다. 물론 이 URL은 Heroku로 접속하여 변경할 수 있고, 기존에 Heroku에서 제공하는 다양한 부가서비스들도 동일하게 이용할 수 있다. 참고로 페이스북 앱 등록 페이지를 통해 설치되는 Heroku의 디폴트 앱에 대한 소스코드는 아래 github에서 확인할 수 있다.</p>
+
+<ul>
+  <li>PHP <a href="https://github.com/heroku/facebook-template-php">https://github.com/heroku/facebook-template-php</a></li>
+  <li>Node.js <a href="https://github.com/heroku/facebook-template-nodejs">https://github.com/heroku/facebook-template-nodejs</a></li>
+  <li>Python <a href="https://github.com/heroku/facebook-template-python">https://github.com/heroku/facebook-template-python</a></li>
+  <li>Ruby <a href="https://github.com/heroku/facebook-template-ruby">https://github.com/heroku/facebook-template-ruby</a></li>
+</ul>
+
+<h3 id="aws-cloud-">아마존 웹서비스 클라우드(AWS cloud)에 호스팅하기</h3>
+
+<p>아마존 웹서비스 클라우드 환경에 Facebook 앱을 호스팅하는 방법은 여러 가지 있지만 가장 간단한 방법 중 하나는 아마존 웹서비스 중 하나인 <a href="http://aws.amazon.com/cloudformation/">AWS CloudFormation</a> 서비스를 이용하는 것이다. </p>
+
+<p><img src="http://awsmedia.s3.amazonaws.com/articles/FB-apps-on-AWS-9-2011/fig1.png" alt="설치 단계" />  </p>
+
+<p>다음과 같이 AWS CloudFormation 관리 콘솔에서 <a href="http://s3.amazonaws.com/aws-facebook/SampleFacebookPHP.template">Facebook 앱용 템플릿</a>의 URL을 지정하면 바로 페이스북 앱을 생성할 수 있다. 이 때 Facebook AppId, Secret 정보와 AWS 계정 정보 등을 앱 실행에 필요한 정보들을 추가로 입력해 주어야 한다.</p>
+
+<p><img src="http://farm8.staticflickr.com/7158/6387710847_d00f26377f_z.jpg" alt="AWS Facebook 앱 템플릿 등록" /></p>
+
+<p><img src="http://farm8.staticflickr.com/7033/6387710589_3d64302357.jpg" alt="AWS 앱 등록 폼" /></p>
+
+<p>EC2 스택이 새로 생성되고 Facebook PHP SDK 등 관련된 파일이 셋팅되는 동안 잠시 기다리면 다음과 같이 설치가 완료되고 CREATE_COMPLETE 메시지가 출력된다. 이때 생성되는 SiteURL 값을 페이스북 앱 등록 페이지에서 설정해 주면 AWS와 Facebook 간의 연동이 완료된다.</p>
+
+<p><img src="http://farm8.staticflickr.com/7144/6387729251_2bacf6544d_z.jpg" alt="AWS 설치 완료" /></p>
+
+<p>이 때 사용된 페이스북 앱의 소스코드는 다음 URL에서 확인할 수 있다.</p>
+
+<ul>
+  <li><a href="http://aws-facebook.s3.amazonaws.com/aws-facebook-php-v1.tar.gz">http://aws-facebook.s3.amazonaws.com/aws-facebook-php-v1.tar.gz</a></li>
+</ul>
+
+<h3 id="google-app-engine-">Google App Engine에 호스팅하기</h3>
+
+<p>Facebook 캔버스 앱이라고 해서 구글 앱 엔진에 앱을 호스팅하는데 달라지는 점은 전혀 없다. 통상적인 Google App Engine(GAE) 사용 절차에 따라 앱을 개발하여 배포하고 페이스북 개발자 페이지에서 앱 URL을 등록해 주면 된다. 다만 GAE가 현재 Python, Java, Go 언어만을 지원하기 때문에 PHP로 된 앱은 배포할 수 없다. 페이스북 개발자 문서에서 GAE에 Python 기반 Facebook Canvas App을 만드는 <a href="https://developers.facebook.com/docs/samples/canvas/">튜토리얼</a>이 소개되어 있으니 자료로 참조하면 좋을 것이다.</p>
+
+<p><img src="https://developers.facebook.com/attachment/canvas-sample-main-app.png" alt="Sample Canvas App" /></p>
+
+<h3 id="section">참고자료</h3>
+
+<ul>
+  <li><a href="http://blog.heroku.com/archives/2011/9/15/facebook/">Facebook and Heroku</a></li>
+  <li><a href="http://devcenter.heroku.com/articles/facebook">Getting Started with Your Facebook App on Heroku</a></li>
+  <li><a href="http://aws.amazon.com/articles/1044">Hosting Facebook Applications on Amazon EC2</a></li>
+  <li><a href="https://developers.facebook.com/docs/samples/canvas/">Sample Canvas App on GAE</a></li>
+</ul>
+
+
+
+	<p>
+		<div class="fb-like" data-send="false" data-width="280" data-show-faces="false"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="ko">트윗하기</a>
+
+	</p>	
+
+	<footer>
+    <section>
+  		
+    </section>
+
+    <section>
+      
+        <h1>Categories:</h1>
+        <ul>
+        
+        
+
+ 
+	<li><a href="/categories.html#-ref">
+		 <span></span>
+	</a></li>
+
+
+        </ul>
+      
+    </section>
+
+    <p class="gotop">
+      <a href="#page">Back to Top</a>
+    </p>
+	</footer>
+
+	<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'usefulparadigm'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+</article>
+
+      </section>
+      <aside>
+        <nav>
+          <ul>
+			<li><a href="/archive.html">Archive</a></li>
+			<li><a href="/categories.html">Categories</a></li>
+			<li><a href="/wordpress-hosting/">워드프레스 제작지원 신청</a></li>
+          </ul>
+        </nav>
+        <!-- <ul>
+          <li class="contact"><a href="mailto:contact@usefulparadigm.com">contact@usefulparadigm.com</a></li>
+        </ul> -->
+      </aside>
+      <footer class="main">
+        <p><small>
+			Powered by <a href="http://pages.github.com/">GitHub Pages</a>. 
+			Themed with <a href="http://github.com/orderedlist/minimal/">minimal</a>. 
+		</small></p>
+      </footer>
+    </div>
+    <script src="/js/scale.fix.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
+	<script src="/fancybox/jquery.fancybox.pack.js"></script>
+	<script src="/js/application.js"></script>
+
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-16954113-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </body>
+</html>
