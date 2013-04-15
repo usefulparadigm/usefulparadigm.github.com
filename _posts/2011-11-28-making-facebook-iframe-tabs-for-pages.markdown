@@ -3,7 +3,7 @@ layout: post
 title: Facebook Page에 iFrame Tab 추가하기
 excerpt: Facebook 마케팅의 기본은 페이스북 페이지를 만드는 것에서부터 시작합니다. 그런데 페이지를 운영하다 보면 새로운 탭(tab)을 추가해야 하는 경우가 종종 생깁니다. 페이스북 페이지에 커스텀 탭을 추가하는 방법을 간단히 소개합니다.
 thumbnail: http://farm8.staticflickr.com/7169/6417234831_80e84d748c_m.jpg
-category: facebook
+categories: facebook
 ---
 
 <img src="http://farm8.staticflickr.com/7169/6417234831_80e84d748c_m.jpg" class="right" />

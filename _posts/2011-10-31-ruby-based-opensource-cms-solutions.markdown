@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 루비 기반 오픈소스 CMS 솔루션들
-category: oss
+categories: oss
 excerpt: 요즘은 웹사이트나 블로그 만드는 일이 "누워서 떡먹는 일"처럼 쉬워졌습니다. 한 때는 제법 까다로운 축에 속했던 일들이 이렇게 쉬워 진 데에는 강력한 기능을 갖춘 좋은 CMS 솔루션들이 큰 몫을 했습니다. 여기서는 루비 기반으로 사용할 수 있는 오픈소스 CMS 도구들을 몇 가지 소개합니다.
 thumbnail: http://farm7.static.flickr.com/6099/6298110344_3ff95d77b8_m.jpg
 ---
