@@ -2,3 +2,34 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 # permalink: /:categories/:year/:month/:day/:title 
 permalink: /:year/:month/:day/:title 
+
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
+auto: true
+pygments: true
+markdown: kramdown
+
+# Themes are encouraged to use these universal variables 
+# so be sure to set them if your theme uses them.
+#
+title: 유스풀패러다임
+tagline: Yet Another Software Factory on Web
+author:
+  name: Useful Paradigm
+  email: contact@usefulparadigm.com
+  github: usefulparadigm
+  twitter: usefulparadigm
+  facebook: usefulparadigm.soft
+  feedburner : feedname
+
+gatc: UA-16954113-1
+
+# The production_url is only used when full-domain names are needed
+# such as sitemap.txt 
+# Most places will/should use BASE_PATH to make the urls
+#
+# If you have set a CNAME (pages.github.com) set your custom domain here.
+# Else if you are pushing to username.github.com, replace with your username.
+# Finally if you are pushing to a GitHub project page, include the project name at the end.
+#
+production_url : http://usefulparadigm.com
+
