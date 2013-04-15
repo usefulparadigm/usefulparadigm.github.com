@@ -5,18 +5,6 @@ tagline: 웹2.0 소프트웨어 서비스 & 솔루션
 description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅/호스팅, 루비/레일스/얼랭 개발, 페이스북 앱 개발/제작, 워드프레스 웹사이트 제작,  페이스북Facebook/트위터Twitter/소셜웹SocialWeb 개발 및 컨설팅
 ---
 
-  {% for page in site.pages %}
-  {% if page.sitemap != null and page.sitemap != empty %}
-  <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
-    <lastmod>{{ page.sitemap.lastmod | date_to_xmlschema }}</lastmod>
-    <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-    <priority>{{ page.sitemap.priority }}</priority>
-  </url>
-  {% endif %}
-  {% endfor %}
-
-
 <p class="about justify">
   <strong><a href="/">유스풀패러다임</a></strong>은
 	진화하는 웹 및 인터넷 기술에 기반하여 보다 많은 사람들에게 보다 유용한 인터넷 서비스와 솔루션을 제공하는 징검다리가 되고자 합니다.
