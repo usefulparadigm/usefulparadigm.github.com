@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 클라우드 기반에 Facebook App 호스팅하기
-excerpt: 페이스북 앱과 같은 소셜 플랫폼 기반의 앱을 개발할 경우 고려야 할 문제 중 하나는 갑작스런 사용자수 증가에 따른 확장성(scalability) 문제입니다. 이에 대한 대비책 중 하나는 아마존(AWS)이나 Heroku 같은 클라우드 기반에 앱을 호스팅하는 것입니다.
+description: 페이스북 앱과 같은 소셜 플랫폼 기반의 앱을 개발할 경우 고려야 할 문제 중 하나는 갑작스런 사용자수 증가에 따른 확장성(scalability) 문제입니다. 이에 대한 대비책 중 하나는 아마존(AWS)이나 Heroku 같은 클라우드 기반에 앱을 호스팅하는 것입니다.
 thumbnail: 
 category: facebook
 ---
