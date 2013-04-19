@@ -2,6 +2,8 @@
 
 */
 
+var disqus_shortname = 'usefulparadigm'; // required: replace example with your forum shortname
+
 $(function() {
 	// $('.bigger').biggerlink();
 	// $('.tabs').tabs();
@@ -34,7 +36,7 @@ $(function() {
 
 		if (typeof FB !== 'undefined') FB.XFBML.parse();
 		if (typeof twttr !== 'undefined') twttr.widgets.load();
-		
+		loadDisqus();
 		
 		// if (typeof DISQUS !== 'undefined') {
 		// 	DISQUS.reset({
