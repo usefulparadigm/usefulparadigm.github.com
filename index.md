@@ -27,7 +27,7 @@ description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅
 <ul class="posts">
   {% for post in site.posts limit:5 %}
     <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li> -->
-    <li><a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a> | <span>{{ post.date | date_to_string }}</span></li>
+    <li><a href="{{ post.url }}" class="pjax">{{ post.title }}</a> | <span>{{ post.date | date_to_string }}</span></li>
   {% endfor %}
 </ul>
 
@@ -39,4 +39,3 @@ description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅
 
 	<!-- <div class="media-grid"><a class="various fancybox.iframe" href="http://map.naver.com/index.nhn?dlevel=11&lat=37.5711873&lng=126.9823252&query=&menu=location&searchCoord=&tab=1&pinId=30858388&pinType=site&pinTitle=7Jyg7Iqk7ZKA7Yyo65%2Bs64uk7J6E&mapMode=0&enc=b64"><img src="http://prt.map.naver.com/mashupmap/print?key=p1345437335473_983733216" width="270" height="160" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></div> -->
 </p>
-
