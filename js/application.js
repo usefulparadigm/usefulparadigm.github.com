@@ -12,7 +12,7 @@ $(function() {
 		return $("<div>", {html: "" + this}).html();
 	};
 	  
-	// if (window.history && window.history.pushState) {
+	if (window.history && window.history.pushState) {
 		
 		var loadPage = function(href) {
 			history.pushState({}, '', href);
@@ -40,7 +40,7 @@ $(function() {
 		//     };
 		// })(history.pushState);
 		
-	// }
+	}
 
 
 	
