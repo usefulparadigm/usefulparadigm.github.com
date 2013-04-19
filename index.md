@@ -27,7 +27,7 @@ description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅
 <ul class="posts">
   {% for post in site.posts limit:5 %}
     <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li> -->
-    <li><a href="{{ post.url }}/" class="pjax">{{ post.title }}</a> | <span>{{ post.date | date_to_string }}</span></li>
+    <li><a href="{{ post.url }}/">{{ post.title }}</a> | <span>{{ post.date | date_to_string }}</span></li>
   {% endfor %}
 </ul>
 
