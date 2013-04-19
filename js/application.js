@@ -17,7 +17,7 @@ $(function() {
 		var loadPage = function(href) {
 			history.ready = true; 
 			history.pushState({path: href}, '', href);
-			$('#container').load(href + ' #container', function(html) {
+			$('#container').load(href + ' #container>*', function(html) {
 				document.title = html.match(/<title>(.*?)<\/title>/)[1].trim().decodeHTML();
 			});
 		};
