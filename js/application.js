@@ -7,15 +7,43 @@ $(function() {
 	// $('.tabs').tabs();
 
 	// minimal pjax without server processing
-	$('a.pjax').live('click', function(e) {
-		if (window.history && window.history.pushState) {
-			var href = $(this).attr('href')
-			e.preventDefault();
-			history.pushState(null, null, href);
-			$('#container').load(href + ' #content');
-		}
-	});
 
+	String.prototype.decodeHTML = function() {
+		return $("<div>", {html: "" + this}).html();
+	};
+	  
+	// if (window.history && window.history.pushState) {
+		
+		var loadPage = function(href) {
+			history.pushState({}, '', href);
+			$('#container').load(href + ' #container', function(html) {
+				document.title = html.match(/<title>(.*?)<\/title>/)[1].trim().decodeHTML();
+			});
+		};
+
+		$(document).on('click', 'a.pjax', function() {
+			loadPage($(this).attr('href'));
+			return false;
+		});
+		
+		$(window).on("popstate", function(e) {
+			// console.log(e.originalEvent.state);
+		    if (e.originalEvent.state !== null) { // if not initial load
+		      loadPage(location.href);
+		    }
+		});
+
+		// (function(original) { // overwrite history.pushState 
+		//     history.pushState = function(state) {
+		//         change(state);
+		//         return original.apply(this, arguments);
+		//     };
+		// })(history.pushState);
+		
+	// }
+
+
+	
 	$(".various").fancybox({
 		// maxWidth	: 800,
 		// maxHeight	: 600,
