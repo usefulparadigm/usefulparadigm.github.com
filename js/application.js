@@ -7,6 +7,8 @@ $(function() {
 	// $('.tabs').tabs();
 
 	var init = function() {
+		if (typeof FB !== 'undefined') FB.XFBML.parse();
+		if (typeof twttr !== 'undefined') twttr.widgets.load();
 		
 		$(".various").fancybox({
 			// maxWidth	: 800,
@@ -36,7 +38,6 @@ $(function() {
 			history.pushState({path: href}, '', href);
 			$('#container').load(href + ' #container>*', function(html) {
 				document.title = html.match(/<title>(.*?)<\/title>/)[1].trim().decodeHTML();
-				FB.XFBML.parse();
 				init();
 			});
 		};
@@ -50,7 +51,7 @@ $(function() {
 		});
 		
 		$(window).on("popstate", function(e) {
-			console.log(e.originalEvent);
+			// console.log(e.originalEvent);
 		    if (window.history.ready || e.originalEvent.state !== null) { // if not initial load
 				loadPage(location.href);
 		    }
