@@ -15,7 +15,8 @@ $(function() {
 	if (window.history && window.history.pushState) {
 		
 		var loadPage = function(href) {
-			history.pushState({}, '', href);
+			history.ready = true; 
+			history.pushState({path: href}, '', href);
 			$('#container').load(href + ' #container', function(html) {
 				document.title = html.match(/<title>(.*?)<\/title>/)[1].trim().decodeHTML();
 			});
@@ -27,12 +28,12 @@ $(function() {
 		});
 		
 		$(window).on("popstate", function(e) {
-			// console.log(e.originalEvent.state);
-		    if (e.originalEvent.state !== null) { // if not initial load
-		      loadPage(location.href);
+			// console.log(e.originalEvent);
+		    if (window.history.ready || e.originalEvent.state !== null) { // if not initial load
+				loadPage(location.href);
 		    }
 		});
-
+		
 		// (function(original) { // overwrite history.pushState 
 		//     history.pushState = function(state) {
 		//         change(state);
