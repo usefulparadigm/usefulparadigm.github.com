@@ -33,15 +33,15 @@ $(function() {
 	    //     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 	    // })();
 		
-		if (typeof DISQUS !== 'undefined') {
-			DISQUS.reset({
-			  reload: true,
-			  config: function () {  
-			    this.page.identifier = "newidentifier";  
-			    this.page.url = "http://example.com/#!newthread";
-			  }
-			});			
-		}
+		// if (typeof DISQUS !== 'undefined') {
+		// 	DISQUS.reset({
+		// 	  reload: true,
+		// 	  config: function () {  
+		// 	    this.page.identifier = "newidentifier";  
+		// 	    this.page.url = "http://example.com/#!newthread";
+		// 	  }
+		// 	});			
+		// }
 		
 	};
 	
