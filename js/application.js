@@ -23,15 +23,25 @@ $(function() {
 		if (typeof FB !== 'undefined') FB.XFBML.parse();
 		if (typeof twttr !== 'undefined') twttr.widgets.load();
 		
-	    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-	    var disqus_shortname = 'usefulparadigm'; // required: replace example with your forum shortname
-
-	    /* * * DON'T EDIT BELOW THIS LINE * * */
-	    (function() {
-	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-	    })();
+	    // /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+	    // var disqus_shortname = 'usefulparadigm'; // required: replace example with your forum shortname
+	    // 
+	    // /* * * DON'T EDIT BELOW THIS LINE * * */
+	    // (function() {
+	    //     var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	    //     dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+	    //     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    // })();
+		
+		if (typeof DISQUS !== 'undefined') {
+			DISQUS.reset({
+			  reload: true,
+			  config: function () {  
+			    this.page.identifier = "newidentifier";  
+			    this.page.url = "http://example.com/#!newthread";
+			  }
+			});			
+		}
 		
 	};
 	
@@ -51,6 +61,7 @@ $(function() {
 			$('#container').load(href + ' #container>*', function(html) {
 				document.title = html.match(/<title>(.*?)<\/title>/)[1].trim().decodeHTML();
 				init();
+				// $('#container').animate({width: 'toggle'});
 			});
 		};
 
