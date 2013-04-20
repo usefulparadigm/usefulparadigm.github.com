@@ -6,6 +6,16 @@ $(function() {
 	// $('.bigger').biggerlink();
 	// $('.tabs').tabs();
 
+	function loadTwitter() {
+	    if($(".twitter-share-button").length > 0){
+	        if (typeof (twttr) != 'undefined') {
+	            twttr.widgets.load();
+	        } else {
+	            $.getScript('http://platform.twitter.com/widgets.js');
+	        }
+	    }
+	}
+	
 	var init = function(ajax) {
 		
 		$(".various").fancybox({
@@ -23,7 +33,7 @@ $(function() {
 		// re-render widgets
 		if (ajax) {
 			if (typeof FB !== 'undefined') FB.XFBML.parse();
-			if (typeof twttr !== 'undefined') twttr.widgets.load();
+			loadTwitter();
 		}
 	};
 	
