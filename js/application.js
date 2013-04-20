@@ -39,46 +39,46 @@ $(function() {
 	
 	init();
 
-	// ajax pushState
-
-	String.prototype.decodeHTML = function() {
-		return $("<div>", {html: "" + this}).html();
-	};
-	
-	if (window.history && window.history.pushState) {
-		
-		var loadPage = function(href) {
-			history.ready = true; 
-			history.pushState({path: href}, '', href);
-			$.get(href, function(html) {
-				$("#container").html(html.match(/<!--\^frag-->([\s\S]*?)<!--\$frag-->/m)[1]);
-				document.title = html.match(/<title>(.*?)<\/title>/)[1].trim().decodeHTML();
-				init(true);
-			});
-			// $('#container').load(href + ' #container>*', function(html) {
-			// 	console.log($(html).filter("#container>*"));
-			// 	document.title = html.match(/<title>(.*?)<\/title>/)[1].trim().decodeHTML();
-			// 	init();
-			// 	// $('#container').animate({width: 'toggle'});
-			// });
-		};
-
-		$(document).on('click', "a:not([href^='http://'])", function() {
-			var href = $(this).attr('href');
-			// if (href.indexOf(document.domain) > -1 || href.indexOf(':') === -1) {
-				loadPage(href);
-			// }
-			return false;
-		});
-		
-		$(window).on("popstate", function(e) {
-			// console.log(e.originalEvent);
-		    if (window.history.ready || e.originalEvent.state !== null) { // if not initial load
-				loadPage(location.href);
-		    }
-		});
-		
-	}
+	// // ajax pushState
+	// 
+	// String.prototype.decodeHTML = function() {
+	// 	return $("<div>", {html: "" + this}).html();
+	// };
+	// 
+	// if (window.history && window.history.pushState) {
+	// 	
+	// 	var loadPage = function(href) {
+	// 		history.ready = true; 
+	// 		history.pushState({path: href}, '', href);
+	// 		$.get(href, function(html) {
+	// 			$("#container").html(html.match(/<!--\^frag-->([\s\S]*?)<!--\$frag-->/m)[1]);
+	// 			document.title = html.match(/<title>(.*?)<\/title>/)[1].trim().decodeHTML();
+	// 			init(true);
+	// 		});
+	// 		// $('#container').load(href + ' #container>*', function(html) {
+	// 		// 	console.log($(html).filter("#container>*"));
+	// 		// 	document.title = html.match(/<title>(.*?)<\/title>/)[1].trim().decodeHTML();
+	// 		// 	init();
+	// 		// 	// $('#container').animate({width: 'toggle'});
+	// 		// });
+	// 	};
+	// 
+	// 	$(document).on('click', "a:not([href^='http://'])", function() {
+	// 		var href = $(this).attr('href');
+	// 		// if (href.indexOf(document.domain) > -1 || href.indexOf(':') === -1) {
+	// 			loadPage(href);
+	// 		// }
+	// 		return false;
+	// 	});
+	// 	
+	// 	$(window).on("popstate", function(e) {
+	// 		// console.log(e.originalEvent);
+	// 	    if (window.history.ready || e.originalEvent.state !== null) { // if not initial load
+	// 			loadPage(location.href);
+	// 	    }
+	// 	});
+	// 	
+	// }
 
 });
 
