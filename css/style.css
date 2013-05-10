@@ -1,5 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
-@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);
 
 body {
   padding:50px;
@@ -114,6 +114,7 @@ header.main {
   position:fixed;
 }
 
+/*
 header.main ul.buttons {
   list-style:none;
   height:40px;
@@ -174,6 +175,42 @@ header.main ul.buttons a:active {
   -moz-box-shadow: inset 0px 2px 2px 0px #ddd;
   box-shadow: inset 0px 2px 2px 0px #ddd;
 }
+*/
+
+header.main ul.buttons {
+  list-style:none;
+  height:40px;
+  padding:0;
+  width:270px;
+}
+
+header.main ul.buttons li {
+  width:90px;
+  float:left;
+  height:40px;
+}
+
+header.main ul.buttons a {
+  line-height:1;
+  font-size:11px;
+  color:#999;
+  display:block;
+  text-align:center;
+}
+
+header.main ul.buttons li.twitter a {
+    background: url(/img/ico_twitter.png) no-repeat left center;
+	margin-left: 13px; padding-left: 7px;
+	width: 70px;
+}
+header.main ul.buttons li.facebook a {
+    background: url(/img/ico_facebook.png) no-repeat left center;
+	padding-left: 8px; width: 82px;
+}
+header.main ul.buttons li.google a {
+    background: url(/img/ico_google.png) no-repeat left center;
+}
+
 
 strong {
   color:#222;
