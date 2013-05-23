@@ -2,7 +2,7 @@
 layout: post
 title: baas.io 단상
 description: baas.io는 모바일 앱 개발자들을 위한 백엔드 플랫폼입니다. iOS나 안드로이드 또는 모바일웹 기반에서 앱을 개발하는 프론트엔드 개발자들에게 좋은 선택지 중 하나입니다. 
-category: web development
+category: essay
 tags: []
 ---
 
