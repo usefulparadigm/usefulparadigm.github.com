@@ -1,6 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 /*@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
 @import url('//api.mobilis.co.kr/webfonts/v2/css/NanumGothicWeb');
+@import url(/css/auticons/auticons.css);
 
 body {
   padding:50px;
