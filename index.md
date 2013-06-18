@@ -35,7 +35,7 @@ description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅
 
 <p>
 110-702 서울 종로구 공평동 100 스탠다드차타드은행본점빌딩 2044호<br/>
-<a href="tel:+8227205059">02.720.5059</a> | <a href='mailto:contact@usefulparadigm.com'>contact@usefulparadigm.com</a><br/>
+<a href="tel:+8227205059">720.5059</a> | <a href='mailto:contact@usefulparadigm.com'>contact@usefulparadigm.com</a><br/>
 
 	<!-- <div class="media-grid"><a class="various fancybox.iframe" href="http://map.naver.com/index.nhn?dlevel=11&lat=37.5711873&lng=126.9823252&query=&menu=location&searchCoord=&tab=1&pinId=30858388&pinType=site&pinTitle=7Jyg7Iqk7ZKA7Yyo65%2Bs64uk7J6E&mapMode=0&enc=b64"><img src="http://prt.map.naver.com/mashupmap/print?key=p1345437335473_983733216" width="270" height="160" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></div> -->
 </p>
