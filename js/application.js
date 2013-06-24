@@ -30,11 +30,15 @@ $(function() {
 			// closeEffect	: 'none'
 		});
 		
+		// http://stackoverflow.com/questions/7901679/jquery-add-target-blank-for-outgoing-link
+		$('a[href^="http://"]').not('a[href*=usefulparadigm]').attr('target','_blank');
+		
 		// re-render widgets
 		if (ajax) {
 			if (typeof FB !== 'undefined') FB.XFBML.parse();
 			loadTwitter();
 		}
+
 	};
 	
 	init();

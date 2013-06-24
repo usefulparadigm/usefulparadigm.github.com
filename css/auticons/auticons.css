@@ -39,11 +39,11 @@ a:before { padding-right: 0.125em }
 ----------------------------------------------------------------------
 */
 
-[target="_blank"]:after {
+/*[target="_blank"]:after {
 	content:'\E002';
 	font-size: 0.85em;
 	vertical-align: super;
-}
+}*/
 
 /**
 * LINKS TO SECURE PAGES
