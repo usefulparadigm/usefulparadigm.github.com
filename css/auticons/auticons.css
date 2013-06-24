@@ -50,9 +50,9 @@ a:before { padding-right: 0.125em }
 ----------------------------------------------------------------------
 */
 
-[href^="https:"]:before {
+/*[href^="https:"]:before {
 	content:'\E017';
-}
+}*/
 
 /**
 * LINK RELATIONS (http://blog.whatwg.org/the-road-to-html-5-link-relations)
