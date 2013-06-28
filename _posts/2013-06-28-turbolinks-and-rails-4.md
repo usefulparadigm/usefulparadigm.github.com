@@ -64,7 +64,7 @@ Pjax를 쓰면 큰 노력 없이 정적인 웹페이지를 좀 더 빠르게 만
 
 국내에서 만들어지는 웹서비스들의 경우 아직은 SPA 방식 보다는 전통적인 서버측 HTML 렌더링 방식을 사용하는 쪽의 비중이 훨씬 높은 것이 사실이다. 자바스크립트 MV* 프레임워크나 CDN을 적용하는 곳도 그렇게 많지는 않은 것 같다. 이런 전통적인(?) 방식의 웹 개발 환경에서라면 터보링크는 분명  "최소 노력으로 최대 효과"를 얻을 수 있는 실용적인 접근이 될 수 있을 것 같다. 특히 기존에 레일스로 만들어진 웹사이트의 모바일 버전을 새로 만드는 경우가 터보링크를 적용하기에 가장 적합한 유스케이스가 아닐까 생각된다. [37signals가 그랬듯이]((http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile)).
 
-레일스 개발자들은 대부분 [실용주의 개발자](http://www.insightbook.co.kr/books/ppp/%EC%8B%A4%EC%9A%A9%EC%A3%BC%EC%9D%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8)들이다. 필요하면 쓰고 아니면 안쓰면 된다.  터보링크를 레일스 디폴트로 두면서 [DHH](http://37signals.com/svn/writers/dhh)가 했던 생각도 아마 그런 게 아니었을까. "내가 써 봤는데 좋더라구. 너도 한번 써 봐!" 맘에 안들면? 혹은 필요 없으면? 안쓰면 그만이다.
+레일스 개발자들은 대부분 [실용주의 개발자](http://www.insightbook.co.kr/books/ppp/%EC%8B%A4%EC%9A%A9%EC%A3%BC%EC%9D%98-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8)들이다. 필요하면 쓰고 아니면 안쓰면 된다.  터보링크를 레일스 디폴트로 두면서 [DHH](http://37signals.com/svn/writers/dhh)가 했던 생각도 아마 그런 게 아니었을까. "내가 써 봤는데 좋더라구. 너도 한번 써 봐!" 맘에 안들면? 혹은 필요 없으면? [안쓰면 그만](http://blog.steveklabnik.com/posts/2013-06-25-removing-turbolinks-from-rails-4)이다.
 
 터보링크의 사용법은 [Rails Guides](http://guides.rubyonrails.org/working_with_javascript_in_rails.html#turbolinks)와 [터보링크 README 파일](https://github.com/rails/turbolinks/blob/master/README.md)에 잘 나와 있으니 참조하면 된다.
 
