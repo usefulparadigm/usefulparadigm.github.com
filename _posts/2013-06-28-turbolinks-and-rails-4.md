@@ -68,7 +68,4 @@ Pjax를 쓰면 큰 노력 없이 정적인 웹페이지를 좀 더 빠르게 만
 
 터보링크의 사용법은 [Rails Guides](http://guides.rubyonrails.org/working_with_javascript_in_rails.html#turbolinks)와 [터보링크 README 파일](https://github.com/rails/turbolinks/blob/master/README.md)에 잘 나와 있으니 참조하면 된다.
 
-<blockquote class="twitter-tweet"><p>“터보링크(Turbolinks)와 레일스 4.0” <a href="http://t.co/TPRxulr6vn">http://t.co/TPRxulr6vn</a> 최근 이 바닥에서 가장 핫한 이슈를 다룬 글. pjax의 장점이 하나 빠진 것 같은데, 퍼머링크로 접근했을 때 올바른 html을 얻을 수 있다는 게 있다.</p>&mdash; Ashal aka JOKER (@ahastudio) <a href="https://twitter.com/ahastudio/statuses/351937932019503108">July 2, 2013</a></blockquote>
-<!-- <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-
 
