@@ -83,5 +83,16 @@ tags: []
 
 국내에는 아직까지 워드프레스 기반 쇼핑몰을 지원하는 플러그인은 나와 있지 않은 것 같다. 이미 국내에 많은 좋은 쇼핑몰 솔루션들이 나와 있으니, 요즘과 같은 관심과 저변이 계속된다면 아마 조만간 워드프레스 기반에 맞춘 좋은 플러그인들도 많이 등장할 것이라 예상된다. 그러면 결제 처리와 관련된 문제들도 자연스레 해소되리라 기대해 본다.
 
+## 업데이트
 
+이 글을 포스팅한 후에 댓글 또는 이메일 등을 통해 많은 분들께서 좋은 정보들을 제공해 주셨고, 또 그간 국내에서도 쓸만한 쇼핑몰/결제처리 관련 오픈소스들이 제법 공개된 탓에 참고로 정리해 보았습니다. 아래 목록은 계속해서 업데이트할 예정입니다. 혹시라도 빠졌거나 더 추가할만한 내용 알려 주시면 반영하겠습니다.
 
+### 워드프레스 쇼핑몰 솔루션
+
+- 아직 워드프레스 기반 쇼핑몰 솔루션(플러그인)은 국내에 나와 있는 것이 없는 것으로 보입니다.
+
+### 결제처리(PG연동) 솔루션
+
+- [WooCommerce Paygate JT](http://studio-jt.co.kr/%EC%9B%8C%EB%93%9C%ED%94%84%EB%A0%88%EC%8A%A4-%ED%95%9C%EA%B5%AD%ED%98%95-%EA%B2%B0%EC%A0%9C-%EC%97%B0%EB%8F%99-%ED%94%8C%EB%9F%AC%EA%B7%B8%EC%9D%B8-%EB%AC%B4%EB%A3%8C-%EB%B0%B0%ED%8F%AC/) 스튜디오 제이티에서 개발한 WooCommerce용 결제모듈이며 Paygate 연동을 지원합니다. [다운로드](http://wordpress.org/plugins/woocommerce-paygate-jt/)
+- [WooCommerce Paygate](http://blog.sunnysidesoft.com/woocommerce-paygate/) Sunnysidesoft에서 만든 결제 플러그인이며, WooCommerce 기반에 Paygate 연동을 지원합니다. [다운로드](https://github.com/sunnysidesoft/woocommerce-paygate)
+- 그 밖에도 [플레닛메이트](http://www.bloter.net/archives/166509), [옵티안](http://www.optian.co.kr/?p=3442) 같은 곳에서도 결제 솔루션(플러그인)을 제작/판매하고 있습니다.

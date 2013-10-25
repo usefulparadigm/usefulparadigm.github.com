@@ -24,6 +24,11 @@ sitemap:
 * [워드프레스로 웹사이트 만들기](/2012/03/17/creating-static-website-with-wordpress/)
 * [워드프레스 웹사이트 제작 가이드](/2012/08/13/wordpress-website-builidng-guide-2012/)
 
+<div class="about">
+    <strong>워드프레스 무료 제작지원 서비스를 종료합니다.</strong> 그간 저희는 국내 워드프레스 저변 확대와 좋은 솔루션인줄 알면서도 참고자료의 부족 등 여러 이유로 적용에 어려움을 겪고 계신분들을 대상으로 무료 제작지원 서비스를 제공해 왔습니다만, 최근 워드프레스 관련 참고자료들도 많아졌고 또 전문업체들도 많이 생겼기 때문에 2013.10.01 부로 무료 제작지원을 종료합니다.
+</div>
+
+<!--
 그러나 국내에 아직 자료도 많지 않은데다 기술적인 문제 등으로 인해 좋은 기능을 제대로 활용하지 못하고 계신 분들이 많습니다.
 
 [유스풀패러다임](/)에서는 이런 분들을 위해 워드프레스에 대한 제작 및 기술지원을 무료로 제공해 드리고 있습니다.
@@ -48,7 +53,7 @@ sitemap:
 4. **테마 제작비** (새로 테마를 처음부터 직접 제작할 경우)
 5. **디자인비** (별도 디자인이 들어갈 경우의 디자인 외주 비용. 직접 처리할 경우는 무료)
 6. **엉뚱한 사용** (워드프레스를 쇼핑몰, 뉴스/매거진, 리뷰, 공동구매, 메타블로그, 채용사이트 등 통상적 용도 이외로 사용하고자 할 때)
-
+-->
 <!--
 #### 누구를 대상으로 하나요?
 
@@ -60,9 +65,9 @@ sitemap:
 문의는 전화, 댓글 또는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 해 주시고, <br/>
 서비스 신청은 아래 신청 버튼을 눌러 양식을 작성해 주세요!-->
 
-<p>
+<!--p>
 	<a href="//docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" class="button itunes various fancybox.iframe">무료 제작지원 서비스 신청하기</a>
-</p>
+</p-->
 
 ---
 
@@ -78,5 +83,5 @@ sitemap:
 
 ## 서비스 문의
 
-프리미엄 서비스 문의는 <a href="mailto:contact@usefulparadigm.com">이메일</a> 또는 아래 댓글로 남겨 주세요!
+프리미엄 서비스 문의는 <a href="mailto:contact@usefulparadigm.com">이메일</a>로 남겨 주세요!
 
