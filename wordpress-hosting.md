@@ -10,7 +10,7 @@ disqus: true
 sitemap:
   priority: 1
   changefreq: weekly
-  lastmod: 2013-04-15T00:00:00+09:00
+  lastmod: 2013-09-30
 ---
 
 <img src="http://farm8.staticflickr.com/7003/6834042221_e1ab360fc7_m.jpg" class="right" style="float: right;" />
