@@ -2,7 +2,7 @@
 layout: default
 title: 유스풀패러다임
 tagline: 웹2.0 소프트웨어 서비스 & 솔루션
-description: 웹2.0 서비스/솔루션 개발, 오픈소스 솔루션 컨설팅/호스팅, 루비/레일스/얼랭 개발, 페이스북 앱 개발/제작, 워드프레스 웹사이트 제작,  페이스북Facebook/트위터Twitter/소셜웹SocialWeb 개발 및 컨설팅, HTML5 모바일 웹사이트 구축
+description: 웹서비스 개발/컨설팅, 페이스북앱 개발/제작, 워드프레스 테마/플러그인 제작, 오픈소스 솔루션 컨설팅/기술지원, 루비/레일스/얼랭 개발, 워드프레스 웹사이트 제작, 페이스북Facebook/트위터Twitter/소셜웹SocialWeb 개발 및 컨설팅, HTML5 모바일 웹사이트 구축
 ---
 
 <p class="about justify">
