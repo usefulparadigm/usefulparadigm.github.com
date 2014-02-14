@@ -497,10 +497,6 @@ section.main { text-align: justify; }
 	background-color: #ededed;
 }
 
-section.share > div {
-    max-width: 33% !important;
-}
-
 
 /* Button 
 https://github.com/ubuwaits/css3-buttons/blob/gh-pages/stylesheets/buttons.css
