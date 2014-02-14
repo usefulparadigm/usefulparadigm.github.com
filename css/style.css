@@ -497,9 +497,7 @@ section.main { text-align: justify; }
 	background-color: #ededed;
 }
 
-/* Aligning Share buttons
-https://gist.github.com/thebigreason/1296097
-*/
+/* Aligning Share buttons */
 ul.share_links { margin: 0; padding: 0; overflow: auto; }
 ul.share_links li { 
     list-style: none; float: left; margin-right: 5px; 
