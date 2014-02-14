@@ -497,6 +497,11 @@ section.main { text-align: justify; }
 	background-color: #ededed;
 }
 
+/* Aligning Share buttons
+http://stackoverflow.com/questions/6654186/aligning-social-media-sharing-buttons-to-look-nice-together 
+*/
+ul.share_links { overflow: auto; }
+ul.share_links li { list-style: none; float: left; margin-right: 5px; }
 
 /* Button 
 https://github.com/ubuwaits/css3-buttons/blob/gh-pages/stylesheets/buttons.css
