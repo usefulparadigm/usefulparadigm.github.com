@@ -103,6 +103,7 @@ ChocolateChip-UI는 npm을 제공하고 [Grunt](http://gruntjs.com/)나 [Gulp](h
 -----
 
 * [JSON API 문서](http://wordpress.org/plugins/json-api/other_notes/)
+* [Backbone.js 사이트](http://backbonejs.org/)
 * [ChocolateChip-UI 문서](http://www.chocolatechip-ui.com/documentation)
 * [Apache Cordova 문서](http://cordova.apache.org/docs/en/3.3.0/)
 * [데모 소스](https://github.com/usefulparadigm/chocosteak)
