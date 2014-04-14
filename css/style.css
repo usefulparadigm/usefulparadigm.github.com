@@ -424,6 +424,8 @@ article footer p.gotop {
 
 @media print, screen and (max-width: 480px)  {
     header .about { display: none; }
+    section.main .nav { display: none; }
+    section.main .emblem { display: none; }
     section.main .panel-title small { display: none; }
     section.main .posts .media > a { display: none; }
 /*    section.main .posts .media .media-body > p { display: none; }*/
