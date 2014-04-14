@@ -270,6 +270,8 @@ section.main #accordion .panel {
 section.main #accordion .panel-heading {
     background-color: #fff;
 }
+.panel-group .panel-heading+.panel-collapse .panel-body { border-top: none; }
+/*section.main #accordion .panel-body { border: none; }*/
 
 /*section.main .page-header:first-child { margin-top: 0; }*/
 section.main .panel-title .glyphicon { color: #699C30; }
