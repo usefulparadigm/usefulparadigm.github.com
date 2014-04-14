@@ -36,7 +36,7 @@ services:
     title: 워드프레스 테마 제작
     subtitle: WordPress Theme Development
     emblem: /img/emblem-wordpress.png
-    description: 유스풀패러다임은 고객 니즈에 부합하는 맞춤형 <a href="http://wordpress.org/">워드프레스</a>(WordPress) 테마를 제작하고 워드프레스 프로젝트에서 발생하는 여러 기술적 문제들을 해결합니다.
+    description: 유스풀패러다임은 고객 니즈에 부합하는 맞춤형 <a href="http://wordpress.org/">워드프레스</a>(WordPress) 테마를 제작하고 워드프레스 프로젝트에서 발생하는 여러 기술적 문제들을 해결해 드립니다.
     details: [맞춤형 테마(Custom Theme) 제작, API 연동 및 플러그인 제작, 워드프레스 구축 관련 컨설팅/기술지원]
     references:
     - title: Discover Hyundai
