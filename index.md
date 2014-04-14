@@ -52,7 +52,7 @@ services:
     title: HTML5 모바일 웹 구축
     subtitle: HTML5 & Mobile Web Development
     emblem: /img/emblem-html5.png
-    description: 유스풀패러다임은 HTML5/CSS3로 대표되는 최신 프론트엔드 웹 기술을 기반으로 모바일 환경에 최적화된 사용성 높은 웹사이트와 웹애플리케이션을 구축합니다.
+    description: 유스풀패러다임은 HTML5/CSS3로 대표되는 최신 프론트엔드 웹 기술을 기반으로 모바일 환경에 최적화된 사용성 높은 웹사이트와 웹애플리케이션을 구현합니다.
     details: [리거시(Legacy) 웹사이트 모바일 대응, HTML5 프론트엔드 웹앱 제작, Cordova/PhoneGap 기반 하이브리드앱 제작, 반응형웹(Responsive Web) 지원]
   - name: oss
     title: 오픈소스 기술지원
