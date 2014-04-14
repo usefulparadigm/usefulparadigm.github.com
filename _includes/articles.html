@@ -1,0 +1,26 @@
+
+<div class="page-header">
+  <h3>Recent Posts</h3>
+</div>
+
+<ul class="posts list-unstyled">
+  {% for post in site.posts limit:5 %}
+    <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li> -->
+    <!--li><a href="{{ post.url }}/">{{ post.title }}</a> | <span>{{ post.date | date_to_string }}</span></li-->
+    <li>
+      <span>{{ post.date | date_to_string }}</span>
+      <div class="media">
+        <a class="pull-left" href="{{post.url}}">
+          <img class="media-object" src="{{post.thumbnail}}" width="100" alt="">
+        </a>
+        <div class="media-body">
+          <h4 class="media-heading"><a href="{{post.url}}">{{post.title}}</a></h4>
+          <p>{{post.description}}</p>
+        </div>
+      </div>
+    </li>
+        
+  {% endfor %}
+</ul>
+
+<a href="/archive.html" class="btn btn-default">더보기</a>

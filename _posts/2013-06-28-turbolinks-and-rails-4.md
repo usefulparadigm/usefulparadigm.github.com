@@ -2,6 +2,7 @@
 layout: post
 title: 터보링크(Turbolinks)와 레일스 4.0
 description: 레일스 4.0 파이널 버전이 출시되었습니다. 4.0 릴리즈 소식을 전하는 레일스 블로그에서 비중있게 소개하고 있는 터보링크(Turbolinks)의 개념과 장단점 등을 소개합니다.
+thumbnail: http://usefulpa.s3.amazonaws.com/images/2013/pjax-requests.jpg
 category: ruby 
 tags: []
 ---

@@ -1,6 +1,56 @@
 /* Author: 
-
 */
+
+// var App = Ember.Application.create({
+//     rootElement: '#container'
+// });
+// 
+// App.Router.map(function() {
+//     this.route('articles');
+// });
+// 
+// App.IndexView = Ember.View.extend({
+// 
+//     // http://stackoverflow.com/questions/21779815/how-to-integrate-jquery-masonry-with-ember-js
+//     
+//     onDidInsertElement: function() {
+//         // TODO: refactoring
+// 
+//         $('#accordion').on('show.bs.collapse', function () {
+// 
+//             // http://masonry.desandro.com/
+//             var $container = $('.masonry', this);
+//             $container.imagesLoaded( function() {
+//                 $container.masonry({
+//                     // columnWidth: 200,
+//                     // itemSelector: '.item'
+//                 });
+//             });
+//             
+//         });
+// 
+//         // $('.thumbnail.with-caption').hover(
+//         //     function(){ $(this).find('.caption').slideDown(250); },
+//         //     function(){ $(this).find('.caption').slideUp(250); }
+//         // ); 
+// 
+//       this.reMason();
+//     }.on('didInsertElement'),
+// 
+//     onWillDestroy: function() {
+//       this.$('.masonry').masonry('destroy');
+//     }.on('willDestroy'),
+// 
+//     reMason: function() {
+//       this.$('.masonry').masonry({
+//         // masonry init options here
+//       });
+//       this.$('.masonry').imagesLoaded( function() {
+//         this.$('.masonry').masonry();
+//       }.bind(this));
+//     }    
+// });
+
 
 $(function() {
 	// $('.bigger').biggerlink();
@@ -38,7 +88,35 @@ $(function() {
 			if (typeof FB !== 'undefined') FB.XFBML.parse();
 			loadTwitter();
 		}
+        
 
+        // http://kenwheeler.github.io/slick/        
+        // $('.work-slider').slick({
+        //     infinite: true,
+        //       slidesToShow: 3,
+        //       slidesToScroll: 3
+        // });    
+        
+        // http://masonry.desandro.com/
+        // var $container = $('.masonry');
+        // $container.imagesLoaded( function() {
+        //     $container.masonry({
+        //         // columnWidth: 200,
+        //         // itemSelector: '.item'
+        //     });
+        // });
+
+        $('#accordion').on('show.bs.collapse', function () {
+            // http://masonry.desandro.com/
+            var $container = $('.masonry', this);
+            $container.imagesLoaded( function() {
+                $container.masonry({
+                    // columnWidth: 200,
+                    // itemSelector: '.item'
+                });
+            });
+        });
+        
 	};
 	
 	init();
@@ -85,24 +163,4 @@ $(function() {
 	// }
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,0 +1,41 @@
+<div class="media">
+  <div class="emblem pull-right">
+    <img src="{{service.emblem}}" width="100" alt="{{service.name}}" />
+  </div>  
+  <div class="media-body">
+    <p class="description">
+      {{ service.description }}
+    </p>
+    {% if service.details %}
+    <ul class="details">
+      {% for item in service.details %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+</div>
+
+{% if service.references %}
+<h4>Recent Works</h4>
+
+<div class="row work-sliderx masonry">
+{% for w in service.references %}
+  <div class="item col-xs-6 col-sm-3 col-md-4">
+
+    <div class="thumbnail with-captionx">
+      {% if w.link %}<a href="{{ w.link }}" target="_blank">{% endif %}
+        <img src="{{ w.thumbnail }}" width="240">
+      {% if w.link %}</a>{% endif %}  
+      <div class="caption">
+          <!-- <h5>{{ w.title }}</h5> -->
+          <p class="text-center">{{ w.title }}</p>
+      </div>
+    </div>
+
+  </div>
+{% endfor %}
+</div>  
+
+{% endif %}
+
