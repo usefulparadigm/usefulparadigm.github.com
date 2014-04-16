@@ -11,8 +11,8 @@ services:
     title: 웹서비스 개발/컨설팅
     subtitle: Web Services Dev & Consulting
     emblem: /img/emblem-rails.jpg
-    description: 유스풀패러다임은 생산성과 성능이 검증된 다양한 오픈소스 도구들과 변화에 유연하게 대처하는 애자일(Agile) 방법을 사용하여 사용성 높은 웹서비스를 구현합니다.
-    details: [루비/레일스(Rails) 기반 웹서비스 구축, 노드(NodeJS/Express) 기반 웹서비스 구축, 얼랭(Erlang)/OTP 기반 백엔드 구축, 오픈API 연동/설계/구현]
+    description: 유스풀패러다임은 높은 생산성을 자랑하는 웹 프레임워크인 <a href="http://rubyonrails.org/">루비온레일스</a>(Ruby on Rails)를 중심으로 여러 오픈소스 도구들과 애자일(Agile) 웹개발 방법을 사용하여 사용성 높은 웹서비스를 만듭니다.
+    details: [루비/레일스 기반 웹서비스 구축, 웹서비스 기획/개발 컨설팅/기술지원, 오픈API 연동/설계/구현]
   - name: facebook
     title: 페이스북 앱 제작
     subtitle: Facebook App Development
