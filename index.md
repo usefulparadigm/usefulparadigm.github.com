@@ -12,7 +12,7 @@ services:
     subtitle: Web Services Dev & Consulting
     emblem: /img/emblem-rails.jpg
     description: 유스풀패러다임은 높은 생산성을 갖춘 웹 프레임워크인 <a href="http://rubyonrails.org/">루비온레일스</a>(Ruby on Rails)와 여러 오픈소스 도구를 효과적으로 활용하여 고객 니즈에 부합하는 웹서비스를 유연하고 빠르게 구현합니다.
-    details: [루비/레일스 기반 웹서비스 구축, 웹서비스 기획/개발/컨설팅/프로토타이핑, 오픈API 연동/설계/구현]
+    details: [루비/레일스 기반 웹서비스 구축, 웹서비스 기획/개발/프로토타이핑, 오픈API 연동/설계/구현]
   - name: facebook
     title: 페이스북 앱 제작
     subtitle: Facebook App Development
