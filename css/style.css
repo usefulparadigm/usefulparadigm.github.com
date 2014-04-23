@@ -427,7 +427,7 @@ article footer p.gotop {
 @media print, screen and (max-width: 480px)  {
     section.main .nav { display: none; }
     section.main .emblem { display: none; }
-    section.main .panel-title small { display: none; }
+    section.main .services small { display: none; }
     section.main .posts .media > a { display: none; }
 /*    section.main .posts .media .media-body > p { display: none; }*/
 }    
@@ -577,7 +577,7 @@ a:hover { color: green; }
 
 #tagline { text-align: left; margin-left: 1.5em; margin-bottom: 2em; }
 
-section.main { text-align: justify; }
+/*section.main { text-align: justify; }*/
 
 .about {
 /*    border-radius: 3px;*/

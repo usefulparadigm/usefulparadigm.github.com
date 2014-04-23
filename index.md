@@ -70,4 +70,3 @@ services:
 
 {% include home.html %}
 {% include articles.html %}
-
