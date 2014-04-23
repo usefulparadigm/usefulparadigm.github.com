@@ -7,6 +7,10 @@ categories: [mobile, web development, wordpress]
 tags: []
 ---
 
+<div class="alert alert-info">
+  이 글은 같은 제목으로 <a href="http://www.bloter.net/archives/181062" target="_blank">블로터닷넷</a>에 게재된 글의 원문입니다.
+</div>  
+
 아직도 [워드프레스(WordPress)](http://wordpress.org/)를 그저 블로그 만드는 툴 쯤으로 생각하고 계신 분들이 계실지 모르지만, 워드프레스는 이미 블로깅 도구를 넘어 범용 콘텐트 관리 시스템(Content Management System)으로 자리매김한지 오래입니다. 해외는 물론 국내에서도 워드프레스를 기반으로 자사의 홈페이지나 웹사이트를 제작하려는 곳이 늘고 있다는 것은 이미 오래 전에 [소개](/2012/03/17/creating-static-website-with-wordpress/)해 드린 적이 있습니다만, 최근엔 여기서 한발 더 나아가 단순 웹사이트 용도가 아니라 일정한 기능을 갖추고 온라인 서비스를 제공하는 웹 애플리케이션으로까지 그 용도가 확장되는 추세입니다. 아예 워드프레스를 웹 개발 프레임워크(framework)로 사용하는 케이스도 생기고 있구요. 맞습니다. 흔히 사용되고 있는 [레일스(Ruby on Rails)](http://rubyonrails.org/) 나 [장고(Django)](https://www.djangoproject.com/)와 같은 바로 그 프레임워크입니다.
 
 워드프레스와 모바일
