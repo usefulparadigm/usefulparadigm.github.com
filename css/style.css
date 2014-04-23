@@ -424,7 +424,7 @@ article footer p.gotop {
   text-align: left;
 }
 
-@media print, screen and (max-width: 480px)  {
+@media print, screen and (max-width: 320px)  {
     section.main .nav { display: none; }
     section.main .emblem { display: none; }
     section.main .services small { display: none; }
