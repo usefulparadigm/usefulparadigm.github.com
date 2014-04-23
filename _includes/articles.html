@@ -6,7 +6,22 @@
 <ul class="posts list-unstyled">
   {% for post in site.posts limit:5 %}
     <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li> -->
-    <!--li><a href="{{ post.url }}/">{{ post.title }}</a> | <span>{{ post.date | date_to_string }}</span></li-->
+    {% if forloop.index == 1 %}
+    <li>
+      <div class="media">
+        <a class="pull-right" href="{{post.url}}">
+          <img class="media-object" src="{{post.thumbnail}}" width="100" alt="">
+        </a>
+        <div class="media-body">
+          <h5 class="media-heading"><a href="{{post.url}}">{{post.title}}</a> <small class="label label-default">{{ post.date | date_to_string }}</small></h5>
+          <p>{{post.description}}</p>
+        </div>
+      </div>
+    </li>
+    {% else %}
+    <li><h5><a href="{{ post.url }}/">{{ post.title }}</a> <small class="label label-default">{{ post.date | date_to_string }}</small></h5></li>
+    {% endif %}
+    {% comment %}
     <li>
       <span>{{ post.date | date_to_string }}</span>
       <div class="media">
@@ -19,8 +34,9 @@
         </div>
       </div>
     </li>
+    {% endcomment %}
         
   {% endfor %}
 </ul>
 
-<a href="/archive.html" class="btn btn-default">더보기</a>
+<!--a href="/archive.html" class="btn btn-default btn-sm">더보기</a-->

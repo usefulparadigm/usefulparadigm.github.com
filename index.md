@@ -49,7 +49,7 @@ services:
     - thumbnail: http://cookinfacebook.com/wp-content/uploads/2013/03/niveakorea-review.jpg
       title: 니베아코리아 제품 리뷰 앱
   - name: webdev
-    title: 웹서비스 개발/컨설팅
+    title: 웹서비스 개발/ 컨설팅
     subtitle: Web Services Dev & Consulting
     emblem: /img/emblem-rails.jpg
     description: 유스풀패러다임은 높은 생산성을 갖춘 웹 프레임워크인 <a href="http://rubyonrails.org/">루비온레일스</a>(Ruby on Rails)와 여러 오픈소스 도구를 효과적으로 활용하여 고객 니즈에 부합하는 웹서비스를 유연하고 빠르게 구현합니다.
@@ -63,12 +63,15 @@ services:
 ---
 
 <!-- Nav tabs -->
-<ul class="nav nav-pills nav-justifiedx">
+<!--ul class="nav nav-pills nav-justifiedx">
     <li class="active"><a href="/">Home</a></li>
     <li class=""><a href="/articles.html">Articles</a></li>
-</ul>
+</ul-->
+
+<div class="about">
+  <a href="/">유스풀패러다임</a>은 진화하는 웹 및 인터넷 기술에 기반하여 보다 많은 사람들에게 보다 유용한 소프트웨어 서비스와 솔루션을 제공하는 징검다리가 되고자 합니다.
+</div>
 
 {% include home.html %}
-
-
+{% include articles.html %}
 

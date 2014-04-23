@@ -8,18 +8,18 @@
 </div>
 {% endif %}
 
+
 <div class="page-header">
   <h2>Services & Solutions</h2>
 </div>
 
-<!-- <ul class="">
-  <li>웹서비스 개발/ 컨설팅</li>
-  <li>페이스북 앱 제작</li>
-  <li>워드프레스 테마 제작</li>
-  <li>HTML5 모바일 웹사이트 구축</li>
-  <li>오픈소스 기술지원</li>
-</ul>   -->
+<ul class="list-unstyled">
+{% for service in page.services %}
+<li><h5>{{ service.title }} <small>{{ service.subtitle }}</small></h5></li>
+{% endfor %}
+</ul>
 
+{% comment %}
 <div class="panel-group" id="accordion">
 {% for service in page.services %}
   <div class="panel panel-default">
@@ -42,6 +42,7 @@
   </div>
 {% endfor %}
 </div>  
+{% endcomment %}
 
 
 <!--div class="text-left">
