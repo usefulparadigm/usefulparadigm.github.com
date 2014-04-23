@@ -68,10 +68,6 @@ services:
     <li class=""><a href="/articles.html">Articles</a></li>
 </ul-->
 
-<div class="about">
-  <p><a href="/">유스풀패러다임</a>은 진화하는 웹 및 인터넷 기술에 기반하여 보다 많은 사람들에게 보다 유용한 소프트웨어 서비스와 솔루션을 제공하는 징검다리가 되고자 합니다.</p>
-</div>
-
 {% include home.html %}
 {% include articles.html %}
 

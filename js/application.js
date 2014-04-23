@@ -106,16 +106,16 @@ $(function() {
         //     });
         // });
 
-        $('#accordion').on('show.bs.collapse', function () {
-            // http://masonry.desandro.com/
-            var $container = $('.masonry', this);
-            $container.imagesLoaded( function() {
-                $container.masonry({
-                    // columnWidth: 200,
-                    // itemSelector: '.item'
-                });
-            });
-        });
+        // $('#accordion').on('show.bs.collapse', function () {
+        //     // http://masonry.desandro.com/
+        //     var $container = $('.masonry', this);
+        //     $container.imagesLoaded( function() {
+        //         $container.masonry({
+        //             // columnWidth: 200,
+        //             // itemSelector: '.item'
+        //         });
+        //     });
+        // });
         
 	};
 	

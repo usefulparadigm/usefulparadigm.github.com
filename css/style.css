@@ -425,7 +425,6 @@ article footer p.gotop {
 }
 
 @media print, screen and (max-width: 480px)  {
-    header .about { display: none; }
     section.main .nav { display: none; }
     section.main .emblem { display: none; }
     section.main .panel-title small { display: none; }
@@ -453,7 +452,8 @@ article footer p.gotop {
   
   section.main {
     border:1px solid #e5e5e5;
-    border-width:1px 0;
+/*    border-width:1px 0;*/
+    border-width:0 0 1px;
     padding:20px 0;
     margin:0 0 20px;
   }
@@ -580,7 +580,7 @@ a:hover { color: green; }
 section.main { text-align: justify; }
 
 .about {
-	border-radius: 3px;
+/*    border-radius: 3px;*/
 	padding: 10px;
     /*text-align: justify;*/
 	background-color: #ededed;
