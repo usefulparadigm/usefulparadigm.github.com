@@ -7,12 +7,12 @@ jumbotron__:
     title: Start-Up을 응원합니다!
     body: 유스풀패러다임은 새로 시작하는 비즈니스를 위한 기술지원 프로그램을 운영합니다.
 services: 
-  - name: html5mobile
-    title: HTML5 모바일 웹 개발
-    subtitle: HTML5 & Mobile Web Development
-    emblem: /img/emblem-html5.png
-    description: 유스풀패러다임은 HTML5/CSS3로 대표되는 최신 웹 기술을 기반으로 모바일 환경에 최적화된 사용성 높은 웹사이트와 웹애플리케이션을 구현합니다.
-    details: [HTML5 프론트엔드 웹앱 제작, Cordova/PhoneGap 기반 하이브리드앱 제작, 반응형웹(Responsive Web) 지원, 리거시(Legacy) 웹사이트 모바일 대응]
+  - name: webdev
+    title: 웹서비스 개발/ 컨설팅
+    subtitle: Web Services Dev & Consulting
+    emblem: /img/emblem-rails.jpg
+    description: 유스풀패러다임은 높은 생산성을 갖춘 웹 프레임워크인 <a href="http://rubyonrails.org/">루비온레일스</a>(Ruby on Rails)와 여러 오픈소스 도구를 효과적으로 활용하여 고객 니즈에 부합하는 웹서비스를 유연하고 빠르게 구현합니다.
+    details: [루비/레일스 기반 웹서비스 구축, 웹서비스 기획/개발/컨설팅/프로토타이핑, 오픈API 연동/설계/구현]
   - name: wordpress
     title: 워드프레스 테마 제작
     subtitle: WordPress Theme Development
@@ -48,12 +48,12 @@ services:
       title: "KB카드 20′s List 투표 이벤트 앱"
     - thumbnail: http://cookinfacebook.com/wp-content/uploads/2013/03/niveakorea-review.jpg
       title: 니베아코리아 제품 리뷰 앱
-  - name: webdev
-    title: 웹서비스 개발/ 컨설팅
-    subtitle: Web Services Dev & Consulting
-    emblem: /img/emblem-rails.jpg
-    description: 유스풀패러다임은 높은 생산성을 갖춘 웹 프레임워크인 <a href="http://rubyonrails.org/">루비온레일스</a>(Ruby on Rails)와 여러 오픈소스 도구를 효과적으로 활용하여 고객 니즈에 부합하는 웹서비스를 유연하고 빠르게 구현합니다.
-    details: [루비/레일스 기반 웹서비스 구축, 웹서비스 기획/개발/컨설팅/프로토타이핑, 오픈API 연동/설계/구현]
+  - name: html5mobile
+    title: HTML5 모바일 웹 개발
+    subtitle: HTML5 & Mobile Web Development
+    emblem: /img/emblem-html5.png
+    description: 유스풀패러다임은 HTML5/CSS3로 대표되는 최신 웹 기술을 기반으로 모바일 환경에 최적화된 사용성 높은 웹사이트와 웹애플리케이션을 구현합니다.
+    details: [HTML5 프론트엔드 웹앱 제작, Cordova/PhoneGap 기반 하이브리드앱 제작, 반응형웹(Responsive Web) 지원, 리거시(Legacy) 웹사이트 모바일 대응]
   - name: oss
     title: 오픈소스 기술지원
     subtitle: Open Source Tech Support
