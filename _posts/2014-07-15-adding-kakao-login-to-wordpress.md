@@ -18,7 +18,11 @@ tags: []
 
 이제 이 플러그인에 카카오톡 로그인 부분을 추가해 보기로 하겠습니다. 우선 아래의 다운로드 URL로 접속하여 Kakao.php 라는 파일을 찾아 다운로드하여 WordPress Social Login 플러그인(이하 'WSL')이 설치된 디렉터리 아래의 `hybridauth/Hybrid/Providers` 디렉터리에 복사해 넣습니다.
 
-* [Kakoa.php 다운로드 바로가기](https://github.com/usefulparadigm/hybridauth-kakao)
+<div class="panel panel-default">
+  <div class="panel-body">
+		<a href="https://github.com/usefulparadigm/hybridauth-kakao">Kakoa.php 다운로드 바로가기</a>
+  </div>
+</div>
 
 그 다음으로  워드프레스 테마의 functions.php 파일에 다음 코드를 추가합니다.
 
