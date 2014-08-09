@@ -49,8 +49,8 @@ services:
     - thumbnail: http://cookinfacebook.com/wp-content/uploads/2013/03/niveakorea-review.jpg
       title: 니베아코리아 제품 리뷰 앱
   - name: html5mobile
-    title: HTML5 모바일 웹 개발
-    subtitle: HTML5 & Mobile Web Development
+    title: HTML5 모바일 웹앱 개발
+    subtitle: HTML5 & Mobile Web App Development
     emblem: /img/emblem-html5.png
     description: 유스풀패러다임은 HTML5/CSS3로 대표되는 최신 웹 기술을 기반으로 모바일 환경에 최적화된 사용성 높은 웹사이트와 웹애플리케이션을 구현합니다.
     details: [HTML5 프론트엔드 웹앱 제작, Cordova/PhoneGap 기반 하이브리드앱 제작, 반응형웹(Responsive Web) 지원, 리거시(Legacy) 웹사이트 모바일 대응]
