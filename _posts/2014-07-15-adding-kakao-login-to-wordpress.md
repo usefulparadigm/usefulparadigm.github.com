@@ -37,6 +37,7 @@ tags: []
 	        $WORDPRESS_SOCIAL_LOGIN_PROVIDERS_CONFIG[] = ARRAY(
 	            "provider_id"       => "Kakao",
 	            "provider_name"     => "Kakao",
+	            "require_client_id" => true,
 	            "callback"          => true,
 	            "new_app_link"      => "https://developers.kakao.com/apps/new",
 	            "cat"               => "socialnetworks",
