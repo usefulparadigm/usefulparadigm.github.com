@@ -4,7 +4,8 @@
 permalink: /:year/:month/:day/:title 
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
-markdown: kramdown
+markdown: redcarpet #kramdown
+fenced_code_blocks: true
 highlighter: pygments
 lsi: false
 # auto: true # deprecated

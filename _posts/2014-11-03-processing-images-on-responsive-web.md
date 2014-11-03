@@ -22,7 +22,9 @@ tags: []
 
 2010년의 어느 날 웹 디자이너인 Ethan Marcotte가 처음 [반응형웹이란 개념을 소개](http://alistapart.com/article/responsive-web-design)했을 때만 해도 반응형웹에서 이미지를 어떻게 다루어야 할지에 대해서는 크게 문제가 되지 않는 듯 했다. 통상적으로 반응형웹은 유동(fluid) 레이아웃에 기반하고 유동 레이아웃에서 어떤 요소를 가변적으로 구성하려면 비율값 즉 퍼센트(%) 값을 사용하는게 일반적이므로, 흔히 (그리고 지금까지도) 반응형웹에서 이미지 처리의 기본패턴은 CSS 스타일시트에 다음과 같이 비율폭을 추가하는 것이다.
 
-	img { max-width: 100%; }
+~~~css
+img { max-width: 100%; }
+~~~
 
 사실 반응형 이미지를 위해 처리해줘야 할 부분은 이게 전부이기도 하다. 이렇게만 해도 하나의 이미지가 웹사이트의 가로폭에 맞춰 크기가 가변적으로 조정되고 당연히 페이지의 최대폭을 넘지 않기 때문에 모든 디바이스에서 이미지가 "제대로(넘치지 않고)" 표시되는 것을 보장할 수 있다. 여기에 페이지 레이아웃에 맞춰 미디어별로 이미지 크기를 다르게 설정하는 미디어쿼리(media query)를 가미하면 좀 더 나은 반응형웹을 구현할 수 있다.
 
@@ -68,10 +70,12 @@ tags: []
 
 처음 소개할 방법은 srcset 과 sizes 속성이다. 이 방식은 HTML의 `<img>` 태그에 새로운 속성을 추가하여 반응형 이미지를 처리하는 방식으로 Apple이 처음 제안하여 현재의 웹표준에 이른 방식이며, 예제는 다음과 같다.
 
-	<img src="small.jpg"
-	     srcset="large.jpg 1024w, medium.jpg 640w, small.jpg 320w"
-	     sizes="(min-width: 36em) 33.3vw, 100vw"
-	     alt="A rad wolf">
+~~~html
+<img src="small.jpg"
+     srcset="large.jpg 1024w, medium.jpg 640w, small.jpg 320w"
+     sizes="(min-width: 36em) 33.3vw, 100vw"
+     alt="A rad wolf">
+~~~
 
 (* 예제 출처: [RICG](http://responsiveimages.org/))
 
@@ -83,13 +87,15 @@ srcset과 sizes 속성을 사용하면 앞에서 제기한 네 가지 문제들 
 
 srcset/sizes 속성만으로 해결할 수 없는 문제들, 예컨대 아트 디렉션 처리나 여러 이미지 포맷 지원 등은 `<picture>` 엘리먼트로 해결할 수 있다. `<picture>` 엘리먼트는 [Mat Marquis](http://alistapart.com/article/responsive-images-how-they-almost-worked-and-what-we-need)에 의해 처음 제안되어 현재 W3C의 [Responsive Images Community Group](http://responsiveimages.org/)에 의해 관리되는 웹표준에 이른 반응형 이미지 처리 방법이다. (`<picture>` 엘리먼트가 오늘에 이르기까지의 우여곡절과 웹커뮤니티의 노력은 참고자료 참조)
 
-	<picture>
-	  <source media="(min-width: 40em)"
-	    srcset="big.jpg 1x, big-hd.jpg 2x">
-	  <source 
-	    srcset="small.jpg 1x, small-hd.jpg 2x">
-	  <img src="fallback.jpg" alt="">
-	</picture>
+~~~html
+<picture>
+  <source media="(min-width: 40em)"
+    srcset="big.jpg 1x, big-hd.jpg 2x">
+  <source 
+    srcset="small.jpg 1x, small-hd.jpg 2x">
+  <img src="fallback.jpg" alt="">
+</picture>
+~~~
 
 (* 예제 출처: [RICG](http://responsiveimages.org/))
 
@@ -97,19 +103,21 @@ srcset/sizes 속성만으로 해결할 수 없는 문제들, 예컨대 아트 �
 
 이 `<picture>` 엘리먼트를 이용하면 앞서 `<img>` 태그에 붙여 사용했던 srcset/sizes 방식보다 조금 더 다양한 처리가 가능해 진다. 예를 들어, 아트디렉션(art direction) 은 다음과 같이 처리할 수 있다. 여기서는 미디어쿼리로 width값이 800px 이상인 경우(lighthouse-landscape)와 그 이하인 경우(lighthouse) 각각 다른 이미지를 사용하며 그 결과 좁은 폭의 화면에서는 넓은 폭과는 다른 모양의 이미지가 보여짐을 알 수 있다.
 
-	<picture>
-	  <source media="(min-width: 800px)"
-	          sizes="80vw"
-	          srcset="lighthouse-landscape-640.jpg 640w,
-	                  lighthouse-landscape-1280.jpg 1280w,
-	                  lighthouse-landscape-2560.jpg 2560w">
-	  <img src="lighthouse-160.jpg" alt="lighthouse"
-	       sizes="80vw"
-	       srcset="lighthouse-160.jpg 160w,
-	               lighthouse-320.jpg 320w,
-	               lighthouse-640.jpg 640w,
-	               lighthouse-1280.jpg 1280w">
-	</picture>
+~~~html
+<picture>
+  <source media="(min-width: 800px)"
+          sizes="80vw"
+          srcset="lighthouse-landscape-640.jpg 640w,
+                  lighthouse-landscape-1280.jpg 1280w,
+                  lighthouse-landscape-2560.jpg 2560w">
+  <img src="lighthouse-160.jpg" alt="lighthouse"
+       sizes="80vw"
+       srcset="lighthouse-160.jpg 160w,
+               lighthouse-320.jpg 320w,
+               lighthouse-640.jpg 640w,
+               lighthouse-1280.jpg 1280w">
+</picture>
+~~~
 
 ![](http://usefulpa.s3.amazonaws.com/images/2014/lighthouse-example-picture2X.png)
 
@@ -117,10 +125,12 @@ srcset/sizes 속성만으로 해결할 수 없는 문제들, 예컨대 아트 �
 
 `<picture>` 엘리먼트는 다양한 이미지 형식을 처리하는 데도 사용될 수 있다.  아래 예제를 보면 webp를 지원하는 브라우저인 경우 jpg 파일이 아닌 webp 파일을 표시하도록 하고 있다.
 
-	<picture>
-	  <source type="image/webp" srcset="images/butterfly.webp">
-	  <img src="images/butterfly.jpg" alt="a butterfly">
-	</picture>
+~~~html
+<picture>
+  <source type="image/webp" srcset="images/butterfly.webp">
+  <img src="images/butterfly.jpg" alt="a butterfly">
+</picture>
+~~~
 
 `<picture>` 엘리먼트 관련 더 자세한 내용은 [W3C Draft 문서](http://www.w3.org/TR/html-picture-element/) 참조.
 
