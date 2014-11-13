@@ -89,6 +89,11 @@ $(function() {
 			loadTwitter();
 		}
         
+        // http://www.appelsiini.net/projects/lazyload
+        $("article img").lazyload({
+            effect : "fadeIn"
+        });
+        
 
         // http://kenwheeler.github.io/slick/        
         // $('.work-slider').slick({
