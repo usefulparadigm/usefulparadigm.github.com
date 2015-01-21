@@ -94,6 +94,10 @@ $(function() {
             effect : "fadeIn"
         });
         
+        setTimeout(function() {
+            $('.posts .media-object').addClass('animated swing');
+        }, 3000);
+        
 
         // http://kenwheeler.github.io/slick/        
         // $('.work-slider').slick({
