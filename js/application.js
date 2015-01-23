@@ -94,9 +94,14 @@ $(function() {
             effect : "fadeIn"
         });
         
-        setTimeout(function() {
-            $('.posts .media-object').addClass('animated swing');
-        }, 3000);
+        // Run animate only once in a session
+        if (!$.cookie('animated')) {
+            $('*[data-animate]').each(function() {
+                var $self = $(this);
+                $self.addClass('animated ' + $self.data('animate'))
+            });
+            $.cookie('animated', true);
+        }
         
 
         // http://kenwheeler.github.io/slick/        
