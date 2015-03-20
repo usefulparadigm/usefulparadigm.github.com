@@ -19,17 +19,16 @@
 {% endfor %}
 </ul>
 
-<div class="solutions row">
-  <div class="col-xs-6 col-sm-4">
-    <div class="panel panel-default">
-      <div class="panel-body text-center">
-        <a href="http://www.hashcloud.io/" class="thumbnail orange" target="_blank">
-          <!-- <i class="glyphicon glyphicon-cloud"></i> -->HashCloud.IO
-        </a>
-      </div>
-    </div>
-  </div>  
-</div>
+<ul class="solutions list-unstyled">
+{% for s in page.solutions %}
+<li>
+  <h5>
+    <a href="{{ s.url }}" class="{{ s.classes }}" target="_blank">{{ s.title }}</a> 
+    <small>{{ s.subtitle }}</small>
+  </h5>
+</li>
+{% endfor %}
+</ul>
 
 {% comment %}
 <div class="panel-group" id="accordion">

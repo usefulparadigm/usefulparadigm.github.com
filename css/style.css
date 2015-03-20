@@ -277,8 +277,8 @@ section.main #accordion .panel-heading {
 .panel-group .panel-heading+.panel-collapse .panel-body { border-top: none; }
 /*section.main #accordion .panel-body { border: none; }*/
 
-section.main .page-header { margin-top: 0; }
-section.main .page-header:first-child { margin-top: -1em; }
+/*section.main .page-header { margin-top: 0; }*/
+section.main .page-header:first-child { margin-top: -12px; }
 
 section.main .panel-title .glyphicon { color: #699C30; }
 
@@ -331,10 +331,8 @@ section.main ul.services {
 }
 
 section.main .solutions {
+  border-top: 1px dashed #ededed;
   margin-top: 2em;
-}
-section.main .solutions .thumbnail {
-  margin-bottom: 0;
 }
 
 

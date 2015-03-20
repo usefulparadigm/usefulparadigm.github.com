@@ -60,6 +60,12 @@ services:
     emblem: /img/emblem-oss.png
     description: 유스풀패러다임은 오랜 프로젝트 경험과 다양한 오픈소스 솔루션 지원 경험을 바탕으로 여러분 프로젝트에 가장 잘 맞는 최적의 오픈소스 솔루션을 찾아 프로젝트에 적용할 수 있도록 도와 드립니다.
     details__: [오픈소스 솔루션 소싱, 오픈소스 솔루션 도입 컨설팅, 구축/적용/기술지원, 호스팅 및 유지관리]
+solutions:
+  - name: hashcloud
+    title: HashCloud.IO
+    subtitle: 해시클라우드 | Hashtag Data Platform
+    url: http://www.hashcloud.io/
+    classes: orange
 ---
 
 <!-- Nav tabs -->
