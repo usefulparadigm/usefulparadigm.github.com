@@ -55,6 +55,11 @@ WP-Cron은 크게 **cron 이벤트(event)**라고 부르는 cron 작업 부분�
 		return $schedules;
 	}
 	add_filter( 'cron_schedules', 'my_add_weekly' ); 
+
+참고로, 워드프레스 사이트 내에서 실제로 어떤 cron 작업들이 등록되어 어떻게 실행되고 있는지를 확인해 보려면 [WP Crontrol](https://wordpress.org/plugins/wp-crontrol/) 같은 플러그인을 사용하면 편리하다. 이 플러그인은 실행 중인 cron 작업을 확인할 뿐 아니라 변경/삭제할 수 있는 기능도 제공한다.
+
+![WP Crontrol](http://usefulpa.s3.amazonaws.com/images/2014/screenshot-1.png)
+
 	
 ### WP-Cron 죽이기
 
