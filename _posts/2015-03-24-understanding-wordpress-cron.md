@@ -80,7 +80,7 @@ WP-Cron은 크게 **cron 이벤트(event)**라고 부르는 cron 작업 부분�
 
 그런 다음, 진짜 cron을 깨우자. cron tab에 다음과 같이 wp-cron.php를 호출하는 스크립트를 추가하면 된다. (crontab의 자세한 사용법은 생략한다)
 
-	wget http://www.server.com/wp-cron.php?doing_wp_cron=1 > /dev/null 2>&1
+	wget http://www.server.com/wp-cron.php > /dev/null 2>&1
 
 ### 참고자료
 
