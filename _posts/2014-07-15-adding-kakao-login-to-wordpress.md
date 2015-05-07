@@ -26,11 +26,11 @@ tags: []
 
 그 다음으로  워드프레스 테마의 functions.php 파일에 다음 코드를 추가합니다.
 
-	add_action( 'init', 'usefulpa_add_kakao_provider_to_wsl' );
+	add_action( 'init', 'my_add_kakao_provider_to_wsl' );
 	
-	function usefulpa_add_kakao_provider_to_wsl() {
+	function my_add_kakao_provider_to_wsl() {
 	
-	    if ( function_exists ('wsl_version') ) {
+	    //if ( function_exists ('wsl_version') ) {
 	
 	        global $WORDPRESS_SOCIAL_LOGIN_PROVIDERS_CONFIG;
 	
@@ -42,10 +42,14 @@ tags: []
 	            "new_app_link"      => "https://developers.kakao.com/apps/new",
 	            "cat"               => "socialnetworks",
 	        );
-	    }
+	    //}
 	}
 
-이제 워드프레스의 어드민 대시보드에서 Settings > WP Social Login 메뉴에 접속하면 아래 그림과 같이 카카오 계정을 설정하는 부분이 추가된 것을 확인할 수 있을 것입니다.
+이제 워드프레스의 어드민 대시보드에서 Settings > WP Social Login 메뉴에 접속하면 아래 그림과 "Add more providers" 창에 Kakao 버튼이 추가된 것을 확인할 수 있습니다(이 때 버튼의 이미지가 깨지는 이유는 버튼 이미지 파일을 따로 만들지 않은 탓입니다. 적절한 크기의 Kakao버튼 이미지를 만들어 WSL 플러그인의 assets 폴더 아래에 있는 img 폴더에 넣어주면 됩니다).
+
+![](http://usefulpa.s3.amazonaws.com/images/2014/add-more-providers.png)
+
+이제 이 버튼을 클릭하면 아래와 같이 카카오 계정을 설정하는 부분이 추가된 것을 확인할 수 있을 것입니다.
 
 ![](http://usefulpa.s3.amazonaws.com/images/2014/wsl-dashboard-kakao-login.png)
 
