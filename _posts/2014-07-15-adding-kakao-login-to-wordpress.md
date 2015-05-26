@@ -7,6 +7,13 @@ categories: wordpress
 tags: []
 ---
 
+<div class="panel panel-default">
+  <div class="panel-body" style="background: #eee;">
+    <strong>UPDATE(2015-05-26)</strong> Kakao 로그인이 제대로 작동하지 않는다고 문의주시는 분들이 계셔서, 아래 포스팅의 내용대로 저희 사이트에 <a href="http://blog.usefulparadigm.com/wp-login.php" target="_blank">DEMO</a>를 적용해 두었으니 참고 바랍니다. DEMO 테스트로 로그인한 사용자 정보는 주기적으로 삭제 처리됩니다.
+  </div>
+</div>
+
+
 간혹 워드프레스에 카카오(톡)이나 네이버 계정을 이용한 로그인을 추가하려면 어떻게 해야하는지 문의 주시는 분들이 계셔서 오늘은 카카오 계정 로그인 연동하는 법을 간단하게 소개합니다.
 
 ![](http://usefulpa.s3.amazonaws.com/images/2014/kakao_account_login_btn_large_narrow_ov.png)
