@@ -9,6 +9,14 @@ tags: []
 
 <div class="panel panel-default">
   <div class="panel-body" style="background: #eee;">
+    <strong>UPDATE(2015-06-12)</strong> <a href="https://disqus.com/by/kuthia/" target="_blank">Inho Ahn</a>님이 Wordpress Social Login 플러그인에서 사용하고 있는 라이브러리인 hybridauth의 Kakao Provider와 Naver Provider를 구현한 소스를 댓글로 알려 주셔서 공유합니다. 
+    카카오와 네이버 로그인 연동이 필요하신 분들은 참고 바랍니다. 
+    <a href="https://github.com/jinseokoh/additional-providers" target="_blank">hybridauth providers for Kakao and Naver</a>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-body" style="background: #eee;">
     <strong>UPDATE(2015-05-26)</strong> Kakao 로그인이 제대로 작동하지 않는다고 문의주시는 분들이 계셔서, 아래 포스팅의 내용대로 저희 사이트에 <a href="http://blog.usefulparadigm.com/wp-login.php" target="_blank">DEMO</a>를 적용해 두었으니 참고 바랍니다. DEMO 테스트로 로그인한 사용자 정보는 주기적으로 삭제 처리됩니다.
   </div>
 </div>
