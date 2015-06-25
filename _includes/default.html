@@ -39,6 +39,7 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
     })();
   </script>
+  {% include ga.html %}
   </head>
   <body>
 	  <div id="fb-root"></div>
@@ -121,8 +122,6 @@
 	<script src="/fancyBox/jquery.fancybox.pack.js"></script>
 	<script src="/js/jquery.lazyload.min.js"></script>
 	<script src="/js/application.js"></script>
-
-    {% include ga.html %}
-    {% include piwik.html %}
+  {% include piwik.html %}
   </body>
 </html>
