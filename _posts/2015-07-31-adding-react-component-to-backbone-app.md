@@ -8,9 +8,9 @@ categories: ["web development"]
 
 ![](http://usefulpa.s3.amazonaws.com/images/2014/backbone-plus-react.png)
 
-[React](https://facebook.github.io/react/index.html)는 페이스북에서 공개한 오픈소스 자바스크립트 UI 라이브러리다. [Angular](https://angularjs.org/) 또는 [Ember](http://emberjs.com/)와 같은 다른 자바스크립트 라이브러리들이 주로 UI와 데이터 처리, 그리고 URL 라우팅까지 아우르는 소위 "풀스택(full stack)"의 프레임워크 구성을 가져가는 반면, React는 사용자 인터페이스 부분만 다룬다는 점에서 차이가 있다. 게다가 컴포넌트(web components) 개념을 갖추고 가상돔(Virtual DOM)을 이용한 렌더링 방식을 사용하는 탓에 사용하기 쉽고 UI 처리 속도도 빨라, 아직 v0.13 이라는 낮은 버전임에도 이미 많은 저변을 확보하고 있다.
+알다시피 [React](https://facebook.github.io/react/index.html)는 페이스북에서 공개한 오픈소스 자바스크립트 UI 라이브러리다. [Angular](https://angularjs.org/) 또는 [Ember](http://emberjs.com/)와 같은 다른 자바스크립트 라이브러리들이 주로 UI와 데이터 처리, 그리고 URL 라우팅까지 아우르는 소위 "풀스택(full stack)"의 프레임워크 구성을 가져가는 반면, React는 사용자 인터페이스 부분만 다룬다는 점에서 이들 프레임워크와 차이가 있다. 게다가 컴포넌트(web components) 개념을 갖추고 가상 DOM(Virtual DOM)을 이용한 렌더링 방식을 사용하는 탓에 사용하기 쉽고 UI 처리 속도도 빨라, 아직 v0.13.x 라는 낮은 버전임에도 이미 많은 저변을 확보하고 있다.
 
-이에 비하면 [Backbone](http://backbonejs.org/)은 제법 오래된 축에 속한다. 웹 개발에서 프론트엔드와 자바스크립트의 비중이 커진 무렵, 그 때까지 주로 jQuery로만 작업하던 "기존의 방식"에서 한걸음 더 나아가 프론트엔트 측에도 서버 측의 웹개발과 유사한 MVC(Model-View-Controller) 기반의 패턴을 적용한 시도 중 가장 성공한 케이스 중 하나다. 그러다보니 이미 많은 적용 사례를 갖고 있고 또 Angular나 Ember 같은 다른 프레임워크들에 비해 상대적으로 관례가 적고 "가벼워서" 요즘도 계속 사용되고 있는 자바스크립트 라이브러리의 "고전(classic)"이다.
+이에 비하면 [Backbone](http://backbonejs.org/)은 제법 오래된 축에 속한다. 웹 개발에서 프론트엔드와 자바스크립트의 비중이 커지고 SPA(Single Page App) 개념이 일반화될 무렵, 그때까지 주로 jQuery로만 작업하던 "기존의 방식"에서 한걸음 더 나아가 프론트엔트 측에도 서버 측의 웹개발과 유사한 MVC(Model-View-Controller) 기반의 패턴을 적용한 시도 중 가장 성공한 케이스 중 하나다. 그러다보니 이미 많은 적용 사례를 갖고 있고 또 Angular나 Ember 같은 다른 프레임워크들에 비해 상대적으로 관례가 적고 "가벼워서" 요즘도 계속 사용되고 있는 자바스크립트 라이브러리의 "고전(classic)"이다.
 
 그렇지만 Backbone 라이브러리가 그 자체로는 너무 "기본적인" 내용들만 담고 있다 보니 종종 까다로운 문제를 처리해야 할 때는 여러 가지 직접 해결해야 할 문제들이 생기곤 할 때가 많다. 특히 뷰 처리와 관련해서는, 뷰 템플릿(template)을 처리하거나 중첩된 뷰(nested view)를 다룰 때 또는 뷰와 연결된 여러 이벤트들을 관리하거나 뷰의 상태를 다룰 때 등에서 종종 복잡한 문제와 맞닥뜨릴 때가 있다. 이럴 경우 Backbone 앱의 기본 구조는 그대로 남겨두고 뷰(View) 부분만 React로 교체해 보는 것도 좋은 방법이다. [Backbone의 뷰는 렌더링(rendering)에 있어 특별한 관례를 갖고 있지 않기 때문에](http://backbonejs.org/#View-rendering) React와 연동하여 가상돔(Virtual DOM)을 렌더링하는 것도 얼마든지 가능하기 때문이다.
 
