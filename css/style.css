@@ -220,6 +220,10 @@ header.main ul.buttons li.google a {
     background: url(/img/ico_google.png) no-repeat left center;
     padding-left: 5px;
 }
+header.main ul.buttons li.github a {
+    background: url(/img/ico_github_2.png) no-repeat left center;
+    padding-left: 10px;
+}
 
 
 strong {
