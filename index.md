@@ -63,7 +63,7 @@ services:
 solutions:
   - name: hashcloud
     title: HashCloud.IO
-    subtitle: 해시클라우드 | Hashtag Data Platform
+    subtitle: 해시클라우드 | Hashtag Marketing Platform
     url: http://www.hashcloud.io/
     classes: orange
 ---
