@@ -56,7 +56,7 @@ services:
     details: [HTML5 프론트엔드 웹앱 제작, Cordova/PhoneGap 기반 하이브리드앱 제작, 반응형웹(Responsive Web) 지원, 리거시(Legacy) 웹사이트 모바일 대응]
   - name: oss
     title: 오픈소스 기술지원
-    subtitle: Open Source Tech Support
+    subtitle: Open Source Tech Supports
     emblem: /img/emblem-oss.png
     description: 유스풀패러다임은 오랜 프로젝트 경험과 다양한 오픈소스 솔루션 지원 경험을 바탕으로 여러분 프로젝트에 가장 잘 맞는 최적의 오픈소스 솔루션을 찾아 프로젝트에 적용할 수 있도록 도와 드립니다.
     details__: [오픈소스 솔루션 소싱, 오픈소스 솔루션 도입 컨설팅, 구축/적용/기술지원, 호스팅 및 유지관리]
