@@ -2,20 +2,20 @@
 layout: default
 title: 유스풀패러다임
 tagline: 웹2.0 소프트웨어 서비스 & 솔루션
-description: 웹서비스 개발/컨설팅, 페이스북앱 개발/제작, 워드프레스 테마/플러그인 제작, 오픈소스 솔루션 컨설팅/기술지원, 루비/레일스/얼랭 개발, 워드프레스 웹사이트 제작, 페이스북Facebook/트위터Twitter/소셜웹SocialWeb 개발 및 컨설팅, HTML5 모바일 웹사이트 구축
+description: 웹서비스 개발/컨설팅, 워드프레스 테마/플러그인 개발/제작, 페이스북앱 개발/제작, 오픈소스 솔루션 컨설팅/기술지원, 루비/레일스/얼랭 개발, 워드프레스 웹사이트 제작, 페이스북Facebook/트위터Twitter/소셜웹SocialWeb 개발 및 컨설팅, HTML5 모바일 웹사이트 구축
 jumbotron__:
     title: Start-Up을 응원합니다!
     body: 유스풀패러다임은 새로 시작하는 비즈니스를 위한 기술지원 프로그램을 운영합니다.
 services: 
   - name: webdev
-    title: 웹서비스 개발/ 컨설팅
-    subtitle: Web Services Dev & Consulting
+    title: 웹서비스 개발 & 컨설팅
+    subtitle: Web Service Development & Consulting
     emblem: /img/emblem-rails.jpg
     description: 유스풀패러다임은 높은 생산성을 갖춘 웹 프레임워크인 <a href="http://rubyonrails.org/">루비온레일스</a>(Ruby on Rails)와 여러 오픈소스 도구를 효과적으로 활용하여 고객 니즈에 부합하는 웹서비스를 유연하고 빠르게 구현합니다.
     details: [루비/레일스 기반 웹서비스 구축, 웹서비스 기획/개발/컨설팅/프로토타이핑, 오픈API 연동/설계/구현]
   - name: wordpress
-    title: 워드프레스 테마 제작
-    subtitle: WordPress Theme Development
+    title: 워드프레스 테마/플러그인 제작
+    subtitle: WordPress Theme & Plugin Development
     emblem: /img/emblem-wordpress.png
     description: 유스풀패러다임은 고객 니즈에 부합하는 맞춤형 <a href="http://wordpress.org/">워드프레스</a>(WordPress) 테마를 제작하고 워드프레스 프로젝트에서 발생하는 여러 기술적 문제들을 해결해 드립니다.
     details: [맞춤형 테마(Custom Theme) 제작, API 연동 및 플러그인 제작, 워드프레스 구축 관련 컨설팅/기술지원]
