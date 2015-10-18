@@ -1,6 +1,18 @@
 @import url(//fonts.googleapis.com/css?family=Lato:300italic,700italic,300,700);
 /*@import url(//fonts.googleapis.com/earlyaccess/nanumgothic.css);*/
-@import url('//api.mobilis.co.kr/webfonts/v2/css/NanumGothicWeb');
+/*@import url('http://api.mobilis.co.kr/webfonts/v2/css/NanumGothicWeb');*/
+
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot);
+  src: url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff2) format('woff2'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.woff) format('woff'),
+       url(//fonts.gstatic.com/ea/nanumgothic/v5/NanumGothic-Bold.ttf) format('truetype');
+}
+
 @import url(/css/auticons/auticons.css);
 
 /*https://raw.githubusercontent.com/mrmrs/colors/master/css/colors.css*/
@@ -440,10 +452,11 @@ article footer p.gotop {
   text-align: left;
 }
 
-@media print, screen and (max-width: 320px)  {
+@media print, screen and (max-width: 375px)  {
     section.main .nav { display: none; }
     section.main .emblem { display: none; }
-    section.main .services small { display: none; }
+    section.main .services small { display: block; }
+    section.main .solutions small { display: block; }
     section.main .posts .media > a { display: none; }
 /*    section.main .posts .media .media-body > p { display: none; }*/
 }    
