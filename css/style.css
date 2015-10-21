@@ -457,7 +457,7 @@ article footer p.gotop {
     section.main .emblem { display: none; }
     section.main .services small { display: block; }
     section.main .solutions small { display: block; }
-    section.main .posts .media > a { display: none; }
+/*    section.main .posts .media > a { display: none; }*/
 /*    section.main .posts .media .media-body > p { display: none; }*/
 }    
 
