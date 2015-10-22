@@ -19,35 +19,12 @@ services:
     emblem: /img/emblem-wordpress.png
     description: 유스풀패러다임은 고객 니즈에 부합하는 맞춤형 <a href="http://wordpress.org/">워드프레스</a>(WordPress) 테마를 제작하고 워드프레스 프로젝트에서 발생하는 여러 기술적 문제들을 해결해 드립니다.
     details: [맞춤형 테마(Custom Theme) 제작, API 연동 및 플러그인 제작, 워드프레스 구축 관련 컨설팅/기술지원]
-    references:
-    - title: Discover Hyundai
-      link: http://www.discover-hyundai.com/
-      thumbnail: https://usefulpa.s3.amazonaws.com/images/2014/screenshot-wp-hqtour.png
-    - title: LG CES 2014
-      link: http://ces2014.lgnewsroom.com/
-      thumbnail: https://usefulpa.s3.amazonaws.com/images/2014/screenshot-wp-lgces2014.png
-    - title: 오스터 코리아 공식 웹사이트
-      link: http://www.oster.co.kr/
-      thumbnail: https://usefulpa.s3.amazonaws.com/images/2014/screenshot-wp-osterkr.png
   - name: facebook
     title: 페이스북 앱 제작
     subtitle: Facebook App Development
     emblem: /img/emblem-facebook.png
     description: 유스풀패러다임은 풍부한 페이스북 플랫폼 지식과 다양한 앱 구축 경험을 토대로 고객의 마케팅 니즈에 부합하는 커스텀 앱을 신속하게 제작합니다.
     details: [100% 맞춤형 앱 설계/제작, 데스크톱/모바일 통합, 오픈그래프(Open Graph) 연동, 관리자 기능/분석도구 지원]
-    references:
-    - thumbnail: http://cookinfacebook.com/wp-content/uploads/2013/03/skt-mission3.jpg
-      title: "SKT '좋아요' 사진 릴레이 이벤트 앱"
-    - thumbnail: http://cookinfacebook.com/wp-content/uploads/2013/03/wcg-fantasy.jpg
-      title: WCG 환상의 게임팀 만들기 앱
-    - thumbnail: http://cookinfacebook.com/wp-content/uploads/2013/03/skt-mission1.jpg
-      title: SKT 한줄 시 백일장 이벤트 앱
-    - thumbnail: http://cookinfacebook.com/wp-content/uploads/2013/03/wcg-avatar.jpg
-      title: WCG Avatar 만들기 앱
-    - thumbnail: http://cookinfacebook.com/wp-content/uploads/2013/03/kbstar-20slist.png
-      title: "KB카드 20′s List 투표 이벤트 앱"
-    - thumbnail: http://cookinfacebook.com/wp-content/uploads/2013/03/niveakorea-review.jpg
-      title: 니베아코리아 제품 리뷰 앱
   - name: html5mobile
     title: HTML5 모바일 웹앱 개발
     subtitle: HTML5 & Mobile Web App Development
