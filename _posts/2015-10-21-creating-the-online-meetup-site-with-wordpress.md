@@ -19,6 +19,16 @@ tags: []
 #### 2. [새 모임 개설하기](http://blog.usefulparadigm.com/archives/290) 
 사용자가 프론트엔드(frontend)에서 직접 모임을 만들고 저장할 수 있는 기능을 구현합니다.
 
-#### 3. Coming Soon!
+#### 3. [사용자 로그인하기](http://blog.usefulparadigm.com/archives/291) 
+로그인한 사용자만 모임을 만들 수 있도록 사용자 로그인 기능을 추가합니다.
+
+#### 4. Coming Soon!
+
+<hr>
+
+#### 소스코드:
+
+- [https://github.com/usefulparadigm/moiming-twentyfifteen](https://github.com/usefulparadigm/moiming-twentyfifteen)
+
 
 <br>
