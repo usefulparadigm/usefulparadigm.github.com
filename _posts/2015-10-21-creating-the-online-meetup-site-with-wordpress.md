@@ -22,7 +22,12 @@ tags: []
 #### 3. [사용자 로그인하기](http://blog.usefulparadigm.com/archives/291) 
 로그인한 사용자만 모임을 만들 수 있도록 사용자 로그인 기능을 추가합니다.
 
-#### 4. Coming Soon!
+#### 4. [모임 참가신청 받기](http://blog.usefulparadigm.com/archives/292) 
+사용자가 모임에 참가 신청을 하고 참가신청자 목록을 볼 수 있는 기능을 구현합니다.
+
+#### 5. [지도와 지역별 메뉴](http://blog.usefulparadigm.com/archives/300) 
+모임에 날짜와 장소 정보를 추가하고 장소 정보에 기반한 지역별 메뉴를 구현합니다.
+
 
 <hr>
 
