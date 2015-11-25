@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Calypso와 WordPress의 미래"
-description: WordPress.com의 새로운 프론트엔드 대시보드 "칼립소(Calypso)"가 워드프레스 플랫폼 생태계와 워드프레스의 미래에 어떤 영향과 시사점을 주는지 한번 생각해 봅니다. 
+description: WordPress.com의 새로운 프론트엔드 대시보드 "칼립소(Calypso)"가 출시되었습니다. 칼립소는 워드프레스 플랫폼 생태계와 워드프레스의 미래에 어떤 영향을 주게 될까요? 
 thumbnail: https://usefulpa.s3.amazonaws.com/images/2015/Web_Image_2015-11-25_12-37-21.png
 categories: ["essay", "wordpress"]
 ---
 
-엊그제(11/23) [WordPress.com](https://wordpress.com/)의 개발사이자 운영사인 [Automattic](https://automattic.com/)에서 코드명을 '[칼립소(Calypso)](https://developer.wordpress.com/calypso/)'로 명명한 새로운 워드프레스 어드민 인터페이스를 선보였습니다. 이미 WordPress.com에 적용되었고 설치형 워드프레스를 사용하는 경우도 [JetPack 플러그인](http://jetpack.me/)을 연동한 사이트라면 마찬가지로 이 새 인터페이스를 사용할 수 있습니다. 여기에 더해 칼립소 코드 자체는 오픈소스로 [GitHub](https://github.com/Automattic/wp-calypso)에 공개하였고 [맥 사용자들을 위한 데스크톱용 앱](https://desktop.wordpress.com/)도 함께 출시하였습니다.
+엊그제 2015년 11월 23일, [WordPress.com](https://wordpress.com/)의 개발사이자 운영사인 [Automattic](https://automattic.com/)에서 코드명을 '[칼립소(Calypso)](https://developer.wordpress.com/calypso/)'로 명명한 새로운 워드프레스 어드민 인터페이스를 선보였습니다. 이미 WordPress.com에 적용되었고 설치형 워드프레스를 사용하는 경우도 [JetPack 플러그인](http://jetpack.me/)을 연동한 사이트라면 마찬가지로 이 새 인터페이스를 사용할 수 있습니다. 여기에 더해 칼립소 코드 자체는 오픈소스로 [GitHub](https://github.com/Automattic/wp-calypso)에 공개하였고 [맥 사용자들을 위한 데스크톱용 앱](https://desktop.wordpress.com/)도 함께 출시하였습니다.
 
 ![](https://usefulpa.s3.amazonaws.com/images/2015/introducing-wp-calypso.png)
 
@@ -34,20 +34,20 @@ categories: ["essay", "wordpress"]
 
 ![](https://usefulpa.s3.amazonaws.com/images/2015/wp-architecture-tobe.png)
 
-어찌보면 이번 시도는 이미 시장을 완전히 장악한 벤더가 시도하기엔 조금 무모한 시도 같아 보이기도 합니다. 그래서인지 Automattic의 CEO은 매트 뮬렌웨그((Mattew Mullenweg)는 칼립소 프로젝트를 소개하는 그의 블로그를 다음과 같은 말로 시작하고 있습니다.
+어찌보면 이번 시도는 이미 시장을 완전히 장악한 벤더가 시도하기엔 조금 무모한 시도 같아 보이기도 합니다. 그래서인지 Automattic의 CEO인 매트 뮬렌웨그((Mattew Mullenweg)는 [칼립소 프로젝트를 소개하는 그의 블로그](http://ma.tt/2015/11/dance-to-calypso/)를 다음과 같은 말로 시작하고 있습니다.
 
 > One of the hardest things to do in technology is disrupt yourself.
 
-아마도 쉬운 결정은 아니었을 것입니다. 이미 10년의 역사를 가진, 게다가 지금 현재 가장 높은 시장점유율과 인기를 구가하고 있는 제품이 채택하기엔 더더군다나 쉬운 결정이 아니었으리라 짐작합니다. 그렇지만 변화하는 웹 환경에서 오래도록 살아남기 위해 워드프레스가 취한 이번 결정은 아마도 워드프레스, 그리고 워드프레스 생태계 속에 있는 많은 개발사들과 개발자들에게 많은 도전과 함께 새로운 기회들을 던져 줄 것이라 생각합니다.
+스스로를 뒤엎는 일. 아마도 쉬운 결정은 아니었을 것입니다. 이미 10년의 역사를 가진, 게다가 지금 현재 세상에서 가장 높은 시장점유율과 인기를 구가하고 있는 제품이 채택하기엔 더더군다나 쉬운 결정이 아니었으리라 짐작됩니다. 그렇지만 변화하는 웹과 기술 환경에서 오래도록 살아남기 위해 워드프레스가 취한 이번 결정은 아마도 워드프레스, 그리고 워드프레스 생태계에 속해 있는 많은 개발사들과 개발자들에게 새로운 도전과 함께 새로운 기회들을 던져 줄 것이라 생각이 듭니다.
 
-물론 여러 가지 해결할 문제들이 있습니다. 얼핏 생각해도 PHP 기반으로 되어 있는 워드프레스의 확장시스템을 어떻게 새 시스템으로 교체할 건지, 기존의 플러그인과 테마 시스템과의 관계를 어떻게 가져갈건지 등등. 하지만 칼립소가 세상에 나오기 훨씬 이전부터 워드프레스를 웹 애플리케이션 도구로 사용하려는 시도들이 워드프레스 개발자들 사이에서는 종종 있어왔고, 이제 워드프레스에서 공식적으로 새로운 방향을 제시한 셈이니, 앞으로 더 좋은 생각 더 좋은 시도들이 워드프레스와 오픈소스 커뮤니티 속에서 생겨날 것입니다.
+물론 여러 가지 해결할 문제들도 남아 있습니다. 얼핏 생각해도 PHP 기반으로 되어 있는 워드프레스의 확장시스템을 어떻게 새 시스템으로 교체할 건지, 아직 SEO 측면에서 완전한 해결책이 제시되고 있지 않은 SPA환경을 워드프레스가 어떤 식으로 해결할지, 기존의 플러그인과 테마 시스템과의 관계는 어떻게 가져갈지 등등. 하지만 칼립소가 세상에 나오기 훨씬 이전부터 워드프레스를 웹 애플리케이션 개발을 위한 도구로 활용하려는 움직임들이 워드프레스 개발자들 사이에는 여기저기서 있어 왔고, 이제 워드프레스에서 조차 공식적으로 '새로운 방향'을 제시한 셈이니, 앞으로는 지금까지와는 완전히 차원이 다른 새로운 생각 더 좋은 시도와 실험들이 워드프레스와 오픈소스 커뮤니티에서 생겨날 것은 분명해 보입니다.
 
-아래 표는 [워드프레스 개발자 사이트]()에서 제공하는, 칼립소가 기존의 WordPress.com과 비교해 무엇이 바뀌었는지를 보여주는 표입니다. 
+아래 표는 [워드프레스 개발자 블로그](https://developer.wordpress.com/blog/)에서 제공하는, 칼립소가 기존의 WordPress.com과 비교해 무엇이 바뀌었는지를 보여주는 표입니다. 정말이지, 누구 말처럼, "바뀐 건 오직 하나, 전부!" 이로군요.
 
 ![](https://developer.files.wordpress.com/2015/11/whats-new-wpcom2x2.png)
 출처: [The Story Behind the New WordPress.com](https://developer.wordpress.com/2015/11/23/the-story-behind-the-new-wordpress-com/)
 
-정말이지, 누구 말처럼, "바뀐 건 오직 하나, 전부!" 이로군요. 워드프레스 개발자들에겐 새로운 먹거리가 생긴 셈입니다. :)
+공교롭게도 이번에 칼립스가 발표된 날이 [WordPress.com이 세상에 나온지 꼭 10년이 되는 날](https://en.blog.wordpress.com/2005/11/23/opening-it-up/)이라는군요. 10년이면 긴 세월이죠. 오랜 시간을 워드프레스와 함께 해 온 워드프레스 개발자들에겐 새로운 숙제와 먹거리가 가득 생긴 날입니다. :)
 
 
 
