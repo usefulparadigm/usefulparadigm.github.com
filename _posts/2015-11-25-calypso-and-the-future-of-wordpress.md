@@ -32,7 +32,7 @@ categories: ["essay", "wordpress"]
 
 앞으로의 워드프레스는 아마도 이런 그림이 될 듯 싶습니다. 즉 워드프레스는 콘텐츠를 저장하고 관리하는 API 서버로 동작하고, 대시보드와 테마를 포함한 모든 프론트엔드는 이 API 서버의 클라이언트로서 독립해서 동작하는 방식입니다. 이번의 칼립소 프로젝트는 이에 기반한 워드프레스의 공식적인 첫 번째 시도구요.
 
-![](https://usefulpa.s3.amazonaws.com/images/2015/wp-architecture-tobe.png)
+![](https://usefulpa.s3.amazonaws.com/images/2015/wp-architecture-future.png)
 
 어찌보면 이번 시도는 이미 시장을 완전히 장악한 벤더가 시도하기엔 조금 무모한 시도 같아 보이기도 합니다. 그래서인지 Automattic의 CEO인 매트 뮬렌웨그((Mattew Mullenweg)는 [칼립소 프로젝트를 소개하는 그의 블로그](http://ma.tt/2015/11/dance-to-calypso/)를 다음과 같은 말로 시작하고 있습니다.
 
