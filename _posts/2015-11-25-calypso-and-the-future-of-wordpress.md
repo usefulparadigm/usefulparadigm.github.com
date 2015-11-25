@@ -6,7 +6,7 @@ thumbnail: https://usefulpa.s3.amazonaws.com/images/2015/Web_Image_2015-11-25_12
 categories: ["essay", "wordpress"]
 ---
 
-엊그제 2015년 11월 23일, [WordPress.com](https://wordpress.com/)의 개발사이자 운영사인 [Automattic](https://automattic.com/)에서 코드명을 '[칼립소(Calypso)](https://developer.wordpress.com/calypso/)'로 명명한 새로운 워드프레스 어드민 인터페이스를 선보였습니다. 이미 WordPress.com에 적용되었고 설치형 워드프레스를 사용하는 경우도 [JetPack 플러그인](http://jetpack.me/)을 연동한 사이트라면 마찬가지로 이 새 인터페이스를 사용할 수 있습니다. 여기에 더해 칼립소 코드 자체는 오픈소스로 [GitHub](https://github.com/Automattic/wp-calypso)에 공개하였고 [맥 사용자들을 위한 데스크톱용 앱](https://desktop.wordpress.com/)도 함께 출시하였습니다.
+엊그제(2015/11/23), [WordPress.com](https://wordpress.com/)의 개발사이자 운영사인 [Automattic](https://automattic.com/)에서 코드명을 '[칼립소(Calypso)](https://developer.wordpress.com/calypso/)'로 명명한 새로운 워드프레스 어드민 인터페이스를 선보였습니다. 이미 WordPress.com에 적용되었고 설치형 워드프레스를 사용하는 경우도 [JetPack 플러그인](http://jetpack.me/)을 연동한 사이트라면 마찬가지로 이 새 인터페이스를 사용할 수 있습니다. 여기에 더해 칼립소 코드 자체는 오픈소스로 [GitHub](https://github.com/Automattic/wp-calypso)에 공개하였고 [맥 사용자들을 위한 데스크톱용 앱](https://desktop.wordpress.com/)도 함께 출시하였습니다.
 
 ![](https://usefulpa.s3.amazonaws.com/images/2015/introducing-wp-calypso.png)
 
