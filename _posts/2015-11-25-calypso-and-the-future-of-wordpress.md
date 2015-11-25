@@ -34,7 +34,7 @@ categories: ["essay", "wordpress"]
 
 ![](https://usefulpa.s3.amazonaws.com/images/2015/wp-architecture-future.png)
 
-어찌보면 이번 시도는 이미 시장을 완전히 장악한 벤더가 시도하기엔 조금 무모한 시도 같아 보이기도 합니다. 그래서인지 Automattic의 CEO인 매트 뮬렌웨그((Mattew Mullenweg)는 [칼립소 프로젝트를 소개하는 그의 블로그](http://ma.tt/2015/11/dance-to-calypso/)를 다음과 같은 말로 시작하고 있습니다.
+어떻게 보면 이번 실험은 이미 시장을 완전히 장악한 벤더가 시도하기엔 조금 무모한 실험 같아 보이기도 합니다. 그래서인지 Automattic의 CEO인 매트 뮬렌웨그((Mattew Mullenweg)는 [칼립소 프로젝트를 소개하는 그의 블로그](http://ma.tt/2015/11/dance-to-calypso/)를 다음과 같은 말로 시작하고 있습니다.
 
 > One of the hardest things to do in technology is disrupt yourself.
 
