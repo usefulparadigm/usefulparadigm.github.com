@@ -47,7 +47,7 @@ categories: ["essay", "wordpress"]
 ![](https://developer.files.wordpress.com/2015/11/whats-new-wpcom2x2.png)
 출처: [The Story Behind the New WordPress.com](https://developer.wordpress.com/2015/11/23/the-story-behind-the-new-wordpress-com/)
 
-공교롭게도 이번에 칼립스가 발표된 날이 [WordPress.com이 세상에 나온지 꼭 10년이 되는 날](https://en.blog.wordpress.com/2005/11/23/opening-it-up/)이라는군요. 10년이면 긴 세월이죠. 오랜 시간을 워드프레스와 함께 해 온 워드프레스 개발자들에겐 새로운 숙제와 먹거리가 가득 생긴 날입니다. :)
+공교롭게도 이번에 칼립스가 발표된 날이 [WordPress.com이 세상에 나온지 꼭 10년이 되는 날](https://en.blog.wordpress.com/2005/11/23/opening-it-up/)이라는군요. 10년이면 긴 세월이죠. 오랜 시간을 워드프레스와 함께 해 온 워드프레스 개발자들에겐 새로운 숙제와 먹거리가 가득 생긴 날이기도 합니다. :)
 
 
 
