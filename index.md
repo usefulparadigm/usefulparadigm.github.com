@@ -39,9 +39,9 @@ services:
     details__: [오픈소스 솔루션 소싱, 오픈소스 솔루션 도입 컨설팅, 구축/적용/기술지원, 호스팅 및 유지관리]
 solutions:
   - name: hashcloud
-    title: HashCloud.IO
+    title: HashCloud
     subtitle: 해시클라우드 | Hashtag Marketing Platform
-    url: http://www.hashcloud.io/
+    url: http://www.hashcloud.kr/
     classes: orange
 ---
 
