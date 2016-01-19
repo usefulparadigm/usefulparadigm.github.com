@@ -9,9 +9,15 @@ tags: []
 
 <div class="panel panel-default">
   <div class="panel-body" style="background: #eee;">
+    <p>  
+    <strong>UPDATE(2016-01-19)</strong> <a href="https://disqus.com/by/thisgun/" target="_blank">thisgun</a>님이 별도의 코딩 작업 없이 카카오와 네이버 로그인 기능을 추가할 수 있는 Wordpress Social Login 확장 플러그인을 개발하셨다고 댓글로 알려 주셨습니다. 감사드리며, 필요하신 분들은 참고 바랍니다: 
+    <a href="http://sir.co.kr/gnucommerce_tip/6" target="_blank">워드프레스에서 네이버 와 카카오 로그인 사용하기</a>
+    </p>
+    <p>  
     <strong>UPDATE(2015-06-12)</strong> <a href="https://disqus.com/by/kuthia/" target="_blank">Inho Ahn</a>님이 Wordpress Social Login 플러그인에서 사용하고 있는 라이브러리인 hybridauth의 Kakao Provider와 Naver Provider를 구현한 소스를 댓글로 알려 주셔서 공유합니다. 
-    카카오와 네이버 로그인 연동이 필요하신 분들은 참고 바랍니다. 
+    카카오와 네이버 로그인 연동이 필요하신 분들은 참고 바랍니다:
     <a href="https://github.com/jinseokoh/additional-providers" target="_blank">hybridauth providers for Kakao and Naver</a>
+    </p>
   </div>
 </div>
 
