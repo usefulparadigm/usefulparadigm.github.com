@@ -4,7 +4,7 @@ title: 웹앱을 위한 REST API 서버 솔루션들
 description: 프론트엔드 웹앱을 지원하기 위한 REST API 서버로 사용할 수 있는 솔루션에는 어떤 것들이 있을까요? 구축형과 설치형, 그리고 클라우드 서비스로 나눠 간단하게 몇 가지 솔루션들을 소개합니다. 
 thumbnail: https://usefulpa.s3.amazonaws.com/images/2015/Web_Image_2015-09-08_10-05-07.png
 categories: ["web development"]
-tags: []
+tags: [rest, webservice, api, solution]
 ---
 
 ![REST API Server Solutions](https://usefulpa.s3.amazonaws.com/images/2015/rest-api-server-solutions.png)

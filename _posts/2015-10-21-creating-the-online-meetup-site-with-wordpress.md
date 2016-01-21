@@ -4,7 +4,7 @@ title: 워드프레스로 웹서비스(온라인 모임) 만들기
 description: 워드프레스로 웹서비스 만들기 튜토리얼을 연재합니다. 서비스 주제는 온라인 모임이며 사용자가 직접 사이트에 접속하여 모임 정보를 올리고 공유할 수 있는 간단한 웹서비스입니다. 
 thumbnail: https://usefulpa.s3.amazonaws.com/images/2015/moiming-thumbnail-480.png
 categories: ["web development", "wordpress"]
-tags: []
+tags: [wordpress, website, webservice, meetup, rest, api]
 ---
 
 ![](http://usefulpa.s3.amazonaws.com/usefulpablog/2015/10/moiming-featured-cover.png)

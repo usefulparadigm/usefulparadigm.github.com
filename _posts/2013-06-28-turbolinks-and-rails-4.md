@@ -4,7 +4,7 @@ title: 터보링크(Turbolinks)와 레일스 4.0
 description: 레일스 4.0 파이널 버전이 출시되었습니다. 4.0 릴리즈 소식을 전하는 레일스 블로그에서 비중있게 소개하고 있는 터보링크(Turbolinks)의 개념과 장단점 등을 소개합니다.
 thumbnail: http://usefulpa.s3.amazonaws.com/images/2013/pjax-requests.jpg
 category: ruby 
-tags: []
+tags: [rails, turbolink, ruby, ajax, pjax]
 ---
 
 엊그제 [레일스(Ruby on Rails)](http://rubyonrails.org/) 4.0 파이널 버전이 공식적으로 릴리즈 되었다. 2.x 버전에서 3.0 버전으로 넘어올 때 만큼 눈에 띄는 큰 변화는 없지만 그래도 프레임워크 전반에 걸쳐 작은 부분까지 놓치지 않고 세심하게 가다듬은 흔적들이 눈에 띄어 반갑다. 4.0 릴리즈 소식을 전하는 [루비온레일스 블로그](http://weblog.rubyonrails.org/)에서 특히 눈에 띈 부분은 터보링크(Turbolinks)를 비중있게 소개하고 있다는 점. 다음은 블로그에서 적힌 터보링크에 대한 소개다:

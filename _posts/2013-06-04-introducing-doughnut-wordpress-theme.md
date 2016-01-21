@@ -4,7 +4,7 @@ title: "도넛(Doughnut), 다음 Dough 기반 워드프레스 테마"
 description: 도넛(Doughnut)은 다음 커뮤니케이션에서 제작한 CSS 기반 UI 프레임워크인 Dough(도우)에 기반한 오픈소스 워드프레스 테마입니다.
 thumbnail: http://usefulpa.s3.amazonaws.com/images/2013/daum-dough.png
 category: wordpress
-tags: []
+tags: [theme, dough, wordpress]
 ---
 
 구글링을 하다 보면 아주 좋은 오픈소스 CSS 프레임워크들을 많이 만나게 됩니다. 대표적인 것이 트위터가 만들어 공개한 [Bootstrap](http://twitter.github.io/bootstrap/)이고, 그 밖에도 [Foundation](http://foundation.zurb.com/)이나 [Pure](http://purecss.io/) 등 멋진 라이브러리들이 즐비하기 때문에 무엇을 선택할까가 오히려 고민인 경우가 많습니다. 아! 물론 이건 어디까지나 CSS3와 반응형 웹 디자인 등 최신 프론트엔드 디자인 흐름을 반영한 CSS 프레임워크들을 말하며, Blueprint나 960gs 같은 예전 그리드 방식의 CSS 프레임워크는 논외입니다.

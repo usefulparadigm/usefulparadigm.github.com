@@ -4,7 +4,7 @@ title: OSX에서 Docker로 개발환경 구성하기
 description: Docker는 리눅스 컨테이너(LXC) 기반 초경량 가상화 솔루션입니다. 이 글에서는 Docker를 이용하여 OSX에서 Node.js 애플리케이션 개발환경을 구성하는 방법을 소개합니다.
 thumbnail: http://usefulpa.s3.amazonaws.com/images/2014/Screenshot_20140210_140908.png
 categories: [web development, oss]
-tags: []
+tags: [docker, osx, devops]
 ---
 
 [Docker](https://www.docker.io/)는 리눅스 기반의 가상화 솔루션입니다. Docker가 다른 가상화 솔루션들과 다른 점은 [리눅스 LXC](http://linuxcontainers.org/)를 기반으로 가상화 환경을 구성하는 탓에 기존 가상화 솔루션에 비해 훨씬 가볍게 가상화 환경을 구성할 수 있다는 점입니다. Docker에서는 이 가상화 공간을 "컨테이너(container)"라고 부르는데, [Docker 소개 페이지](https://www.docker.io/the_whole_story/)에도 나와 있듯 마치 물류 환경에서의 화물 컨테이너와 같은 역할을 합니다.

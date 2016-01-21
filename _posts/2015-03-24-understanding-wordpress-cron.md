@@ -4,7 +4,7 @@ title: 워드프레스와 Cron
 description: WP-Cron은 워드프레스에서 작동하는 cron 시스템으로 Unix/Linux 시스템의 cron과 유사한 기능을 수행합니다. WP-Cron이 무엇이고 어떻게 동작하는지 개념과 사용법을 소개합니다.
 thumbnail: http://usefulpa.s3.amazonaws.com/images/2014/wp_cron_clock.jpg
 category: wordpress 
-tags: []
+tags: [wordpress, cron, devops]
 ---
 
 ![](http://usefulpa.s3.amazonaws.com/images/2014/wordpress_wp_cron.png)

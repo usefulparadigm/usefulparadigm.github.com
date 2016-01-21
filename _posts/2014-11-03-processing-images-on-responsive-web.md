@@ -4,7 +4,7 @@ title: 반응형웹과 Responsive Image 처리
 description: 반응형웹은 모바일과 데스크톱을 아우르는 다양한 디바이스에 효과적으로 대응하기 위한 프론트엔드 웹 기술입니다. 이 글은 반응형웹에서 특히 문제가 되는 이미지(image) 파일의 처리에 대해 소개합니다. 
 thumbnail: http://usefulpa.s3.amazonaws.com/images/2014/econo-is-responsive.png
 category: web development 
-tags: []
+tags: [responsive, image, frontend, layout]
 ---
 반응형웹(responsive web)이 대세가 된지 오래다. 국내외를 막론하고 새로 만들어지는 웹사이트 중 반응형웹을 지원하지 않는 곳은 찾아보기 힘들 정도다. 알다사피 반응형웹 혹은 [반응형웹 디자인(responsive web design, 줄여서 RWD)](http://en.wikipedia.org/wiki/Responsive_web_design)이란, 마치 예전에 Ajax가 그랬듯, 기존에 나와 있던 몇몇 개념들이 결합되어 만들어진 개념으로, 하나의 웹페이지만으로 모바일과 데스크톱을 아우르는 다양한 디바이스에 효과적으로 대응하기 위해 만들어진 프론트엔트 웹개발 방법이다. 
 

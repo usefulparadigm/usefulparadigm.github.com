@@ -4,7 +4,7 @@ title: "워드프레스에 카카오 계정 로그인 추가하기"
 description: 워드프레스에 소셜 로그인 기능을 추가해 보세요! 카카오(Kakao)나 네이버(Naver) 같은 국내 서비스 계정을 이용한 로그인도 간단하게 추가할 수 있습니다.
 thumbnail: http://usefulpa.s3.amazonaws.com/images/2014/wordpress-kakao-social-login.png
 categories: wordpress
-tags: []
+tags: [wordpress, kakao, naver, authentication, social, login]
 ---
 
 <div class="panel panel-default">

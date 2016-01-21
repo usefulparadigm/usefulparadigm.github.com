@@ -1,0 +1,18 @@
+{% if page.tags and page.tags != empty %}
+<section class="related-posts">
+<h4 class="title">Related Posts</h4>
+<ul>
+  {% for post in site.posts %}
+    {% if post.url != page.url %}	
+      {% for tag in page.tags %} 
+        {% if post.tags contains tag %}
+          <li><a href="{{ post.url }}">{{ post.title }}</a><br /></li>
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+</ul>
+<br />
+</section>
+{% endif %}    

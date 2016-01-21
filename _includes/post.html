@@ -17,15 +17,15 @@
 	</p>	
 
 	<footer>
-    <section>
-  		{% unless page.tags == empty %}
+    <!-- <section>
+          {% unless page.tags == empty %}
         <h1>Tags:</h1>
         <ul>
         {% assign tags_list = page.tags %}
         {% include JB/tags_list %}
         </ul>
       {% endunless %}
-    </section>
+    </section> -->
 
     <section>
       {% unless page.categories == empty %}
@@ -37,10 +37,13 @@
       {% endunless %}
     </section>
 
-    <p class="gotop">
+    <!-- <p class="gotop">
       <a href="#page">Back to Top</a>
-    </p>
+    </p> -->
+    
 	</footer>
 
+	{% include related-posts.html %}
 	{% include disqus.html %}
+
 </article>

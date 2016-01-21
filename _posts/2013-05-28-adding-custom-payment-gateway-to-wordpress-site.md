@@ -3,7 +3,7 @@ layout: post
 title: "워드프레스 사이트에 결제모듈 연동하기"
 description: "워드프레스에는 쇼핑몰을 만들어 주는 좋은 플러그인들이 많이 있다. 다만 이들 플러그인이 국내에서 제작된 것이 아닌 탓에 국내 PG사 결재 연동을 위한 부분은 지원하지 않는다. 이 글에서는 워드프레스 쇼핑몰 플러그인 중 하나인 WP e-Commerce에 국내 PG사 중 한 곳인 올더게이트allthegate PG 모듈을 연동하는 방법을 소개한다."
 category: wordpress
-tags: []
+tags: [wordpress ecommerce payment]
 ---
 
 작년 초에 [워드프레스로 웹사이트 만들기](http://usefulparadigm.com/2012/03/17/creating-static-website-with-wordpress/)를 포스팅할 때만 해도 국내에는 워드프레스와 관련하여 참고할만한 자료나 문서가 많이 부족했지만, 요즘은 서점에만 나가도 워드프레스 관련 책들이 넘친다. 불과 1년 여만에 정말이지 놀라운 변화다. 그만큼 관심도 많아졌고 또 저변도 넓어졌다는 얘기니 워드프레스를 좋아하는 한 사람으로 즐거운 변화가 아닐 수 없다.
