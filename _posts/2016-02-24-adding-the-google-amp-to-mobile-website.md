@@ -120,6 +120,10 @@ CMS를 사용하고 있는 경우라면, 아마도 곧 많은 CMS가 AMP를 지�
 
 **워드프레스**는 AMP가 출시된 이후로 계속해서 [AMP 프로젝트와 보조를 맞추어 오고 있다](https://vip.wordpress.com/2015/10/07/mobile-web/amp/). 워드프레스 개발사인 Automattic이 참여하여 최근 출시한 [AMP 플러그인](https://wordpress.org/plugins/amp/) 같은 경우, 플러그인을 설치하는 것만으로 AMP 문서를 자동 생성해 준다. 또한 워드프레스닷컴(wordpress.com) 사이트의 경우 [워드프레스가 이미 자동으로 AMP 문서를 생성](https://en.blog.wordpress.com/2016/02/24/amp-for-wordpress-dot-com/amp/)하기 때문에 사용자가 별도로 할 일은 없다.
 
+또한 일반적인 워드프레스 사용자들이라면 구글 AMP 뿐 아니라 페이스북 Instant Articles와 애플의 Apple News 포맷까지 모두 지원하는 [PageFrog](http://pagefrog.com/)라는 플러그인도 이미 나와 있기 때문에 이를 검토해 봐도 좋을 듯 싶다.
+
+![PageFrog](https://usefulpa.s3.amazonaws.com/images/2015/pagefrog-screenshot-1.png)
+
 ## AMP의 현재와 미래
 
 구글 검색엔진은 어떤 웹문서가 AMP 버전의 문서를 가질 경우 이 문서를 처리하여 모바일 웹 검색결과에 AMP 문서임을 표시하고 사용자가 AMP 문서가 딸린 웹문서를 모바일 디바이스를 통해 클릭했을 경우 기존 웹문서가 아닌 AMP 문서를 보여준다(2016-02-24 현재, [구글 검색에 이미 적용되었다고 보도](http://searchengineland.com/live-google-launches-amp-results-in-mobile-search-results-243147)되고 있지만, 아직 국내에는 적용되지 않은 듯 하다). 번개마크 달린 AMP 아이콘이 표시(아래 그림) 되는데, 공교롭게도 페이스북의 인스턴트 아티클도 포스팅 위에 번개마크를 표시하고 있어 재밌다.
