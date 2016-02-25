@@ -7,13 +7,13 @@ category: ["mobile", "web development"]
 tags: ["future", "mobile", "google"]
 ---
 
-최근 모바일 콘텐츠 플랫폼을 둘러 싼 속도(speed) 경쟁이 뜨겁다. 작년 초 페이스북(Facebook)이 자사의 모바일 앱에 최적화된 콘텐츠를 제공하는 [인스턴트 아티클](https://instantarticles.fb.com/)(Instant Articles)을 출시한 것을 시작으로, 이어 애플이 [애플뉴스](https://www.apple.com/news/)를, 그리고 지난해 하반기에 구글이 [AMP](https://www.ampproject.org/)(Accelerated Mobile Pages, 우리말로는 "빠른 게재 모바일 페이지")라는 모바일 콘텐츠 최적화 표준을 들고 나오면서 소위 "인스턴트(instant)"한 콘텐츠를 앞세운 플랫폼 간의 경쟁이 본격화된 듯 하다. 
+최근 모바일 콘텐츠 플랫폼을 둘러 싼 속도(speed) 경쟁이 뜨겁다. 작년 초 페이스북(Facebook)이 자사의 모바일 앱에 최적화된 콘텐츠를 제공하는 [인스턴트 아티클](https://instantarticles.fb.com/)(Instant Articles)을 출시한 것을 시작으로, 이어 애플이 [애플뉴스](https://www.apple.com/news/)를, 그리고 지난해 하반기에 구글이 [AMP](https://www.ampproject.org/)(Accelerated Mobile Pages, 우리말로는 "빠른 게재 모바일 페이지")라는 모바일 콘텐츠 최적화 표준을 들고 나오면서 소위 "인스턴트(instant)"한 콘텐츠를 앞세운 플랫폼 간의 경쟁이 가속화된 듯 하다. 
 
 이 중 구글이 제시한 모바일 콘텐츠 최적화 표준인 AMP에 대해 조금 알아보기로 하자.
 
 ![Google AMP Project](https://usefulpa.s3.amazonaws.com/images/2015/google-amp-project.png)
 
-## AMP란 무엇인가?
+## AMP란?
 
 AMP는 한마디로 말해 모바일 콘텐츠 최적화 표준이다. 뉴스나 블로그 같은 정적인 콘텐츠를 만들어 배포하는 온라인 매체가 이 AMP 표준에 맞춰 콘텐츠를 작성하여 게시하면 기존의 모바일 콘텐츠보다 [약 15% ~ 85%의 성능 향상을 가져올 수 있다](https://www.ampproject.org/how-it-works/)고 구글은 주장한다. 이를 위해 AMP는 웹 콘텐츠 제작에 사용되는 기술에 제약을 가한다. 한마디로 속도를 떨어뜨리는 기술의 사용을 배제함으로써 속도의 향상을 꽤하는 방법인 셈이다.
 
@@ -22,7 +22,7 @@ AMP는 한마디로 말해 모바일 콘텐츠 최적화 표준이다. 뉴스나
 - [일반적인 HTML 페이지](https://www.washingtonpost.com/lifestyle/style/six-ways-the-martian-subverts-expectations/2015/10/05/6bba4d42-6873-11e5-8325-a42b5a459b1e_story.html)
 - [AMP 페이지](https://www.washingtonpost.com/amphtml/lifestyle/style/six-ways-the-martian-subverts-expectations/2015/10/05/6bba4d42-6873-11e5-8325-a42b5a459b1e_story.html)
 
-보면 알 수 있듯, AMP 페이지는 일반적인 HTML 페이지에서 '불필요한'(?) 많은 요소들을 제거하여 "알맹이"만 남겨 둔다(그러니 당연히 속도는 빠를 밖에).
+보면 알 수 있듯, AMP 페이지는 일반적인 HTML 페이지에서 광고나 자바스크립트, CSS 애니메이션 등과 같은 동적인 요소들을 제거하여 "알맹이"만 남겨 둔다. 물론 그렇다고 광고나 자바스크립트를 삽입하지 못한다는 의미는 아니고, 구글 AMP에서 정한 규약에 맞춰야 한다는 말이다. 통상적으로 웹사이트에서 속도를 느리게 만드는 요소들에 제약을 가하니 당연히 속도는 빨라 질 밖에 없다.
 
 ![일반 웹문서 vs. AMP 문서](https://usefulpa.s3.amazonaws.com/images/2015/normal-html-vs-amp.png)
 -- 출처: Washington Post
@@ -33,7 +33,7 @@ AMP는 한마디로 말해 모바일 콘텐츠 최적화 표준이다. 뉴스나
 - AMP JS
 - Google AMP Cache
 
-이 중 AMP HTML은 기존의 HTML 문서에서 속도에 부담을 주는 요소를 배제하고 몇몇 확장 속성들을 추가한 일종의 HTML 확장이고, AMP JS는 이런 AMP HTML을 읽고 렌더링하는 런타임(Runtime)이며, Google AMP Cache는 구글이 제공하는 AMP HTML 문서의 캐싱 서비스이다. 즉 AMP 문서를 만들어 올리면 구글이 자체 CDN을 통해 더 빠른 액세스를 할 수 있게 해주는 것이다. 
+이 중 AMP HTML은 기존의 HTML 문서에서 속도에 부담을 주는 요소를 배제하고 몇몇 확장 속성들을 추가한 일종의 HTML 확장이고, AMP JS는 이런 AMP HTML을 읽고 렌더링하는 런타임(Runtime) 이다. 그리고 Google AMP Cache는 구글이 제공하는 AMP HTML 문서의 캐싱 서비스이다. 즉 AMP 문서를 만들어 올리면 구글이 자체 CDN을 통해 더 빠른 액세스를 할 수 있게 해주는 것이다. 
 
 이렇게 작성된 AMP, 즉 "빠른 게재 모바일 페이지"는 모바일 디바이스 환경에서 구글 검색(Google Search)을 수행할 경우 기존의 웹페이지를 대체하여 보여지게 되고, 따라서 사용자는 보다 빠른 모바일 사용자 경험을 얻게 되는 것이다.
 
@@ -101,6 +101,8 @@ HTML 문서의 형식은 일반적인 문서와 다를 게 없어 보이지만 h
 
 	<link rel="amphtml" href="https://www.example.com/url/to/amp/document.html">
 
+![원본문서와 AMP문서 간 연결](https://usefulpa.s3.amazonaws.com/images/2015/amphtml-canonical-link.png)
+
 ## AMP 문서 검증하기
 
 이렇게 만든 AMP 문서는 구글 크롬 브라우저의 개발자 도구 콘솔을 통해 검증(validation)할 수 있다. AMP 문서 URL 뒤에 `#development=1` 해시문자열을 추가하면 검증 결과가 콘솔에 표시된다.
@@ -116,19 +118,19 @@ CMS를 사용하고 있는 경우라면, 아마도 곧 많은 CMS가 AMP를 지�
 - [amp-jekyll](https://github.com/juusaw/amp-jekyll)
 - [ampproject/docs](https://github.com/ampproject/docs)
 
-**워드프레스**는 AMP가 출시된 이후로 계속해서 [AMP 프로젝트와 보조를 맞추어 오고 있다](https://vip.wordpress.com/2015/10/07/mobile-web/amp/). 워드프레스 개발사인 Automattic이 참여하여 최근 출시한 [AMP 플러그인](https://wordpress.org/plugins/amp/) 같은 경우, 플러그인을 설치하는 것만으로 AMP 문서를 자동 생성해 준다.
+**워드프레스**는 AMP가 출시된 이후로 계속해서 [AMP 프로젝트와 보조를 맞추어 오고 있다](https://vip.wordpress.com/2015/10/07/mobile-web/amp/). 워드프레스 개발사인 Automattic이 참여하여 최근 출시한 [AMP 플러그인](https://wordpress.org/plugins/amp/) 같은 경우, 플러그인을 설치하는 것만으로 AMP 문서를 자동 생성해 준다. 또한 워드프레스닷컴(wordpress.com) 사이트의 경우 [워드프레스가 이미 자동으로 AMP 문서를 생성](https://en.blog.wordpress.com/2016/02/24/amp-for-wordpress-dot-com/amp/)하기 때문에 사용자가 별도로 할 일은 없다.
 
 ## AMP의 현재와 미래
 
-구글 검색엔진은 어떤 웹문서가 AMP 버전의 문서를 가질 경우 이 문서를 처리하여 모바일 웹 검색결과에 AMP 문서임을 표시하고 사용자가 AMP 문서가 딸린 웹문서를 모바일 디바이스를 통해 클릭했을 경우 기존 웹문서가 아닌 AMP 문서를 보여준다고 한다(2016-02-24 현재, [구글 검색에 이미 적용되었다고 보도](http://searchengineland.com/live-google-launches-amp-results-in-mobile-search-results-243147)되고 있지만, 아직 국내에는 적용되지 않은 듯 하다). 번개마크 달린 AMP 아이콘이 표시(아래 그림) 되는데, 공교롭게도 페이스북의 인스턴트 아티클도 포스팅 위에 번개마크를 표시하고 있어 재밌다.
+구글 검색엔진은 어떤 웹문서가 AMP 버전의 문서를 가질 경우 이 문서를 처리하여 모바일 웹 검색결과에 AMP 문서임을 표시하고 사용자가 AMP 문서가 딸린 웹문서를 모바일 디바이스를 통해 클릭했을 경우 기존 웹문서가 아닌 AMP 문서를 보여준다(2016-02-24 현재, [구글 검색에 이미 적용되었다고 보도](http://searchengineland.com/live-google-launches-amp-results-in-mobile-search-results-243147)되고 있지만, 아직 국내에는 적용되지 않은 듯 하다). 번개마크 달린 AMP 아이콘이 표시(아래 그림) 되는데, 공교롭게도 페이스북의 인스턴트 아티클도 포스팅 위에 번개마크를 표시하고 있어 재밌다.
 
 <img src="https://usefulpa.s3.amazonaws.com/images/2015/Web_Image_2016-02-24_17-09-37.png" alt="AMP 적용 예제" width="300px">
 
 아직 국내에서는 AMP를 적용한 사례는 없어 보이지만 아마도 [곧 많은 언론사 사이트와 온라인 매체가 AMP를 적용할 것](http://www.bloter.net/archives/250056)으로 보인다. 게다가 페이스북이 [올 4월에 있을 F8 컨퍼런스에서 인스턴트 아티클을 모든 매체에 개방](http://media.fb.com/2016/02/17/opening-up-instant-articles/)하기로 이미 선언한 상태이기에 두 "빠름" 간의 경쟁도 더욱 가속화될 듯 싶다.
 
-다만 AMP가 W3C 표준은 아니라는 점, 다른 벤더들의 참여와 지원이 얼마나 되느냐 하는 점, 원본 문서와는 별개로 또 하나의 문서를 만들어야 한다는 온라인 매체(콘텐츠 제공자)들의 부담과 마치 "손발 다 묶고 뛰는" 듯한 콘텐츠 작성의 제약조건들은 AMP가 앞으로 풀어야 할 숙제로 보인다.
+다만 AMP가 W3C 표준은 아니라는 점, 다른 콘텐츠 관련 벤더들의 참여와 지원이 얼마나 되느냐 하는 점, 원본 문서와는 별개로 또 하나의 문서를 만들어야 한다는 온라인 매체(콘텐츠 제공자)들의 부담 등은 AMP가 앞으로 풀어야 할 숙제로 보인다. 물론 앞으로 모바일 디바이스 성능이 더 좋아져 AMP 같은 해법이 필요 없어질 날이 오면 더 좋겠지만.
 
-마침 지난 해 가을에 서울에서 열린 "Google for Mobile 2015" 컨퍼런스 동영상이 최근 공개가 되었다. 그 날 세션 중 AMP를 소개한 세션 영상이 들어 있으니, 시간나는 분들은 한번 보는 것도 좋을 듯 싶다.
+마침 지난 해 가을에 서울에서 열린 "[Google for Mobile 2015](https://www.youtube.com/watch?v=3omUr_q_wz0&list=PL6OeXcmhVzfSsbqs0hAfOnRuSFulsfopX)" 컨퍼런스 동영상이 최근 공개가 되었다. 그 날 세션 중 AMP를 소개한 세션 영상이 들어 있으니, 시간나는 분들은 한번 보는 것도 좋을 듯 싶다.
 
 <iframe width="560" height="315" style="width: 100%" src="https://www.youtube.com/embed/mrjzoH-rvjI" frameborder="0" allowfullscreen></iframe>
 
