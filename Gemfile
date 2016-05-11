@@ -11,3 +11,4 @@ source "https://rubygems.org"
 # gem 'RedCloth',   '=4.2.9'
 
 gem 'github-pages'
+gem 'jekyll-seo-tag' # https://github.com/jekyll/jekyll-seo-tag
