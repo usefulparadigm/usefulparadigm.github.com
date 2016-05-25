@@ -3,9 +3,6 @@ layout: default
 title: 유스풀패러다임
 tagline: 웹2.0 소프트웨어 서비스 & 솔루션
 description: 웹서비스 개발/컨설팅, 워드프레스 테마/플러그인 개발/제작, 페이스북앱 개발/제작, 오픈소스 솔루션 컨설팅/기술지원, 루비/레일스/얼랭 개발, 워드프레스 웹사이트 제작, 페이스북Facebook/트위터Twitter/소셜웹SocialWeb 개발 및 컨설팅, HTML5 모바일 웹사이트 구축
-jumbotron__:
-    title: Start-Up을 응원합니다!
-    body: 유스풀패러다임은 새로 시작하는 비즈니스를 위한 기술지원 프로그램을 운영합니다.
 services: 
   - name: webdev
     title: 웹서비스 개발 & 컨설팅
