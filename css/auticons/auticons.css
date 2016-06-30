@@ -39,20 +39,20 @@ a:before { padding-right: 0.125em }
 ----------------------------------------------------------------------
 */
 
-/*[target="_blank"]:after {
+[target="_blank"]:after {
 	content:'\E002';
 	font-size: 0.85em;
 	vertical-align: super;
-}*/
+}
 
 /**
 * LINKS TO SECURE PAGES
 ----------------------------------------------------------------------
 */
 
-/*[href^="https:"]:before {
+[href^="https:"]:before {
 	content:'\E017';
-}*/
+}
 
 /**
 * LINK RELATIONS (http://blog.whatwg.org/the-road-to-html-5-link-relations)
@@ -201,6 +201,47 @@ a:before { padding-right: 0.125em }
 	content: '\E004';
 }
 
+/**
+* COMMON SOCIAL PROFILES
+----------------------------------------------------------------------
+*/
+
+/* twitter */
+
+[href*="twitter.com/"]:before {
+	content: '\E013';
+}
+
+/* facebook */
+
+[href*="facebook.com/"]:before {
+	content: '\E010';
+}
+
+/* linkedin */
+
+[href*="linkedin.com/"]:before {
+	content: '\E011';
+}
+
+/* google+ */
+
+[href*="plus.google.com/"]:before {
+	content: '\E012';
+}
+
+/* youtube */
+
+[href*="youtube.com/"]:before,
+[href*="youtu.be/"]:before {
+	content: '\E014';
+}
+
+/* github */
+
+[href*="github.com/"]:before {
+	content: '\E023';
+}
 
 /**
 * ARIA PRESSED
