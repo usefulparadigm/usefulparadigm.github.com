@@ -1,0 +1,10 @@
+<div class="row" id="external_posts">
+  <div class="col-md-6">
+    <h4>WordPress 가이드</h4>
+    <hr />
+      <!-- <span class="label label-default">@ WordPress 가이드</span> -->
+    {% for post in site.data.wpguide %}
+      <h5>{{post.title.rendered}}</h5>
+    {% endfor %}
+  </div>
+</div>  

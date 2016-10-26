@@ -12,3 +12,4 @@ source "https://rubygems.org"
 
 gem 'github-pages'
 gem 'jekyll-seo-tag' # https://github.com/jekyll/jekyll-seo-tag
+gem 'hash-joiner'
