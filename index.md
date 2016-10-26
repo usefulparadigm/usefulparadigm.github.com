@@ -50,4 +50,3 @@ solutions:
 
 {% include home.html %}
 {% include articles.html %}
-{% include externals.html %}
