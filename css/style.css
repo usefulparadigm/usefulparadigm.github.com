@@ -57,6 +57,10 @@ h3, h4, h5, h6 {
 
 h1, .post h2, /*h3, h4, h5, h6*/ .title /*, .about*/ { font-family: 'NanumGothicWeb', 'Nanum Gothic', sans-serif; }
 
+.page-header h2 {
+    font-size: 1.3em; font-weight: 500;    
+}
+
 a {
   color: #39c;
   font-weight:400;
