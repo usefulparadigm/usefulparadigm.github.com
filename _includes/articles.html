@@ -9,11 +9,12 @@
     {% if forloop.index == 1 %}
     <li>
       <div class="media">
-        <a class="pull-right" href="{{post.url}}">
-          <img class="media-object" src="{{post.thumbnail}}" width="100" alt="">
+        <a class="pull-left" href="{{post.url}}">
+          <img class="media-object" src="{{post.thumbnail}}" width="120" alt="">
         </a>
         <div class="media-body">
-          <h5 class="media-heading"><a href="{{post.url}}">{{post.title}}</a> <small class="label label-default">{{ post.date | date_to_string }}</small></h5>
+          <h5 class="media-heading"><a href="{{post.url}}">{{post.title}}</a></h5>
+          <small class="label label-default">{{ post.date | date_to_string }}</small>
           <p>{{post.description}}</p>
         </div>
       </div>
@@ -21,21 +22,6 @@
     {% else %}
     <li><h5><a href="{{ post.url }}">{{ post.title }}</a> <small class="label label-default">{{ post.date | date_to_string }}</small></h5></li>
     {% endif %}
-    {% comment %}
-    <li>
-      <span>{{ post.date | date_to_string }}</span>
-      <div class="media">
-        <a class="pull-left" href="{{post.url}}">
-          <img class="media-object" src="{{post.thumbnail}}" width="100" alt="">
-        </a>
-        <div class="media-body">
-          <h4 class="media-heading"><a href="{{post.url}}">{{post.title}}</a></h4>
-          <p>{{post.description}}</p>
-        </div>
-      </div>
-    </li>
-    {% endcomment %}
-        
   {% endfor %}
 </ul>
 

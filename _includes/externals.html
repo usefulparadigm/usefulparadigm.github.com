@@ -1,4 +1,12 @@
+<hr class="divider dotted" />
 <div class="row" id="external_posts">
+  <div class="col-md-6">
+    <h4><a href="#">디지털 마케팅의 기술</a></h4>
+      <!-- <span class="label label-default">@ WordPress 가이드</span> -->
+    {% for post in site.data.wpguide %}
+      <h5><a href="#">{{post.title.rendered}}</a></h5>
+    {% endfor %}
+  </div>
   <div class="col-md-6">
     <h4>WordPress 가이드</h4>
     <hr />

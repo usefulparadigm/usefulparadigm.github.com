@@ -126,6 +126,8 @@ img {
   max-width:100%;
 }
 
+hr.divider { margin: 2em 0 1em; }
+hr.divider.dotted { border: 0; background: #fff; border-bottom: 1px dashed #ccc; }
 
 header.main {
   width:270px;
