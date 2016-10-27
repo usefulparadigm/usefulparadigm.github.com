@@ -1,3 +1,4 @@
+name: blog
 title: 디지털 마케팅의 기술
 url: https://blog.usefulparadigm.com/
 posts:
@@ -5,10 +6,19 @@ posts:
     link: https://blog.usefulparadigm.com/페이스북-마케팅-이벤트-댓글-다운로드-받기-c31515e244e0
     thumbnail: https://cdn-images-1.medium.com/max/1600/1*WJbQh_Cgpy0GJPyxMw1H0Q.png
     pubdate: 2016-10-26
-    description: 페이스북 개발자 도구 중 하나인 그래프 API 탐색기(Graph API Explorer)를 이용, 특정 페이스북 페이지 포스트에서 댓글을 추출하여 CSV 파일로 다운로드 받는 방법 소개
+    description: Facebook 그래프 API 탐색기(Graph API Explorer)를 이용, 특정 페이스북 페이지 포스트에서 댓글을 추출하여 CSV 파일로 변환시켜 다운로드 받는 방법을 소개합니다.
   - title: 손 안대고 페이스북 “좋아요” 버튼 누르기
     link: https://blog.usefulparadigm.com/손-안대고-페이스북-좋아요-버튼-누르기-d6c37b5d60a3
     thumbnail: https://cdn-images-1.medium.com/max/1600/1*tCO5cLQFQhZAe7m621tJ6Q.png
     pubdate: 2016-07-11
-    description: CasperJS를 사용하여 페이스북 페이지의 “좋아요” 버튼을 자동으로 누르는 방법 소개
-  
+    description: CasperJS를 사용한, 페이스북 페이지의 “좋아요” 버튼을 자동으로 누르는 방법을 소개합니다.
+  - title: Foundation for Emails로 반응형 HTML Email 만들기
+    link: https://blog.usefulparadigm.com/foundation-for-emails로-반응형-html-email-만들기-9364e02db99a
+    thumbnail: https://cdn-images-1.medium.com/max/2000/1*mg9NoZzLpBXdAg7MY6cXmg.png
+    pubdate: 2016-07-04
+    description: 이메일 템플릿 자동 생성도구 Foundation for Emails를 사용하면 복잡한 반응형 HTML Email을 간단하게 만들 수 있습니다.
+  - title: Headless CMS와 WordPress
+    link: https://blog.usefulparadigm.com/headless-cms와-wordpress-c635a9eb2517
+    thumbnail: https://cdn-images-1.medium.com/max/1600/1*CaYfOcRvf1ODwMBJYXVgIg.png
+    pubdate: 2016-05-13
+    description: Headless CMS는 CMS를 프론트 UI와 분리시켜 사용하는 방식으로, 최근 워드프레스에도 적용되고 있습니다. 워드프레스의 미래, 만나 보세요!

@@ -1,170 +1,148 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-	<title>{{ page.title }} | {% if page.tagline %}{{page.tagline}}{% else %}{{ site.title }}{% endif %}</title>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    {% seo %}
-  <meta name="google-site-verification" content="KyE-PMrb9__CwHMsFc2fM_b1ecWeTs3P5SKZwvcFTaA" />
-	<meta name="msvalidate.01" content="E0A6CD63C809E00257EA5B66D60EFFA7" />
-  <meta name="naver-site-verification" content="03c9fff0bcdc9e0bb09126c1ad0036cccc451bc5"/>
-	<meta name="bitly-verification" content="4e3dc2895796"/>
-	<link href="http://feeds.feedburner.com/usefulparadigm" rel="alternate" title="{{ site.sitename }} News Feed" type="application/atom+xml">
-  <!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicomatic/apple-touch-icon-144x144.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicomatic/apple-touch-icon-60x60.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicomatic/apple-touch-icon-120x120.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicomatic/apple-touch-icon-76x76.png" />
-  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicomatic/apple-touch-icon-152x152.png" />
-  <link rel="icon" type="image/png" href="favicomatic/favicon-196x196.png" sizes="196x196" />
-  <link rel="icon" type="image/png" href="favicomatic/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
-  <link rel="icon" type="image/png" href="favicomatic/favicon-128.png" sizes="128x128" />
-  <meta name="application-name" content="유스풀패러다임"/>
-  <meta name="msapplication-TileColor" content="#FFFFFF" />
-  <meta name="msapplication-TileImage" content="favicomatic/mstile-144x144.png" />
-  <meta name="msapplication-square70x70logo" content="favicomatic/mstile-70x70.png" />
-  <meta name="msapplication-square150x150logo" content="favicomatic/mstile-150x150.png" />
-  <meta name="msapplication-wide310x150logo" content="favicomatic/mstile-310x150.png" />
-  <meta name="msapplication-square310x310logo" content="favicomatic/mstile-310x310.png" />
+<head>
+<meta charset="utf-8">
+<title>{{ page.title }} | {% if page.tagline %}{{page.tagline}}{% else %}{{ site.title }}{% endif %}</title>
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+{% seo %}
+<meta name="google-site-verification" content="KyE-PMrb9__CwHMsFc2fM_b1ecWeTs3P5SKZwvcFTaA" />
+<meta name="msvalidate.01" content="E0A6CD63C809E00257EA5B66D60EFFA7" />
+<meta name="naver-site-verification" content="03c9fff0bcdc9e0bb09126c1ad0036cccc451bc5"/>
+<meta name="bitly-verification" content="4e3dc2895796"/>
+<link href="http://feeds.feedburner.com/usefulparadigm" rel="alternate" title="{{ site.sitename }} News Feed" type="application/atom+xml">
+<!-- <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"> -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="favicomatic/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="favicomatic/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="favicomatic/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="favicomatic/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="favicomatic/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="favicomatic/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="favicomatic/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="favicomatic/apple-touch-icon-152x152.png" />
+<link rel="icon" type="image/png" href="favicomatic/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="favicomatic/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="favicomatic/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="favicomatic/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="favicomatic/favicon-128.png" sizes="128x128" />
+<meta name="application-name" content="유스풀패러다임"/>
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-TileImage" content="favicomatic/mstile-144x144.png" />
+<meta name="msapplication-square70x70logo" content="favicomatic/mstile-70x70.png" />
+<meta name="msapplication-square150x150logo" content="favicomatic/mstile-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="favicomatic/mstile-310x150.png" />
+<meta name="msapplication-square310x310logo" content="favicomatic/mstile-310x310.png" />
 
-	<!-- <link rel="author" href="https://plus.google.com/115608046866498207775"> -->
+<!-- <link rel="author" href="https://plus.google.com/115608046866498207775"> -->
 
-    <!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"-->
-    <!--link rel="stylesheet" href="//cdn.jsdelivr.net/bootflat/2.0.0/css/bootflat.css" /-->
-    <link rel="stylesheet" href="//bootswatch.com/yeti/bootstrap.min.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.block-grid/latest/bootstrap3-block-grid.min.css">
-    <!--link rel="stylesheet" href="/css/ihover.min.css"-->
-    <link rel="stylesheet" href="/css/pygment_trac.css">
-    <link rel="stylesheet" href="/css/animate.css">
-    <!-- <link rel="stylesheet" href="/css/auticons/auticons.css"> -->
-    <!--link rel="stylesheet" href="/css/pygments-css/monokai.css"-->
-    <link rel="stylesheet" href="/fancyBox/jquery.fancybox.css">
-    <link rel="stylesheet" href="/css/style.css">
+<!--link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"-->
+<!--link rel="stylesheet" href="//cdn.jsdelivr.net/bootflat/2.0.0/css/bootflat.css" /-->
+<link rel="stylesheet" href="//bootswatch.com/yeti/bootstrap.min.css" />
+<link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.block-grid/latest/bootstrap3-block-grid.min.css">
+<!--link rel="stylesheet" href="/css/ihover.min.css"-->
+<link rel="stylesheet" href="/css/pygment_trac.css">
+<link rel="stylesheet" href="/css/animate.css">
+<!-- <link rel="stylesheet" href="/css/auticons/auticons.css"> -->
+<!--link rel="stylesheet" href="/css/pygments-css/monokai.css"-->
+<link rel="stylesheet" href="/fancyBox/jquery.fancybox.css">
+<link rel="stylesheet" href="/css/style.css">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-  <script type="text/javascript">
-    (function() {
-      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-      po.src = 'https://apis.google.com/js/plusone.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-    })();
-  </script>
-  {% include ga.html %}
-  </head>
-  <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=279724202051145";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <!-- Google Tag Manager -->
-    <!-- <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TR3S24"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TR3S24');</script> -->
-    <!-- End Google Tag Manager -->  
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+{% include ga.html %}
+{% include pixel.html %}
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/ko_KR/all.js#xfbml=1&appId=279724202051145";
+      fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+  <!-- Google Tag Manager -->
+  <!-- <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-TR3S24"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-TR3S24');</script> -->
+  <!-- End Google Tag Manager -->  
 
-    <div class="wrapper">
-      <header class="main">
-        <hgroup>
-          <h1 id="logo"><a href="/">{{ site.title }}</a></h1>
-          {% if site.tagline %}
-            <p id="tagline">{{ site.tagline }}</p>
-          {% endif %}
-        </hgroup>
-        <ul class="buttons" data-animate="zoomIn">
-          <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">Follow <strong>Twitter</strong></a></li>
-          <li class="facebook"><a href="http://www.facebook.com/{{ site.author.facebook }}/" rel="me">Connect <strong>Facebook</strong></a></li>
-          <li class="google"><a href="http://plus.google.com/{{ site.author.googleplus }}/" rel="publisher">Find Us<strong>Google+</strong></a></li>
-          <!-- <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">Code <strong>GitHub</strong></a></li> -->
+  <div class="wrapper">
+    <header class="main">
+      <hgroup>
+        <h1 id="logo"><a href="/">{{ site.title }}</a></h1>
+        {% if site.tagline %}
+          <p id="tagline">{{ site.tagline }}</p>
+        {% endif %}
+      </hgroup>
+      <ul class="social buttons" data-animate="zoomIn">
+        <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">Follow <strong>Twitter</strong></a></li>
+        <li class="facebook"><a href="http://www.facebook.com/{{ site.author.facebook }}/" rel="me">Connect <strong>Facebook</strong></a></li>
+        <li class="google"><a href="http://plus.google.com/{{ site.author.googleplus }}/" rel="publisher">Find Us<strong>Google+</strong></a></li>
+        <!-- <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">Code <strong>GitHub</strong></a></li> -->
+      </ul>
+    </header>
+
+    <section class="main" id="container">
+	<!--^frag-->{{ content }}<!--$frag-->
+    </section>
+
+    <aside>
+      <nav>
+        <ul>
+    			<li><a href="/">Home</a></li>
+                <!-- <li><a href="/wordpress-hosting/">워드프레스 제작지원 신청</a></li> -->
+    			<li><a href="/categories.html">Categories</a></li>
+    			<li><a href="/archive.html">Archive</a></li>
+    			<li><a href="/blog/">디지털 마케팅의 기술</a></li>
+          <!-- <li><a href="http://blog.usefulparadigm.com/" target="_blank">디지털 마케팅의 기술</a></li> -->
+    			<li><a href="http://wpguide.usefulparadigm.com/" target="_blank">WordPress 가이드</a></li>
         </ul>
+      </nav>
+      <hr/>
+      <!-- <h3>Contact</h3> -->
+      <div class="contact">
+        <p class="address">110-702 서울 종로구 공평동 100 SC제일은행본점빌딩 20F 2011호</p>
+        <p>
+          <a href="tel:+8227205059">02.720.5059</a><br> 
+          <a href='mailto:contact@usefulparadigm.com'>contact@usefulparadigm.com</a>
+        </p>  
+      </div>
+    </aside>
 
-        <!-- <p class="about text-justify">
-          {{ site.about }}
-        </p> -->
+    <footer class="main">
+      <p><small>
+      Powered by <a href="http://pages.github.com/">GitHub Pages</a>. 
+      Themed with <a href="http://github.com/orderedlist/minimal/">minimal</a>. 
+      </small></p>
+    </footer>
+  </div><!-- .wrapper -->  
 
-        <!-- Facebook Pixel Code -->
-        <script>
-        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-        document,'script','https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '654713964688174');
-        fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=654713964688174&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- DO NOT MODIFY -->
-        <!-- End Facebook Pixel Code -->
-      </header>
-
-      <section class="main" id="container">
-		<!--^frag-->{{ content }}<!--$frag-->
-      </section>
-
-      <aside>
-        <nav>
-          <ul>
-      			<li><a href="/">Home</a></li>
-                  <!-- <li><a href="/wordpress-hosting/">워드프레스 제작지원 신청</a></li> -->
-      			<li><a href="/categories.html">Categories</a></li>
-      			<li><a href="/archive.html">Archive</a></li>
-      			<li><a href="/blog/">디지털 마케팅의 기술</a></li>
-            <!-- <li><a href="http://blog.usefulparadigm.com/" target="_blank">디지털 마케팅의 기술</a></li> -->
-      			<li><a href="http://wpguide.usefulparadigm.com/" target="_blank">WordPress 가이드</a></li>
-          </ul>
-        </nav>
-        <!-- <ul>
-          <li class="contact"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-        </ul> -->
-
-        <hr/>
-        <!-- <h3>Contact</h3> -->
-        <section class="contact">
-        110-702 서울 종로구 공평동 100 SC제일은행본점빌딩 20F 2011호<br/>
-        <a href="tel:+8227205059">02.720.5059</a> <a href='mailto:contact@usefulparadigm.com'>contact@usefulparadigm.com</a><!-- <br/> -->
-
-        	<!-- <div class="media-grid"><a class="various fancybox.iframe" href="http://map.naver.com/index.nhn?dlevel=11&lat=37.5711873&lng=126.9823252&query=&menu=location&searchCoord=&tab=1&pinId=30858388&pinType=site&pinTitle=7Jyg7Iqk7ZKA7Yyo65%2Bs64uk7J6E&mapMode=0&enc=b64"><img src="http://prt.map.naver.com/mashupmap/print?key=p1345437335473_983733216" width="270" height="160" alt="지도 크게 보기" title="지도 크게 보기" border="0" style="vertical-align:top;"/></a></div> -->
-        </section>
-
-
-      </aside>
-      <footer class="main">
-        <p><small>
-			Powered by <a href="http://pages.github.com/">GitHub Pages</a>. 
-			Themed with <a href="http://github.com/orderedlist/minimal/">minimal</a>. 
-		</small></p>
-      </footer>
-    </div>
-    <script src="/js/scale.fix.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
-    <script src="/js/jquery.cookie.min.js"></script>
-	<!--script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script-->
-  <!--script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script-->
-  <!--script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.5.0/ember.js"></script-->
-  <!--script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script-->
-	<script src="/fancyBox/jquery.fancybox.pack.js"></script>
-	<script src="/js/jquery.lazyload.min.js"></script>
-	<script src="/js/application.js"></script>
-  {% include piwik.html %}
-  </body>
+<script src="/js/scale.fix.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js" type="text/javascript"></script>
+<script src="/js/jquery.cookie.min.js"></script>
+<!--script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script-->
+<!--script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script-->
+<!--script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ember.js/1.5.0/ember.js"></script-->
+<!--script src="//cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.0.4/jquery.imagesloaded.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/masonry/3.1.2/masonry.pkgd.min.js"></script-->
+<script src="/fancyBox/jquery.fancybox.pack.js"></script>
+<script src="/js/jquery.lazyload.min.js"></script>
+<script src="/js/application.js"></script>
+{% include piwik.html %}
+</body>
 </html>
