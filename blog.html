@@ -1,0 +1,34 @@
+---
+layout: page
+title: 디지털 마케팅의 기술
+permalink: /blog/
+sitemap:
+  priority: 0.9
+  changefreq: weekly
+  lastmod: 2016-10-27
+---
+<!-- <a href="http://platanustree.com" class="btn btn-primary" target="_blank" style="position: absolute; top: 1em; right: 1em; ">더 보기</a> -->
+
+<ul class="posts list-unstyled">
+{% for post in site.data.blog.posts limit:5 %}
+  <li>
+    <div class="media">
+      <a class="pull-left" href="{{post.link}}">
+        <img class="media-object" src="{{post.thumbnail}}" width="120" alt="">
+      </a>
+      <div class="media-body">
+        <h5 class="media-heading"><a href="{{post.link}}">{{post.title}}</a></h5>
+        <small class="label label-default">{{ post.pubdate }}</small>
+        <p>{{post.description}}</p>
+      </div>
+    </div>
+    <hr class="divider dashed">
+  </li>
+{% endfor %}
+</ul>
+
+<p>&nbsp;</p>
+
+<div class="text-center">
+  <a href="http://platanustree.com" class="btn btn-primary" target="_blank">더 보기</a>
+</div>

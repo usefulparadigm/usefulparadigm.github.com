@@ -38,7 +38,6 @@ facebook:
   publisher: usefulparadigm
 logo: /img/up-logo-400.png
 
-# https://github.com/18F/jekyll-get
-jekyll_get:
+jekyll_data:
   data: wpguide
   json: 'https://wpguide.usefulparadigm.com/wp-json/wp/v2/posts?per_page=3'
