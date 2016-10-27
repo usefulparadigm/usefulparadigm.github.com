@@ -39,6 +39,7 @@
 <!--link rel="stylesheet" href="//cdn.jsdelivr.net/bootflat/2.0.0/css/bootflat.css" /-->
 <link rel="stylesheet" href="//bootswatch.com/yeti/bootstrap.min.css" />
 <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap.block-grid/latest/bootstrap3-block-grid.min.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/fontawesome/4.6.3/css/font-awesome.min.css">
 <!--link rel="stylesheet" href="/css/ihover.min.css"-->
 <link rel="stylesheet" href="/css/pygment_trac.css">
 <link rel="stylesheet" href="/css/animate.css">
@@ -88,12 +89,6 @@
           <p id="tagline">{{ site.tagline }}</p>
         {% endif %}
       </hgroup>
-      <ul class="social buttons" data-animate="zoomIn">
-        <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/" rel="me">Follow <strong>Twitter</strong></a></li>
-        <li class="facebook"><a href="http://www.facebook.com/{{ site.author.facebook }}/" rel="me">Connect <strong>Facebook</strong></a></li>
-        <li class="google"><a href="http://plus.google.com/{{ site.author.googleplus }}/" rel="publisher">Find Us<strong>Google+</strong></a></li>
-        <!-- <li class="github"><a href="http://github.com/{{ site.author.github }}/" rel="me">Code <strong>GitHub</strong></a></li> -->
-      </ul>
     </header>
 
     <section class="main" id="container">
@@ -121,13 +116,21 @@
           <a href='mailto:contact@usefulparadigm.com'>contact@usefulparadigm.com</a>
         </p>  
       </div>
+
+      <ul class="social buttons" data-animate="zoomIn">
+        <li class="twitter"><a href="http://twitter.com/{{ site.author.twitter }}/"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li class="facebook"><a href="http://www.facebook.com/{{ site.author.facebook }}/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        <li class="google"><a href="http://plus.google.com/{{ site.author.googleplus }}/"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a></li>
+        <li class="github"><a href="http://github.com/{{ site.author.github }}/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul>
+
     </aside>
 
     <footer class="main">
-      <p><small>
-      Powered by <a href="http://pages.github.com/">GitHub Pages</a>. 
-      Themed with <a href="http://github.com/orderedlist/minimal/">minimal</a>. 
-      </small></p>
+      <!-- <p><small>
+      Powered by <a href="http://pages.github.com/">GitHub Pages</a>
+      Themed with <a href="http://github.com/orderedlist/minimal/">minimal</a>.
+      </small></p> -->
     </footer>
   </div><!-- .wrapper -->  
 
