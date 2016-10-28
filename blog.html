@@ -5,7 +5,7 @@ permalink: /blog/
 sitemap:
   priority: 0.9
   changefreq: weekly
-  lastmod: 2016-10-27
+  lastmod: 2016-10-28
 ---
 <ul class="posts list-unstyled">
 {% for post in site.data.blog.posts limit:5 %}
@@ -13,8 +13,6 @@ sitemap:
 {% endfor %}
 </ul>
 
-<p>&nbsp;</p>
-
-<div class="text-center">
-  <a href="{{ site.data.blog.url }}" class="btn btn-primary" target="_blank">더 보기</a>
+<div class="text-centerx">
+  <a href="{{ site.data.blog.url }}" class="btn btn-primary" target="_blank">"{{site.data.blog.title}}" 더 보기</a>
 </div>

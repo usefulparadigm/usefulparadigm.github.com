@@ -217,47 +217,6 @@ header.main ul.buttons a:active {
 .social.buttons li.google a { color: #dd4b39; }
 .social.buttons li.github a { color: #000000; }
 
-/*.main .social.buttons {
-  list-style:none;
-  height:40px;
-  padding:0;
-  width:270px;
-}
-
-.main .social.buttons li {
-  width:90px;
-  float:left;
-  height:40px;
-}
-
-.main .social.buttons a {
-  line-height:1;
-  font-size:11px;
-  color:#999;
-  display:block;
-  text-align:center;
-}
-
-.main .social.buttons li.twitter a {
-    background: url(/img/ico_twitter.png) no-repeat left center;
-    margin-left: 13px; padding-left: 15px;
-    width: 70px;
-}
-.main .social.buttons li.facebook a {
-    background: url(/img/ico_facebook.png) no-repeat left center;
-    padding-left: 18px; width: 82px;
-}
-.main .social.buttons li.google a {
-    background: url(/img/ico_google.png) no-repeat left center;
-    padding-left: 5px;
-}
-.main .social.buttons li.github a {
-    background: url(/img/ico_github_2.png) no-repeat left center;
-    padding-left: 10px;
-}
-*/
-
-
 strong {
   color:#222;
   font-weight:700;
@@ -421,6 +380,11 @@ header.main h2 {
   line-height: inherit;
   font-size: inherit;
   font-weight: inherit;
+}
+
+/* post items*/
+.posts .item {
+    margin-bottom: 1em;
 }
 
 
