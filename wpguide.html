@@ -1,0 +1,19 @@
+---
+layout: page
+title: WordPress 가이드
+permalink: /wpguide/
+description: 워드프레스 웹사이트 제작 운영 HowTo & Recipes
+sitemap:
+  priority: 0.8
+  changefreq: weekly
+  lastmod: 2016-10-30
+---
+<ul class="posts list-unstyled">
+{% for post in site.data.wpguide.posts limit:5 %}
+  {% include post_item.html %}
+{% endfor %}
+</ul>
+
+<div class="text-centerx">
+  <a href="{{ site.data.wpguide.url }}" class="btn btn-primary" target="_blank">더 보기</a>
+</div>

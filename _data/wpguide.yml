@@ -1,0 +1,29 @@
+name: wpguide
+title: WordPress 가이드
+url: https://wpguide.usefulparadigm.com/
+posts:
+  - title: 워드프레스와 Discourse 포럼 연동하기
+    link: https://wpguide.usefulparadigm.com/posts/210
+    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2016/10/wp-discourse-featured-600x350.png
+    pubdate: 2016-10-14
+    description: 오픈소스 포럼 솔루션인 디스코스(Discourse)를 워드프레스와 연동하여 사용하는 방법을 소개합니다.
+  - title: 워드프레스 테마에 Bootstrap 적용하기
+    link: https://wpguide.usefulparadigm.com/posts/205
+    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2016/10/bootstrap-wordpress-600x350.png
+    pubdate: 2016-10-05
+    description: 대표적인 오픈소스 UI 프레임워크인 트위터 부트스크랩(Twitter Bootstrap)을 워드프레스에 적용하는 몇몇 방법들을 소개합니다.
+  - title: 워드프레스 사이드바에 로그인-로그아웃 메뉴 추가하기
+    link: https://wpguide.usefulparadigm.com/posts/194
+    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2016/09/wp-login-logout-featured-600x254.png
+    pubdate: 2016-09-02
+    description: 워드프레스 네비게이션 메뉴에 로그인/로그아웃 버튼을 추가하는 간단한 방법을 소개
+  - title: 워드프레스 사이트 이전(migration)하기
+    link: 워드프레스 사이트 이전(migration)하기
+    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2016/08/wp-migration-featured-600x323.jpg
+    pubdate: 2016-08-29
+    description: 워드프레스 사이트를 이전을 위해 필요한 내용들을 알아보고 WP Migrate DB 플러그인으로 사이트 이전을 처리하는 법을 소개합니다.
+  - title: 워드프레스 썸네일 이미지 다루기
+    link: https://wpguide.usefulparadigm.com/posts/184
+    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2016/08/thumbnail-gallery-featured-600x349.jpg
+    pubdate: 2016-08-22
+    description: 워드프레스에서 썸네일(thumbnail) 이미지와 특성(featured) 이미지 다루는 방법을 알아 봅니다.
