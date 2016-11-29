@@ -61,6 +61,7 @@ h1, .post h2, /*h3, h4, h5, h6*/ .title /*, .about*/ { font-family: 'NanumGothic
     font-size: 1.3em; font-weight: 500;    
 }
 
+/*
 a {
   color: #39c;
   font-weight:400;
@@ -81,6 +82,7 @@ a small {
 a:hover small {
   color:#777;
 }
+*/
 
 .wrapper {
   width:860px;
