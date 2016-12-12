@@ -2,6 +2,11 @@ name: wpguide
 title: WordPress 가이드
 url: https://wpguide.usefulparadigm.com/
 posts:
+  - title: 워드프레스 4.7 “Vaughan” 출시
+    link: https://wpguide.usefulparadigm.com/posts/229
+    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2016/12/wordpress-release-4.7-vaughan-featured-600x350.jpg
+    pubdate: 2016-12-12
+    description: Twenty Seventeen 테마를 포함, 이번 버전에 새로 추가된 기능들을 간략히 정리합니다.
   - title: 워드프레스와 Discourse 포럼 연동하기
     link: https://wpguide.usefulparadigm.com/posts/210
     thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2016/10/wp-discourse-featured-600x350.png
