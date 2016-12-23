@@ -82,7 +82,7 @@ WP-Cron은 크게 **cron 이벤트(event)**라고 부르는 cron 작업 부분�
 
 	*/5 * * * * wget -q -O - http://www.your-site.com/wp-cron.php
 
-이 때 wget 명령에서 사용한 -O 옵션은 출력결과를 파일이 아닌 표준출력(STDOUT)으로 보내는 옵션이며, 여기서 wget 대신 curl 등 HTTP 웹요청을 수행하는 명령이면 어떤 것을 사용하든 무방하다.
+이 때 wget 명령에서 사용한 -O 옵션은 출력 결과를 파일이 아닌 표준출력(STDOUT)으로 보내는 옵션이며, wget 대신 예를 들면 curl 같은, HTTP 웹요청을 수행하는 명령이면 어떤 것을 사용하든 무방하다.
 
 ### 참고자료
 
