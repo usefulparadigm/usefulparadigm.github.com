@@ -78,9 +78,11 @@ WP-Cron은 크게 **cron 이벤트(event)**라고 부르는 cron 작업 부분�
 	// 내부 WP-Cron 비활성화
 	define('DISABLE_WP_CRON', true);
 
-그런 다음, 진짜 cron을 깨우자. cron tab에 다음과 같이 wp-cron.php를 호출하는 스크립트를 추가하면 된다. (crontab의 자세한 사용법은 생략한다)
+그런 다음, 진짜 cron을 깨우자. 만약 5분 단위로 호출하려면, crontab에 다음과 같이 wp-cron.php를 호출하는 스크립트를 추가하면 된다. (crontab의 사용법은 생략한다)
 
-	wget http://www.server.com/wp-cron.php > /dev/null 2>&1
+	*/5 * * * * wget -q -O - http://www.your-site.com/wp-cron.php
+
+이 때 wget 명령에서 사용한 -O 옵션은 출력결과를 파일이 아닌 표준출력(STDOUT)으로 보내는 옵션이며, 여기서 wget 대신 curl 등 HTTP 웹요청을 수행하는 명령이면 어떤 것을 사용하든 무방하다.
 
 ### 참고자료
 
