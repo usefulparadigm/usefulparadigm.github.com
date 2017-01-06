@@ -84,6 +84,13 @@ a:hover small {
 }
 */
 
+/* External links */
+/* a[href*="//"]:not([href*="www.usefulparadigm.com"]):after,*/ a.external:after {
+    content: '\f08e';
+    font-family: FontAwesome;
+    padding-left: 0.3em;
+}
+
 .wrapper {
   width:860px;
   margin:0 auto;
