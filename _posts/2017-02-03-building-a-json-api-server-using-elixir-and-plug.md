@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Elixir로 JSON API 서버 만들기"
-description: 함수형 언어 Elixir로 웹 API 서버를 만들어 보며 Elixir 웹 개발의 기본 개념과 도구들을 소개하는 튜토리얼입니다.
+description: 함수형 언어 Elixir로 간단한 웹 API 서버를 구현하면서 Elixir 웹 개발의 기본 개념과 방법, 도구들을 소개합니다.
 thumbnail: https://usefulpa.s3.amazonaws.com/images/2017/elixir-plug-thumb.png
 categories: ["web development"]
 tags: [rest, webservice, api, json, elixir]
