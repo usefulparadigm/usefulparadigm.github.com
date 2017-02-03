@@ -7,6 +7,8 @@ categories: ["web development"]
 tags: [rest, webservice, api, json, elixir]
 ---
 
+![](https://usefulpa.s3.amazonaws.com/images/2017/elixir-plug-thumb.png)
+
 [Elixir](http://elixir-lang.org/)는 얼랭(Erlang) VM에서 작동하는 프로그램을 만드는 함수형 언어다.  스크립트 언어인 루비(Ruby)와 유사한 문법을 갖고 있지만 스크립트 방식과 컴파일 방식을 모두 지원하며, 특히 컴파일된 바이너리 코드는 얼랭과 완전히 호환되기 때문에 얼랭의 다양한 라이브러리와 도구들을 Elixir에서도 그대로 사용할 수 있는 장점이 있다. 게다가 [동시성(concurrency)](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) 지원이나 [무정지(fault tolerance)](https://en.wikipedia.org/wiki/Fault_tolerance) 시스템과 같은, 얼랭 VM의 장점들도 고스란히 이어받을 수 있기 때문에 안정적이고 가용성 높은 서버 시스템을 구현하려 할 때 Elixir는 좋은 선택이 될 수 있다고 할 것이다.
 
 이 글에서는 Elixir를 이용하여 간단한 JSON API 서버를 한번 만들어 보기로 한다(말이 'API 서버'지만 정말로 간단하니, 큰 기대는 접자).
