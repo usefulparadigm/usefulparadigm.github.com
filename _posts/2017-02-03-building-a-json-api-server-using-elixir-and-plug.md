@@ -177,8 +177,8 @@ end
 
  여기서는 Elixir 웹 개발의 기본 툴이라 할 수 있는 Plug을 가지고 API 서버를 구현했지만, 만약 좀 더 다양한 기능을 갖춘 서버를 좀 더 쉽게(?) 만들려면 다음과 같은 도구들도 고려해 볼만 하다.
  
- *  [Phoenix Framework]: (http://www.phoenixframework.org/) Ruby on Rails 같은 범용 Elixir 웹 프레임워크
- * [Maru]: (https://maru.readme.io/) Elixir REST API Framework 
+ *  [Phoenix Framework](http://www.phoenixframework.org/): Ruby on Rails 같은 범용 Elixir 웹 프레임워크
+ * [Maru](https://maru.readme.io/): Elixir REST API Framework 
 
 ## 참고자료
 
