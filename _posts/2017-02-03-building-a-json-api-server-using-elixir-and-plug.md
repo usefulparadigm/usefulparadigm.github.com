@@ -24,7 +24,7 @@ Elixir를 설치하면 Mix라고 하는 작업 관리툴이 함께 설치된다(
 
 my_app 이라는 프로젝트 디렉터리가 만들어 졌으면 이 디렉터리로 들어가서 디렉터리 구조를 한번 살펴보자. 
 
-![](https://usefulpa.s3.amazonaws.com/images/2017/elixir-my_app-directory.png)
+![](https://usefulpa.s3.amazonaws.com/images/2017/elixir-my_app-tree.png)
 
 mix.exs 파일은 프로젝트의 설정과 관련된 파일이며 lib 디렉터리 아래에 프로그램의 소스코드가 위치한다. config 디렉터리 아래의 config.exs 파일은 애플리케이션의 설정에서 사용하는 파일이다.
 
@@ -37,7 +37,7 @@ mix.exs 파일을 열어 끝 부분에 있는 deps 함수를 다음과 같이 �
 ```elixir
 defp deps do
   [
-  	{:cowboy, "~> 1.0.0"},
+    {:cowboy, "~> 1.0.0"},
     {:plug, "~> 1.3"},
     {:poison, "~> 3.1"}
   ]
@@ -177,8 +177,8 @@ end
 
  여기서는 Elixir 웹 개발의 기본 툴이라 할 수 있는 Plug을 가지고 API 서버를 구현했지만, 만약 좀 더 다양한 기능을 갖춘 서버를 좀 더 쉽게(?) 만들려면 다음과 같은 도구들도 고려해 볼만 하다.
  
- *  [Phoenix Framework](http://www.phoenixframework.org/) Ruby on Rails 같은 범용 Elixir 웹 프레임워크
- * [Maru](https://maru.readme.io/) Elixir REST API Framework 
+ *  [Phoenix Framework]: (http://www.phoenixframework.org/) Ruby on Rails 같은 범용 Elixir 웹 프레임워크
+ * [Maru]: (https://maru.readme.io/) Elixir REST API Framework 
 
 ## 참고자료
 
