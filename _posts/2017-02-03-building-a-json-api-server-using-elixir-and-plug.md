@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Elixir로 JSON API 서버 만들기"
-description: 함수형 언어 Elixir로 간단한 웹 API 서버를 구현하면서 Elixir 웹 개발의 기본 개념과 방법, 도구들을 소개합니다.
+title: "엘릭서(Elixir)로 JSON API 서버 만들기"
+description: 함수형 언어 엘릭서(Elixir)로 간단한 웹 API 서버를 구현하면서 Elixir 웹 개발의 기본 개념과 방법, 도구들을 소개합니다.
 thumbnail: https://usefulpa.s3.amazonaws.com/images/2017/elixir-plug-thumb.png
 image: https://usefulpa.s3.amazonaws.com/images/2017/elixir-plug-thumb.png
 categories: ["web development"]
@@ -10,15 +10,15 @@ tags: [rest, webservice, api, json, elixir]
 
 ![](https://usefulpa.s3.amazonaws.com/images/2017/elixir-plug-thumb.png)
 
-[Elixir](http://elixir-lang.org/)는 얼랭(Erlang) VM에서 작동하는 프로그램을 만드는 함수형 언어다.  스크립트 언어인 루비(Ruby)와 유사한 문법을 갖고 있지만 스크립트 방식과 컴파일 방식을 모두 지원하며, 특히 컴파일된 바이너리 코드는 얼랭과 완전히 호환되기 때문에 얼랭의 다양한 라이브러리와 도구들을 Elixir에서도 그대로 사용할 수 있는 장점이 있다. 게다가 [동시성(concurrency)](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) 지원이나 [무정지(fault tolerance)](https://en.wikipedia.org/wiki/Fault_tolerance) 시스템과 같은, 얼랭 VM의 장점들도 고스란히 이어받을 수 있기 때문에 안정적이고 가용성 높은 서버 시스템을 구현하려 할 때 Elixir는 좋은 선택이 될 수 있다고 할 것이다.
+[엘릭서(Elixir)](http://elixir-lang.org/)는 얼랭(Erlang) VM에서 작동하는 프로그램을 만드는 함수형 언어다.  스크립트 언어인 루비(Ruby)와 유사한 문법을 갖고 있지만 스크립트 방식과 컴파일 방식을 모두 지원하며, 특히 컴파일된 바이너리 코드는 얼랭과 완전히 호환되기 때문에 얼랭의 다양한 라이브러리와 도구들을 Elixir에서도 그대로 사용할 수 있는 장점이 있다. 게다가 [동시성(concurrency)](https://en.wikipedia.org/wiki/Concurrency_(computer_science)) 지원이나 [무정지(fault tolerance)](https://en.wikipedia.org/wiki/Fault_tolerance) 시스템과 같은, 얼랭 VM의 장점들도 고스란히 이어받을 수 있기 때문에 안정적이고 가용성 높은 서버 시스템을 구현하려 할 때 Elixir는 좋은 선택이 될 수 있다고 할 것이다.
 
-이 글에서는 Elixir를 이용하여 간단한 JSON API 서버를 한번 만들어 보기로 한다(말이 'API 서버'지만 정말로 간단하니, 큰 기대는 접자).
+이 글에서는 엘릭서를 이용하여 간단한 JSON API 서버를 한번 만들어 보기로 한다(말이 'API 서버'지만 정말로 간단하니, 큰 기대는 접자).
 
-Elixir를 처음 접하는 분들이라면 Elixir가 어떤 언어이고 웹에서는 어떻게 사용되는지 개념을 잡을 수 있는 글이 되었으면 좋겠고, JSON API 서버를 포함한 서버측 개발을 하는 분들이라면 Elixir에 대해 좀 더 관심을 가질 수 있는 계기가 되면 좋겠다.
+엘릭서를 처음 접하는 분들이라면 Elixir가 어떤 언어이고 웹에서는 어떻게 사용되는지 개념을 잡을 수 있는 글이 되었으면 좋겠고, JSON API 서버를 포함한 서버측 개발을 하는 분들이라면 엘릭서에 대해 좀 더 관심을 가질 수 있는 계기가 되면 좋겠다.
 
 ## 프로젝트 시작하기
 
-Elixir를 설치하면 Mix라고 하는 작업 관리툴이 함께 설치된다(Node로 치면 grunt나 gulp와 비슷한 도구라고 생각하면 된다). 통상적으로 Elixir 프로젝트는 이 Mix를 사용하여 새 프로젝트 구조를 만드는 것으로부터 시작한다. 터미널에서 다음과 같이 `mix new` 명령으로 새 프로젝트를 생성하자(Mix는 다양한 용도를 갖고 있는데 자세한 내용은 `mix help`로 확인할 수 있다).
+엘릭서를 설치하면 Mix라고 하는 작업 관리툴이 함께 설치된다(Node로 치면 grunt나 gulp와 비슷한 도구라고 생각하면 된다). 통상적으로 엘릭서 프로젝트는 이 Mix를 사용하여 새 프로젝트 구조를 만드는 것으로부터 시작한다. 터미널에서 다음과 같이 `mix new` 명령으로 새 프로젝트를 생성하자(Mix는 다양한 용도를 갖고 있는데 자세한 내용은 `mix help`로 확인할 수 있다).
 
 	$ mix new my_app
 
@@ -30,7 +30,7 @@ mix.exs 파일은 프로젝트의 설정과 관련된 파일이며 lib 디렉터
 
 ## 의존 라이브러리 추가하기
 
-우리가 만들 프로그램은 어떤 임의의 URL을 입력하면 JSON 형식의 텍스트를 반환하는 간단한 API 서버다. 이를 위해 이 프로그램에서는 Elixir에서 웹 애플리케이션 기능을 제공할 때 사용하는 표준 라이브러리인 [Plug](https://hex.pm/packages/plug)과 JSON을 처리하는 [Poison](https://hex.pm/packages/poison) 라이브러리를 사용할 것이다.
+우리가 만들 프로그램은 어떤 임의의 URL을 입력하면 JSON 형식의 텍스트를 반환하는 간단한 API 서버다. 이를 위해 이 프로그램에서는 엘릭서에서 웹 애플리케이션 기능을 제공할 때 사용하는 표준 라이브러리인 [Plug](https://hex.pm/packages/plug)과 JSON을 처리하는 [Poison](https://hex.pm/packages/poison) 라이브러리를 사용할 것이다.
 
 mix.exs 파일을 열어 끝 부분에 있는 deps 함수를 다음과 같이 수정하자. 이 부분은 프로젝트에서 의존하는 라이브러리를 추가하는 부분이다. 이 때 함께 추가한 [Cowboy](https://github.com/ninenines/cowboy)는 실은 Erlang HTTP Server이며, Plug에서 필요로 하기 때문에 함께 추가한 것이다. 
 
@@ -48,7 +48,7 @@ end
 
 	$ mix deps.get
 
-다음으로, 같은 파일에 있는 application 함수를 아래와 같이 수정하자. 마찬가지로 이 프로젝트에서 사용될 애플리케이션들을 선언하는 부분이다(Elixir에서는 각각의 라이브러리가 하나의 독립된 애플리케이션이며 따라서 Elixir 프로젝트는 결국 여러 애플리케이션들이 서로 어울려 작동하는 구조가 된다). 
+다음으로, 같은 파일에 있는 application 함수를 아래와 같이 수정하자. 마찬가지로 이 프로젝트에서 사용될 애플리케이션들을 선언하는 부분이다(엘릭서에서는 각각의 라이브러리가 하나의 독립된 애플리케이션이며 따라서 Elixir 프로젝트는 결국 여러 애플리케이션들이 서로 어울려 작동하는 구조가 된다). 
 
 ```elixir
 def application do
@@ -107,9 +107,9 @@ iex(1)> Plug.Adapters.Cowboy.http MyApp, []
 
 ![](https://usefulpa.s3.amazonaws.com/images/2017/elixir-plug-is.png)
 
-즉, Plug은 1) Elixir 기반 웹 애플리케이션들 간 상호 호환가능한 모듈을 만들기 위한 명세이자 2) 다양한 웹서버들과의 연결을 위한 어댑터 역할을 하는 라이브러리이다. 
+즉, Plug은 1) 엘릭서 기반 웹 애플리케이션들 간 상호 호환가능한 모듈을 만들기 위한 명세이자 2) 다양한 웹서버들과의 연결을 위한 어댑터 역할을 하는 라이브러리이다. 
 
-비슷한 냄새를 맡았다면, 맞다! 바로 루비의 [Rack](https://rack.github.io/)과 유사한 개념이다(실제로 Elixir 언어를 만든 [José Valim](https://github.com/josevalim)은 Rails Contributer이기도 하다). Rack과 다른 점이라면, Plug은 라우터(router) 기능까지 제공한다는 점이다([Sinatra](http://www.sinatrarb.com/)의 router 기능을 Plug에서는 기본으로 제공한다). 
+비슷한 냄새를 맡았다면, 맞다! 바로 루비의 [Rack](https://rack.github.io/)과 유사한 개념이다(실제로 엘릭서 언어를 만든 [José Valim](https://github.com/josevalim)은 Rails Contributer이기도 하다). Rack과 다른 점이라면, Plug은 라우터(router) 기능까지 제공한다는 점이다([Sinatra](http://www.sinatrarb.com/)의 router 기능을 Plug에서는 기본으로 제공한다). 
 
 Plug에 대한 더 자세한 설명은 [Plug 문서](https://hexdocs.pm/plug/readme.html)에 잘 소개되어 있으니 여기서는 생략하기로 하고, 방금 소개한 Plug의 라우터 기능을 이용해 우리의 구현 목표인 API 서버로 한 발짝 더 나가 보자.
 
@@ -170,7 +170,7 @@ end
 
 굳이 IEx로 접속하지 않고도 API 서버가 작동되는 것을 확인할 수 있을 것이다. 프로덕션(production) 환경에서라면 Nginx 같은 웹서버를 이 API 서버 앞단에 [리버스 프록시(reverse proxy)](https://en.wikipedia.org/wiki/Reverse_proxy)로 두는 방식도 가능하다.
 
-이것으로 간단한 Elixir 기반 API 서버 구현에 대한 설명을 마친다. 이 글은 Elixir 웹 개발에 필요한 기본을 따라가려다 보니 미처 설명하지 못한 부분들이 더러 있다. 예를 들면, 
+이것으로 간단한 엘릭서 기반 API 서버 구현에 대한 설명을 마친다. 이 글은 Elixir 웹 개발에 필요한 기본을 따라가려다 보니 미처 설명하지 못한 부분들이 더러 있다. 예를 들면, 
 
 - **데이터 저장소와의 연동**. 실제로라면 API 호출 시에 결과값을 반환하기 위해 RDBMS나 NoSQL 등 여러 유형의 데이터 저장소로부터 데이터를 추출하여 결과를 반환해야 할 것이다.
 - **Supervisor 처리**. Erlang/OTP에는 [수퍼바이저(Supervisor)](http://erlang.org/doc/man/supervisor.html) 라고 하는 기능(이를 '비헤비어behaviour'라 부른다)이 제공되며, Elixir에서도 이 [수퍼바이저](https://hexdocs.pm/elixir/Supervisor.html) 기능을 지원한다. 이를 이용하면 supervisor/worker 방식의 프로세스 구성을 쉽게 처리할 수 있지만, 여기서는 이 부분은 생략하였다.
