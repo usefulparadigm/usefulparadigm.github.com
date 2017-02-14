@@ -2,6 +2,11 @@ name: wpguide
 title: WordPress 가이드
 url: https://wpguide.usefulparadigm.com/
 posts:
+  - title: 워드프레스 캐시 제대로 사용하기
+    link: https://wpguide.usefulparadigm.com/posts/238
+    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2017/02/wp-caching-featured-825x510.png
+    pubdate: 2017-02-08
+    description: 워드프레스 캐시(cache)의 종류와 W3 Total Cache 플러그인에서의 사용법을 설명합니다.
   - title: 워드프레스 4.7 “Vaughan” 출시
     link: https://wpguide.usefulparadigm.com/posts/229
     thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2016/12/wordpress-release-4.7-vaughan-featured-600x350.jpg
