@@ -4,7 +4,7 @@ url: https://wpguide.usefulparadigm.com/
 posts:
   - title: 워드프레스에서 웹 요청 처리하기
     link: https://wpguide.usefulparadigm.com/posts/245
-    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2017/02/wp-form-submit-featured-825x510.png
+    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2017/02/wp-submit-form-featured-825x510.png
     pubdate: 2017-02-21
     description: 워드프레스에서 웹요청은 어떻게 처리할까요? 워드프레스에서 제공하는 웹요청 처리 방법을 알아봅니다.
   - title: 워드프레스 캐시 제대로 사용하기
