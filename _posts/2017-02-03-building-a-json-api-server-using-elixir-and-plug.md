@@ -186,6 +186,6 @@ Elixir와 Plug에 대해 좀 더 깊게 공부해 보고 싶은 분들이라면,
 
 * [Elixir Crash Course](http://elixir-lang.org/crash-course.html)
 * [Elixir School](https://elixirschool.com/) Plug 튜토리얼: [영문](https://elixirschool.com/lessons/specifics/plug/), [국문](https://elixirschool.com/ko/lessons/specifics/plug/)
-* [튜토리얼 소스코드](https://github.com/sjoonk/my_plug_app) 및 [Demo](https://salty-spire-99865.herokuapp.com/)
+* [튜토리얼 소스코드](https://github.com/sjoonk/my_plug_app)
 
     
