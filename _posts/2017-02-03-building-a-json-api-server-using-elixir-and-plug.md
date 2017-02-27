@@ -180,12 +180,12 @@ end
  *  [Phoenix Framework](http://www.phoenixframework.org/): Ruby on Rails 같은 범용 Elixir 웹 프레임워크
  * [Maru](https://maru.readme.io/): Elixir REST API Framework 
 
+이 글에서 사용한 소스코드와 이렇게 만든 앱을 [Heroku](heroku.com)에 배포하는 방법은 [GitHub](https://github.com/sjoonk/my_plug_app)에서 확인할 수 있다.
+
 ## 참고자료
 
 Elixir와 Plug에 대해 좀 더 깊게 공부해 보고 싶은 분들이라면, 앞서 본문에서 소개한 문서들 외에도 아래 자료를 참고하면 좋을 것 같다.
 
 * [Elixir Crash Course](http://elixir-lang.org/crash-course.html)
 * [Elixir School](https://elixirschool.com/) Plug 튜토리얼: [영문](https://elixirschool.com/lessons/specifics/plug/), [국문](https://elixirschool.com/ko/lessons/specifics/plug/)
-* [튜토리얼 소스코드](https://github.com/sjoonk/my_plug_app)
-
     
