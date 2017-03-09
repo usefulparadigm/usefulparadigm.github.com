@@ -4,7 +4,7 @@ url: https://wpguide.usefulparadigm.com/
 posts:
   - title: Docker로 워드프레스 설치하기
     link: https://wpguide.usefulparadigm.com/posts/257
-    thumbnail:
+    thumbnail: https://wpguide.usefulparadigm.com/wp-content/uploads/2017/03/wpguide-featured-wp-with-docker-1.png
     pubdate: 2017-03-06
     description: 애플리케이션 컨터이너 플랫폼인 도커(Docker) 기반에서 워드프레스를 설치하는 방법에 대해 소개합니다.
   - title: 워드프레스에서 웹 요청 처리하기
