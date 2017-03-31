@@ -77,13 +77,13 @@ CSS float 속성을 사용하여 위 마크업을 그리드 레이아웃으로 �
 
 - [float을 clear하는 4가지 방법](http://naradesign.net/wp/2008/05/27/144/) 
  
-이 CSS float 속성을 이용한 그리드 레이아웃 구성 방법은 오늘날 웹에서 가장 일반적으로 사용되는 방법이다. 많은 CSS 프레임워크들도 이 방법으로 그리드를 구성한다. CSS 프레임워크의 원조라 할 [Blueprint](http://blueprintcss.org/) 부터 시작해서 요즘 가장 인기있는 [Bootstrap](http://getbootstrap.com/)이나 [Foundation](http://foundation.zurb.com/) 도 마찬가지다.
+이 CSS float 속성을 이용한 그리드 레이아웃 구성 방법은 오늘날 웹에서 가장 일반적으로 사용되는 방법이다. CSS 프레임워크의 원조라 할 [Blueprint](http://blueprintcss.org/)부터 시작해서 요즘 가장 인기있는 [Bootstrap](http://getbootstrap.com/) 과 [Foundation](http://foundation.zurb.com/) 에 이르기 까지 많은 CSS 프레임워크들도 이 방법으로 그리드를 구성한다.
 
 ## Flexbox
 
-[Flexbox](http://www.w3.org/TR/css3-flexbox/)의 정식 명칭은 정식 명칭은 'CSS Flexible Box Layout '이며 이름 그대로 유연한(flex) 박스 모델을 위한 CSS 스펙이다. 간단하게 Flexbox는 여러 요소들을 플렉스 컨테이너(flex container)로 감싸는 방식으로 구현한다. 즉 플렉스 컨테이너 속에 들어간 요소(자식 박스)들은 가로 세로 아주 유연하게 배치할 수 있는 것이 Flexbox의 장점이다.
+[Flexbox](http://www.w3.org/TR/css3-flexbox/)의 정식 명칭은 'CSS Flexible Box Layout '이며 이름 그대로 유연한(flex) 박스 모델을 위한 CSS 스펙이다. Flexbox는 여러 요소들을 플렉스 컨테이너(flex container)로 감싸는 방식으로 구현한다. 이 플렉스 컨테이너 속에 들어간 요소(자식 박스)들은 가로 세로 아주 유연하게 배치될 수 있는 것이 Flexbox의 장점이다.
 
-위 웹사이트 레이아웃 예제를 이 Flexbox를 사용하여 구성하려면 CSS 스타일을 다음과 같이 주면 된다.
+위 웹사이트 레이아웃 예제를 이번엔 Flexbox를 사용하여 다시 구성하려면 CSS 스타일을 다음과 같이 주면 된다.
 
 ```css
 .wrap, .features {
@@ -97,11 +97,11 @@ CSS float 속성을 사용하여 위 마크업을 그리드 레이아웃으로 �
 }
 ```
 
-잠깐 부연하면, .wrap과 .features 클래스를 flex 컨테이너로 만들었다. 어떤 요소가 flex 컨테이너가 되면, 그 속의 자식 요소들을 flex 아이템(item)이 되어 flex box 모델의 적용을 받는다. flexbox 모델의 기본 값은 각각의 자식 요소들이 동일한 크기의 영역을 차지하는 것이기 때문에 여기서 .content와 .sidebar는 flex 속성값을 각각 2와 1로 주어 .content 가 .sidebar 보다 2배 크기의 영역을 차지하게끔 선언하고 있다. .feature 이미지들은 각각 1/4(25%) 씩 균등하게 차지하면 되기 때문에 따로 선언해 주지 않았다(디폴트 값 적용).
+잠깐 부연하면, .wrap과 .features 클래스를 flex 컨테이너로 만들었다. 어떤 요소가 flex 컨테이너가 되면, 그 속의 자식 요소들은 'flex 아이템(item)'이 되어 flex box 모델의 적용을 받는다. flexbox 모델의 기본 값은 각각의 자식 요소들이 동일한 크기의 영역을 차지하는 것이기 때문에 여기서 .content와 .sidebar는 flex 속성값을 각각 2와 1로 주어 .content 가 .sidebar 보다 2배 크기의 영역을 차지하게끔 선언하고 있다. .feature 이미지들은 각각 1/4(25%) 씩 균등하게 차지하면 되기 때문에 따로 선언해 주지 않았다(디폴트 값 적용).
 
-앞서 float 속성 방식과 비교하면 훨씬 간단하다. 게다가 Flexbox를 사용하면 가로 세로 아주 다양한 방식으로 레이아웃을 구성할 수도 있다. 또한 미디어 쿼리(media query)와 함께 사용하면 다양한 디바이스 폭에 맞춘 반응형 웹디자인 처리도 간단하게 해결된다.
+앞서 float 속성 방식과 비교하면 훨씬 간단하다. 핵(hack)도 필요없다. 게다가 Flexbox를 사용하면 가로 세로 아주 다양한 방식으로 레이아웃을 구성할 수도 있다. 또한 미디어 쿼리(media query)와 함께 사용하면 다양한 디바이스 폭에 맞춘 반응형 웹디자인 처리도 간단하게 해결된다.
 
-여기서는 Flexbox를 그리드 레이아웃을 만드는데 사용했지만, 사실 Flexbox는 비단 그리드 레이아웃을 구성하는 용도로만 사용되는 것은 아니다. 웹사이트 상에서 여러 요소들을 한 데 묶어 유연하게 레이아웃을 구성할 경우라면 여러 용도로 다양하게 활용할 수 있다. 또흔 최신 브라우저들이라면 대부분이 지원한다. 
+여기서는 Flexbox를 그리드 레이아웃을 만드는데 사용했지만, 사실 Flexbox는 비단 그리드 레이아웃을 구성하는 용도로만 사용되는 것은 아니다. 웹사이트 상에서 여러 요소들을 한 데 묶어 유연하게 레이아웃을 구성할 경우라면 여러 용도로 다양하게 활용할 수 있다. 브라우저 지원성도 좋아, 최신 브라우저들이라면 대부분이 지원한다. 
 
 - [Flexbox 지원 브라우저](http://caniuse.com/#feat=flexbox)
 
@@ -115,7 +115,7 @@ CSS float 속성을 사용하여 위 마크업을 그리드 레이아웃으로 �
 
 [CSS Grid Layout](https://www.w3.org/TR/css-grid/)은 그야말로 '그리드 레이아웃'만을 위한 CSS 모듈이다. 가로세로 격자를 만들어 그 속에 디자인 요소들을 배치하는 점에서는 앞서 table 방식의 레이아웃과 비슷하다 말할 수도 있지만, 그 구성 방법이나 유연성에 있어서는 차원이 다르다. 또한 Flexbox 처럼 미디어 쿼리와 함께 사용하면 반응형 웹 구성도 쉽게 처리할 수 있다.
 
-앞서 적용한 예제와 동일한 레이아웃을 이번엔 CSS Grid로 구현해 보면, 적용한 CSS 스타일은 다음과 같다.
+앞서 적용한 예제와 동일한 레이아웃을 이번엔 CSS Grid로 구현해 보면, 다음과 같이 할 수 있다. (여기서는 `grid-template-columns`라는 속성으로 각각의 컬럼 폭을 명시하는 방법을 썼지만, CSS Grid에는 `grid-template-areas`라는 방식으로 영역에 이름을 지정하여 처리하는 방식도 지원한다)
 
 ```css
 .wrap {
@@ -128,7 +128,7 @@ CSS float 속성을 사용하여 위 마크업을 그리드 레이아웃으로 �
 }
 ```
 
-Flexbox에서는 display 속성을 'flex'로 주어 flex 컨테이너로 만들었다면, 이번엔 display 속성을 'grid'로 주어 grid 컨테이너로 만들었다. Flexbox와 마찬가지로, 이럴 경우 grid 컨테이너 속 자식 요소들은 grid 아이템(item)이 되어 그리드 모델의 적용을 받게 된다. 여기서는 grid-template-columns 라는 속성을 사용하여, .wrap 클래스에서는 컬럼(즉 메인과 사이드바) 폭을 각각 67%와 33%로 주었고 그 아래 .features 클래스는 자식 요소들 각 컬럼의 폭을 25%씩 주어 균등하게 나누었다.
+Flexbox에서는 display 속성을 'flex'로 주어 flex 컨테이너로 만들었다면, 이번엔 display 속성을 'grid'로 주어 grid 컨테이너로 만들었다. Flexbox와 마찬가지로, 이럴 경우 grid 컨테이너 속 자식 요소들은 'grid 아이템(item)'이 되어 그리드 모델의 적용을 받게 된다. 여기서는 `grid-template-columns` 라는 속성을 사용하여, .wrap 클래스에서는 컬럼(즉 메인과 사이드바) 폭을 각각 67%와 33%로 주었고 그 아래 .features 클래스는 자식 요소들 각 컬럼의 폭을 25%씩 주어 균등하게 나누었다.
 
 ### CSS Grid vs. Flexbox
 
@@ -137,7 +137,7 @@ Flexbox에서는 display 속성을 'flex'로 주어 flex 컨테이너로 만들�
 ![](https://usefulpa.s3.amazonaws.com/images/2017/2017-03-31_cssgrid-vs-flexbox.png)
 \* 그림 출처: [W3C CSS Grid Layout Module 명세](https://www.w3.org/TR/css-grid/#intro) (적색 선 추가)
 
-물론 앞서 소개한 예제의 경우, 간단하게 가로x세로 = 1x2 짜리 그리드를 만들어 사용한 관계로 Flexbox와의 차이를 잘 느끼지 못할 수도 있지만, 가로 세로 행열의 개수가 많아질 수록 Flexbox와의 차이가 분명하게 드러난다.
+물론 앞서 소개한 예제의 경우, 간단하게 가로x세로 = 1x2의 간단한 그리드를 만들어 사용한 관계로 Flexbox와의 차이를 잘 느끼지 못할 수도 있지만, 가로 세로 행열의 개수가 많을수록 Flexbox와의 차이가 분명하게 드러난다.
 
 또한 Flexbox와 CSS Grid가 서로 대체 관계에 있는 것도 아니다. 둘은 함께 사용할 수 있고 또 함께 사용할 때 진정한 효과가 나올 수 있다. 예를 들어, 전체 사이트의 레이아웃은 CSS Grid로 잡고 그 속에 들어가는 갤러리 영역이나 카드 목록 같은 부분은 Flexbox를 써서 만드는 식이다.
 
