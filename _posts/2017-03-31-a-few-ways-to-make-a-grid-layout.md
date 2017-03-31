@@ -75,7 +75,7 @@ CSS float 속성을 사용하여 위 마크업을 그리드 레이아웃으로 �
 ```
 각각의 요소에 width 값을 준 다음 float 속성을 사용하여 왼쪽과 오른쪽으로 띄웠다. 그런 다음, 마지막에서 소위 "clearfix"라고 하는 것을 적용하였는데, 이는 float 속성만 갖는 부모 요소가 영역을 차지하지 못하는 문제를 해결하기 위한 잘 알려진 핵(hack)이다. Clearfix 와 관련한 더 자세한 내용은 아래 문서를 참조하면 된다.
 
--- [float을 clear하는 4가지 방법](http://naradesign.net/wp/2008/05/27/144/) 
+- [float을 clear하는 4가지 방법](http://naradesign.net/wp/2008/05/27/144/) 
  
 이 CSS float 속성을 이용한 그리드 레이아웃 구성 방법은 오늘날 웹에서 가장 일반적으로 사용되는 방법이다. 많은 CSS 프레임워크들도 이 방법으로 그리드를 구성한다. CSS 프레임워크의 원조라 할 [Blueprint](http://blueprintcss.org/) 부터 시작해서 요즘 가장 인기있는 [Bootstrap](http://getbootstrap.com/)이나 [Foundation](http://foundation.zurb.com/) 도 마찬가지다.
 
@@ -103,13 +103,13 @@ CSS float 속성을 사용하여 위 마크업을 그리드 레이아웃으로 �
 
 여기서는 Flexbox를 그리드 레이아웃을 만드는데 사용했지만, 사실 Flexbox는 비단 그리드 레이아웃을 구성하는 용도로만 사용되는 것은 아니다. 웹사이트 상에서 여러 요소들을 한 데 묶어 유연하게 레이아웃을 구성할 경우라면 여러 용도로 다양하게 활용할 수 있다. 또흔 최신 브라우저들이라면 대부분이 지원한다. 
 
--- [Flexbox 지원 브라우저](http://caniuse.com/#feat=flexbox)
+- [Flexbox 지원 브라우저](http://caniuse.com/#feat=flexbox)
 
 자세한 설명과 사용법, 용도(유스케이스)는 아래 자료들을 참조하자.
 
--- [CSS 레이아웃을 배웁시다 : flexbox](http://ko.learnlayout.com/flexbox.html)
--- [Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/) : CSS Flexbox의 다양한 유스케이스
--- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) : 자세한 설명을 곁들인 레퍼런스
+- [CSS 레이아웃을 배웁시다 : flexbox](http://ko.learnlayout.com/flexbox.html)
+- [Solved by Flexbox](https://philipwalton.github.io/solved-by-flexbox/) : CSS Flexbox의 다양한 유스케이스
+- [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) : 자세한 설명을 곁들인 레퍼런스
 
 ## CSS Grid Layout
 
@@ -143,7 +143,7 @@ Flexbox에서는 display 속성을 'flex'로 주어 flex 컨테이너로 만들�
 
 물론 CSS Grid는 아직 모든 브라우저에서 사용할 수 있는 것은 아니다.
 
--- [CSS Grid 지원 브라우저](http://caniuse.com/#feat=css-grid)
+- [CSS Grid 지원 브라우저](http://caniuse.com/#feat=css-grid)
 
 [크롬(Chrome) 57](https://developers.google.com/web/updates/2017/03/nic57), [파이어폭스(Firebox) 52](https://developer.mozilla.org/en-US/Firefox/Releases/52) 이상에서 지원되며, 이 글을 쓰는 시점에서 이틀 전인 2017년 3월 29일, [사파리(Safari) 브라우저 10.1 버전에서 CSS Grid 지원](https://webkit.org/blog/7477/new-web-features-in-safari-10-1/)이 발표되었다. 그렇지만 지금과 같은 지원 속도라면, 아마 모든 브라우저에서 CSS Grid를 쓸 수 있는 날이 머지 않을 듯 싶다.
 
@@ -157,9 +157,9 @@ Flexbox에서는 display 속성을 'flex'로 주어 flex 컨테이너로 만들�
 
 CSS Grid와 관련해서 더 자세한 내용은 아래 자료들을 참조하자.
 
--- [Grid by Example](http://gridbyexample.com/)
--- [A Complete Guide to CSS Grid](https://tympanus.net/codrops/css_reference/grid/) 
--- [Practical CSS Grid: Adding Grid to an Existing Design](https://alistapart.com/article/practical-grid) : CSS 전문가 Eric Meyer가 최근 자신의 사이트에 CSS Grid를 적용한 내용을 소개한 글 
--- [CSS 그리드를 사용하여 적응 레이아웃을 만드는 방법](https://msdn.microsoft.com/ko-kr/library/jj553856(v=vs.85).aspx) : MSDN 문서. 마이크로소프트 IE 11 및 Edge 14 버전부터 CSS Grid를 지원하지만, MS 브라우저가 지원하는 CSS Grid Layout은 [예전 버전](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/)이며, 이 글은 그 명세에 따른 것임에 유의하자.
+- [Grid by Example](http://gridbyexample.com/)
+- [A Complete Guide to CSS Grid](https://tympanus.net/codrops/css_reference/grid/) 
+- [Practical CSS Grid: Adding Grid to an Existing Design](https://alistapart.com/article/practical-grid) : CSS 전문가 Eric Meyer가 최근 자신의 사이트에 CSS Grid를 적용한 내용을 소개한 글 
+- [CSS 그리드를 사용하여 적응 레이아웃을 만드는 방법](https://msdn.microsoft.com/ko-kr/library/jj553856(v=vs.85).aspx) : MSDN 문서. 마이크로소프트 IE 11 및 Edge 14 버전부터 CSS Grid를 지원하지만, MS 브라우저가 지원하는 CSS Grid Layout은 [예전 버전](https://www.w3.org/TR/2011/WD-css3-grid-layout-20110407/)이며, 이 글은 그 명세에 따른 것임에 유의하자.
 
 
