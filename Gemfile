@@ -10,6 +10,7 @@ source "https://rubygems.org"
 # gem 'rdiscount',  '=1.6.8'
 # gem 'RedCloth',   '=4.2.9'
 
-gem 'github-pages'
-gem 'jekyll-seo-tag' # https://github.com/jekyll/jekyll-seo-tag
+# gem 'github-pages'
+# gem 'jekyll-seo-tag' # https://github.com/jekyll/jekyll-seo-tag
+gem 'github-pages', group: :jekyll_plugins
 gem 'hash-joiner'
