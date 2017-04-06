@@ -606,6 +606,12 @@ a:hover { color: green; }
 	background-color: #ededed;
 }
 
+.contact .title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4A6F0B;
+}
+
 /* Aligning Share buttons */
 ul.share_links { margin: 0; padding: 0; overflow: auto; }
 ul.share_links li { 
