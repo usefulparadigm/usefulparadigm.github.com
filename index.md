@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 유스풀패러다임
-tagline: 웹 기술과 비즈니스를 잇는 징검다리
+tagline: 비즈니스와 웹 기술을 잇는 징검다리
 description: 웹서비스 개발 & 컨설팅, 디지털 마케팅 S/W 서비스 & 솔루션 개발 및 컨설팅, 워드프레스 테마 제작 & 기술지원, 페이스북 및 소셜 API 솔루션 개발, 오픈소스 솔루션 기술지원 
 services: 
   - name: webdev
