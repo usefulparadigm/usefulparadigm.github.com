@@ -39,7 +39,8 @@ footer.main {
 aside {
   float: left;
   position: fixed;
-  bottom: 115px;
+//  bottom: 115px;
+  top: 270px;
   text-align: right;
   font-size: 0.9em;
 }
@@ -96,33 +97,26 @@ aside ul {
     font-size: 1.3em; font-weight: 500;    
 }
 
-@media print, screen and (max-width: 375px)  {
-    section.main .nav { display: none; }
-    section.main .emblem { display: none; }
-    section.main .services small { display: block; }
-    section.main .solutions small { display: block; }
-/*    section.main .posts .media > a { display: none; }*/
-/*    section.main .posts .media .media-body > p { display: none; }*/
-}    
 
+//@media screen and (max-width: 960px), (max-height: 500px)  {
+@media screen and (max-width: 960px)  {
 
-@media print, screen and (max-width: 960px), (max-height: 500px)  {
-  
+  body {
+    word-wrap: break-word;
+    padding:15px;
+  }
+
   div.wrapper {
-    width:auto;
-    margin:0;
+    width: auto;
+    margin: 0;
   }
-  
+
   header.main, section.main, footer.main, aside {
-    float:none;
-    position:static;
-    width:auto;
+    float: none;
+    position: static;
+    width: auto;
   }
-  
-//  header.main {
-//    padding-right:320px;
-//  }
-  
+
   section.main {
     border:1px solid #e5e5e5;
     border-width:1px 0;
@@ -130,49 +124,29 @@ aside ul {
     padding:20px 0;
     margin:0 0 20px;
   }
-  
+
   header.main a small {
     display:inline;
   }
-  
-  header.main ul.buttons {
-    position:absolute;
-    right:50px;
-    top:52px;
-  }
+
   aside {
       text-align: left;
   }
 }
 
-@media print, screen and (max-width: 768px) {
-  body {
-    word-wrap:break-word;
-    padding:15px;
-  }
-  
-  header.main {
-    padding:0;
-  }
-  
-  header.main ul.buttons {
-    position:static;
-  }
-  
-  pre, code {
-    word-wrap:normal;
+@media screen and (max-width: 480px) {
+
+  aside {
+      text-align: center;
   }
 }
 
-@media print, screen and (max-width: 480px) {
-//  body {
-//    padding:15px;
-//  }
-  
-  header.main ul.buttons {
-    display:none;
-  }
-}
+@media screen and (max-width: 375px)  {
+    section.main .nav { display: none; }
+    section.main .emblem { display: none; }
+    section.main .services small { display: block; }
+    section.main .solutions small { display: block; }
+}    
 
 @media print {
   body {
