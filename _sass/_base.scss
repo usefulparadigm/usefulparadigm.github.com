@@ -1,0 +1,70 @@
+// base.scss
+
+small { font-size: 13px; }
+
+code, pre {
+  font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal;
+  color: #333;
+  font-size: 12px;
+}
+
+pre {
+  padding:8px 15px;
+  background: #f8f8f8;  
+  border-radius:5px;
+  border:1px solid #e5e5e5;
+  overflow-x: auto;
+}
+
+table {
+  width:100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding:5px 10px;
+  border-bottom:1px solid #e5e5e5;
+}
+
+th {
+  color:#444;
+}
+
+dt {
+  color:#444;
+  font-weight:700;
+}
+
+//img {
+//  max-width:100%;
+//}
+
+strong {
+  color:#222;
+  font-weight:700;
+}
+
+hr {
+  border:0;
+  background:#e5e5e5;
+  height:1px;
+  margin:0 0 20px;
+}
+
+//.clearfix:after {
+//  clear:both;
+//  display:block;
+//  visibility:hidden;
+//  overflow:hidden;
+//  height:0 !important;
+//  line-height:0;
+//  font-size:xx-large;
+//  content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
+//.clearfix { zoom: 1; } /* IE6-7 */
+
+.right { float: right; }
+.left { float: left; }
+img.right { padding: 0 0 8px 8px; }
+.justify { text-align: justify; }
+.center { text-align: center; }

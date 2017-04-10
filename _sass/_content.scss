@@ -1,0 +1,73 @@
+// content.scss
+
+// post items
+.posts {
+  .media-body p {
+    font-size: 0.95em;
+  }
+}
+
+// article
+
+article {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.8em; }
+  h3 { font-size: 1.6em; }
+  h4 { font-size: 1.4em; }
+  h5 { font-size: 1.2em; }
+  h6 { font-size: 1.1em; }
+  
+//  .page-header h1 {
+//    font-family: 'NanumGothicWeb', 'Nanum Gothic', sans-serif;
+//  }
+}
+
+article.post {
+  line-height: 1.6;
+}
+
+article.post img {
+  width: inherit; //for ie8
+  max-width: 100%;
+  height: auto;
+}
+
+article.post header {
+  p {
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: right;
+  }
+}
+
+article.post footer {
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: right;
+  .section-title {
+//      font-weight: normal;
+      display: inline;
+      font-size: inherit;
+      padding-right: 5px;
+  }
+  ul {
+      display: inline;
+      list-style: none;
+      padding:0;
+      li {
+          display: inline;
+          margin-right: 5px;
+          span { display: none; }
+      }
+  }
+}
+
+//article footer p.gotop {
+//  margin-top: 10px;
+//  margin-bottom: 0;
+//  font-size: 14px;
+//  font-style: normal;
+//  text-align: left;
+//}
+
+
