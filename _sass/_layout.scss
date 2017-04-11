@@ -27,6 +27,7 @@ section.main {
   width: 500px;
   float: right;
   padding-bottom: 50px;
+  padding-top: 60px;
 }
 
 footer.main {
@@ -97,9 +98,53 @@ aside .contact {
 // home title
 
 .page-header h2 {
-    font-size: 1.3em; font-weight: 500;    
+  font-size: 1em;
+  color: #aaa;
+  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
+// home grid layout
+
+.grid {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  .item {
+    width: 25%;
+    padding-bottom: 25%;
+    float: left;
+    position: relative;
+    opacity: 0.9;
+    transition: opacity 1s;
+    &:hover { opacity: 1; }
+    &-content {
+      display: block;
+      position: absolute;
+      top: 0; left: 0; bottom: 0; right: 0;
+      padding: 10px 15px;
+      margin: 0 3px 3px 0;
+      &:hover {
+        text-decoration: none;
+        font-weight: bold;
+//        background: #999 !important;
+//        *{ color: #111; }
+      }
+      &_title {
+        color: #fff;
+        small { 
+          display: block; 
+          color: #ddd;
+          padding-top: 4px;
+        }
+      }
+    }
+    &.mid { width: 33.3%; padding-bottom: 20%; }
+    &.wide { width: 50%; }
+  }
+}
 
 //@media screen and (max-width: 960px), (max-height: 500px)  {
 @media screen and (max-width: 960px)  {
@@ -135,13 +180,19 @@ aside .contact {
   aside {
       text-align: left;
   }
-}
 
-@media screen and (max-width: 480px) {
+}  
 
-  aside {
-      text-align: center;
+@media screen and (max-width: 768px)  {
+
+  .grid {
+    .item {
+      width: 50%;
+      &.mid { width: 50%; padding-bottom: 25%; }
+      &.wide { width: 100%; }
+    }
   }
+
 }
 
 @media screen and (max-width: 375px)  {
@@ -149,7 +200,22 @@ aside .contact {
     section.main .emblem { display: none; }
     section.main .services small { display: block; }
     section.main .solutions small { display: block; }
+
+    .grid {
+      .item {
+        width: 100%;
+        &.mid { width: 100%; }
+        &.wide { width: 100%; }
+      }
+    }
 }    
+
+//@media screen and (max-width: 480px) {
+//
+//  aside {
+//      text-align: center;
+//  }
+//}
 
 @media print {
   body {

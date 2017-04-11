@@ -9,54 +9,16 @@
 {% endif %}
 
 
-<div class="page-header">
+<!-- <div class="page-header">
   <h2>Services & Solutions</h2>
-</div>
+</div> -->
 
-<ul class="services list-unstyled">
+<ul class="services grid list-unstyled">
 {% for service in page.services %}
-<li><h5>{{ service.title }} <small>{{ service.subtitle }}</small></h5></li>
+  <li class="item {{ service.name }} {{ service.item_class }}">
+    <div class="item-content" style="background: {{ service.item_bg_color }};">
+      <h5 class="item-content_title">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
+    </div>  
+  </li>
 {% endfor %}
 </ul>
-
-<!-- <ul class="solutions list-unstyled">
-{% for s in page.solutions %}
-<li>
-  <h5>
-    <a href="{{ s.url }}" class="{{ s.classes }}" target="_blank">{{ s.title }}</a>
-    <small>{{ s.subtitle }}</small>
-  </h5>
-</li>
-{% endfor %}
-</ul> -->
-
-{% comment %}
-<div class="panel-group" id="accordion">
-{% for service in page.services %}
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h3 class="panel-title">
-        <a data-toggle="collapse" data-parent="#accordion" href="#collapse-{{ forloop.index }}">
-          <span class="glyphicon glyphicon-chevron-right"></span>
-          {{ service.title }}
-        </a>
-        {% if service.subtitle %}
-          <small>{{ service.subtitle }}</small>
-        {% endif %}  
-      </h3>
-    </div>
-    <div id="collapse-{{ forloop.index }}" class="panel-collapse collapse{% if forloop.index == 1 %} in{% endif %}">
-      <div class="panel-body">
-        {% include service.html %}
-      </div>
-    </div>
-  </div>
-{% endfor %}
-</div>  
-{% endcomment %}
-
-
-<!--div class="text-left">
-	<a href="//docs.google.com/spreadsheet/embeddedform?formkey=dG91RWN6ZVVzMnFyX2dKdlU0ckZ0TEE6MQ" class="various fancybox.iframe btn btn-default btn-smx">서비스 의뢰하기</a>
-</div-->
-
