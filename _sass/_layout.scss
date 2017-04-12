@@ -129,6 +129,7 @@ aside .contact {
       display: block;
       position: absolute;
       top: 0; left: 0; bottom: 0; right: 0;
+      background: #ccc;
       padding: 5px 15px;
       margin: 0 3px 3px 0;
       &:hover {
@@ -146,9 +147,15 @@ aside .contact {
         }
       }
     }
-    &.mid { width: 33.3%; padding-bottom: 20%; }
-    &.wide { width: 50%; }
+    &.item-1 { width: 50%; }
+    &.item-4, &.item-5 { width: 33.3%; padding-bottom: 20%; }
   }
+  // set item bg color
+  .item-1 .item-content { background: #B23536; }
+  .item-2 .item-content { background: #F9840A; }
+  .item-3 .item-content { background: #E2C329; }
+  .item-4 .item-content { background: #85A949; }
+  .item-5 .item-content { background: #329746; }
 }
 
 //@media screen and (max-width: 960px), (max-height: 500px)  {
@@ -194,8 +201,8 @@ aside .contact {
     margin-right: 0;
     .item {
       width: 50%;
-      &.mid { width: 50%; padding-bottom: 25%; }
-      &.wide { width: 100%; }
+      &.item-1 { width: 100%; }
+      &.item-4, &.item-5 { width: 50%; padding-bottom: 25%; }
     }
   }
 
@@ -210,8 +217,8 @@ aside .contact {
     .grid {
       .item {
         width: 100%;
-        &.mid { width: 100%; }
-        &.wide { width: 100%; }
+        &.item-1 { width: 100%; }
+        &.item-4, &.item-5 { width: 100%; }
       }
     }
 }    
