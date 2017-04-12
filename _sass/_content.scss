@@ -1,11 +1,21 @@
 // content.scss
 
-// post items
+// posts list
 .posts {
   .media-body p {
     font-size: 0.95em;
   }
 }
+
+.posts .item:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  margin-bottom: 1em;
+}
+
+// page
+//.page {
+//  &-description { color: #aaa; }
+//}
 
 // article
 
@@ -22,14 +32,8 @@ article {
 //  }
 }
 
-article.post {
+article.post, article.page {
   line-height: 1.6;
-}
-
-article.post img {
-  width: inherit; //for ie8
-  max-width: 100%;
-  height: auto;
 }
 
 article.post header {

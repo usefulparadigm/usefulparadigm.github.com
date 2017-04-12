@@ -36,9 +36,10 @@ dt {
   font-weight:700;
 }
 
-//img {
-//  max-width:100%;
-//}
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 strong {
   color:#222;
@@ -52,15 +53,11 @@ hr {
   margin:0 0 20px;
 }
 
-//.clearfix:after {
-//  clear:both;
-//  display:block;
-//  visibility:hidden;
-//  overflow:hidden;
-//  height:0 !important;
-//  line-height:0;
-//  font-size:xx-large;
-//  content:" x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x x ";}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
 //.clearfix { zoom: 1; } /* IE6-7 */
 
 .right { float: right; }

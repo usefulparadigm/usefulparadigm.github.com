@@ -2,15 +2,15 @@
 
 <article class="page">
 	{% unless page.hide_title %}
-  <div class="page-header">
-	  <h1>{{ page.title }}</h1>
-  </div>
+    <div class="page-header">
+  	  <h1>{{ page.title }}</h1>
+    </div>
 	{% endunless %}
 
 	{{ content }}
 
 	{% if page.shares %}
-	<p>{% include shares.html %}</p>	
+    <p>{% include shares.html %}</p>	
 	{% endif %}
 
 	{% if page.disqus %}
