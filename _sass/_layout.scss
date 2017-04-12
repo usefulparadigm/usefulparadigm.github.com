@@ -110,6 +110,8 @@ aside .contact {
 // home grid layout
 
 .grid {
+  margin-right: 50px;
+  max-width: 507px;
   &:after {
     content: '';
     display: block;
@@ -186,9 +188,10 @@ aside .contact {
 
 }  
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 507px)  {
 
   .grid {
+    margin-right: 0;
     .item {
       width: 50%;
       &.mid { width: 50%; padding-bottom: 25%; }
