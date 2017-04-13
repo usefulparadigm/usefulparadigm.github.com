@@ -85,17 +85,22 @@ $(function() {
 
   // Change grid color randomly
   // http://colormind.io/api-access/
-  (function() {
-    var url = "http://colormind.io/api/";
-    var data = {
-      model : "default",
-      input : [[44,43,44],[90,83,82],"N","N","N"]
-    };
-    
-    // $.post(url, data, function(colors) {
-    //   console.log(colors);
-    // });
-  })();
+  // (function() {
+  //   var url = "http://colormind.io/api/";
+  //   var data = {
+  //     model : "default"
+  //     // input : [[44,43,44],[90,83,82],"N","N","N"]
+  //   };
+  //
+  //   $.post(url, JSON.stringify(data), function(resp) {
+  //     var colors = JSON.parse(resp).result;
+  //     // console.log(colors);
+  //     $('#services .item .item-content').each(function(index) {
+  //       var rgb = 'rgb('+colors[index % 5].join(',')+')';
+  //       $(this).css('background-color', rgb);
+  //     });
+  //   });
+  // })();
   
 });
 
