@@ -13,9 +13,16 @@
 }
 
 // page
-//.page {
-//  &-description { color: #aaa; }
-//}
+
+.page .grid {
+  margin: 0;
+  max-width: 100%;
+  .item {
+    width: 100%;
+  }
+  &#webdev .item-content { background-color: $color-item-1; } 
+}
+
 
 // article
 
