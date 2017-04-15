@@ -193,16 +193,29 @@ aside .contact {
       text-align: left;
   }
 
+  .grid {
+    margin-right: 0;
+    max-width: 100%;
+    .item {
+      width: 20%;
+      padding-bottom: 18%;
+      &.item-1 { width: 20%; padding-bottom: 18%; }
+      &.item-4, &.item-5 { width: 20%; padding-bottom: 18%; }
+    }
+  }
+
 }  
 
-@media screen and (max-width: 507px)  {
+@media screen and (max-width: 640px)  {
 
   .grid {
     margin-right: 0;
+    max-width: 100%;
     .item {
       width: 50%;
-      &.item-1 { width: 100%; }
-      &.item-4, &.item-5 { width: 50%; padding-bottom: 25%; }
+      padding-bottom: 18%;
+      &.item-1 { width: 100%; padding-bottom: 18%; }
+      &.item-4, &.item-5 { width: 50%; padding-bottom: 18%; }
     }
   }
 
@@ -217,8 +230,9 @@ aside .contact {
     .grid {
       .item {
         width: 100%;
-        &.item-1 { width: 100%; }
-        &.item-4, &.item-5 { width: 100%; }
+        padding-bottom: 25%;
+        &.item-1 { width: 100%; padding-bottom: 25%; }
+        &.item-4, &.item-5 { width: 100%; padding-bottom: 25%; }
       }
     }
 }    
