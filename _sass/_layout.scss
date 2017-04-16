@@ -125,7 +125,7 @@ aside .contact {
     opacity: 0.9;
     transition: opacity 1s;
     &:hover { opacity: 1; }
-    &-content {
+    &__content {
       display: block;
       position: absolute;
       top: 0; left: 0; bottom: 0; right: 0;
@@ -139,7 +139,7 @@ aside .contact {
 //        background: #999 !important;
 //        *{ color: #111; }
       }
-      &_title {
+      &__title {
         color: #fff;
         small { 
           display: block; 
@@ -148,14 +148,14 @@ aside .contact {
         }
       }
     }
-    &.item-1 { width: 50%; }
-    &.item-4, &.item-5 { width: 33.3%; padding-bottom: 20%; }
+    &.item--1 { width: 50%; }
+    &.item--4, &.item--5 { width: 33.3%; padding-bottom: 20%; }
   }
-  .item-1 .item-content { background: $color-item-1; }
-  .item-2 .item-content { background: $color-item-2; }
-  .item-3 .item-content { background: $color-item-3; }
-  .item-4 .item-content { background: $color-item-4; }
-  .item-5 .item-content { background: $color-item-5; }
+  .item--1 .item__content { background: $color-item-1; }
+  .item--2 .item__content { background: $color-item-2; }
+  .item--3 .item__content { background: $color-item-3; }
+  .item--4 .item__content { background: $color-item-4; }
+  .item--5 .item__content { background: $color-item-5; }
 }
 
 //@media screen and (max-width: 960px), (max-height: 500px)  {
@@ -199,8 +199,8 @@ aside .contact {
     .item {
       width: 20%;
       padding-bottom: 20%;
-      &.item-1 { width: 20%; padding-bottom: 20%; }
-      &.item-4, &.item-5 { width: 20%; padding-bottom: 20%; }
+      &.item--1 { width: 20%; padding-bottom: 20%; }
+      &.item--4, &.item--5 { width: 20%; padding-bottom: 20%; }
     }
   }
 
@@ -214,8 +214,8 @@ aside .contact {
     .item {
       width: 50%;
       padding-bottom: 18%;
-      &.item-1 { width: 100%; padding-bottom: 18%; }
-      &.item-4, &.item-5 { width: 50%; padding-bottom: 18%; }
+      &.item--1 { width: 100%; padding-bottom: 18%; }
+      &.item--4, &.item--5 { width: 50%; padding-bottom: 18%; }
     }
   }
 
@@ -231,8 +231,8 @@ aside .contact {
       .item {
         width: 100%;
         padding-bottom: 25%;
-        &.item-1 { width: 100%; padding-bottom: 25%; }
-        &.item-4, &.item-5 { width: 100%; padding-bottom: 25%; }
+        &.item--1 { width: 100%; padding-bottom: 25%; }
+        &.item--4, &.item--5 { width: 100%; padding-bottom: 25%; }
       }
     }
 }    

@@ -20,9 +20,9 @@
   .item {
     width: 100%;
   }
-  &#webdev .item-content { background-color: $color-item-1; } 
-  &#martech .item-content { background-color: $color-item-2; } 
-  &#wordpress .item-content { background-color: $color-item-3; } 
+  &#webdev .item__content { background-color: $color-item-1; } 
+  &#martech .item__content { background-color: $color-item-2; } 
+  &#wordpress .item__content { background-color: $color-item-3; } 
 }
 
 

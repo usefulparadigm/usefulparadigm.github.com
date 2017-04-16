@@ -8,17 +8,16 @@
 </div>
 {% endif %}
 
-
 <!-- <div class="page-header">
   <h2>Services & Solutions</h2>
 </div> -->
 
 <ul id="services" class="grid list-unstyled">
 {% for service in page.services %}
-  <li class="item item-{{ forloop.index }}">
-    <div class="item-content">
-      <h5 class="item-content_title">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
-    </div>  
+  <li class="item item--{{ forloop.index }}">
+    <div class="item__content">
+      <h5 class="item__content__title">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
+    </div>
   </li>
 {% endfor %}
 </ul>
