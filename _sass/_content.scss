@@ -19,8 +19,17 @@
   max-width: 100%;
   .item {
     width: 100%;
+    padding-bottom: 40%;
+    &__content {
+      background-color: transparent;
+      .title { color: #fff; }
+      p { color: #eee; }
+    }
   }
-  &#webdev .item__content { background-color: $color-item-1; } 
+  &#webdev { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-webdev.jpg');
+    background-size: cover;
+  } 
   &#martech .item__content { background-color: $color-item-2; } 
   &#wordpress .item__content { background-color: $color-item-3; } 
 }
