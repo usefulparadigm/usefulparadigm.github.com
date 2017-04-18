@@ -37,57 +37,28 @@ $(function() {
 			loadTwitter();
 		}
         
-        // http://www.appelsiini.net/projects/lazyload
-        $("article img").lazyload({
-            effect : "fadeIn"
+    // http://www.appelsiini.net/projects/lazyload
+    $("article img").lazyload({
+        effect : "fadeIn"
+    });
+
+    // animate.css
+    // https://github.com/daneden/animate.css
+    $('*[data-animate]').hover(function() {
+      $(this).toggleClass('animated ' + $(this).data('animate'));
+    });
+    
+    // Run animate only once in a session
+    if (!$.cookie('animated')) {
+        $('*[data-animate].animate-once').each(function() {
+            $(this).addClass('animated ' + $(this).data('animate'))
         });
-        
-        // Run animate only once in a session
-        // if (!$.cookie('animated')) {
-        //     $('*[data-animate]').each(function() {
-        //         var $self = $(this);
-        //         $self.addClass('animated ' + $self.data('animate'))
-        //     });
-        //     $.cookie('animated', true);
-        // }
-        
+        $.cookie('animated', true);
+    }
 
-        // http://kenwheeler.github.io/slick/        
-        // $('.work-slider').slick({
-        //     infinite: true,
-        //       slidesToShow: 3,
-        //       slidesToScroll: 3
-        // });    
-        
-        // http://masonry.desandro.com/
-        // var $container = $('.masonry');
-        // $container.imagesLoaded( function() {
-        //     $container.masonry({
-        //         // columnWidth: 200,
-        //         // itemSelector: '.item'
-        //     });
-        // });
-
-        // $('#accordion').on('show.bs.collapse', function () {
-        //     // http://masonry.desandro.com/
-        //     var $container = $('.masonry', this);
-        //     $container.imagesLoaded( function() {
-        //         $container.masonry({
-        //             // columnWidth: 200,
-        //             // itemSelector: '.item'
-        //         });
-        //     });
-        // });
-        
 	};
 
 	init();
-
-  // animate.css
-  // https://github.com/daneden/animate.css
-  $('*[data-animate]').hover(function() {
-    $(this).toggleClass('animated ' + $(this).data('animate'));
-  });
 
   // Change grid color randomly
   // http://colormind.io/api-access/
