@@ -80,9 +80,10 @@
       }
       .title {
         position: absolute;
-        bottom: 0; left: 0;
+        top: 0; left: 0; right: 0;
         color: #fff;
         background-color: rgba(0, 0, 0, 0.6);
+        font-size: 1.1em;
         margin: 5px;
         padding: 3px;
       }
