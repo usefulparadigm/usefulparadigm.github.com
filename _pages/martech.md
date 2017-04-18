@@ -3,6 +3,10 @@ layout: hero
 title: 디지털 마케팅 S/W 서비스 & 솔루션
 description: 유스풀패러다임은 기업과 개인의 비즈니스와 마케팅을 지원하는 소프트웨어 서비스와 솔루션을 만들고 컨설팅합니다.
 permalink: /marketing-technology/
+sitemap:
+  priority: 0.8
+  changefreq: weekly
+  lastmod: 2017-04-18
 ---
 
 {% include hero_title.html name="martech" %}
@@ -19,3 +23,16 @@ permalink: /marketing-technology/
 * 온라인 데이터 분석 및 검색 최적화(SEO) 기술 지원
 * 마케팅 챗봇(Chatbot) 및 메신저봇 제작
 
+<div class="page-header">
+  <h2>Resources</h2>
+</div>
+
+<ul id="martech-resources" class="resources">
+{% for entry in site.data.martech.entries limit:5 %}
+  <li class="item item--{{ forloop.index }}">
+    <a href="{{ entry.url }}" class="item__content" style="background-image: url({{ entry.thumb }});">
+      <h5 class="title">{{ entry.title }}</h5>
+    </a>
+  </li>
+{% endfor %}
+</ul>
