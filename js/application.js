@@ -43,13 +43,13 @@ $(function() {
         });
         
         // Run animate only once in a session
-        if (!$.cookie('animated')) {
-            $('*[data-animate]').each(function() {
-                var $self = $(this);
-                $self.addClass('animated ' + $self.data('animate'))
-            });
-            $.cookie('animated', true);
-        }
+        // if (!$.cookie('animated')) {
+        //     $('*[data-animate]').each(function() {
+        //         var $self = $(this);
+        //         $self.addClass('animated ' + $self.data('animate'))
+        //     });
+        //     $.cookie('animated', true);
+        // }
         
 
         // http://kenwheeler.github.io/slick/        
@@ -82,6 +82,12 @@ $(function() {
 	};
 
 	init();
+
+  // animate.css
+  // https://github.com/daneden/animate.css
+  $('*[data-animate]').hover(function() {
+    $(this).toggleClass('animated ' + $(this).data('animate'));
+  });
 
   // Change grid color randomly
   // http://colormind.io/api-access/
