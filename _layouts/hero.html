@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="page">
+	{{ content }}
+
+	{% if page.shares %}
+    <p>{% include shares.html %}</p>	
+	{% endif %}
+
+	{% if page.disqus %}
+	{% include disqus.html %}
+	{% endif %}
+</article>

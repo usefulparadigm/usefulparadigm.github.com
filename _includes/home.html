@@ -1,13 +1,3 @@
-{% if page.jumbotron %}
-<div class="jumbotron">
-  <h2>{{ page.jumbotron.title }}</h2>
-  <p>{{ page.jumbotron.body }}</p>
-  {% if page.jumbotron.link %}
-    <a class="btn btn-primary" role="button">Learn more</a>
-  {% endif %}
-</div>
-{% endif %}
-
 <!-- <div class="page-header">
   <h2>Services & Solutions</h2>
 </div> -->
@@ -15,9 +5,9 @@
 <ul id="services" class="grid list-unstyled">
 {% for service in page.services %}
   <li class="item item--{{ forloop.index }}">
-    <div class="item__content">
+    <a href="{{ service.link }}" class="item__content">
       <h5 class="item__content__title">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
-    </div>
+    </a>
   </li>
 {% endfor %}
 </ul>

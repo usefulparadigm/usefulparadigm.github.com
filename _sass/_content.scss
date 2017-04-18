@@ -12,7 +12,7 @@
   margin-bottom: 1em;
 }
 
-// page
+// page & hero title
 
 .page .grid {
   margin: 0;
@@ -27,11 +27,33 @@
     }
   }
   &#webdev { 
+//    background-color: $color-item-1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-webdev.jpg');
-    background-size: cover;
+    background-size: 100%;
   } 
-  &#martech .item__content { background-color: $color-item-2; } 
-  &#wordpress .item__content { background-color: $color-item-3; } 
+  &#martech .item__content { 
+//    background-color: $color-item-2;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-martech.jpg');
+    background-size: 100%;
+  } 
+  &#wordpress .item__content { 
+//    background-color: $color-item-3;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-wordpress.jpg');
+    background-size: 100%;
+  } 
+
+  @media screen and (max-width: 960px)  {
+    .item { padding-bottom: 25%; }
+  }
+
+  @media screen and (max-width: 640px)  {
+    .item { padding-bottom: 40%; }
+  }
+
+  @media screen and (max-width: 375px)  {
+    .item { padding-bottom: 60%; }
+  }
+
 }
 
 
