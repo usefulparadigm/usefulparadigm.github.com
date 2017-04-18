@@ -49,12 +49,12 @@ $(function() {
     });
     
     // Run animate only once in a session
-    if (!$.cookie('animated')) {
-        $('*[data-animate].animate-once').each(function() {
-            $(this).addClass('animated ' + $(this).data('animate'))
-        });
-        $.cookie('animated', true);
-    }
+    // if (!$.cookie('animated')) {
+    //     $('*[data-animate].animate-once').each(function() {
+    //         $(this).addClass('animated ' + $(this).data('animate'))
+    //     });
+    //     $.cookie('animated', true);
+    // }
 
 	};
 
