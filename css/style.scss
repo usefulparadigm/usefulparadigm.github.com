@@ -12,6 +12,7 @@ $font-size-base: 16px;
 $font-family-sans-serif: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 //$text-color: #333;
 $headings-color: #222;
+$thumbnail-border-radius: 0;
 
 @import "bootstrap";
 @import "bootstrap-block-grid/bootstrap3-block-grid";
@@ -26,4 +27,5 @@ $headings-color: #222;
 @import "base";
 @import "layout";
 @import "content";
+@import "items";
 @import "extras";

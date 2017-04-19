@@ -1,0 +1,88 @@
+// items.scss
+
+.items {
+  .title {}
+  .description {
+    color: #999;
+    font-size: 0.9em;
+  }
+}
+
+// Resources
+
+.resources {
+  list-style: none;
+  padding: 0;
+	display: flex;
+	flex-flow: row wrap;
+  .item {
+//    &:before {
+//      content: ''; float: left; padding-top: 50%;
+//    }
+  	flex: 50%;
+    position: relative;
+    height: 120px;
+    &__content {
+      display: block;
+      position: absolute;
+      top: 0; bottom: 0; left: 0; right: 0;
+      background-color: #ccc;
+      background-size: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 5px 5px 0;
+      height: auto;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-size: 150%;
+      }
+      .title {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.6);
+        font-size: 1.1em;
+        margin: 5px;
+        padding: 3px;
+      }
+    }
+  }
+  
+//  @media screen and (max-width: 960px)  {
+//    .item { flex: 50%; }
+//  }
+  @media screen and (max-width: 640px)  {
+    .item { flex: 100%; }
+  }
+}
+
+
+// References
+
+.references {
+  .thumbnail { 
+    margin: 10px; 
+    min-height: 80px;
+  }
+  .title {
+    margin: 0;
+    font-size: 1.1em;
+  }
+  .description {
+    color: #999;
+    font-size: 0.9em;
+  }
+  
+}
+
+// Publications
+
+.publications {
+  .cover img {
+    border: 1px solid #ccc;
+  }
+  .item:not(:last-of-type) {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+  }
+}
+

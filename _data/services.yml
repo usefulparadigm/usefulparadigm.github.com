@@ -1,0 +1,50 @@
+---
+webdev:
+  publications:
+  - title: 레일스와 함께하는 애자일 웹 개발
+    url: http://book.naver.com/bookdb/book_detail.nhn?bid=2691152
+    cover: http://image.aladin.co.kr/product/88/90/cover/8991268269_1.jpg
+    description: 데이브 토머스, 데이비드 하이네마이어 한슨 저 | 김석준 외 2명 역 | 인사이트 | 2007
+  - title: 프로그래밍 얼랭
+    url: http://book.naver.com/bookdb/book_detail.nhn?bid=4590312
+    cover: http://image.aladin.co.kr/product/221/27/letslook/8991268404_f.jpg  
+    description: 조 암스트롱 저 | 김석준 역 | 인사이트 | 2008
+  - title: Rails Recipes
+    url: http://book.naver.com/bookdb/book_detail.nhn?bid=2625095
+    cover: http://image.aladin.co.kr/product/87/48/cover/8991268242_1.jpg
+    description: 차드 파울러 저 | 김석준 역 | 인사이트 | 2007
+        
+martech:
+  resources:  
+    - title: Bottr로 페이스북 메신저 챗봇 만들기
+      url: http://bit.ly/2nZ2WSm
+      thumb: https://cdn-images-1.medium.com/max/1200/1*7DPF8WAe31qMcap7gUTxlw.jpeg
+    - title: 검색엔진최적화(SEO) 쉬운 가이드
+      url: http://bit.ly/2oIHKx6
+      thumb: https://cdn-images-1.medium.com/max/1600/1*BTZAgsS0q5Ye6S-IcWTINg.jpeg
+    - title: Foundation for Emails로 반응형 HTML Email 만들기
+      url: http://bit.ly/2oIOZoC
+      thumb: https://cdn-images-1.medium.com/max/2000/1*mg9NoZzLpBXdAg7MY6cXmg.png
+    - title: 랜딩 페이지에 컨택 폼 추가하기
+      url: http://bit.ly/2oILHBY
+      thumb: https://cdn-images-1.medium.com/max/2000/1*OO520mXc8fKFGedrWoO1Fg.jpeg
+
+wordpress:
+  references:
+  - title: LG CES2017 Newsroom
+    url: http://ces2017.lgnewsroom.com/
+    description: 2017, Custom Theme, 반응형웹
+    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-lgces2017.png
+  - title: Computex Taipei 2016
+    url: https://www.computextaipei.com.tw/
+    description: 2016, Custom Theme, 반응형웹
+    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-computex2016.png
+  - title: 페르노리카 코리아
+    url: http://www.pernod-ricard-korea.com/
+    description: 2015, Custom Theme, 반응형웹
+    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-prk.png
+  - title: WordPress 가이드
+    url: https://wpguide.usefulparadigm.com/
+    description: 2016, Twenty Fifteen Theme
+    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-wpguide.png
+                   
