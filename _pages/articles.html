@@ -1,0 +1,28 @@
+---
+layout: page
+title: Articles
+permalink: /articles/
+sitemap:
+  priority: 0.8
+  changefreq: weekly
+  lastmod: 2017-04-26
+---
+
+<ul class="posts articles list-unstyled">
+  {% for post in site.posts %}
+    <li class="item">
+      <div class="media">
+        {% if post.thumbnail %}
+        <a class="pull-left" href="{{post.url}}">
+          <img class="media-object" src="{{post.thumbnail}}" width="120" alt="">
+        </a>
+        {% endif %}
+        <div class="media-body">
+          <h5 class="media-heading"><a href="{{post.url}}">{{post.title}}</a></h5>
+          <small class="">{{ post.date | date_to_string }}</small>
+          <p>{{post.description}}</p>
+        </div>
+      </div>
+    </li>
+  {% endfor %}
+</ul>
