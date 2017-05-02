@@ -39,12 +39,12 @@ wordpress:
     url: https://www.computextaipei.com.tw/
     description: 2016, Custom Theme, 반응형웹
     screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-computex2016.png
-  - title: 페르노리카 코리아
-    url: http://www.pernod-ricard-korea.com/
-    description: 2015, Custom Theme, 반응형웹
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-prk.png
   - title: WordPress 가이드
     url: https://wpguide.usefulparadigm.com/
-    description: 2016, Twenty Fifteen Theme
+    description: 2015, Twenty Fifteen Theme
     screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-wpguide.png
+  - title: 페르노리카 코리아
+    url: http://www.pernod-ricard-korea.com/
+    description: 2014, Custom Theme, 반응형웹
+    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-prk.png
                    
