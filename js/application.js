@@ -92,38 +92,26 @@
 	// $('.bigger').biggerlink();
 	// $('.tabs').tabs();
 
-	function loadTwitter() {
-	    if($(".twitter-share-button").length > 0){
-	        if (typeof (twttr) != 'undefined') {
-	            twttr.widgets.load();
-	        } else {
-	            $.getScript('http://platform.twitter.com/widgets.js');
-	        }
-	    }
-	}
+  // function loadTwitter() {
+  //     if($(".twitter-share-button").length > 0){
+  //         if (typeof (twttr) != 'undefined') {
+  //             twttr.widgets.load();
+  //         } else {
+  //             $.getScript('http://platform.twitter.com/widgets.js');
+  //         }
+  //     }
+  // }
 	
-	var init = function(ajax) {
-		
-    // $(".various").fancybox({
-    //   // maxWidth  : 800,
-    //   // maxHeight  : 600,
-    //   // fitToView  : false,
-    //   // width    : '70%',
-    //   // height    : '70%',
-    //   // autoSize  : false,
-    //   // closeClick  : false,
-    //   // openEffect  : 'none',
-    //   // closeEffect  : 'none'
-    // });
+	var init = function() {
 		
 		// http://stackoverflow.com/questions/7901679/jquery-add-target-blank-for-outgoing-link
 		$('a[href^="http://"]').not('a[href*=usefulparadigm]').attr('target','_blank');
 		
 		// re-render widgets
-		if (ajax) {
-			if (typeof FB !== 'undefined') FB.XFBML.parse();
-			loadTwitter();
-		}
+    // if (ajax) {
+    //   if (typeof FB !== 'undefined') FB.XFBML.parse();
+    //   loadTwitter();
+    // }
         
     // http://www.appelsiini.net/projects/lazyload
     // $("article img").lazyload({
@@ -132,9 +120,9 @@
 
     // animate.css
     // https://github.com/daneden/animate.css
-    $('*[data-animate]').hover(function() {
-      $(this).toggleClass('animated ' + $(this).data('animate'));
-    });
+    // $('*[data-animate]').hover(function() {
+    //   $(this).toggleClass('animated ' + $(this).data('animate'));
+    // });
     
     // Run animate only once in a session
     // if (!$.cookie('animated')) {
@@ -207,7 +195,7 @@
     return FadeTransition;
   };
   
-  Barba.Dispatcher.on('newPageReady', function(currentStatus, oldStatus, container) {
+  Barba.Dispatcher.on('transitionCompleted', function(currentStatus) {
     // console.log(currentStatus);
     
     // Loading social sharing buttons  
@@ -218,8 +206,7 @@
     // Loading a Disqus thread dynamically
     // https://css-tricks.com/lazy-loading-disqus-comments/
     $.disqusLoader( '#disqus_thread', { 
-      scriptUrl: '//usefulparadigm.disqus.com/embed.js',
-      laziness: 0 
+      scriptUrl: '//usefulparadigm.disqus.com/embed.js'
     });
 
   });
