@@ -199,7 +199,8 @@
     // console.log(currentStatus);
     
     // Loading social sharing buttons  
-    try { gapi.plusone.go('main'); } catch(e) {}
+    // try { gapi.plusone.go(document.getElementById('main')); } catch(e) {}
+    try { gapi.plusone.render('g-plusone'); } catch(e) {}
     try { FB.XFBML.parse(document.getElementById('main')); } catch(e) {}
     try { twttr.widgets.load(document.getElementById("main")); } catch(e) {}
     
