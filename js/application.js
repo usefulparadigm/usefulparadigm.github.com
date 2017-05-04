@@ -195,7 +195,7 @@
     return FadeTransition;
   };
   
-  Barba.Dispatcher.on('initStateChange', function(currentStatus) {
+  Barba.Dispatcher.on('newPageReady', function(currentStatus) {
     // console.log(currentStatus);
     
     // Updating Google Analytics tracking
