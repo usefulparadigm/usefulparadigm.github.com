@@ -218,7 +218,8 @@
     // Loading a Disqus thread dynamically
     // https://css-tricks.com/lazy-loading-disqus-comments/
     $.disqusLoader( '#disqus_thread', { 
-      scriptUrl: '//usefulparadigm.disqus.com/embed.js' 
+      scriptUrl: '//usefulparadigm.disqus.com/embed.js',
+      laziness: 0 
     });
 
   });
