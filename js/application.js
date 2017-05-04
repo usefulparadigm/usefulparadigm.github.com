@@ -195,6 +195,14 @@
     return FadeTransition;
   };
   
+  Barba.Dispatcher.on('initStateChange', function(currentStatus) {
+    // console.log(currentStatus);
+    
+    // Updating Google Analytics tracking
+    ga('set', 'page', window.location.pathname);
+    ga('send', 'pageview');
+  });
+  
   Barba.Dispatcher.on('transitionCompleted', function(currentStatus) {
     // console.log(currentStatus);
     
