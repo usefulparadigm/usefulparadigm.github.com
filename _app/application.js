@@ -65,7 +65,7 @@
       ga('send', 'pageview');
       
       // Update canonical meta tag (used for google +1 button)  
-      // $('link[rel="canonical"]').attr('href', window.location.href);
+      $('link[rel="canonical"]').attr('href', window.location.href);
     }
   });
   
