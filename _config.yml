@@ -6,8 +6,9 @@ permalink: /:year/:month/:day/:title/
 # Reading Files
 include:
   - _pages
+  
+exclude: [".rvmrc", ".ruby-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock", "brunch-config.js", "package.json", "node_modules"]
 
-exclude: [".rvmrc", ".ruby-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock"]
 # markdown: redcarpet #kramdown
 fenced_code_blocks: true
 highlighter: rouge #pygments
