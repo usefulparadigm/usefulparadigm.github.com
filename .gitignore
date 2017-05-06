@@ -3,6 +3,7 @@ _site
 _posts/*.draft.*
 .bundle/
 .ruby-version
+.jekyll-metadata
 node_modules/
 Procfile
 *.map
