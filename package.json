@@ -1,0 +1,24 @@
+{
+  "name": "www.usefulparadigm.com",
+  "version": "1.0.0",
+  "description": "The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/usefulparadigm/usefulparadigm.github.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/usefulparadigm/usefulparadigm.github.com/issues"
+  },
+  "homepage": "https://github.com/usefulparadigm/usefulparadigm.github.com#readme",
+  "devDependencies": {
+    "brunch": "^2.10.9",
+    "javascript-brunch": "^2.10.0",
+    "uglify-js-brunch": "^2.10.0"
+  }
+}
