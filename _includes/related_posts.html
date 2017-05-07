@@ -1,7 +1,7 @@
 {% if page.tags and page.tags != empty %}
 <section class="related-posts">
 <h4 class="section-title">Related Posts</h4>
-<ul>
+<ul class="list-box">
   {% for post in site.posts %}
     {% if post.url != page.url %}	
       {% for tag in page.tags %} 

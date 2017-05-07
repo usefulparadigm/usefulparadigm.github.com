@@ -35,12 +35,12 @@ var FadeTransition = Barba.BaseTransition.extend({
 
     $(this.oldContainer).hide();
 
-    document.body.scrollTop = 0;
-
     $el.css({
       visibility : 'visible',
       opacity : 0
     });
+
+    document.body.scrollTop = 0;
 
     $el.animate({ opacity: 1 }, 400, function() {
       /**
