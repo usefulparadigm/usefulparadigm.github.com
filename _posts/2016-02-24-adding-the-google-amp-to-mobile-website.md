@@ -2,7 +2,7 @@
 layout: post
 title: 모바일 웹사이트에 구글 AMP 적용하기
 description: "최근 모바일 콘텐츠의 속도를 높여 사용자의 모바일 콘텐츠 접근성을 개선하려는 모바일 플랫폼 간 경쟁이 가속화되고 있습니다. 그 중 구글의 \"빠른 게재 모바일 페이지(AMP)\"에 대해 알아 보고 그 적용 방법을 소개합니다."
-thumbnail: https://usefulpa.s3.amazonaws.com/images/2017/google-amp-mobile.png
+thumbnail: https://usefulpa.s3.amazonaws.com/images/2017/logo-og-image.jpg
 category: ["mobile", "web development"]
 tags: ["future", "mobile", "google"]
 ---
