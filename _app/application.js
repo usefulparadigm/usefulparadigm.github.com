@@ -51,9 +51,20 @@
   // Pjax page transition
   // https://github.com/luruke/barba.js
 
+	var HideShowTransition = Barba.BaseTransition.extend({
+	  start: function() {
+	    this.newContainerLoading.then(this.finish.bind(this));
+	  },
+	
+	  finish: function() {
+	    document.body.scrollTop = 0;
+	    this.done();
+	  }
+	});
 
   Barba.Pjax.getTransition = function() {
-    return require('./FadeTransition'); //FadeTransition;
+    // return require('./FadeTransition'); //FadeTransition;
+    return HideShowTransition; 
   };
 
   Barba.Dispatcher.on('initStateChange', function(currentStatus, prevStatus) {
