@@ -20,7 +20,7 @@ var FadeTransition = Barba.BaseTransition.extend({
      * this.oldContainer is the HTMLElement of the old Container
      */
 
-    return $(this.oldContainer).animate({ opacity: 0 }).promise();
+    return $(this.oldContainer).velocity({ opacity: 0 }).promise();
   },
 
   fadeIn: function() {
@@ -42,7 +42,7 @@ var FadeTransition = Barba.BaseTransition.extend({
 
     document.body.scrollTop = 0;
 
-    $el.animate({ opacity: 1 }, 400, function() {
+    $el.velocity({ opacity: 1 }, 400, function() {
       /**
        * Do not forget to call .done() as soon your transition is finished!
        * .done() will automatically remove from the DOM the old Container
