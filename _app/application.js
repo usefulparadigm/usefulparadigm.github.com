@@ -51,9 +51,9 @@
   // Pjax page transition
   // https://github.com/luruke/barba.js
 
-  // Barba.Pjax.getTransition = function() {
-  //   return require('./FadeTransition'); //FadeTransition;
-  // };
+  Barba.Pjax.getTransition = function() {
+    return require('./FadeTransition'); //FadeTransition;
+  };
 
   Barba.Dispatcher.on('initStateChange', function(currentStatus, prevStatus) {
     // console.log(currentStatus, prevStatus);
