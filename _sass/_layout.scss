@@ -133,7 +133,7 @@ aside .contact {
       transition: background-color 2s ease-in;
       padding: 5px 15px;
       margin: 0 3px 3px 0;
-      &:hover, &:visited {
+      &, &:hover, &:visited {
         text-decoration: none;
 //        font-weight: bold;
 //        background: #999 !important;
