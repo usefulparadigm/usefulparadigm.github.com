@@ -22,8 +22,9 @@
     padding-bottom: 40%;
     &__content {
       background-color: transparent;
-      .title { color: #fff; }
-      p { color: #eee; }
+      .title { color: #fff; opacity: 0; }
+      p { color: #eee; opacity: 0; }
+//      .animated { opacity: 1; }
     }
   }
   &#webdev { 

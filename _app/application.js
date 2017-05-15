@@ -67,6 +67,14 @@
       $('link[rel="canonical"]').attr('href', window.location.href);
     }
   });
+
+  Barba.Dispatcher.on('newPageReady', function(currentStatus, prevStatus) {
+    // animate.css
+    // https://github.com/daneden/animate.css
+    $('*[data-animate]').each(function() {
+      $(this).toggleClass('animated ' + $(this).data('animate'));
+    });
+  });
   
   Barba.Dispatcher.on('transitionCompleted', function(currentStatus, prevStatus) {
     // console.log(currentStatus);
@@ -84,6 +92,7 @@
         scriptUrl: '//usefulparadigm.disqus.com/embed.js'
       });
     }
+
   });
   
   Barba.Pjax.start();

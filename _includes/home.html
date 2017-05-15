@@ -4,7 +4,7 @@
 
 <ul id="services" class="grid list-unstyled">
 {% for service in page.services %}
-  <li class="item item--{{ forloop.index }}" data-animate="tada">
+  <li class="item item--{{ forloop.index }}">
     <a href="{{ service.link }}" class="item__content">
       <h5 class="item__content__title">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
     </a>
