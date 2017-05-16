@@ -74,6 +74,9 @@
     $('*[data-animate]').each(function() {
       $(this).toggleClass('animated ' + $(this).data('animate'));
     });
+    $('*[data-animate-hover]').hover(function() {
+      $(this).toggleClass('animated ' + $(this).data('animate-hover'));
+    });
   });
   
   Barba.Dispatcher.on('transitionCompleted', function(currentStatus, prevStatus) {

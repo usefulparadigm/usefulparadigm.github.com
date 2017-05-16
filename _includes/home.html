@@ -6,7 +6,7 @@
 {% for service in page.services %}
   <li class="item item--{{ forloop.index }}">
     <a href="{{ service.link }}" class="item__content">
-      <h5 class="item__content__title">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
+      <h5 class="item__content__title" data-animate-hover="pulse">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
     </a>
   </li>
 {% endfor %}
