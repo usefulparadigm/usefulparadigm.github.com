@@ -74,8 +74,10 @@
     $('*[data-animate]').each(function() {
       $(this).toggleClass('animated ' + $(this).data('animate'));
     });
-    $('*[data-animate-hover]').hover(function() {
-      $(this).toggleClass('animated ' + $(this).data('animate-hover'));
+    // front grid hover animation
+    $('.grid .item').hover(function() {
+      var $hover = $('*[data-animate-hover]', this);
+      $hover.toggleClass('animated ' + $hover.data('animate-hover'));
     });
   });
   
