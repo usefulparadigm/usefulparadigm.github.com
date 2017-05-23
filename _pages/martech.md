@@ -15,8 +15,9 @@ sitemap:
   <h2>Service Areas</h2>
 </div>
 
+* 디지털 마케팅 솔루션 개발/컨설팅
 * 온라인 마케팅 Landing Page 제작
-* 페이스북(Facebook) 앱 제작 및 API 기술 지원
+* 페이스북(Facebook) 앱 제작 및 API 연동 기술 지원
 * 소셜 미디어 마케팅 및 SNS 연동 기술 지원
 * 이메일 마케팅 솔루션 개발
 * 콘텐츠 큐레이션 솔루션 제작
