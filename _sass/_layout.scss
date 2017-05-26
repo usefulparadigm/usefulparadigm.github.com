@@ -110,8 +110,8 @@ aside .contact {
 
 // home grid layout
 
+// controlling initial visibility working /w animate.css
 #services .item {
-  // controlling initial visibility working /w animate.css
   visibility: hidden;
   &.animated { visibility: visible; }
 }
