@@ -110,6 +110,12 @@ aside .contact {
 
 // home grid layout
 
+#services .item {
+  // controlling initial visibility working /w animate.css
+  visibility: hidden;
+  &.animated { visibility: visible; }
+}
+
 .grid {
   margin-right: 50px;
   max-width: 507px;
@@ -123,8 +129,8 @@ aside .contact {
     padding-bottom: 25%;
     float: left;
     position: relative;
-    opacity: 0.9;
-//    transition: opacity 1s;
+    opacity: 0.8;
+    transition: opacity 1s;
     &:hover { opacity: 1; }
     &__content {
       display: block;
