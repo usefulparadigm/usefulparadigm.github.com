@@ -35,8 +35,8 @@ wordpress:
     url: http://ces2017.lgnewsroom.com/
     description: 2017, Custom Theme, 반응형웹
     screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-lgces2017.png
-  - title: Computex Taipei 2016
-    url: https://www.computextaipei.com.tw/
+  - title: Computex Taipei 2016 국문 사이트
+    url: http://computextaipei.kr/
     description: 2016, Custom Theme, 반응형웹
     screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-computex2016.png
   - title: WordPress 가이드
