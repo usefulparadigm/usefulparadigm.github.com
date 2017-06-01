@@ -14,6 +14,10 @@ $font-family-sans-serif: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headings-color: #222;
 $thumbnail-border-radius: 0;
 
+$border-radius-base:        0px !default;
+//$border-radius-large:       0px !default;
+//$border-radius-small:       0px !default;
+
 @import "bootstrap";
 @import "bootstrap-block-grid/bootstrap3-block-grid";
 //@import "bourbon/bourbon";
