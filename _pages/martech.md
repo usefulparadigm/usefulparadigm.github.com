@@ -12,7 +12,7 @@ last_modified_at: 2017-06-01
   <h2>Service Areas</h2>
 </div>
 
-* 디지털 마케팅 솔루션 컨설팅
+<!-- * 디지털 마케팅 솔루션 컨설팅 -->
 * 페이스북(Facebook) 앱 제작 및 API 연동
 * 온라인 마케팅 Landing Page 제작
 <!-- * 소셜 미디어 마케팅 및 SNS 연동 기술 지원 -->
