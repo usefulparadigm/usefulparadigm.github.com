@@ -198,6 +198,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   hash-joiner
+  jekyll-redirect-from
 
 BUNDLED WITH
    1.12.5
