@@ -3,10 +3,7 @@ layout: hero
 title: 웹 기술 개발 & 컨설팅
 description: 유스풀패러다임은 다양한 웹 표준 기술과 검증된 오픈소스 솔루션을 기반으로 웹서비스와 솔루션을 만들고 운영합니다.
 permalink: /web-development/
-sitemap:
-  priority: 1
-  changefreq: weekly
-  lastmod: 2017-04-18
+last_modified_at: 2017-06-01
 ---
 
 {% include hero_title.html name="webdev" %}

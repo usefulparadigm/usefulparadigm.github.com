@@ -3,10 +3,7 @@ layout: hero
 title: 디지털 마케팅 솔루션
 description: 유스풀패러다임은 기업과 개인의 비즈니스와 마케팅을 지원하는 다양한 소프트웨어 서비스와 솔루션을 제공합니다.
 permalink: /marketing-technology/
-sitemap:
-  priority: 1
-  changefreq: weekly
-  lastmod: 2017-04-18
+last_modified_at: 2017-06-01
 ---
 
 {% include hero_title.html name="martech" %}
