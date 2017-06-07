@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Grid layout을 만드는 몇 가지 방법들
-description: 웹에서 그리드 레이아웃(grid layout)을 만드는데 주로 사용되는 방법들 몇 가지를 소개하고 특히 최근 등장한 CSS Grid Layout에 대해 알아 봅니다.
+title: Grid layout을 만드는 몇 가지 기술들
+description: 웹에서 그리드 레이아웃(grid layout)을 구현하는데 사용되는 몇 가지 기술들을 소개하고 특히 최근 등장한 CSS Grid Layout에 대해 알아 봅니다.
 thumbnail: https://usefulpa.s3.amazonaws.com/images/2017/12-grid-layout-featured.jpg
 image: https://usefulpa.s3.amazonaws.com/images/2017/12-grid-layout-featured.jpg
 categories: ["web development"]
