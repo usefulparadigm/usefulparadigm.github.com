@@ -14,7 +14,7 @@
 
 // page & hero title
 
-.page .grid {
+.page .grid, #home.grid {
   margin: 0;
   max-width: 100%;
   .item {
@@ -22,11 +22,16 @@
     padding-bottom: 40%;
     &__content {
       background-color: transparent;
-      .title { color: #fff; opacity: 0; }
+      .title { font-size: 2em; color: #fff; opacity: 0; }
       p { color: #eee; opacity: 0; }
 //      .animated { opacity: 1; }
     }
   }
+  &#home { 
+//    background-color: $color-item-1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-home.jpg');
+    background-size: 100%;
+  } 
   &#webdev { 
 //    background-color: $color-item-1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-webdev.jpg');
@@ -48,11 +53,11 @@
   }
 
   @media screen and (max-width: 640px)  {
-    .item { padding-bottom: 40%; }
+    .item { padding-bottom: 45%; }
   }
 
   @media screen and (max-width: 375px)  {
-    .item { padding-bottom: 60%; }
+    .item { padding-bottom: 55%; }
   }
 
 }

@@ -48,7 +48,7 @@
 {% include ga.html %}
 {% include pixel.html %}
 </head>
-<body>
+<body class="{{ page.name }}">
   <div id="fb-root"></div>
   <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
@@ -70,9 +70,8 @@
   <div class="wrapper">
     <header class="main">
       <hgroup>
-        <!-- <h1 id="logo"><a href="/">{{ site.title }}</a></h1> -->
         <h1 id="logo"><a href="/"><img src="/img/up-logo-top.png" width="80" alt="{{ site.title }}"></a></h1>
-        {% if site.tagline %}<p id="tagline">{{ site.tagline }}</p>{% endif %}
+        {% comment %}{% if site.tagline %}<p id="tagline">{{ site.tagline }}</p>{% endif %}{% endcomment %}
       </hgroup>
     </header>
 
@@ -95,6 +94,7 @@
           <li><a href="http://wpguide.usefulparadigm.com/" target="_blank" class="external">WordPress 가이드</a></li>
           <!--li><a href="/blog/">디지털 마케팅의 기술</a></li-->
           <li><a href="http://blog.usefulparadigm.com/" target="_blank" class="external">디지털 마케팅의 기술</a></li>
+          <li><a href="/opensources/">Open Sources</a></li>
         </ul>
       </nav>
       <hr/>
