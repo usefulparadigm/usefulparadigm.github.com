@@ -207,20 +207,20 @@ aside .contact {
 
 }
 
-//@media screen and (max-width: 480px) {
-//
+@media screen and (max-width: 480px) {
+
 //  aside {
 //      text-align: center;
 //  }
-//}
+
+  .grid .item__content small { display: none; }
+}
 
 @media screen and (max-width: 375px)  {
     section.main .nav { display: none; }
     section.main .emblem { display: none; }
     section.main .services small { display: block; }
     section.main .solutions small { display: block; }
-
-    #services .item__content small { display: none; }
 }    
 
 @media print {
