@@ -58,6 +58,13 @@
 
   @media screen and (max-width: 375px)  {
     .item { padding-bottom: 55%; }
+    .item__content .title {
+      font-size: 1.8em;
+    }
+  }
+
+  @media screen and (max-width: 320px)  {
+    .item { padding-bottom: 70%; }
   }
 
 }

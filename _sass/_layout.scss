@@ -78,7 +78,7 @@ aside ul {
 #tagline { 
     text-align: center;
     margin: 0 0 1em; 
-//    color: $color-gray;
+//    color: $color-up-gray;
 }
 
 .about {
@@ -111,59 +111,47 @@ aside .contact {
 
 // home grid layout
 
-// controlling initial visibility working /w animate.css
-#services .item {
-  visibility: hidden;
-  &.animated { visibility: visible; }
-}
-
 .grid {
-  margin-right: 50px;
-  max-width: 507px;
+//  margin-right: 50px;
+//  max-width: 507px;
   &:after {
     content: '';
     display: block;
     clear: both;
   }
   .item {
-    width: 25%;
-    padding-bottom: 25%;
+    width: 33.3%;
+    padding-bottom: 20%;
     float: left;
+    text-align: center;
     position: relative;
     opacity: 0.9;
-//    transition: opacity 1s;
+    transition: opacity 1s;
     &:hover { opacity: 1; }
+    &__icon { 
+//      color: $color-up-green;
+      font-size: 1.2em;
+    }
     &__content {
       display: block;
       position: absolute;
       top: 0; left: 0; bottom: 0; right: 0;
-      background: #ccc;
-      transition: background-color 2s ease-in;
-      padding: 5px 15px;
+      padding: 5px 10px;
       margin: 0 3px 3px 0;
       &, &:hover, &:visited {
         text-decoration: none;
-//        font-weight: bold;
-//        background: #999 !important;
-//        *{ color: #111; }
       }
       &__title {
-        color: #fff;
         small { 
           display: block; 
-          color: #ddd;
           padding-top: 4px;
         }
       }
     }
-    &.item--1 { width: 50%; }
-    &.item--4, &.item--5 { width: 33.3%; padding-bottom: 20%; }
   }
-  .item--1 .item__content { background: $color-item-1; }
-  .item--2 .item__content { background: $color-item-2; }
-  .item--3 .item__content { background: $color-item-3; }
-  .item--4 .item__content { background: $color-item-4; }
-  .item--5 .item__content { background: $color-item-5; }
+  .item--1 .item__icon { color: $color-item-1; }
+  .item--2 .item__icon { color: $color-item-2; }
+  .item--3 .item__icon { color: $color-item-3; }
 }
 
 //@media screen and (max-width: 960px), (max-height: 500px)  {
@@ -202,13 +190,8 @@ aside .contact {
   }
 
   .grid {
-    margin-right: 0;
-    max-width: 100%;
     .item {
-      width: 20%;
-      padding-bottom: 20%;
-      &.item--1 { width: 20%; padding-bottom: 20%; }
-      &.item--4, &.item--5 { width: 20%; padding-bottom: 20%; }
+      padding-bottom: 10%;
     }
   }
 
@@ -217,33 +200,12 @@ aside .contact {
 @media screen and (max-width: 640px)  {
 
   .grid {
-    margin-right: 0;
-    max-width: 100%;
     .item {
-      width: 50%;
-      padding-bottom: 18%;
-      &.item--1 { width: 100%; padding-bottom: 18%; }
-      &.item--4, &.item--5 { width: 50%; padding-bottom: 18%; }
+      padding-bottom: 30%;
     }
   }
 
 }
-
-@media screen and (max-width: 375px)  {
-    section.main .nav { display: none; }
-    section.main .emblem { display: none; }
-    section.main .services small { display: block; }
-    section.main .solutions small { display: block; }
-
-    .grid {
-      .item {
-        width: 100%;
-        padding-bottom: 25%;
-        &.item--1 { width: 100%; padding-bottom: 25%; }
-        &.item--4, &.item--5 { width: 50%; padding-bottom: 25%; }
-      }
-    }
-}    
 
 //@media screen and (max-width: 480px) {
 //
@@ -251,6 +213,15 @@ aside .contact {
 //      text-align: center;
 //  }
 //}
+
+@media screen and (max-width: 375px)  {
+    section.main .nav { display: none; }
+    section.main .emblem { display: none; }
+    section.main .services small { display: block; }
+    section.main .solutions small { display: block; }
+
+    #services .item__content small { display: none; }
+}    
 
 @media print {
   body {

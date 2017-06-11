@@ -1,13 +1,14 @@
 ---
 ---
 // color themes for item bg color (autogen by Colormind.io)
-$color-item-1: #64a669;
+$color-item-1: #FF4136; //#64a669;
 $color-item-2: #f6a51d;
-$color-item-3: #186186;
+$color-item-3: #0074D9; //#186186;
 $color-item-4: #84928c;
 $color-item-5: #989b2a;
 
-$color-gray: #aaa;
+$color-up-green: #73941E;
+$color-up-gray: #aaa;
 
 // overriding Bootstrap's default vars
 $font-size-base: 17px;
@@ -15,6 +16,7 @@ $font-family-sans-serif: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
 //$text-color: #333;
 $headings-color: #222;
 $thumbnail-border-radius: 0;
+//$link-color: $color-up-green;
 
 $border-radius-base:        0px !default;
 //$border-radius-large:       0px !default;
