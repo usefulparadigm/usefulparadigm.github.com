@@ -17,6 +17,7 @@
 .page .grid, #home.grid {
   margin: 0;
   max-width: 100%;
+  background-size: 100%;
   .item {
     width: 100%;
     padding-bottom: 40%;
@@ -30,22 +31,18 @@
   &#home { 
     background-color: #fff;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('/img/hero-home.jpg');
-    background-size: 100%;
   } 
   &#webdev { 
 //    background-color: $color-item-1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-webdev.jpg');
-    background-size: 100%;
   } 
   &#martech .item__content { 
 //    background-color: $color-item-2;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-martech.jpg');
-    background-size: 100%;
   } 
   &#wordpress .item__content { 
 //    background-color: $color-item-3;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-wordpress.jpg');
-    background-size: 100%;
   } 
 
   @media screen and (max-width: 960px)  {
