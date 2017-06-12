@@ -17,22 +17,21 @@
 .page .grid, #home.grid {
   margin: 0;
   max-width: 100%;
-  background-size: 100%;
   .item {
     width: 100%;
     padding-bottom: 40%;
     &__content {
-      background-color: transparent;
+      background-color: #fff; //transparent;
+      background-size: 100%;
       .title { font-size: 2em; color: #fff; opacity: 0; }
       p { color: #eee; opacity: 0; }
 //      .animated { opacity: 1; }
     }
   }
-  &#home { 
-    background-color: #fff;
+  &#home .item__content { 
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('/img/hero-home.jpg');
   } 
-  &#webdev { 
+  &#webdev .item__content { 
 //    background-color: $color-item-1;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-webdev.jpg');
   } 
