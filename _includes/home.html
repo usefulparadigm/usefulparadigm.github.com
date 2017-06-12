@@ -7,9 +7,9 @@
 <ul id="services" class="grid list-unstyled">
 {% for service in page.services %}
   <li class="item item--{{ forloop.index }}" data-animate="zoomInx">
-    <a href="{{ service.link }}" class="item__content">
+    <a href="{{ service.link }}" class="item__content" data-animate-hover="pulse">
       <span class="item__icon">{{ service.icon }}</span>
-      <h5 class="item__content__title" data-animate-hover="pulse">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
+      <h5 class="item__content__title">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
     </a>
   </li>
 {% endfor %}
