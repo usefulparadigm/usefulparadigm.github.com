@@ -69,6 +69,13 @@
   });
 
   Barba.Dispatcher.on('newPageReady', function(currentStatus, prevStatus) {
+
+    // https://github.com/alexanderdickson/waitForImages
+    $('.grid').waitForImages(function() {
+        // All descendant images have loaded, now slide up.
+        $(this).css({'opacity': 1});
+    });
+
     // animate.css
     // https://github.com/daneden/animate.css
     $('*[data-animate]').each(function() {
