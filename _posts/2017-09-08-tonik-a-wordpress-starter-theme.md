@@ -26,7 +26,7 @@ tags: [wordpress]
 
 Namespace나 autoloading, Composer 같은 [PHP의 모던 프랙티스들](http://www.phptherightway.com/), 그리고 webpack이나 gulp 같은 Node.js 기반 에셋 빌더 도구들을 사용하여 테마 개발을 자동화하고 생산성 향상을 꽤하는 것은 최근의 프론트엔드측 개발 흐름을 반영한 것. 
 
-예전에 루비온레일스가 점점 루비 표준 방식으로 돌아섰던 것처럼 이제 워드프레스도 제대로 다루려면 PHP의 베스트 프랙티스들을 익혀야 할 때가 온 듯한 생각도 듬.
+예전에 루비온레일스가 점점 루비 표준 방식으로 돌아섰던 것처럼 이제 워드프레스도 제대로 다루려면 PHP의 베스트 프랙티스들을 익혀야 할 때가 온 듯한 생각.
 
 Sage가 비교적 workflow 측면만 고려한 Starter Theme인 반면, 이 Tonik 테마는 코드 기반(code base)도 [Genesis Framework](https://my.studiopress.com/themes/genesis/) 수준으로 추상화 수준이 높아서 약간의 러닝 커브(learning curve)는 있음.
 
