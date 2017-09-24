@@ -436,7 +436,7 @@ CP의 “설정 > 에셋” 메뉴에서 새 에셋을 추가해 보자.
 참고로, 여기에서 사용한 알리오 올리오 파스타의 내용은 다음 자료들을 참조하였다.
 
 - [알리오 올리오 - 나무위키](https://namu.wiki/w/%EC%95%8C%EB%A6%AC%EC%98%A4%20%EC%98%AC%EB%A6%AC%EC%98%A4)
-- [알리오 올리오 파스타 만들기 : 맛있지만 간단한 오일 파스타 | Spaghetti Aglio e Olio - YouTube](https://www.youtube.com/watch?v=Yf0LIvDo9sc)
+- [알리오 올리오 파스타 만들기 : 맛있지만 간단한 오일 파스타 - YouTube](https://www.youtube.com/watch?v=Yf0LIvDo9sc)
 
 
 ### YouTube 비디오 포함 시키기
@@ -460,11 +460,11 @@ CP의 “설정 > 에셋” 메뉴에서 새 에셋을 추가해 보자.
 
 템플릿 파일에서는 동영상 처리 부분에서 다음과 같이 필터로 추가해 주면 된다.
 
-```
 {% raw %}
+```twig
 {{ entry.video | videoEmbed({ width: 600, height: 400 }) }}
-{% endraw %}
 ```
+{% endraw %}
 
 이제 다시 레시피로 돌아와 확인하면, 동영상이 보일 것이다.
 
