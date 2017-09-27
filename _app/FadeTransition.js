@@ -29,6 +29,13 @@ var FadeTransition = Barba.BaseTransition.extend({
      * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
      * Please note, newContainer is available just after newContainerLoading is resolved!
      */
+    
+    $(window).scrollTop(0); // scroll to top here
+
+    // // https://github.com/luruke/barba.js/issues/158
+    // if ('scrollRestoration' in history) {
+    //   history.scrollRestoration = 'manual';
+    // }
 
     var _this = this;
     var $el = $(this.newContainer);
