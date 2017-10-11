@@ -26,6 +26,12 @@
     &__content {
       background-color: #fff; //transparent;
       background-size: 100%;
+      // https://stackoverflow.com/a/26996468
+      &.fixed-bg {
+            background-position: center top;
+//            background-size: contain;
+            background-attachment: scroll;
+      }
       .title { font-size: 2em; color: #fff; opacity: 0; }
       p { color: #eee; opacity: 0; }
 //      .animated { opacity: 1; }
@@ -66,13 +72,6 @@
     .item { padding-bottom: 70%; }
   }
 
-}
-
-// https://stackoverflow.com/a/26996468
-.fixed-bg {
-      background-position: center top;
-      background-size: cover;
-      background-attachment: scroll;
 }
 
 // page sub-menu
