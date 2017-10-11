@@ -18,7 +18,14 @@
 		
 		// http://stackoverflow.com/questions/7901679/jquery-add-target-blank-for-outgoing-link
 		$('a[href^="http://"],a[href^="https://"]').not('a[href^="http://www.usefulparadigm.com"]').attr('target','_blank');
-		
+
+    // https://stackoverflow.com/a/26996468
+    // https://stackoverflow.com/questions/23363141/background-fixed-up-go-a-bit-up-when-scroll
+    $(window).scroll(function() {
+      var scrolledY = $(window).scrollTop();
+      $('.fixed-bg').css('background-position', 'center -' + ((scrolledY * 0.3)) + 'px');
+    });
+
 		// re-render widgets
     // if (ajax) {
     //   if (typeof FB !== 'undefined') FB.XFBML.parse();

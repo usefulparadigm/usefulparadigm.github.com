@@ -68,6 +68,13 @@
 
 }
 
+// https://stackoverflow.com/a/26996468
+.fixed-bg {
+      background-position: center top;
+      background-size: cover;
+      background-attachment: scroll;
+}
+
 // page sub-menu
 .page .sub-menu {
   margin-top: -1em;
