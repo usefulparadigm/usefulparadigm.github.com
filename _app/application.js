@@ -22,7 +22,12 @@
     // https://stackoverflow.com/a/26996468
     $(window).scroll(function() {
       var scrolledY = $(window).scrollTop();
-      $('.fixed-bg').css('background-position', 'center top, center -' + ((scrolledY * 0.3)) + 'px');
+      var bgHeight = $('.fixed-bg').outerHeight();
+      console.log(scrolledY, bgHeight/2, ((bgHeight/2 - scrolledY)));
+      $('.fixed-bg').css('background-position', 'center top, center -' + (bgHeight/2 + (scrolledY * 0.3)) + 'px');
+      // $('.fixed-bg').each(function() {
+      //   // $(this).css('background-position', 'center top, center -' + ((scrolledY - bgHeight/2)) + 'px');
+      // });
     });
 
 		// re-render widgets
