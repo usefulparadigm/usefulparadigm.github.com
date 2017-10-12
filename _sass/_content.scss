@@ -28,7 +28,7 @@
       background-size: 100%;
       // https://stackoverflow.com/a/26996468
       &.fixed-bg {
-            background-position: center top, center -50px; // #TODO; hard-coding! center not works!!
+            background-position: center top, center -60px; // padding from the top!
 //            background-size: cover;
             background-attachment: scroll;
       }
