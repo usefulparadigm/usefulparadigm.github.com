@@ -23,8 +23,8 @@
     $(window).scroll(function() {
       var scrolledY = $(window).scrollTop();
       var bgHeight = $('.fixed-bg').outerHeight();
-      console.log(scrolledY, bgHeight/2, ((bgHeight/2 - scrolledY)));
-      $('.fixed-bg').css('background-position', 'center top, center -' + (bgHeight/2 + (scrolledY * 0.3)) + 'px');
+      // console.log(scrolledY, bgHeight/2, ((bgHeight/2 - scrolledY)));
+      $('.fixed-bg').css('background-position', 'center top, center -' + ((scrolledY * 0.3) + 50) + 'px');
       // $('.fixed-bg').each(function() {
       //   // $(this).css('background-position', 'center top, center -' + ((scrolledY - bgHeight/2)) + 'px');
       // });
