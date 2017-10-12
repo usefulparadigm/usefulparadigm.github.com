@@ -23,7 +23,7 @@
     $(window).scroll(function() {
       var scrolledY = $(window).scrollTop();
       // sync with css' background-position value!!
-      $('.fixed-bg').css('background-position', 'center top, center -' + ((scrolledY * 0.2) + 56) + 'px');
+      $('.fixed-bg').css('background-position', 'center top, center -' + ((scrolledY * 0.2) + 50) + 'px');
     });
 
 		// re-render widgets
