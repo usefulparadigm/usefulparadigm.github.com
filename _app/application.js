@@ -22,7 +22,7 @@
     // https://stackoverflow.com/a/26996468
     $(window).scroll(function() {
       var scrolledY = $(window).scrollTop();
-      $('.fixed-bg').css('background-position', '0 0, center -' + ((scrolledY * 0.3)) + 'px');
+      $('.fixed-bg').css('background-position', 'center -' + ((scrolledY * 0.3)) + 'px');
     });
 
 		// re-render widgets

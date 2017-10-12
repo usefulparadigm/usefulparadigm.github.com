@@ -30,7 +30,7 @@
       &.fixed-bg {
             background-position: center top;
             background-size: cover;
-            background-attachment: scroll;
+            background-attachment: fixed, scroll;
       }
       .title { font-size: 2em; color: #fff; opacity: 0; }
       p { color: #eee; opacity: 0; }
