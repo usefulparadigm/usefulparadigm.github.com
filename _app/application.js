@@ -19,11 +19,12 @@
 		// http://stackoverflow.com/questions/7901679/jquery-add-target-blank-for-outgoing-link
 		$('a[href^="http://"],a[href^="https://"]').not('a[href^="http://www.usefulparadigm.com"]').attr('target','_blank');
 
+    // parallax scrolling of hero title
     // https://stackoverflow.com/a/26996468
     $(window).scroll(function() {
       var scrolledY = $(window).scrollTop();
       // sync with css' background-position value!!
-      $('.fixed-bg').css('background-position', 'center top, center -' + ((scrolledY * 0.1) + 30) + 'px');
+      $('.fixed-bg').css('background-position', 'center top, center -' + ((scrolledY * 0.1) + 50) + 'px');
     });
 
 		// re-render widgets
