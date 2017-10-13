@@ -24,7 +24,7 @@
     $(window).scroll(function() {
       var scrolledY = $(window).scrollTop();
       // sync with css' background-position value!!
-      $('.fixed-bg').css('background-position', 'center top, center -' + ((scrolledY * 0.05) + 30) + 'px');
+      $('.fixed-bg').css('background-position', 'center top, center -' + ((scrolledY * 0.1) + 40) + 'px');
     });
 
 		// re-render widgets
