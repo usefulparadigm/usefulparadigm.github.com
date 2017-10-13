@@ -2,7 +2,7 @@
   <div class="item">
     <div class="item__content fixed-bg">
       <h1 class="title" data-animate="fadeInLeftBig">{{ include.title | default: page.title }}</h1>
-      <p data-animate="fadeInRightBig">{{ page.description }}</p>
+      <p data-animate="fadeInRightBig">{{ include.description | default: page.description }}</p>
     </div>
   </div>
 </div>  
