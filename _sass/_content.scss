@@ -33,7 +33,12 @@
             background-attachment: scroll;
       }
       .title { font-size: 1.8em; color: #fff; opacity: 0; }
-      p { color: #eee; opacity: 0; padding: 0 20px; line-height: 1.4; }
+      p { 
+        color: #eee; opacity: 0; padding: 0 20px; line-height: 1.4; 
+        @media screen and (max-width: 375px)  {
+          padding: 0;
+        }
+      }
 //      .animated { opacity: 1; }
       br { line-height: 1.6; }
     }
