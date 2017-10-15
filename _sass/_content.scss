@@ -14,11 +14,6 @@
 
 // page & hero title
 
-#home.hero .title {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-} 
-
 .page .grid, #home.grid {
   margin: 0;
   max-width: 100%;
@@ -37,14 +32,20 @@
 //            background-size: cover;
             background-attachment: scroll;
       }
-      .title { font-size: 2em; color: #fff; opacity: 0; }
-      p { color: #eee; opacity: 0; }
+      .title { font-size: 1.8em; color: #fff; opacity: 0; }
+      p { color: #eee; opacity: 0; padding: 0 20px; line-height: 1.4; }
 //      .animated { opacity: 1; }
+      br { line-height: 1.6; }
     }
   }
   &#home .item__content { 
     background-image: url('/img/hero-home.jpg'); // fallback for OLD browsers
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('/img/hero-home.jpg');
+    // Logo
+    .title {
+      font-family: 'Lato', sans-serif;
+      font-weight: 900;
+    }
   } 
   &#webdev .item__content { 
 //    background-color: $color-item-1;
