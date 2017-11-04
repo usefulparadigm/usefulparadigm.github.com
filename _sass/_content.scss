@@ -114,6 +114,12 @@ article.post, article.page {
   line-height: 1.6;
 }
 
+article.post {
+  h2,h3,h4,h5,h6 {
+    padding-top: 0.8em;
+  }
+}
+
 article.post header {
   p {
     font-size: 0.9em;
