@@ -30,10 +30,10 @@ last_modified_at: 2017-06-01
         <a class="pull-left cover" href="{{ entry.url }}">
           <img class="media-object" src="{{ entry.cover }}" alt="{{ entry.title }}" width="80">
         </a>
-        <div class="media-body">
+        <!-- <div class="media-body">
           <h5 class="media-heading title">{{ entry.title }}</h5>
           <p class="description">{{ entry.description }}</p>
-        </div>
+        </div> -->
       </div><!--.media-->
   </li>
 {% endfor %}

@@ -76,13 +76,18 @@
 // Publications
 
 .publications {
+  .item {
+    display: inline-block;
+//    width: 25%;
+  }
   .cover img {
-    border: 1px solid #ccc;
+    padding: 4px;
+    border: 1px solid #ddd;
   }
-  .item:not(:last-of-type) {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-  }
+//  .item:not(:last-of-type) {
+//    border-bottom: 1px solid #eee;
+//    padding-bottom: 1em;
+//    margin-bottom: 1em;
+//  }
 }
 
