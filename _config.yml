@@ -11,9 +11,13 @@ exclude: [".rvmrc", ".ruby-version", "README.md", "Rakefile", "changelog.md", "C
 
 # markdown: redcarpet #kramdown
 # fenced_code_blocks: true
-highlighter: rouge #pygments
-lsi: false
+# highlighter: rouge #pygments
+# lsi: false
 # auto: true # deprecated
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
 
 gems:
   - jekyll-seo-tag
