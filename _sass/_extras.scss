@@ -198,6 +198,14 @@ ul.share_links li {
 .highlight .o { color: #989DAA; }
 .highlight .nv,.highlight .vc,.highlight .vg,.highlight .vi { color: #fff; }
 
+// temporary bug fix
+// https://github.com/jneen/rouge/issues/821
+.highlight .highlight {
+   border: none;
+   box-shadow: none;
+   padding: 0;
+}
+
 // Facebook Messenger Chat widget
 // https://digitalinspiration.com/images/facebook/widget.html
 
