@@ -19,7 +19,9 @@ markdown: kramdown
 kramdown:
   input: GFM
 
-gems:
+# Deprecation: The 'gems' configuration option has been renamed to 'plugins'.
+# gems:
+plugins:  
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-redirect-from
