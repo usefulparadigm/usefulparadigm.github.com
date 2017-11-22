@@ -10,7 +10,7 @@ include:
 exclude: [".rvmrc", ".ruby-version", "README.md", "Rakefile", "changelog.md", "CNAME", "Gemfile", "Gemfile.lock", "brunch-config.js", "package.json", "node_modules"]
 
 # markdown: redcarpet #kramdown
-fenced_code_blocks: true
+# fenced_code_blocks: true
 highlighter: rouge #pygments
 lsi: false
 # auto: true # deprecated
