@@ -48,7 +48,7 @@ Visit https://gohugo.io/ for quickstart guide and full documentation.
 
 ![](https://usefulpa.s3.amazonaws.com/images/usefulparadigm/2017/1447D499-FD48-47A8-B7BC-5C74641D0E7B.png)
 
-물론 테마를 직접 만들어도 되지만, 여기서는 이 디렉터리에 있는 테마 중 하나를 골라 적용해 보도록 하겠습니다. 제 임의로 ‘[Bilberry Hugo Theme](https://themes.gohugo.io/bilberry-hugo-theme/)’이라는 테마를 선택해 보겠습니다. 
+물론 테마를 직접 만들어도 되지만, 여기서는 이 디렉터리에 있는 테마 중 하나를 골라 적용해 보도록 하겠습니다. 제 취향으로 ‘[Bilberry Hugo Theme](https://themes.gohugo.io/bilberry-hugo-theme/)’ 테마를 선택해 보겠습니다. 
 
 ![](https://usefulpa.s3.amazonaws.com/images/usefulparadigm/2017/5F41AB66-8C4A-46D4-B042-7BEF5552DE9A.png)
 
