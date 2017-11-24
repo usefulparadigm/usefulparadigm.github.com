@@ -83,9 +83,9 @@ $ hugo new post/어서와-휴고는-처음이지.md
 
 ![](https://usefulpa.s3.amazonaws.com/images/usefulparadigm/2017/0CCE516E-D405-4596-9AEE-277F61DA5B75.png)
 
-여기까지 따라했다면, 지금까지의 내용을 [GitHub](https://github.com/)에 저장합니다. (이 단계는 나중에 배포할 때 필요한 부분이며, 따로 GitHub 저장에 관한 설명은 생략합니다)
+여기까지 따라했다면, 지금까지의 내용을 [GitHub](https://github.com/usefulparadigm/hello-hugo)에 저장합니다. (이 단계는 나중에 배포할 때 필요한 부분이며, GitHub에 저장하기 방법에 관한 별도 설명은 생략합니다)
 
-지금까지의 내용은 Hugo의 아주 기본적인 사용법만 보인 것일 뿐, Hugo는 정말이지 그 이름에 걸맞게 멋진 기능들을 많이 갖고 있습니다. Hugo의 더 자세한 기능과 사용법은 [Hugo 문서](https://gohugo.io/documentation/)를 참조하세요!
+지금까지의 내용은 Hugo의 아주 기본적인 사용법만 보인 것일 뿐, Hugo는 정말이지 그 이름에 걸맞게 멋진 기능들을 많이 갖추고 있습니다. Hugo의 더 자세한 기능과 사용법은 [Hugo 문서](https://gohugo.io/documentation/)를 참조하세요!
 
 
 ## Netlify로 사이트 배포하기
