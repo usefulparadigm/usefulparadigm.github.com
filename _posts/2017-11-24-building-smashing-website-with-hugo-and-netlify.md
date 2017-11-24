@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Hugo와 Netlify로 '빠른' 웹사이트 만들기
-description: 최근 리뉴얼된 스매싱 매거진(Smashing Magazine)에서 채택한 Hugo와 Netlify를 사용해서 번개같이 빠른 🚀  웹사이트를 만들어 보세요! 
+title: Hugo와 Netlify로 '스매싱' 웹사이트 만들기
+description: 최근 리뉴얼된 스매싱 매거진(Smashing Magazine)에서 채택한 기술인 Hugo와 Netlify를 사용해 빠르게 웹사이트를 만들고 배포하는 방법을 소개합니다. 
 thumbnail: https://usefulpa.s3.amazonaws.com/images/2017/hugo-netlify-website.png
 image: https://usefulpa.s3.amazonaws.com/images/2017/hugo-netlify-website.png
 category: ["web development"]
@@ -11,6 +11,7 @@ tags: ["cms", "website", "opensource", "hosting", "cloud"]
 웹 디자이너와 개발자들이 즐겨 찾는 인기있는 웹사이트 중 하나인 [스매싱매거진(Smashing Magazine)](https://www.smashingmagazine.com/)이 최근 리뉴얼 되었습니다. 이번 리뉴얼에는 [Hugo](https://gohugo.io/)라는 웹사이트 도구를 썼고 [Netlify](https://www.netlify.com/)라는 서비스를 이용해 호스팅한 점이 특히 눈에 띄었습니다. 그래서 이 둘의 사용법을 간단하게 정리해 봅니다.
 
 ## Hugo로 웹사이트 만들기
+
 ![](https://usefulpa.s3.amazonaws.com/images/usefulparadigm/2017/2CB42710-C0A1-493F-8DA0-77CA9FEB4FAB.png)
 
 [Hugo](https://gohugo.io/)는 한마디로 정적 웹사이트 생성기(static website generator)입니다. [Jekyll](https://jekyllrb.com/)을 접해 보신 분에겐 아마 ‘Go 언어로 작성된 Jekyll’이라고 소개하는 게 더 잘 와닿을 지도 모르겠습니다. (물론 Hugo는 기분 나쁠 수 있습니다. 어디 감히 함부로 대문호의 이름을 한낱 작품 주인공 이름과 비교하다니요?)
@@ -63,9 +64,6 @@ git clone https://github.com/Lednerb/bilberry-hugo-theme.git
 테마 파일을  설치했다면, 이제 마지막으로 프로젝트의 루트 디렉터리에 있는 `config.toml` 파일을 열어 다음과 같이 테마를 지정해 줍니다. 방금 전 설치한 테마 파일의 디렉터리명과 일치시켜주면 됩니다.
 
 ```
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "Hello Hugo"
 theme = "bilberry-hugo-theme"
 ```
 
@@ -134,7 +132,7 @@ Netlify는 자동 배포(auto publishing) 기능이 기본으로 켜져 있어�
 
 지금까지 본 것처럼, Netlify는 Git 저장소와 연동하여 간단하게 프론트엔드 웹앱(SPA)이나 웹사이트를 배포할 때 사용하면 좋은 서비스입니다. Netlify에 관한 더 자세한 내용은 [Netlify 문서](https://www.netlify.com/docs/)를 참조하세요!
 
-#### ※ 몇 가지 유의사항: Hugo 사이트를 Netlify에 배포할 때
+#### ※ 몇 가지 유의사항: Hugo 사이트를 Netlify로 배포할 때
 
 - Hugo 사이트를 Netlify에 배포하는 경우, Hugo 테마를 위에서 했던 것처럼 clone 하거나 다운로드 방식으로 설치하면 작동하지 않습니다.  git의 submodule을 사용해서 테마를 설치해야 하며, 그 이유와 자세한 내용은 [여기](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/#use-hugo-themes-with-netlify)를 참조하면 됩니다.
 
