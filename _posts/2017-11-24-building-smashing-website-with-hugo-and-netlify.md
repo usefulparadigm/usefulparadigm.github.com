@@ -8,7 +8,9 @@ category: ["web development"]
 tags: ["cms", "website", "opensource", "hosting", "cloud"]
 ---
 
-웹 디자이너와 개발자들이 즐겨 찾는 인기있는 웹사이트 중 하나인 [스매싱매거진(Smashing Magazine)](https://www.smashingmagazine.com/)이 최근 리뉴얼 되었습니다. 이번 리뉴얼에는 그간 사용해 오던 [WordPress](https://wordpress.org/) 대신 [Hugo](https://gohugo.io/)라는 CMS 도구를 썼고 또 [Netlify](https://www.netlify.com/)라는 서비스를 이용해 호스팅한 점이 특히 눈에 띄었습니다. 
+웹 디자이너와 개발자들이 즐겨 찾는 인기있는 웹사이트 중 하나인 [스매싱매거진(Smashing Magazine)](https://www.smashingmagazine.com/)이 최근 [리뉴얼](https://next.smashingmagazine.com/2017/03/a-little-surprise-is-waiting-for-you-here/) 되었습니다. 
+
+이번 리뉴얼은 그간 사용해 오던 [WordPress](https://wordpress.org/) 대신 [Hugo](https://gohugo.io/)라는 CMS 도구를 썼고 또 [Netlify](https://www.netlify.com/)라는 서비스를 이용해 호스팅한 점이 특히 눈에 띕니다. 
 
 **관련 글**:
 - [Smashing Magazine’s Redesign Powered by Hugo (JAMstack)](https://discourse.gohugo.io/t/smashing-magazine-s-redesign-powered-by-hugo-jamstack/5826)
