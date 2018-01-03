@@ -119,8 +119,10 @@ aside .contact {
     display: block;
     clear: both;
   }
+  &.without- .item { width: 33.3%; }
   .item {
-    width: 33.3%;
+//    width: 33.3%;
+    width: 50%;
     padding-bottom: 20%;
     float: left;
     text-align: center;
