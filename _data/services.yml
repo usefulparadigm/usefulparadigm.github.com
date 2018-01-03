@@ -1,4 +1,19 @@
 ---
+# Services & Solutions
+all: 
+  - title: 웹 기술 개발 & 컨설팅
+    subtitle: Web Development & Consulting
+    link: /web-development/
+    icon: <i class="fa fa-rocket" aria-hidden="true"></i>
+  - title: 디지털 마케팅 솔루션
+    subtitle: Digital Marketing Solutions
+    link: /marketing-technology/
+    icon: <i class="fa fa-line-chart" aria-hidden="true"></i>
+  - title: 워드프레스 제작 운영
+    subtitle: WordPress & CMS Development
+    link: /wordpress/
+    icon: <i class="fa fa-wordpress" aria-hidden="true"></i>
+
 webdev:
   publications:
   - title: 레일스와 함께하는 애자일 웹 개발
@@ -30,6 +45,10 @@ martech:
       thumb: https://cdn-images-1.medium.com/max/2000/1*OO520mXc8fKFGedrWoO1Fg.jpeg
 
 wordpress:
+  resources:
+  - title: WordPress 가이드
+    url: https://wpguide.usefulparadigm.com/
+    thumb: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-wpguide.png
   references:
   - title: LG CES2017 Newsroom
     url: http://ces2017.lgnewsroom.com/

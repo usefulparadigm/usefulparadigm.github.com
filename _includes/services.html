@@ -1,0 +1,14 @@
+<div class="page-header">
+  <h2>{{ include.title | default: "Services & Solutions" }}</h2>
+</div>
+
+<ul id="services" class="grid list-unstyled">
+{% for service in site.data.services.all %}
+  <li class="item item--{{ forloop.index }}" data-animate="zoomInx">
+    <a href="{{ service.link }}" class="item__content" data-animate-hover="pulse">
+      <span class="item__icon">{{ service.icon }}</span>
+      <h5 class="item__content__title">{{ service.title }} <small>{{ service.subtitle }}</small></h5>
+    </a>
+  </li>
+{% endfor %}
+</ul>

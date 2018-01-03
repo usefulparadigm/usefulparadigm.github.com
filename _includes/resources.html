@@ -1,0 +1,13 @@
+<div class="page-header">
+  <h2>Resources</h2>
+</div>
+
+<ul id="{{ include.name }}-resources" class="{{ include.name }} resources">
+{% for entry in site.data.services[include.name].resources %}
+  <li class="item item--{{ forloop.index }}">
+    <a href="{{ entry.url }}" class="item__content" style="background-image: url({{ entry.thumb }});" target="_blank">
+      <h5 class="title">{{ entry.title }}</h5>
+    </a>
+  </li>
+{% endfor %}
+</ul>

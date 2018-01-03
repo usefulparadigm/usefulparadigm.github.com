@@ -1,0 +1,15 @@
+<div class="page-header">
+  <h2>References</h2>
+</div>
+
+<ul id="{{ include.name }}-references" class="{{ include.name }} references block-grid-xs-2 block-grid-sm-3 block-grid-md-2">
+{% for entry in site.data.services.wordpress.references %}
+  <li class="item item--{{ forloop.index }}">
+    <a href="{{ entry.url }}" class="item__content" target="_blank">
+      <div class="thumbnail"><img src="{{ entry.screenshot }}" alt="{{ entry.title }}"></div>
+      <h5 class="title">{{ entry.title }}</h5>
+      <p class="description">{{ entry.description }}</p>
+    </a>
+  </li>
+{% endfor %}
+</ul>

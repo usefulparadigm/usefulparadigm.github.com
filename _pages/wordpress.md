@@ -20,18 +20,5 @@ last_modified_at: 2017-06-01
 * 워드프레스 사이트 성능 최적화
 * 데이터 마이그레이션 및 타 시스템 연동
 
-<div class="page-header">
-  <h2>References</h2>
-</div>
-
-<ul id="wordpress-references" class="wordpress references block-grid-xs-2 block-grid-sm-3 block-grid-md-2">
-{% for entry in site.data.services.wordpress.references %}
-  <li class="item item--{{ forloop.index }}">
-    <a href="{{ entry.url }}" class="item__content" target="_blank">
-      <div class="thumbnail"><img src="{{ entry.screenshot }}" alt="{{ entry.title }}"></div>
-      <h5 class="title">{{ entry.title }}</h5>
-      <p class="description">{{ entry.description }}</p>
-    </a>
-  </li>
-{% endfor %}
-</ul>
+{% include resources.html name="wordpress" %}
+{% include services.html %}

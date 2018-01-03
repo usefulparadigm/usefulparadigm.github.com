@@ -21,16 +21,5 @@ last_modified_at: 2017-06-01
 * 온라인 데이터 분석 및 검색 최적화(SEO)
 * 마케팅 챗봇(chatbot) 및 메신저봇
 
-<div class="page-header">
-  <h2>Resources</h2>
-</div>
-
-<ul id="martech-resources" class="martech resources">
-{% for entry in site.data.services.martech.resources %}
-  <li class="item item--{{ forloop.index }}">
-    <a href="{{ entry.url }}" class="item__content" style="background-image: url({{ entry.thumb }});">
-      <h5 class="title">{{ entry.title }}</h5>
-    </a>
-  </li>
-{% endfor %}
-</ul>
+{% include resources.html name="martech" %}
+{% include services.html %}
