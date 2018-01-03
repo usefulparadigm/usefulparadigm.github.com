@@ -8,6 +8,13 @@
   }
 }
 
+// Services & Solutions
+.without-webdev .webdev,
+.without-martech .martech,
+.without-wordpress .wordpress {
+  display: none;
+}
+
 // Resources
 
 .resources {

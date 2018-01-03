@@ -3,14 +3,17 @@
 all: 
   - title: 웹 기술 개발 & 컨설팅
     subtitle: Web Development & Consulting
+    name: webdev
     link: /web-development/
     icon: <i class="fa fa-rocket" aria-hidden="true"></i>
   - title: 디지털 마케팅 솔루션
     subtitle: Digital Marketing Solutions
+    name: martech
     link: /marketing-technology/
     icon: <i class="fa fa-line-chart" aria-hidden="true"></i>
   - title: 워드프레스 제작 운영
     subtitle: WordPress & CMS Development
+    name: wordpress
     link: /wordpress/
     icon: <i class="fa fa-wordpress" aria-hidden="true"></i>
 

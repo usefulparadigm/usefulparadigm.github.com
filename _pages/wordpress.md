@@ -21,4 +21,4 @@ last_modified_at: 2017-06-01
 * 데이터 마이그레이션 및 타 시스템 연동
 
 {% include resources.html name="wordpress" %}
-{% include services.html %}
+{% include services.html title="Other Services & Solutions" without="wordpress" %}
