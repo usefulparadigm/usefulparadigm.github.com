@@ -52,7 +52,7 @@ end
 
 이렇게 만든 프로그램을 [Heroku](https://www.heroku.com/) 같은 클라우드 플랫폼에 설치해 두고 사용하면 별다른 비용 없이 유용하게 사용할 수 있을 것입니다.
 
-* [PageFeed 데모](http://pagefeed.herokuapp.com/)
+* [~~PageFeed 데모~~](http://pagefeed.herokuapp.com/) (Heroku Dyno 용량 초과로 중단)
 * [소스코드](https://github.com/usefulparadigm/pagefeed)
 
 
