@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /naver59ae03b87ec782c818053cd1d810feb7.html
 
 SITEMAP: http://usefulparadigm.com/sitemap.xml
