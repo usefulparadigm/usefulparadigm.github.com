@@ -72,4 +72,4 @@ Ping 호출 및 결과값의 처리에 관한 더 자세한 내용은 네이버 
 * [네이버 신디케이션 사용자 가이드(로그인 후 다운로드)](http://webmastertool.naver.com/tools/downfile.naver?filename=Naver_Syndication_User_Guide_v1.0.pdf)
 * [워드프레스 네이버 신디케이션 문서 색인 고찰](http://badr.kr/신디케이션-문서-url-인덱싱-고찰/)
 
-※ 이 글은 [디지털 마케팅의 기술 블로그](https://blog.usefulparadigm.com/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%8B%A0%EB%94%94%EC%BC%80%EC%9D%B4%EC%85%98-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%93%B0%EA%B8%B0-4edbff52ace1)에 작성되었던 글을 옮긴 것입니다.
+※ 이 글은 [디지털 마케팅의 기술 블로그](https://blog.usefulparadigm.com/%EB%84%A4%EC%9D%B4%EB%B2%84-%EC%8B%A0%EB%94%94%EC%BC%80%EC%9D%B4%EC%85%98-%EC%A0%9C%EB%8C%80%EB%A1%9C-%EC%93%B0%EA%B8%B0-4edbff52ace1)에도 게재된 글입니다.
