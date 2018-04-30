@@ -26,7 +26,7 @@ tags: [jekyll, ruby, website]
 
 아무 디렉터리나 하나 골라 다음과 같이 간단하게 index.html 파일을 하나 만들고  `jekyll serve` 명령을 줍니다. 
 
-```(index.html)
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,7 +53,7 @@ tags: [jekyll, ruby, website]
 
 이제 간단한 페이지를 하나 추가해 보겠습니다. 파일명을 about.md 라고 주고 이번엔 `pages` 라는 하위 디렉터리를 하나 만들어 그 속에 두겠습니다.  (이 때 파일 앞 부분에 빈 [Front Matter](https://jekyllrb.com/docs/frontmatter/) 영역을 둔 이유는 이렇게 해야만 Jekyll이 md 파일을 html로 변환하기 때문입니다. Jekyll은 Front Matter가 있는 모든 파일들을 대상으로 변환 처리를 합니다)
 
-```(about.md)
+```
 ---
 ---
 # About Us
@@ -92,14 +92,14 @@ $ gem install minimal-mistakes-jekyll
 
 설치가 완료되면 이어 프로젝트 루트 디렉터리에 `_config.yml` 이라는 파일을 하나 생성하여 다음과 같이 테마를 지정합니다.
 
-```(_config.yml)
+```
 title: Hello Jekyll
 theme: minimal-mistakes-jekyll
 ```
 
 마지막으로 index.html 파일을 열어 다음과 같이 변경합니다.
 
-```(index.html)
+```
 ---
 layout: home
 ---
