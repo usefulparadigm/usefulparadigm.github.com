@@ -39,7 +39,7 @@ last_modified_at: 2017-06-01
 {% endfor %}
 </ul>
 
-{% include services.html title="Other Services & Solutions" without="webdev" %}
+{% comment %}{% include services.html title="Other Services & Solutions" without="webdev" %}{% endcomment %}
 
 <!-- * [워드프레스 기반 안드로이드 앱 만들기](http://www.bloter.net/archives/181062) (블로터닷넷, 2014)
 * [함수형 프로그래밍과 얼랭](http://www.moazine.com/article/detail.asp?articleid=265737) (마이크로소프트웨어, 2008)
