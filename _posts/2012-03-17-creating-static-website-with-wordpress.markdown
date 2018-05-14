@@ -3,7 +3,7 @@ layout: post
 title:  워드프레스로 웹사이트 만들기
 category: wordpress
 description: 요즘은 국내에서도 워드프레스를 이용해 웹사이트를 만드는 곳이 많아지고 있습니다. 워드프레스는 다양한 테마 생태계를 가지고 있기 때문에 테마만 잘 선택하면 간단하게 웹사이트를 구축할 수 있다 생각할 수도 있지만, 조금 더 알아서 나쁠 건 없습니다. 워드프레스에서 제공하는 페이지 기능을 활용하여 웹사이트를 한번 만들어 보는 건 어떨까요?
-thumbnail: http://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
+thumbnail: https://farm8.staticflickr.com/7200/6989081345_b3d88c4b48_m.jpg
 ---
 
 <!-- <div class="alert-message block-message info">

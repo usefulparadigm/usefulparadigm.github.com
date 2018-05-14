@@ -3,7 +3,7 @@ layout: post
 title: Play 프레임워크와 Heroku를 이용한 웹앱 개발
 category: web development
 description: Play!는 최근에 등장한 자바 기반 웹 프레임워크입니다. 겉으로 보기엔 Ruby on Rails를 많이 닮은 카피캣(copycat) 처럼 보이지만 조금 더 들여다 보면 Play만의 독특한 매력들이 많이 들어 있습니다. Play 설치하고 배포하는 법을 간단히 소개합니다.
-thumbnail: http://farm7.static.flickr.com/6098/6353518445_d8db0eea66_m.jpg
+thumbnail: https://farm7.static.flickr.com/6098/6353518445_d8db0eea66_m.jpg
 ---
 
 최근 Java 기반 웹 프레임워크 중 하나인 Play!가 주목받고 있다. Java야 이미 오래 전부터 수많은 웹서비스와 엔터프라이즈 환경에서 검증된 웹 개발 언어로 그리고 주력 플랫폼으로 사용되고 있었기 때문에 다른 어떤 웹 개발 환경 보다도 다양하고 광범위한 기술 기반을 보유하고 있다. 이미 웹 개발과 관련한 많은 기술 표준들이 나와 있고 많은 훌륭한 웹 개발 프레임워크들이 존재하기 때문에 새로 무언가 필요할까 싶은 생각도 들지만, Play!를 접하고 나면 조금 다른 느낌이 든다. "아~ 자바로도 이런 게 가능하구나. 역시 언어 문제는 아니었군." 하는 생각.
