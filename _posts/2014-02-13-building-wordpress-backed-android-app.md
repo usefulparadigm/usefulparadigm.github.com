@@ -2,7 +2,7 @@
 layout: post
 title: 워드프레스 기반 안드로이드 앱 만들기
 description: 워드프레스는 이제 단순히 웹사이트를 만드는 도구가 아닙니다. 워드프레스를 이용하면 다양한 웹서비스와 모바일 앱들을 쉽게 만들 수도 있습니다. 모바일 안드로이드 앱도 그 중 하나입니다.
-thumbnail: http://usefulpa.s3.amazonaws.com/images/2014/Screenshot_20140213_113109.png
+thumbnail: https://usefulpa.s3.amazonaws.com/images/2014/Screenshot_20140213_113109.png
 categories: [mobile, web development, wordpress] 
 tags: [android, mobile, phonegap, cordova, google, hybrid]
 ---

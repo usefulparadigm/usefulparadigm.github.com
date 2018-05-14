@@ -2,7 +2,7 @@
 layout: post
 title: 반응형웹과 Responsive Image 처리
 description: 반응형웹은 모바일과 데스크톱을 아우르는 다양한 디바이스에 효과적으로 대응하기 위한 프론트엔드 웹 기술입니다. 이 글은 반응형웹에서 특히 문제가 되는 이미지(image) 파일의 처리에 대해 소개합니다. 
-thumbnail: http://usefulpa.s3.amazonaws.com/images/2014/econo-is-responsive.png
+thumbnail: https://usefulpa.s3.amazonaws.com/images/2014/econo-is-responsive.png
 category: web development 
 tags: [responsive, image, frontend, layout]
 ---

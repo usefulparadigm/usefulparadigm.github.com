@@ -2,7 +2,7 @@
 layout: post
 title: "Backbone 앱에 React 컴포넌트 추가하기"
 description: 백본(Backbone)으로 작성된 애플리케이션에 자바스크립트 UI 라이브러리인 리액트(React)를 추가하는 방법을 간단하게 정리해 보았습니다.
-thumbnail: http://usefulpa.s3.amazonaws.com/images/2014/backbone-plus-react.png
+thumbnail: https://usefulpa.s3.amazonaws.com/images/2014/backbone-plus-react.png
 categories: ["web development"]
 tags: [backbone, react, component, javascript, framework]
 ---

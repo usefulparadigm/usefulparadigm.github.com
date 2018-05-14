@@ -2,7 +2,7 @@
 layout: post
 title: "도넛(Doughnut), 다음 Dough 기반 워드프레스 테마"
 description: 도넛(Doughnut)은 다음 커뮤니케이션에서 제작한 CSS 기반 UI 프레임워크인 Dough(도우)에 기반한 오픈소스 워드프레스 테마입니다.
-thumbnail: http://usefulpa.s3.amazonaws.com/images/2013/daum-dough.png
+thumbnail: https://usefulpa.s3.amazonaws.com/images/2013/daum-dough.png
 category: wordpress
 tags: [theme, dough, wordpress]
 ---
