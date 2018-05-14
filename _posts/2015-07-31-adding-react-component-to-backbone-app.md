@@ -7,7 +7,7 @@ categories: ["web development"]
 tags: [backbone, react, component, javascript, framework]
 ---
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/backbone-plus-react.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/backbone-plus-react.png)
 
 알다시피 [React](https://facebook.github.io/react/index.html)는 페이스북에서 공개한 오픈소스 자바스크립트 UI 라이브러리다. [Angular](https://angularjs.org/) 또는 [Ember](http://emberjs.com/)와 같은 다른 자바스크립트 라이브러리들이 주로 UI와 데이터 처리, 그리고 URL 라우팅까지 아우르는 소위 "풀스택(full stack)"의 프레임워크 구성을 가져가는 반면, React는 사용자 인터페이스 부분만 다룬다는 점에서 이들 프레임워크와 차이가 있다. 게다가 컴포넌트(web components) 개념을 갖추고 가상 DOM(Virtual DOM)을 이용한 렌더링 방식을 사용하는 탓에 사용하기 쉽고 UI 처리 속도도 빨라, 아직 v0.13.x 라는 낮은 버전임에도 이미 많은 저변을 확보하고 있다.
 
@@ -17,7 +17,7 @@ tags: [backbone, react, component, javascript, framework]
 
 알다시피 Backbone 앱은 모델(Model)과 뷰(View)를 중심으로 구성된다. Backbone 모델에서 발생한 변경 사항은 Backbone의 자체 이벤트 시스템을 통해 뷰에서 받아서 처리(render)하고, 반대로 사용자 입력은 뷰를 통해 모델로 전달하는 구조다(아래 그림 참조). 다만 Angular나 Ember에서와 같은 소위 '2-way binding'은 지원하지 않는다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/backbone-model-view.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/backbone-model-view.png)
 (그림 출처: [http://backbonejs.org/](http://backbonejs.org/) )
 
 Backbone 앱에 React를 적용하려면 기존에 Backbone 뷰로 작성한 부분을 React 컴포넌트로 교체하면 된다. 아래 코드에서는 기존의 Backbone 뷰 골격은 그대로 두고 뷰의 render 메서드 부분만 React#render 호출로 변경하였다.

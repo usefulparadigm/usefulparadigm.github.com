@@ -22,7 +22,7 @@ Pjax와 터보링크
 
 Pjax를 쓰면 큰 노력 없이 정적인 웹페이지를 좀 더 빠르게 만들 수 있다. 그저 자바스크립트 라이브러리 하나 추가하는 것만으로 웹페이지 속 링크를 클릭할 때마다 매번 전체 페이지를 새로 갱신해야 하는 부담을 줄여주어 성능을 개선 시킬 수 있는 효과가 있기 때문이다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/pjax-requests.jpg)
+![](https://usefulpa.s3.amazonaws.com/images/2013/pjax-requests.jpg)
 (사진출처: [ntotten.com](http://ntotten.com/2012/04/09/building-super-fast-web-apps-with-pjax/))
 
 레일스 [터보링크](https://github.com/rails/turbolinks/)는 여기서 한발 더 나간다. Pjax처럼 클릭 이벤트를 가로 채 자동으로 Ajax 호출하는 부분까지는 똑같지만, 아예 요청 결과를 파싱하여 title 태그와 body 태그를 추출한 다음 기존 페이지에서 상응하는 부분만 대체 시킨다. 과히 [설정 보단 관례(convention over configuration)](http://en.wikipedia.org/wiki/Convention_over_configuration)를 우선하는 "레일스 스러운" 발상이다. 실제로 터보링크는 37signals의 대표적인 웹서비스인 Basecamp의 모바일 버전에 적용되어 [상당한 성능 개선 효과를 거둔](http://37signals.com/svn/posts/3269-behind-the-speed-basecamp-mobile) 것으로 알려져 있기도 하다.
@@ -32,7 +32,7 @@ Pjax를 쓰면 큰 노력 없이 정적인 웹페이지를 좀 더 빠르게 만
 
 이 터보링크가 과연 레일스 4.0을 대표할 만큼 중요한 것일까? 굳이 프레임워크 속에 디폴트로 집어넣을만한 것이었을까? 레일스 3.1로 넘어올 때 새로 프레임워크에 추가된 [에셋 파이프라인(asset pipeline)](http://guides.rubyonrails.org/asset_pipeline.html) 만큼은 아니지만, 그래도 터보링크를 프레임워크 속에 넣는 것을 두고 레일스 커뮤니티에서 갑론을박이 있었던 것으로 기억한다. 그래서인지 레일스 블로그에는 아래와 같은 재밌는 댓들도 눈에 띈다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/idonotlinkturbolinks.png)
+![](https://usefulpa.s3.amazonaws.com/images/2013/idonotlinkturbolinks.png)
 
 터보링크를 사용함으로써 얻는 가장 큰 잇점은, 터보링크 페이지에도 소개되어 있듯, 매번 링크를 클릭할 때 마다 페이지 속 여러 에셋들, 즉 자바스크립트나 CSS 파일들을 다시 다운로드하여 리로딩하지 않아도 된다는 점이다(그럼으로써 애플리케이션의 속도를 향상시킬 수 있다). 
 
@@ -57,7 +57,7 @@ Pjax를 쓰면 큰 노력 없이 정적인 웹페이지를 좀 더 빠르게 만
 
 조금 경력이 있는 개발자들이라면  "터보"라는 말을 들으면 떠오르는 단어가 있을 것이다. 바로 "터보 파스칼", "터보 C" 등 앞에 "터보" 글자가 붙는 볼랜드(Borland)사의 컴파일러/IDE 제품군 이름이다. 지금은 컴퓨팅 역사 속으로 사라졌지만, 파스칼과 C언어가 세상을 주름잡던 당시만 하더라도 프로그래밍 언어 앞에 "터보" 가 붙으면 그야말로 "터보 엔진"을 단 것처럼 빠른 컴파일과 빠른 개발 속도를 선사했었다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/porsche-turbolinks.jpg)
+![](https://usefulpa.s3.amazonaws.com/images/2013/porsche-turbolinks.jpg)
 
 터보링크 앞에 붙은 "터보" 역시 그런 의미로 붙여졌을 것이다. 새 레일스 프로젝트를 생성하는 바로 그 순간부터 터보링크가 적용되니 빠르다고 하지 않을 수 없다. 그렇지만 터보링크는 옛날 볼랜드 제품군이 주름잡던 시절의 그 "터보"만큼 강력한 것 같지는 않다. 
 

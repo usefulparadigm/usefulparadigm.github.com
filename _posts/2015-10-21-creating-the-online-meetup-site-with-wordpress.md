@@ -7,7 +7,7 @@ categories: ["web development", "wordpress"]
 tags: [wordpress, website, webservice, meetup, rest, api]
 ---
 
-![](http://usefulpa.s3.amazonaws.com/usefulpablog/2015/10/moiming-featured-cover.png)
+![](https://usefulpa.s3.amazonaws.com/usefulpablog/2015/10/moiming-featured-cover.png)
 
 통상적으로 워드프레스는 웹사이트를 만드는 도구로 알려져 있으며 지금도 개인이나 기업의 블로그나 정적인 웹사이트를 만드는데 주로 쓰이고 있는 것이 사실입니다. 그렇지만 최근 워드프레스는 강력한 CMS 기능과 유연한 확장성 등을 기반으로 사용자 기반 웹서비스나 동적인 웹애플리케이션 개발에도 사용되고 있습니다. 특히 최근 업데이트된 [WP REST API](http://v2.wp-api.org/)는 워드프레스를 웹서비스의 기반 플랫폼으로도 사용할 수 있는 가능성을 분명하게 보여줍니다.
 

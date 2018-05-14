@@ -43,19 +43,19 @@ img { max-width: 100%; }
 
 실제로 2014년 10월 현재 HTTP Archive에 집계된 통계 상으로 웹 페이지 용량에서 이미지가 차지하는 부분은 절반을 훨씬 넘는 것으로 나타났다. 아무런 다른 조치 없이 단지 이미지 용량만 줄이더라도 웹사이트의 속도가 크게 개선될 수 있다는 말이다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/Web_Image.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/Web_Image.png)
 
 ( * 출처: [HTTP Archive](http://httparchive.org/interesting.php?a=All&l=Oct%201%202014&s=All) ) 
 
 두 번째 문제는 이른바 "레티나(Retina)" 디스플레이라고도 불리는 **고밀집도 디바이스에 대한 대응** 이다. 요즘 새로 출시되는 디바이스들 중에는 밀집도(density)가 높은 디스플레이를 장착한 디바이스가 많고 그러다보니 이미지 처리도 이들 고밀집도(high-density) 디바이스에 대응해야 하는 문제가 생기게 된다. 아래 그림처럼 통상적인 밀집도의 디바이스에서 정상적으로 보이던 이미지가 레티나 기반의 디바이스에서는 흐릿하게 보이게 된다. 레티나를 필두로 한 고밀집도 디바이스에 대한 문제와 이에 대한 대응에 관한 더 자세한 내용은 참고자료를 참조하면 좋겠다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/standard-vs-retina.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/standard-vs-retina.png)
 
 (* 사진출처: [http://greatfridays.com/blog/images-in-responsive-web-development/](http://greatfridays.com/blog/images-in-responsive-web-development/) )
 
 소위 **"아트 디렉션(art direction)" 처리**도 문제가 될 수 있다. 이미지를 일률적으로 배율에 맞춰 확대/축소할 경우 데스크톱에서는 분명한 의미를 전달하던 이미지가 화면 크기가 적은 모바일 디바이스에서는 도무지 무슨 이미지인지 알아보지 못해 의미 전달을 놓치게 되는 경우가 많다. 이 경우 해결책은 디바이스 특성에 맞춰 크기 뿐 아니라 이미지의 내용도 다른 이미지를 제공하는 것이다. 예를 들어 아래 사진 이미지의 경우 배율에 맞춰 크기를 줄이기보다는(우측 상단)  이미지가 표시되는 상황(context)에 맞게 잘라진 사진을 사용하는 것이(우측 하단) 더 효과적으로 의미를 전달할 수 있다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/artdirection.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/artdirection.png)
 
 ( * 사진출처: [http://24ways.org/2012/responsive-images-what-we-thought-we-needed/](http://24ways.org/2012/responsive-images-what-we-thought-we-needed/) )
 
@@ -119,7 +119,7 @@ srcset/sizes 속성만으로 해결할 수 없는 문제들, 예컨대 아트 �
 </picture>
 ~~~
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/lighthouse-example-picture2X.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/lighthouse-example-picture2X.png)
 
 (* 예제 출처: [HTML5Rocks](http://www.html5rocks.com/en/tutorials/responsive/picture-element/))
 
@@ -139,7 +139,7 @@ srcset/sizes 속성만으로 해결할 수 없는 문제들, 예컨대 아트 �
 
 웹에서는 아무리 좋은 기능이라도 브라우저에서 그 기술을 지원하지 않으면 무용지물이다. 다행히 [크롬(Chrome)](http://blog.chromium.org/2014/08/chrome-38-beta-new-primitives-for-next.html), [사파리(Safari)](https://www.webkit.org/blog/2910/improved-support-for-high-resolution-displays-with-the-srcset-image-attribute/) 등 주요 브라우저들이 `<picture>`엘리먼트와 srcset/sizes 속성을 지원하거나 또는 지원을 준비 중이다(아래 표 참조). 
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/resp-images-browser-supports.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/resp-images-browser-supports.png)
 
 (* 출처: [RICG](http://responsiveimages.org/))
 

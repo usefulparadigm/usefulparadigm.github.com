@@ -16,7 +16,7 @@ tags: [website]
 
 맞습니다. 결론부터 말하면 "**안됩니다.**" 개그콘서트 정여사 버전을 빌리자면 "안되도 너~무 안됩니다." 하지만 세상에 안되는 건 없다고 믿는 분들도 계십니다. 워드프레스 게시판도 마찬가지입니다. 워드프레스 기본엔진을 뜯어 고쳐 게시판을 우겨 넣기로 한다면 완전 안될거야 또 없습니다. 그렇지만 워드프레스라는 오픈소스는 기본적으로 블로깅 엔진으로 출발했고 지금은 CMS라 우기고 있는 솔루션입니다. 솔루션은 [정해진 목적에 맞춰 사용하는 게 효율적](http://wpu.kr/note/%ED%95%9C%EA%B5%AD%ED%98%95-%EA%B2%8C%EC%8B%9C%ED%8C%90%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%9B%8C%EB%93%9C%ED%94%84%EB%A0%88%EC%8A%A4%EA%B0%80-%EB%8F%84%EB%8C%80%EC%B2%B4-%EB%AC%B4%EC%97%87%EC%9D%BC/) 입니다. 말하자면 맞춤옷에 대비되는 기성복인 셈이죠. 워드프레스로 게시판을 만드는 게 왜 안되는지 그  기술적인 이유는 여기서 주절이 늘어 놓지 않겠습니다. (궁금하면 5백원!)
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/campus-board.jpg)
+![](https://usefulpa.s3.amazonaws.com/images/2013/campus-board.jpg)
 
 ## "한국형" 워드프레스 게시판들
 
@@ -43,7 +43,7 @@ tags: [website]
 
 페이지 속에 글 목록을 넣는 방법은 여러 가지입니다만, 흔히 사용되는 방법은 플러그인에서 제공하는 단축코드(shortcode)를 활용하는 방법입니다. 예를 들어, 위의 게시판 플러그인들 중 하나인 [MH보드](http://ssamture.net/mh-board)를 사용한다면, MH보드에서 제공하는 단축코드인 '`[mh_board]`'를 페이지 본문 속에 넣어주면 이 부분이 게시판으로 치환되어 화면에 표시되는 식입니다(아래 그림).
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/mh-board-screenshot.png)
+![](https://usefulpa.s3.amazonaws.com/images/2013/mh-board-screenshot.png)
 
 기술적으로는, 페이지 속에 글 목록을 넣는다는 것은 워드프레스에서 [커스텀 쿼리](http://codex.wordpress.org/Custom_Queries)를 사용하여 루프(loop)를 구성하는 것을 의미합니다. 그리고 이 경우 그 쿼리의 조건값은 특정 카테고리에 속한 모든 글들을 추출하여 목록으로 표시하는 것이구요. 따라서 굳이 게시판 플러그인을 사용하지 않더라도 페이지 속에서 커스텀 쿼리를 구성할 수 있는 방법이라면 뭐든 가능합니다. 예를 들어 [List category posts](http://wordpress.org/plugins/list-category-posts/)나 [Display Posts Shortcode](http://wordpress.org/plugins/display-posts-shortcode/) 같은 플러그인을 사용할 수도 있고, 간단하게 직접 커스텀 쿼리가 들어간 템플릿을 작성해도 됩니다.
 
@@ -62,7 +62,7 @@ tags: [website]
 
 위 코드가 적용된 페이지 템플릿을 얼마 전 소개한 적이 있는 [다음 Dough 기반 워드프레스 테마](/2013/06/04/introducing-doughnut-wordpress-theme/)인 [도넛(Doughnut)](https://github.com/usefulparadigm/doughnut)에 적용하면 아래와 같은 결과가 만들어 집니다. 어떠세요? 제법 게시판 같아 보이나요?
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/board-sample-shot.png)
+![](https://usefulpa.s3.amazonaws.com/images/2013/board-sample-shot.png)
 
 이렇게 직접 템플릿을 구성하면 사용자 인터페이스 변경이 수월해지는 장점이 있습니다. UI를 입맛에 맞게 마음대로 커스터마이징할 수 있습니다. 여기에 사용된 페이지 템플릿 소스는 [도넛(Doughnut)](https://github.com/usefulparadigm/doughnut) 코드 속에 들어 있으니 [참고](https://github.com/usefulparadigm/doughnut/blob/master/board-sample.php)하시면 되겠습니다.
 

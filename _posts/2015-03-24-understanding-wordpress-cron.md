@@ -7,7 +7,7 @@ category: wordpress
 tags: [wordpress, cron, devops]
 ---
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/wordpress_wp_cron.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/wordpress_wp_cron.png)
 
 [cron](http://unixhelp.ed.ac.uk/CGI/man-cgi?crontab+5)은 시스템의 백그라운드에서 정해진 시간 또는 시간 간격으로 어떤 작업을 처리할 때 사용하는 UNIX 명령이다. 주기적으로 반복해서 수행해야 하는 작업들을 미리 스케줄링(scheduling)해 두면 지정된 시간에 해당 작업이 자동으로 실행되기 때문에, 백업이나 시스템 업데이트 같은 반복 작업이나 이메일 발송 등 시간이 제법 오래 걸리는 배치(batch) 작업 등에 폭넓게 사용되는 요긴한 명령이다.
 

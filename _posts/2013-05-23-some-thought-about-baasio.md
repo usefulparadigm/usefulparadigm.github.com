@@ -8,7 +8,7 @@ tags: []
 
 오전에 잠깐 짬을 내어 [baas.io 서비스](https://baas.io/)를 한번 사용해 보았습니다. 알다시피 baas.io는 KTH에서 운영하는 클라우드 기반 애플리케이션 백엔드 플랫폼 서비스입니다. 흔히 [PaaS](http://ko.wikipedia.org/wiki/PaaS)라고 부르는 이 서비스의 가장 대표격은 최근 Facebook에 인수된 미국 회사 [Parse](https://www.parse.com/)라고 할 수 있습니다. 아마 baas.io도 이 Parse를 상당부분 벤치마킹한 서비스가 아닐까 생각이 듭니다. 다만, Parse와는 다르게 아직 오픈베타버전이라 확정된 [가격정책](https://baas.io/guidePrice.html)은 나와있지 않으며, 누구든지 무료로 사용해 볼 수 있습니다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/baasio_bi_300x300.png)
+![](https://usefulpa.s3.amazonaws.com/images/2013/baasio_bi_300x300.png)
  
 baas.io가 제공하는 주요 기능에는 다음과 같은 것들이 있습니다. 자세한 내용은 baas.io 사이트에 잘 소개되어 있습니다.
 

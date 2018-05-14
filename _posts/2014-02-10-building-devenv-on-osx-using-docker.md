@@ -9,7 +9,7 @@ tags: [docker, osx, devops]
 
 [Docker](https://www.docker.io/)는 리눅스 기반의 가상화 솔루션입니다. Docker가 다른 가상화 솔루션들과 다른 점은 [리눅스 LXC](http://linuxcontainers.org/)를 기반으로 가상화 환경을 구성하는 탓에 기존 가상화 솔루션에 비해 훨씬 가볍게 가상화 환경을 구성할 수 있다는 점입니다. Docker에서는 이 가상화 공간을 "컨테이너(container)"라고 부르는데, [Docker 소개 페이지](https://www.docker.io/the_whole_story/)에도 나와 있듯 마치 물류 환경에서의 화물 컨테이너와 같은 역할을 합니다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/Screenshot_20140210_140908.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/Screenshot_20140210_140908.png)
 
 Docker가 아직 세간에 소개된지 얼마 안되는 솔루션이긴 하지만 하루가 다르게 업데이트가 이루어지고 있는 "인기있는" 솔루션이다 보니 Docker의 모든 면면을 여기서 다 소개할 수는 없고, 대신 여기서는 저희 유스풀패러다임에서 주로 사용하는 개발환경인 OSX에서 Docker로 개발환경을 구성하는 방법만 간단하게 소개할까 합니다. OSX를 주 타겟으로 하지만 Windows 환경에서도 거의 똑같이 적용됩니다.
 
@@ -33,7 +33,7 @@ OSX에서 Docker 사용하기
 
 어느 방법을 쓰던 작동 원리는 동일합니다. 즉, OSX에 docker 클라이언트를 설치하고 docker CLI로 VM 상의 docker 데몬과 통신하는 방식으로 docker 컨테이너들을 관리하는 형태를 취합니다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/Screenshot_20140210_140819.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/Screenshot_20140210_140819.png)
 
 참고로, Homebrew를 사용한다면 docker 클라이언트는 brew 명령으로 간단하게 설치할 수 있습니다.
 
@@ -92,7 +92,7 @@ Docker는 기존에 빌드된 이미지를 바로 불러와서 사용할 수도 
 
 여기까지 Docker의 기본개념과 OSX에서의 개발환경 구성을 중심으로 간단한 사용법을 소개했지만, 어디까지나 수박 겉핧기에 불과합니다. 실제로 Docker는 여기 소개된 것보다 훨씬 다양한 기능들을 갖추고 있으며 다양한 생태계를 만들어 나가고 있습니다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/Screenshot_20140210_140936.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/Screenshot_20140210_140936.png)
 
 Docker는 이제 겨우 걸음마를 시작한 솔루션입니다. 그렇지만 이미 [올해의 오픈소스 수퍼루키 10선](http://www.itworld.co.kr/slideshow/85821)에 포함될 정도로 벌써 유명세를 치루고 있는 "devops 계의 루키"이기도 합니다. 물론 그만한 대접을 받을 자격이 있다 생각도 듭니다. 무거운 짐을 지고 항해하는 고래를 상징하는 로고 마스코트처럼, 올 한해 Docker의 멋진 순항을 기대해 봅니다.
 

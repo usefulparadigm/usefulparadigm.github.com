@@ -8,7 +8,7 @@ tags: [wordpress ecommerce payment]
 
 작년 초에 [워드프레스로 웹사이트 만들기](http://usefulparadigm.com/2012/03/17/creating-static-website-with-wordpress/)를 포스팅할 때만 해도 국내에는 워드프레스와 관련하여 참고할만한 자료나 문서가 많이 부족했지만, 요즘은 서점에만 나가도 워드프레스 관련 책들이 넘친다. 불과 1년 여만에 정말이지 놀라운 변화다. 그만큼 관심도 많아졌고 또 저변도 넓어졌다는 얘기니 워드프레스를 좋아하는 한 사람으로 즐거운 변화가 아닐 수 없다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/wp-books.jpg)
+![](https://usefulpa.s3.amazonaws.com/images/2013/wp-books.jpg)
 
 ## 워드프레스로 쇼핑몰 만들기
 
@@ -33,13 +33,13 @@ tags: [wordpress ecommerce payment]
 
 알다시피 국내에서 결제를 처리하기 위해서는 주로 PG사와 계약을 맺고 PG사에서 제공하는 모듈을 받아서 결제 처리를 하게 된다. 국내 주요 PG사 (LG데이콤 U+, 올더게이트, 이니시스, KCP, 페이게이트 등)들은 제각각 자신들만의 연동 모듈을 제공하기 때문에, 결국 위의 플러그인들 중 하나를 선택하여 사용하게 되더라도 결제 처리 부분은 이들 PG사의 모듈 중 하나와 연동해야 하는 문제가 남게 된다. 위의  플러그인들이 여러 종류의 결제 옵션을 제공하고 있기는 하지만 아직 국내 PG사 연동을 지원하는 플러그인은 없기 때문이다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/wp-e-commerce.png)
+![](https://usefulpa.s3.amazonaws.com/images/2013/wp-e-commerce.png)
 
 여기서는 위에 소개한 플러그인들 중 가장 많이 사용되고 있는 [WP e-Commerce](http://getshopped.org/) 플러그인에서 국내 PG사 중 한 곳인 [올더게이트](http://www.allthegate.com/ags/index.jsp)의 PG모듈과 연동하는 방법을 간단하게 소개한다. 올더게이트를 선택한 데 특별한 이유가 있는 것은 아니며, 다른 PG사들 역시 기본 연동 방식에는 특별하게 다를 게 없기 때문에 다른 PG모듈과의 연동 시에도 참고할 수 있을 것이다.
 
 올더게이트 연동에 필요한 모듈들은 [올더게이트 자료실](http://www.allthegate.com/ags/download/download_01.jsp)에서 다운로드 받을 수 있으며, 자세한 사용법은 함께 따라오는 설치매뉴얼을 참고하면 된다. 설치 매뉴얼에서 보면 올더게이트의 PG연동 모듈은 다음과 같은 처리 흐름을 갖는다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/allthegate-flow.png)
+![](https://usefulpa.s3.amazonaws.com/images/2013/allthegate-flow.png)
 
 따라서 WP e-Commerse 플러그인(이하 ‘wpsc’)에서는 우선 사용자의 주문정보를 받아 PG의 AGS_pay 모듈까지 넘겨주어야 하는데, wpsc 플러그인은 사용자가 커스텀 PG를 추가하고 연동할 수 있는 [방법](http://getshopped.org/resources/docs/get-involved/writing-a-new-payment-gateway/)을 이미 만들어 두고 있다. wpsc에서는 wpsc-merchants 디렉터리 속에 두는 것을 권장하고 있지만, 간단하게 플러그인을 하나 만들어 그 속에 다음 코드를 추가해도 된다.
 
@@ -49,7 +49,7 @@ tags: [wordpress ecommerce payment]
 
 이제 관리자 페이지의 wpsc 플러그인 설정에서 보면 다음과 같이 “올더게이트PG”가 Payment 옵션에 추가된 것을 확인할 수 있다. 이 옵션을 선택하면 올더게이트 PG가 활성화된다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/wp-pg-allthegate.png)
+![](https://usefulpa.s3.amazonaws.com/images/2013/wp-pg-allthegate.png)
 
 이제 남은 일은 실제로 PG와 연동하는 부분을 만들어 주는 것이다. 앞서 작성한 코드 중 function 부분을 만들어 채워주면 되는데, 결제창을 팝업으로 띄우고, 주문에 관한 정보를 읽어 팝업창으로 넘기는 방식을 사용해 간단하게 구현해 보았다.
 
@@ -75,7 +75,7 @@ tags: [wordpress ecommerce payment]
 
 이제 사용자가 상품을 장바구니에 담고 체크아웃하여 “구매하기(Purchase)” 버튼을 클릭하면 다음과 같이 결제창이 팝업으로 표시된다. (여기서는 올더게이트에서 제공하는 샘플 폼을 그대로 사용하였으며, 실제 사용할 때는 필요에 맞게 폼 양식을 적절히 변경하면 될 것이다)
 
-![](http://usefulpa.s3.amazonaws.com/images/2013/wp-checkout-demo.png)
+![](https://usefulpa.s3.amazonaws.com/images/2013/wp-checkout-demo.png)
 
 ## 마무리
 

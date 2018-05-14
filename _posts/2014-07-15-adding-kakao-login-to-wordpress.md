@@ -30,7 +30,7 @@ tags: [wordpress, kakao, naver, authentication, social, login]
 
 간혹 워드프레스에 카카오(톡)이나 네이버 계정을 이용한 로그인을 추가하려면 어떻게 해야하는지 문의 주시는 분들이 계셔서 오늘은 카카오 계정 로그인 연동하는 법을 간단하게 소개합니다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/kakao_account_login_btn_large_narrow_ov.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/kakao_account_login_btn_large_narrow_ov.png)
 
 소셜 로그인 플러그인
 -----
@@ -68,21 +68,21 @@ tags: [wordpress, kakao, naver, authentication, social, login]
 
 이제 워드프레스의 어드민 대시보드에서 Settings > WP Social Login 메뉴에 접속하면 아래 그림과 "Add more providers" 창에 Kakao 버튼이 추가된 것을 확인할 수 있습니다(이 때 버튼의 이미지가 깨지는 이유는 버튼 이미지 파일을 따로 만들지 않은 탓입니다. 적절한 크기의 Kakao버튼 이미지를 만들어 WSL 플러그인의 assets 폴더 아래에 있는 img 폴더에 넣어주면 됩니다).
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/add-more-providers.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/add-more-providers.png)
 
 이제 이 버튼을 클릭하면 아래와 같이 카카오 계정을 설정하는 부분이 추가된 것을 확인할 수 있을 것입니다.
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/wsl-dashboard-kakao-login.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/wsl-dashboard-kakao-login.png)
 
 여기에 나온 내용 대로 빈칸만 채워주면 설정은 끝입니다. 나와있는 내용 대로 [Kakao Developers 페이지](https://developers.kakao.com/apps/new)로 가서 새 앱을 하나 만들고 필요한 정보를 추가한 다음 Application Key 값(REST API 키)을 받아 빈칸에 넣어주면 됩니다(아래 그림 참고). 
 
 계정의 설정 방법은 페이스북이나 트위터 등 다른 SNS 서비스들과 다르지 않기 때문에 큰 어려움은 없을 것입니다. 
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/hybridauth-kakao-settings.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/hybridauth-kakao-settings.png)
 
 이것으로 끝입니다. 이제 워드프레스 로그인 창에 다음과 같이 카카오 로그인 아이콘이 추가된 것을 확인할 수 있습니다. 물론 로그인도 되구요!
 
-![](http://usefulpa.s3.amazonaws.com/images/2014/wp-login-kakao-icon.png)
+![](https://usefulpa.s3.amazonaws.com/images/2014/wp-login-kakao-icon.png)
 
 
 몇 가지 유의사항
