@@ -55,18 +55,25 @@ wordpress:
   references:
   - title: LG CES2017 Newsroom
     url: http://ces2017.lgnewsroom.com/
-    description: 2017, Custom Theme, 반응형웹
+    description: Custom Theme, 반응형웹
     screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-lgces2017.png
-  - title: Computex Taipei 2016 국문 사이트
+  - title: Computex Taipei 2016 한국
     url: http://computextaipei.kr/
-    description: 2016, Custom Theme, 반응형웹
+    description: Custom Theme, 반응형웹
     screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-computex2016.png
   - title: WordPress 가이드
     url: https://wpguide.usefulparadigm.com/
-    description: 2015, Twenty Fifteen Theme
+    description: Twenty Fifteen Theme
     screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-wpguide.png
   - title: 페르노리카 코리아
     url: http://www.pernod-ricard-korea.com/
-    description: 2014, Custom Theme, 반응형웹
+    description: Custom Theme, 반응형웹
     screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-prk.png
-                   
+  - title: 오스터 코리아 공식몰
+    url: http://www.oster.co.kr/
+    description: Custom Theme, WooCommerce
+    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/screenshot-wp-osterkr.png
+  - title: Discover Hyundai
+    url: http://www.discover-hyundai.com/
+    description: Custom Theme, 반응형웹
+    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/screenshot-wp-hqtour.png                  
