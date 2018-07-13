@@ -45,7 +45,7 @@
   }
   &#home .item__content { 
     background-image: url('/img/hero-home.jpg'); // fallback for OLD browsers
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-home.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6)), url('/img/hero-home.jpg');
     // Logo
     .title {
       font-family: 'Lato', sans-serif;
