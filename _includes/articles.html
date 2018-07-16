@@ -14,8 +14,13 @@
         <div class="media-body">
           <h5 class="media-heading"><a href="{{post.url}}">{{post.title}}</a></h5>
           <small class="">{{ post.date | date_to_string }}</small>
-          <p>{{post.description}}</p>
+          <p>
+            {{post.description}}
+          </p>
         </div>
+        <!-- <div class="more">
+          <a href="{{post.url}}" class="btn btn-primary btn-sm">more &raquo;</a>
+        </div>   -->
       </div>
     </li>
     {% else %}
@@ -24,5 +29,6 @@
   {% endfor %}
 </ul>
 
-<a href="/articles/" class="btn btn-primary btn-sm">More &raquo;</a>
-<!-- <a href="/articles/" class="more">more ..</a> -->
+<div class="more">
+  <a href="/articles/" class="btn btn-primary btn-sm">More &raquo;</a>
+</div>
