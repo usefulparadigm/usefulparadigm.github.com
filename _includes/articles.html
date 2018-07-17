@@ -1,9 +1,9 @@
 <div class="page-header">
-  <h2 class="title">Latest Articles</h2>
+  <h2 class="title">Articles</h2>
 </div>
 
 <ul class="posts list-unstyled">
-  {% for post in site.posts limit:1 %}
+  {% for post in site.posts limit:3 %}
     <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li> -->
     {% if forloop.index == 1 %}
     <li>
