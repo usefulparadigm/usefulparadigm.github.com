@@ -61,10 +61,10 @@ wordpress:
     url: http://computextaipei.kr/
     description: Custom Theme, 반응형웹
     screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-computex2016.png
-  - title: WordPress 가이드
-    url: https://wpguide.usefulparadigm.com/
-    description: Twenty Fifteen Theme
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-wpguide.png
+  # - title: WordPress 가이드
+  #   url: https://wpguide.usefulparadigm.com/
+  #   description: Twenty Fifteen Theme
+  #   screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-wpguide.png
   - title: 페르노리카 코리아
     url: http://www.pernod-ricard-korea.com/
     description: Custom Theme, 반응형웹
