@@ -51,7 +51,6 @@
     //     });
     //     $.cookie('animated', true);
     // }
-    
 	};
 
 	init();
@@ -111,6 +110,19 @@
       $.disqusLoader( '#disqus_thread', { 
         scriptUrl: '//usefulparadigm.disqus.com/embed.js'
       });
+    }
+
+    // Lightweight and simple carousel with no dependencies
+    // https://pawelgrzybek.github.io/siema/
+    if ($('.siema').length > 0) {
+      var mySiema = new Siema({
+        perPage: {
+          640: 2 // items for viewport wider than 800px
+        },
+        loop: true
+      });
+      $('.siema-prev').on('click', function() { mySiema.prev(); });
+      $('.siema-next').on('click', function() { mySiema.next(); });
     }
 
   });

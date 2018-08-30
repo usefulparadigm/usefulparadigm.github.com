@@ -2,14 +2,17 @@
   <h2>Works</h2>
 </div>
 
-<ul id="{{ include.name }}-references" class="{{ include.name }} references block-grid-xs-2 block-grid-sm-3 block-grid-md-2">
+<div id="{{ include.name }}-references" class="{{ include.name }} references block-gridx-xs-2 block-gridx-sm-3 block-gridx-md-2 siema">
 {% for entry in site.data.services.wordpress.references %}
-  <li class="item item--{{ forloop.index }}">
+  <div class="itemx item--{{ forloop.index }}x">
     <!-- <a href="{{ entry.url }}" class="item__content" target="_blank"> -->
       <div class="thumbnail"><img src="{{ entry.screenshot }}" alt="{{ entry.title }}"></div>
       <h5 class="title">{{ entry.title }}</h5>
       <p class="description">{{ entry.description }}</p>
     <!-- </a> -->
-  </li>
+  </div>
 {% endfor %}
-</ul>
+</div>
+
+<button class="siema-prev btn btn-primary btn-sm">&laquo; prev</button>
+<button class="siema-next btn btn-primary btn-sm">next &raquo;</button>
