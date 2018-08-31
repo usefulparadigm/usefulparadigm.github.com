@@ -115,6 +115,9 @@
     // Lightweight and simple carousel with no dependencies
     // https://pawelgrzybek.github.io/siema/
     if ($('.siema').length > 0) {
+      $('.siema-wrap').waitForImages(function() {
+        $(this).addClass('animated fadeIn');
+      });
       var mySiema = new Siema({
         perPage: {
           640: 2 // items for viewport wider than 800px
