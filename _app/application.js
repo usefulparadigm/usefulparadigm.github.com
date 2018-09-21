@@ -40,10 +40,10 @@
 
     // animate.css
     // https://github.com/daneden/animate.css
-    // $('*[data-animate]').hover(function() {
-    //   $(this).toggleClass('animated ' + $(this).data('animate'));
-    // });
-    
+    $('*[data-animate]').each(function() {
+      $(this).toggleClass('animated ' + $(this).data('animate'));
+    });
+
     // Run animate only once in a session
     // if (!$.cookie('animated')) {
     //     $('*[data-animate].animate-once').each(function() {
@@ -51,73 +51,25 @@
     //     });
     //     $.cookie('animated', true);
     // }
-	};
 
-	init();
-
-  // Pjax page transition
-  // https://github.com/luruke/barba.js
-
-  Barba.Pjax.getTransition = function() {
-    return require('./FadeTransition'); //FadeTransition;
-  };
-
-  Barba.Dispatcher.on('initStateChange', function(currentStatus, prevStatus) {
-    // console.log(currentStatus, prevStatus);
-
-    if (prevStatus != null) { // check if page is loaded by Ajax
-      // Updating Google Analytics tracking
-      ga('set', 'page', window.location.pathname);
-      ga('send', 'pageview');
-      
-      // Update canonical meta tag (used for google +1 button)  
-      $('link[rel="canonical"]').attr('href', window.location.href);
-    }
-  });
-
-  Barba.Dispatcher.on('newPageReady', function(currentStatus, prevStatus) {
-
-    // animate.css
-    // https://github.com/daneden/animate.css
-    $('*[data-animate]').each(function() {
-      $(this).toggleClass('animated ' + $(this).data('animate'));
-    });
     // front grid hover animation
     $('.grid .item').hover(function() {
       var $hover = $('*[data-animate-hover]', this);
       $hover.toggleClass('animated ' + $hover.data('animate-hover'));
     });
-  });
-  
-  Barba.Dispatcher.on('transitionCompleted', function(currentStatus, prevStatus) {
-    // console.log(currentStatus);
 
     // https://github.com/alexanderdickson/waitForImages
     $('.grid').waitForImages(function() {
         // All descendant images have loaded, now slide up.
         $(this).css({'opacity': 1});
     });
-
-    if (prevStatus != null) { // check if page is loaded by Ajax
-
-      // Loading social sharing buttons  
-      try { gapi.plusone.go(document.getElementById('main')); } catch(e) {}
-      try { FB.XFBML.parse(document.getElementById('main')); } catch(e) {}
-      try { twttr.widgets.load(document.getElementById("main")); } catch(e) {}
     
-      // Loading a Disqus thread dynamically
-      // https://css-tricks.com/lazy-loading-disqus-comments/
-      $.disqusLoader( '#disqus_thread', { 
-        scriptUrl: '//usefulparadigm.disqus.com/embed.js'
-      });
-    }
-
     // Lightweight and simple carousel with no dependencies
     // https://pawelgrzybek.github.io/siema/
     if ($('.siema').length > 0) {
-      $('.siema-wrap').waitForImages(function() {
-        $(this).addClass('animated fadeIn');
-      });
+      // $('.siema-wrap').waitForImages(function() {
+      //   $(this).addClass('animated fadeIn');
+      // });
       var mySiema = new Siema({
         perPage: {
           640: 2 // items for viewport wider than 800px
@@ -128,9 +80,9 @@
       $('.siema-next').on('click', function() { mySiema.next(); });
     }
 
-  });
-  
-  Barba.Pjax.start();
+	};
+
+	init();
 
   // Change grid color randomly
   // http://colormind.io/api-access/
