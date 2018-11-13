@@ -94,10 +94,15 @@ header.main ul.buttons a:active {
     padding-left: 4px;
 }
 /*http://designpieces.com/2012/12/social-media-colours-hex-and-rgb/*/
-.social.buttons li.twitter a { color: #55acee; }
-.social.buttons li.facebook a { color: #3b5998; }
-.social.buttons li.google a { color: #dd4b39; }
-.social.buttons li.github a { color: #000000; }
+//.social.buttons li.twitter a { color: #55acee; }
+//.social.buttons li.facebook a { color: #3b5998; }
+//.social.buttons li.google a { color: #dd4b39; }
+//.social.buttons li.github a { color: #000000; }
+.social.buttons a { color: $color-up-gray; }
+.social.buttons li.twitter a:hover { color: #55acee; }
+.social.buttons li.facebook a:hover { color: #3b5998; }
+.social.buttons li.google a:hover { color: #dd4b39; }
+.social.buttons li.github a:hover { color: #000000; }
 
 header.main ul.buttons li + li {
   width:88px;
