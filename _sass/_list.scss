@@ -15,6 +15,39 @@
   display: none;
 }
 
+// solutions
+
+#solutions {
+  margin-top: 2.5em;
+  display: flex;
+  flex-wrap: wrap;
+  .box {
+    flex: 33%;
+    &:hover { text-decoration: none; }
+    padding: 3px;
+  }
+  .item {
+    height: 100%;
+    padding: 1.6em;
+//    filter: grayscale(30%);
+    opacity: 0.8;
+    &:hover { opacity: 1; }
+    color: #fff;
+    .title {
+      font-size: 1em;
+  //    font-weight: bold;
+      color: #fff;
+      margin: 0;
+    }
+    .description {
+      font-size: 0.8em;
+      margin: 0;
+      color: #ddd;
+    }
+  }
+}
+
+
 // Resources
 
 .resources {

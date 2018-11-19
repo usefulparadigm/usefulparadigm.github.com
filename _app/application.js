@@ -53,7 +53,7 @@
     // }
 
     // front grid hover animation
-    $('.grid .item').hover(function() {
+    $('.item').hover(function() {
       var $hover = $('*[data-animate-hover]', this);
       $hover.toggleClass('animated ' + $hover.data('animate-hover'));
     });

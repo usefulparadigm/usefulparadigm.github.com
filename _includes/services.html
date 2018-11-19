@@ -12,3 +12,16 @@
   </li>
 {% endfor %}
 </ul>
+
+<div id="solutions">
+{% for s in site.data.services.solutions %}
+  <a class="box {{ s.name }}" href="{{ s.link }}" target="_blank">
+    <div class="item" style="background-color: {{s.color}}">
+      <div data-animate-hover="pulse">
+        <h3 class="title">{{ s.title }}</h3>
+        <p class="description">{{ s.description }}</p>  
+      </div>  
+    </div>
+  </a>  
+{% endfor %}
+</div>  

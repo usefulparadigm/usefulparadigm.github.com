@@ -17,6 +17,33 @@ all:
     link: /wordpress/
     icon: <i class="fa fa-wordpress" aria-hidden="true"></i>
 
+solutions:
+  - title: Pickcle
+    name: pickcle
+    description: 골라 보는 나만의 맞춤 콘텐츠
+    color: '#593196'
+    link: http://pickcle.co/
+  - title: 플라타너스트리
+    name: platanustree
+    description: 책 읽는 좋은 습관! 내 온라인 서재
+    color: '#103210'
+    link: https://platanustree.com/
+  - title: Landing Jekyll
+    name: landing-jekyll
+    description: Jekyll 기반 웹사이트 제작
+    color: '#FFAA00'
+    link: https://landing-jekyll.usefulparadigm.com/
+  - title: WordPress 가이드
+    name: wpguide
+    description: 워드프레스를 여행하는 히치하이커를 위한 안내서  
+    color: '#0B5DD0'
+    link: https://wpguide.usefulparadigm.com/
+  - title: Bayes
+    name: bayes
+    description: 머신러닝 NLP (Coming Soon!)
+    color: '#85144b'
+    link: '#'
+
 webdev:
   publications:
   - title: 레일스와 함께하는 애자일 웹 개발
