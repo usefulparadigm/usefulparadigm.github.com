@@ -1,6 +1,8 @@
-<div class="page-header">
+<!-- <div class="page-header">
   <h2>{{ include.title | default: "Services & Solutions" }}</h2>
-</div>
+</div> -->
+
+<div class="divider"></div>
 
 <ul id="services" class="grid list-unstyled without-{{include.without}}">
 {% for service in site.data.services.all %}
@@ -16,7 +18,7 @@
 <div id="solutions">
 {% for s in site.data.services.solutions %}
   <a class="box {{ s.name }}" href="{{ s.link }}" target="_blank">
-    <div class="item" style="background-color: {{s.color}}">
+    <div class="item" style="background-color: {{s.color}};">
       <div data-animate-hover="pulse">
         <h3 class="title">{{ s.title }}</h3>
         <p class="description">{{ s.description }}</p>  
