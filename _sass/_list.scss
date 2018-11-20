@@ -22,7 +22,14 @@
   display: flex;
   flex-wrap: wrap;
   .box {
-    flex: 33%;
+    flex: auto;
+    width: 33%;
+    @media screen and (max-width: 800px)  {
+      width: 20%;
+    }
+    @media screen and (max-width: 640px)  {
+      width: 100%;
+    }
     &:hover { text-decoration: none; }
     padding: 3px;
   }
