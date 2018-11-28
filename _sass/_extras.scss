@@ -27,7 +27,7 @@ body.modal-open {
 
 // https://tympanus.net/codrops/2013/11/07/css-overlay-techniques/
 .contact-modal {
-  .overlay{
+  .overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -39,9 +39,10 @@ body.modal-open {
   }
   .modal {
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 100%;
     text-align: center;
     z-index: 100; /* 1px higher than the overlay layer */    
     &, .title { color: #fff; }
