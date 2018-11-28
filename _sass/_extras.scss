@@ -13,6 +13,14 @@
 
 // Contact Modal
 
+// https://stackoverflow.com/questions/9538868/prevent-body-from-scrolling-when-a-modal-is-opened
+@media screen and (max-width: 640px)  {
+  body.modal-open {
+    overflow: hidden;
+//    position: fixed;
+  }
+}
+
 .contact-button {
   margin-bottom: 2em;
   text-align: center;
@@ -41,7 +49,7 @@
     color: #ccc;
     border: 0;
     background: none;
-    z-index: 1000;
+    z-index: 1001;
   }
   .modal {
     position: absolute;

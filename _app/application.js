@@ -80,8 +80,12 @@
       $('.siema-next').on('click', function() { mySiema.next(); });
     }
     
+    // var showModal = function(el) { $(el).fadeIn('slow'); }
+    // var hideModal = function(el) { $(el).fadeOut('slow'); }
+      
     // toggle contact modal
     $('.contact-button .btn, .contact-modal .close').on('click', function() {
+      $('body').toggleClass('modal-open');
       // $('#contactModal').toggleClass('hide');
       $('#contactModal').fadeToggle('slow');
     });
