@@ -82,32 +82,33 @@
 
     // Contact form modal
     
-    var showModal = function(el) { 
-      $('body').addClass('modal-open');
-      $(el).fadeIn('slow'); 
-    }
-    var hideModal = function(el) { 
-      $('body').removeClass('modal-open');
-      $(el).fadeOut('slow'); 
-    }
-
-    var hashChange = function() {
-      if (location.hash === "#contact") {
-        showModal('#contactModal');
-      } else {
-        hideModal('#contactModal');
-      }
-    };
-
-    $(window).on('hashchange', hashChange);
-    hashChange();
+    // var showModal = function(el) {
+    //   $('body').addClass('modal-open');
+    //   $(el).fadeIn('slow');
+    // }
+    // var hideModal = function(el) {
+    //   $('body').removeClass('modal-open');
+    //   $(el).fadeOut('slow');
+    // }
+    //
+    // var hashChange = function() {
+    //   if (location.hash === "#contact") {
+    //     showModal('#contactModal');
+    //   } else {
+    //     hideModal('#contactModal');
+    //   }
+    // };
+    //
+    // $(window).on('hashchange', hashChange);
+    // hashChange();
       
     // toggle contact modal
-    // $('.contact-button .btn, .contact-modal .close').on('click', function() {
-    //   $('body').toggleClass('modal-open');
-    //   // $('#contactModal').toggleClass('hide');
-    //   $('#contactModal').fadeToggle('slow');
-    // });
+    $('.contact-button .btn, .contact-modal .close').on('click', function(e) {
+      e.preventDefault();
+      $('body').toggleClass('modal-open');
+      // $('#contactModal').toggleClass('hide');
+      $('#contactModal').fadeToggle('slow');
+    });
 
 	};
 
