@@ -79,6 +79,12 @@
       $('.siema-prev').on('click', function() { mySiema.prev(); });
       $('.siema-next').on('click', function() { mySiema.next(); });
     }
+    
+    // toggle contact modal
+    $('.contact-button .btn, .contact-modal .close').on('click', function() {
+      // $('#contactModal').toggleClass('hide');
+      $('#contactModal').fadeToggle('slow');
+    });
 
 	};
 

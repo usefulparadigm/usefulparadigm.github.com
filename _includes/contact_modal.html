@@ -1,0 +1,30 @@
+<div id="contactModal" class="contact-modal" style="display: none;">
+  <button type="button" class="close" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <div class="overlay"></div>
+  <div class="modal container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">  
+        <h2 class="title">문의 및 제작 의뢰</h2>
+        <form action="https://getform.io/f/add09bba-b6ab-489d-98cd-79cc31abab97" method="post" enctype="multipart/form-data">
+          <div class="form-group">
+            <label for="contactInputEmail">이메일 주소</label>
+            <input type="email" class="form-control" id="contactInputEmail" name="email" placeholder="응답 받으실 이메일 주소를 입력하세요." required>
+            <!-- <span class="help-block">응답 받으실 이메일 주소</span> -->
+          </div>
+          <div class="form-group">
+            <label for="contactInputContent">문의 내용</label>
+            <textarea class="form-control resizable" id="contactInputContent" rows="7" name="content" placeholder="의뢰 또는 문의하실 내용을 입력하세요." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="contactInputFile">첨부파일</label>
+            <p class="help-block">첨부할 파일이 있으시면 첨부하세요.</p>
+            <input type="file" id="contactInputFile" name="file">
+          </div>
+          <button type="submit" class="btn btn-primary">제출하기</button>
+        </form>
+      </div>
+    </div>  
+  </div><!--.modal-->  
+</div>  
