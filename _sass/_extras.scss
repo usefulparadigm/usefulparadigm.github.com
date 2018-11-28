@@ -14,11 +14,9 @@
 // Contact Modal
 
 // https://stackoverflow.com/questions/9538868/prevent-body-from-scrolling-when-a-modal-is-opened
-@media screen and (max-width: 640px)  {
-  body.modal-open {
-    overflow: hidden;
+body.modal-open {
+  overflow: hidden;
 //    position: fixed;
-  }
 }
 
 .contact-button {
@@ -35,9 +33,20 @@
     left: 0;
     height: 100%;
     width: 100%;
-    z-index: 999;
+    z-index: 99;
 //    background-color: rgba(0,0,0,0.5); /*dim the background*/
     background-color: rgba(115,148,30,0.9); /*dim the background*/
+  }
+  .modal {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 100; /* 1px higher than the overlay layer */    
+    &, .title { color: #fff; }
+    .help-block { color: #ccc; }
+    label { font-weight: normal; }
   }
   .close {
     position: absolute;
@@ -49,18 +58,9 @@
     color: #ccc;
     border: 0;
     background: none;
-    z-index: 1001;
-  }
-  .modal {
-    position: absolute;
-    top: 50%; 
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 1000; /* 1px higher than the overlay layer */    
-    &, .title { color: #fff; }
-    .help-block { color: #ccc; }
-    label { font-weight: normal; }
+    text-decoration: none;
+    line-height: 1;
+    z-index: 101;
   }
 }
 
