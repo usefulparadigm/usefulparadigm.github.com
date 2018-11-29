@@ -92,6 +92,7 @@
     }
 
     var hashChange = function() {
+      // console.log(history.state)
       if (location.hash === "#contact") {
         showModal('#contactModal');
       } else {
