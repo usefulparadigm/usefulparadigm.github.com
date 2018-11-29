@@ -101,6 +101,13 @@
 
     $(window).on('hashchange', hashChange);
     hashChange();
+
+    // let getForm return to home after thank-you
+    $('#contactModal form').submit(function() {
+      history.replaceState({origin: '#contact'}, '', '/');
+      this.submit();
+      return false;
+    });
     
     // toggle contact modal
     // $('.contact-button .btn, .contact-modal .close').on('click', function() {
