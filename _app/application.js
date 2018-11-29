@@ -92,22 +92,30 @@
     }
 
     var hashChange = function() {
-      // console.log(history.state)
+      // console.log(location.hash);
       if (location.hash === "#contact") {
         showModal('#contactModal');
       } else {
         hideModal('#contactModal');
       }
     };
-
+    
     $(window).on('hashchange', hashChange);
     hashChange();
 
     // let getForm return to home after thank-you
     $('#contactModal form').submit(function() {
-      history.replaceState({origin: '#contact'}, '', '/');
+      history.replaceState({}, '', '/');
       this.submit();
       return false;
+    });
+
+    // https://stackoverflow.com/questions/24046/the-safari-back-button-problem  
+    $(window).bind("pageshow", function(event) {
+      if (event.originalEvent.persisted) {
+        // window.location.reload()
+        hashChange();
+      }
     });
     
     // toggle contact modal
