@@ -63,7 +63,9 @@ aside ul {
 }
 
 #home {
-  margin-top: 132px;
+//  padding-top: 132px;
+  padding: 76px 0;
+  margin-bottom: 2em;
 }
 
 //#logo {
@@ -209,8 +211,7 @@ aside .contact {
   }
 
   #home {
-    margin-top: 0;
-    margin-bottom: 2em;
+    padding: 24px 0;
   }
 
 }  
