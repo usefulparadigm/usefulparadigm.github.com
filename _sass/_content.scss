@@ -46,8 +46,8 @@
   &#home {
     background-image: url('/img/hero-home.jpg'); // fallback for OLD browsers
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('/img/hero-home_4.jpg');
-    background-size: 100%;
-    background-position: center top, center -50px; // padding from the top!
+    background-size: cover;
+    background-position: center top, center; // padding from the top!
     background-attachment: scroll;
   }
   &#home .item__content { 
