@@ -1,13 +1,19 @@
 <div class="page-header">
-  <h2>Works</h2>
+  <h2>{{ include.title | default: "Works" }}</h2>
 </div>
 
 <section class="siema-wrap">
   <div id="{{ include.name }}-references" class="{{ include.name }} references block-gridx-xs-2 block-gridx-sm-3 block-gridx-md-2 siema">
-  {% for entry in site.data.services.wordpress.references %}
+  {% for entry in include.data %}
     <div class="itemx item--{{ forloop.index }}x">
       <!-- <a href="{{ entry.url }}" class="item__content" target="_blank"> -->
-        <div class="thumbnail"><img src="{{ entry.screenshot }}" alt="{{ entry.title }}"></div>
+        {% if entry.url %}
+          <a href="{{ entry.url }}" target="_blank">
+            <div class="thumbnail"><img src="{{ entry.screenshot }}" alt="{{ entry.title }}"></div>
+          </a>  
+        {% else %}
+          <div class="thumbnail"><img src="{{ entry.screenshot }}" alt="{{ entry.title }}"></div>
+        {% endif %}
         <h5 class="title">{{ entry.title }}</h5>
         <p class="description">{{ entry.description }}</p>
       <!-- </a> -->
@@ -15,6 +21,8 @@
   {% endfor %}
   </div>
 
-  <button class="siema-prev btn btn-primary btn-sm">&laquo; prev</button>
-  <button class="siema-next btn btn-primary btn-sm">next &raquo;</button>
+  {% if include.data.size > 2 %}
+    <button class="siema-prev btn btn-primary btn-sm">&laquo; prev</button>
+    <button class="siema-next btn btn-primary btn-sm">next &raquo;</button>
+  {% endif %}
 </section>

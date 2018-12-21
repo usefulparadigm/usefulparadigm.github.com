@@ -19,6 +19,8 @@ last_modified_at: 2017-06-01
 * 얼랭 엘릭서(Erlang & Elixir)
 <!-- * IT Infra(서버/클라우드 호스팅 운영) -->
 
+{% include references.html name="webdev" data=site.data.services.webdev.references %}
+
 <div class="page-header">
   <h2>Publications</h2>
 </div>
