@@ -51,8 +51,8 @@ webdev:
     cover: https://image.aladin.co.kr/product/88/90/cover/8991268269_1.jpg
     description: 데이브 토머스, 데이비드 하이네마이어 한슨 저 | 김석준 외 2명 역 | 인사이트 | 2007
   - title: 프로그래밍 얼랭
-    url: https://book.naver.com/bookdb/book_detail.nhn?bid=4590312
-    cover: http://image.aladin.co.kr/product/221/27/letslook/8991268404_f.jpg  
+    url: http://book.naver.com/bookdb/book_detail.nhn?bid=4590312
+    cover: https://image.aladin.co.kr/product/221/27/letslook/8991268404_f.jpg  
     description: 조 암스트롱 저 | 김석준 역 | 인사이트 | 2008
   - title: Rails Recipes
     url: http://book.naver.com/bookdb/book_detail.nhn?bid=2625095
