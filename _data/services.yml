@@ -62,11 +62,11 @@ webdev:
   - title: 플라타너스트리
     url: https://platanustree.com/
     description: 책 읽는 좋은 습관! 내 온라인 서재
-    screenshot: https://res.cloudinary.com/usefulpa/image/upload/v1549518585/usefulparadigm/home/Screenshot-platanustree_2018-12-21.jpg
+    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-platanustree_2018-12-21.jpg
   - title: Pickcle
     url: https://pickcle.co/
     description: 골라보는 나만의 맞춤 콘텐츠, 픽클!
-    screenshot: https://res.cloudinary.com/usefulpa/image/upload/v1549518584/usefulparadigm/home/Screenshot-pickcle_2018-12-21.jpg
+    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-pickcle_2018-12-21.jpg
         
 martech:
   resources:  
