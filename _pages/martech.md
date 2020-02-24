@@ -21,6 +21,8 @@ last_modified_at: 2017-06-01
 * 온라인 데이터 분석 및 검색 최적화(SEO)
 * 마케팅 챗봇(chatbot) 및 메신저봇
 
+{% include cta.html %}
+
 {% include references.html name="martech" data=site.data.services.martech.references %}
 
 {% include resources.html name="martech" %}

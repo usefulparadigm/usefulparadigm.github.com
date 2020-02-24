@@ -20,6 +20,8 @@ last_modified_at: 2017-06-01
 * 워드프레스 사이트 성능 최적화
 * 데이터 마이그레이션 및 타 시스템 연동
 
+{% include cta.html %}
+
 {% include references.html name="wordpress" data=site.data.services.wordpress.references %}
 {% include resources.html name="wordpress" %}
 

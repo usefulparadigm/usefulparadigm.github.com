@@ -84,6 +84,11 @@
   background-image: url('/img/hero-wordpress.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-wordpress.jpg');
   } 
+  &#mediawiki .item__content { 
+//    background-color: $color-item-3;
+  background-image: url('/img/hero-mediawiki.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-mediawiki.jpg');
+  } 
 
   @media screen and (max-width: 960px)  {
     .item { padding-bottom: 25%; }
