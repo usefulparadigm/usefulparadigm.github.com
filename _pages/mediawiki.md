@@ -1,6 +1,6 @@
 ---
 layout: hero
-title: 미디어위키 웹사이트 제작
+title: 미디어위키 사이트 제작
 description: 유스풀패러다임은 대표적인 오픈소스 위키 솔루션인 미디어위키(MediaWiki) 기반 사이트 구축 및 기술 지원 서비스를 제공합니다.
 permalink: /mediawiki/
 last_modified_at: 2020-02-24
