@@ -1,0 +1,34 @@
+<div class="page-header">
+  <h2 class="title">Articles</h2>
+</div>
+
+<ul class="posts list-unstyled">
+  {% for post in site.posts limit:3 %}
+    <!-- <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li> -->
+    {% if forloop.index == 1 %}
+    <li>
+      <div class="media">
+        <a class="pull-left" href="{{post.url}}">
+          <img class="media-object" src="{{post.thumbnail}}" width="120" alt="">
+        </a>
+        <div class="media-body">
+          <h5 class="media-heading"><a href="{{post.url}}">{{post.title}}</a></h5>
+          <small class="">{{ post.date | date_to_string }}</small>
+          <p>
+            {{post.description}}
+          </p>
+        </div>
+        <!-- <div class="more">
+          <a href="{{post.url}}" class="btn btn-primary btn-sm">more &raquo;</a>
+        </div>   -->
+      </div>
+    </li>
+    {% else %}
+    <li><h5><a href="{{ post.url }}">{{ post.title }}</a> <small>| {{ post.date | date_to_string }}</small></h5></li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<div class="more">
+  <a href="/articles/" class="btn btn-primary btn-sm">More &raquo;</a>
+</div>

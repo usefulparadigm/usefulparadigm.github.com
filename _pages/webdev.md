@@ -21,9 +21,10 @@ last_modified_at: 2017-06-01
 <!-- * IT Infra(서버/클라우드 호스팅 운영) -->
 
 {% include cta.html %}
-
 {% include references.html name="webdev" data=site.data.services.webdev.references %}
+{% include articles.html category="web development" %}
 
+{% comment %}
 <div class="page-header">
   <h2>Publications</h2>
 </div>
@@ -43,6 +44,7 @@ last_modified_at: 2017-06-01
   </li>
 {% endfor %}
 </ul>
+{% endcomment %}
 
 {% comment %}{% include services.html title="Other Services & Solutions" without="webdev" %}{% endcomment %}
 

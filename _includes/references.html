@@ -21,8 +21,10 @@
   {% endfor %}
   </div>
 
-  {% if include.data.size > 2 %}
+  {% if include.data.size > 1 %}
+  <div class="buttons text-center">
     <button class="siema-prev btn btn-primary btn-sm">&laquo; prev</button>
     <button class="siema-next btn btn-primary btn-sm">next &raquo;</button>
+  </div>        
   {% endif %}
 </section>

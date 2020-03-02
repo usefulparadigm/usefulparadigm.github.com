@@ -24,5 +24,6 @@ last_modified_at: 2017-06-01
 
 {% include references.html name="wordpress" data=site.data.services.wordpress.references %}
 {% include resources.html name="wordpress" %}
+{% include articles.html category="wordpress" %}
 
 {% comment %}{% include services.html title="Other Services & Solutions" without="wordpress" %}{% endcomment %}
