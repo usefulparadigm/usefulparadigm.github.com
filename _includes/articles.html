@@ -3,16 +3,17 @@
 </div>
 
 <ul class="posts list-unstyled">
-  {% for post in site.categories[include.category] limit:5 %}
+  {% assign posts_limit = include.limit | default: 5 %}    
+  {% for post in site.categories[include.category] limit: posts_limit %}
     {% if forloop.index == 1 %}
-    <li>
+    <li class="item">
       <div class="media">
         <a class="pull-left" href="{{post.url}}">
           <img class="media-object" src="{{post.thumbnail}}" width="120" alt="">
         </a>
         <div class="media-body">
           <h6 class="media-heading"><a href="{{post.url}}">{{post.title}}</a></h6>
-          <small class="">{{ post.date | date_to_string }}</small>
+          <small>{{ post.date | date_to_string }}</small>
           <p>
             {{post.description}}
           </p>
@@ -25,6 +26,7 @@
   {% endfor %}
 </ul>
 
-<div class="more">
-  <a href="/articles/" class="more">More &raquo;</a>
+<div class="more text-center">
+  <a href="/articles/" class="btn btn-primary btn-sm">more &raquo;</a>
 </div>
+
