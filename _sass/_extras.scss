@@ -42,8 +42,8 @@ body.modal-open {
     width: 100%;
     z-index: 99;
     background-color: rgba(0,0,0,0.8); /*dim the background*/
-//    background-color: rgba(115,148,30,0.9); /*dim the background*/
   }
+  .modal iframe { background-color: #fff; }
   .modal {
     position: absolute;
     top: 50%;
