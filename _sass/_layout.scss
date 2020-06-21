@@ -131,12 +131,12 @@ aside .contact {
     display: block;
     clear: both;
   }
-  &.without- .item { width: 33.3%; }
+//  &.without- .item { width: 33.3%; }
   .item {
 //    width: 33.3%;
-    width: 50%;
+//    width: 50%;
     padding-bottom: 20%;
-    float: left;
+//    float: left;
     text-align: center;
     position: relative;
     opacity: 0.9;
@@ -168,6 +168,18 @@ aside .contact {
   .item--2 .item__icon { color: $color-item-2; }
   .item--3 .item__icon { color: $color-item-3; }
 }
+
+// Services Area
+
+#services.grid {
+  display: flex;
+  flex-wrap: wrap;
+  .item {
+    flex: 1;
+    @media screen and (max-width: 480px) { flex-basis: 100%; }
+  }
+}
+
 
 //@media screen and (max-width: 960px), (max-height: 500px)  {
 @media screen and (max-width: 960px)  {
@@ -227,14 +239,14 @@ aside .contact {
 
 }
 
-@media screen and (max-width: 480px) {
-
-//  aside {
-//      text-align: center;
-//  }
-
-  .grid .item__content small { display: none; }
-}
+//@media screen and (max-width: 480px) {
+//
+////  aside {
+////      text-align: center;
+////  }
+//
+//  .grid .item__content small { display: none; }
+//}
 
 @media screen and (max-width: 375px)  {
     section.main .nav { display: none; }
