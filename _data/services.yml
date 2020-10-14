@@ -62,11 +62,13 @@ webdev:
   - title: 플라타너스트리
     url: https://platanustree.com/
     description: 책 읽는 좋은 습관! 내 온라인 서재
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-platanustree_2018-12-21.jpg
+    # screenshot: https://usefulparadigm.s3.amazonaws.com/images/2018/Screenshot-platanustree_2018-12-21.jpg
+    screenshot: /img/screenshots/platanustree.jpg
   - title: Pickcle
     url: https://pickcle.co/
     description: 골라보는 나만의 맞춤 콘텐츠, 픽클!
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-pickcle_2018-12-21.jpg
+    # screenshot: https://usefulparadigm.s3.amazonaws.com/images/2018/Screenshot-pickcle_2018-12-21.jpg
+    screenshot: /img/screenshots/pickcle.jpg
         
 martech:
   resources:  
@@ -86,11 +88,13 @@ martech:
   - title: Landing Jekyll
     url: https://landing-jekyll.usefulparadigm.com/
     description: 지킬 기반 랜딩페이지 제작 서비스
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-landingjekyll_2018-12-21.jpg
+    # screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-landingjekyll_2018-12-21.jpg
+    screenshot: /img/screenshots/landing-jekyll.jpg
   - title: Buzzmix
     url: http://buzzmix.co/
     description: 소셜미디어 콘텐츠 큐레이션 솔루션
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-buzzmix_2018-12-21.jpg
+    # screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-buzzmix_2018-12-21.jpg
+    screenshot: /img/screenshots/buzzmix.jpg
 
 wordpress:
   resources:
@@ -101,20 +105,26 @@ wordpress:
   - title: LG CES2017 Newsroom
     # url: http://ces2017.lgnewsroom.com/
     description: Custom Theme, 반응형웹, 2017
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-lgces2017.png
+    # screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-lgces2017.png
+    screenshot: /img/screenshots/lg-ces2017.jpg
   - title: Computex Taipei 2016 한국, 2016
     # url: http://computextaipei.kr/
     description: Custom Theme, 반응형웹
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-computex2016.png
+    # screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-computex2016.png
+    screenshot: /img/screenshots/computex-2016.jpg
   - title: 페르노리카 코리아
     # url: http://www.pernod-ricard-korea.com/
     description: Custom Theme, 반응형웹, 2015
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-prk.png
+    # screenshot: https://usefulpa.s3.amazonaws.com/images/2017/up-ref-wordpress-theme-prk.png
+    screenshot: /img/screenshots/pernod-ricard.jpg
   - title: 오스터 코리아 공식몰
     # url: http://www.oster.co.kr/
     description: Custom Theme, WooCommerce, 2014
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/screenshot-wp-osterkr.png
+    # screenshot: https://usefulpa.s3.amazonaws.com/images/2018/screenshot-wp-osterkr.png
+    screenshot: /img/screenshots/oster-korea.jpg
   - title: Discover Hyundai
     # url: http://www.discover-hyundai.com/
     description: Custom Theme, 반응형웹, 2013
-    screenshot: https://usefulpa.s3.amazonaws.com/images/2018/screenshot-wp-hqtour.png                  
+    # screenshot: https://usefulpa.s3.amazonaws.com/images/2018/screenshot-wp-hqtour.png
+    screenshot: /img/screenshots/discover-hyundai.jpg
+    

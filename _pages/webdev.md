@@ -22,9 +22,10 @@ last_modified_at: 2017-06-01
 
 {% include cta.html %}
 {% include references.html name="webdev" data=site.data.services.webdev.references %}
-{% include articles.html category="web development" %}
 
 {% comment %}
+{% include articles.html category="web development" %}
+
 <div class="page-header">
   <h2>Publications</h2>
 </div>
