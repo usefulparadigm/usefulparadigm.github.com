@@ -16,8 +16,6 @@ last_modified_at: 2017-06-01
 * HTML5 웹앱 개발
 * REST API 서버 구축
 * [오픈소스 기술 지원](/easyoss/)
-* 루비 레일스(Ruby & Ruby on Rails)
-* 얼랭 엘릭서(Erlang & Elixir)
 <!-- * IT Infra(서버/클라우드 호스팅 운영) -->
 
 {% include cta.html %}
