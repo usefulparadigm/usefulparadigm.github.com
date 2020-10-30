@@ -1,16 +1,16 @@
 ---
 # Services & Solutions
 all: 
+  - title: 웹사이트 제작 운영
+    subtitle: Website Development & Operations
+    name: wordpress
+    link: /wordpress/
+    icon: <i class="fa fa-wordpress" aria-hidden="true"></i>
   - title: 웹 기술 개발 & 컨설팅 
     subtitle: Web Development /w Ruby & Rails
     name: webdev
     link: /web-development/
     icon: <i class="fa fa-rocket" aria-hidden="true"></i>
-  - title: 워드프레스 제작 운영
-    subtitle: WordPress Development & Consulting
-    name: wordpress
-    link: /wordpress/
-    icon: <i class="fa fa-wordpress" aria-hidden="true"></i>
   - title: 디지털 마케팅 솔루션
     subtitle: Digital Content Marketing Solutions
     name: martech
