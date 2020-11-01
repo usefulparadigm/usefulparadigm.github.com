@@ -5,9 +5,9 @@ all:
     subtitle: Website Development & Operations
     name: wordpress
     link: /wordpress/
-    icon: <i class="fa fa-wordpress" aria-hidden="true"></i>
-  - title: 웹 기술 개발 & 컨설팅 
-    subtitle: Web Development /w Ruby & Rails
+    icon: <i class="fab fa-wordpress-simple" aria-hidden="true"></i>
+  - title: 웹 서비스 개발 
+    subtitle: Modern Web Services Development
     name: webdev
     link: /web-development/
     icon: <i class="fa fa-rocket" aria-hidden="true"></i>
