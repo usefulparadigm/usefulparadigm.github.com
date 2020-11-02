@@ -45,17 +45,15 @@
   }
   &#home {
     background-image: url('/img/hero-home_5.jpg'); // fallback for OLD browsers
-    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.4)), url('/img/hero-home_5.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('/img/hero-home_5.jpg');
     //    background-color: #4c4c4c;
     background-size: cover;
     background-position: center top, center; // padding from the top!
     background-attachment: scroll;
   }
   &#home .item__content { 
-    background-color: rgba(48, 48, 48, 0.7);
 //    background-color: transparent;
-//    background-image: url('/img/hero-home.jpg'); // fallback for OLD browsers
-//    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.6)), url('/img/hero-home.jpg');
+    background-color: rgba(48, 48, 48, 0.4);
     // Logo
     .title {
       font-family: 'Lato', sans-serif;
