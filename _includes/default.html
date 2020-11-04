@@ -71,9 +71,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   <div class="wrapper">
     <header class="main" style="z-index: 0;">
-      <hgroup class="hidden">
-        <h1 id="logo"><a href="/"><img src="/img/up-logo-top.png" width="80" alt="{{ site.title }}"></a></h1>
-        {% if site.tagline %}<h5 id="tagline">{{ site.tagline }}</h5>{% endif %}
+      <hgroup>
+        <h1 id="logo">
+            <a href="/"><img src="/img/logo-medium.png" width="240" alt="{{ site.title }}"></a>
+        </h1>
+        {% comment% }{% if site.tagline %}<h5 id="tagline">{{ site.tagline }}</h5>{% endif %}{% endcomment %}
       </hgroup>
     </header>
 
@@ -103,7 +105,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <!-- <h3>Contact</h3> -->
       <div class="contact">
         
-        <h4 class="title"><img src="/img/up-logo-top.png" width="35" alt="{{ site.title }}">{{ site.title }}</h4>
+        <h4 class="title"><!--img src="/img/up-logo-top.png" width="35" alt="{{ site.title }}"-->{{ site.title }}</h4>
         <p class="address"><!--03157-->서울특별시 종로구 종로 5길 7 타워8 16층</p>
         <p>
           <a href="tel:+8227205059">02.720.5059</a><br> 
