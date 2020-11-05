@@ -6,8 +6,8 @@ all:
     name: wordpress
     link: /wordpress/
     icon: <i class="fab fa-wordpress-simple" aria-hidden="true"></i>
-  - title: 웹서비스 & 웹앱 개발 
-    subtitle: Web Services & Web App Development
+  - title: 웹 애플리케이션 개발 
+    subtitle: Web Application Development
     name: webdev
     link: /web-development/
     icon: <i class="fa fa-rocket" aria-hidden="true"></i>
