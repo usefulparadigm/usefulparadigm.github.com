@@ -108,9 +108,11 @@
 // References
 
 .references {
+  text-align: center;
   .thumbnail { 
     margin: 10px; 
     min-height: 80px;
+    border: 1px solid #ededed;
   }
   .title {
     margin: 0;
@@ -122,6 +124,18 @@
   }
   
 }
+
+//#website-references {
+//  display: flex;
+//  flex-wrap: wrap;
+//  @media screen and (max-width: 375px)  { display: block; }
+//  .entry {
+//    flex-basis: 50%;
+//    text-align: center;
+//    font-size: 0.9em;
+//  }
+//}
+
 
 // Publications
 

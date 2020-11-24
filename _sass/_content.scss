@@ -55,15 +55,15 @@
 
   &#home {
     background-image: url('/img/hero-home_5.jpg'); // fallback for OLD browsers
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('/img/hero-home_5.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url('/img/hero-home_5.jpg');
     //    background-color: #4c4c4c;
     background-size: cover;
     background-position: center top, center; // padding from the top!
     background-attachment: scroll;
   }
   &#home .item__content { 
-//    background-color: transparent;
-    background-color: rgba(48, 48, 48, 0.4);
+    background-color: transparent;
+//    background-color: rgba(48, 48, 48, 0.4);
     // Logo
     .title {
       font-family: 'Lato', sans-serif;
@@ -82,12 +82,12 @@
 
   &#website .item__content { 
 //    background: $color-item-1;
-    background-image: url('/img/bg_hero_website.png'); // fallback for OLD browsers
+    background-image: url('/img/bg_hero_website.png'); 
   } 
   &#webdev .item__content { 
 //    background-color: $color-item-1;
     background-image: url('/img/hero-webdev.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-webdev.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('/img/hero-webdev.jpg');
   } 
   &#martech .item__content { 
 //    background-color: $color-item-2;
@@ -238,18 +238,6 @@ article.post footer {
     }
   }
 }
-
-#website-references {
-  display: flex;
-  flex-wrap: wrap;
-  @media screen and (max-width: 375px)  { display: block; }
-  .entry {
-    flex-basis: 50%;
-    text-align: center;
-    font-size: 0.9em;
-  }
-}
-
 
 //article footer p.gotop {
 //  margin-top: 10px;

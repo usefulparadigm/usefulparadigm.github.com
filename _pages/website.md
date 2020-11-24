@@ -13,7 +13,7 @@ last_modified_at: 2020-11-23
 </div>
 
 
-방법이 다양한 만큼 구축 기간이나 비용도 천차만별이죠. 하지만 어떤 방법으로 어떻게 만들든 고려할 점들은 항상 있습니다.
+방법이 다양한 만큼 구축 기간이나 비용도 천차만별이죠. 하지만 어떤 방법으로 어떻게 만들든 고려할 점은 항상 있습니다.
 
 {:.checklist}
 - 사용자가 **보기 편한 웹사이트**인가?
@@ -28,7 +28,7 @@ last_modified_at: 2020-11-23
   <h2>저희가 만들면 다릅니다</h2>
 </div>
 
-유스풀패러다임은 축적된 웹기술과 웹사이트 제작 경험을 바탕으로 고객의 니즈에 꼭 맞는 좋은 웹사이트를 합리적인 가격에 구축해 드립니다.
+유스풀패러다임은 축적된 웹기술과 웹사이트 제작 경험을 바탕으로 고객 니즈에 꼭 맞는 좋은 웹사이트를 합리적인 가격에 구축해 드립니다.
 
 ![WordPress,CraftCMS,Jekyll,Gatsby,Hugo](/img/feature-website_1.jpg)
 
@@ -36,19 +36,19 @@ last_modified_at: 2020-11-23
     <div class="feature">
         <h4 class="feature__title">검증된 오픈소스 솔루션</h4>
         <div class="feature__description">
-            <p>다양한 최신 오픈소스 웹사이트 제작 기술을 보유하고 있으며, 고객의 니즈에 맞는 최적의 솔루션을 제시합니다.</p>
+            <p>다양한 최신 오픈소스 웹사이트 제작 전문 기술을 보유하고, 고객의 니즈에 맞는 최적의 솔루션을 제시합니다.</p>
         </div>
     </div>
     <div class="feature">
         <h4 class="feature__title">빠른 구축 지속적 업데이트</h4>
         <div class="feature__description">
-            <p>애자일(agile) 방식의 반복 작업을 통해 가장 빠르게 제품을 출시하고 변화에 유연하게 적응합니다.</p>
+            <p>애자일(agile) 방식의 반복 작업을 통해 가장 빠르게 제품을 출시하고 변화에 유연하게 대응합니다.</p>
         </div>
     </div>        
     <div class="feature">
         <h4 class="feature__title">신속하고 정확한 대응</h4>
         <div class="feature__description">
-            <p>문제는 언제든 생길 수 있습니다. 웹사이트 운영 중 발생한 문제에 신속하고 정확하게 대응합니다.</p>
+            <p>문제는 언제든 생길 수 있습니다. 웹사이트 운영 중 발생한 문제에 신속하고 정확하게 대처합니다.</p>
         </div>
     </div>        
 </div>
@@ -59,6 +59,9 @@ last_modified_at: 2020-11-23
 
 <!--국내외 주요 브랜드의 웹사이트를 만들고 운영하였습니다.-->
 
+{% include references.html name="website" data=site.data.services.website.references %}
+
+<!--section>
 <div id="website-references" class="references">
     {% for entry in site.data.services.website.references %}
     <div class="entry">
@@ -68,6 +71,7 @@ last_modified_at: 2020-11-23
     </div>
     {% endfor %}
 </div>
+</section-->
 
 <div class="page-header">
   <h2>문의 및 구축 의뢰</h2>
