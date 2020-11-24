@@ -55,7 +55,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-TR3S24');</script>
 <!-- End Google Tag Manager -->
 </head>
-<body class="{{ page.name }}">
+<body class="{{ page.name | split: '.' | first }}">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TR3S24"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>

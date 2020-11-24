@@ -32,7 +32,7 @@
 //            background-size: cover;
             background-attachment: scroll;
       }
-      .title { font-size: 1.8em; color: #fff; opacity: 1; }
+      .item__title { font-size: 1.8em; color: #fff; opacity: 1; margin-top: 0; }
       p { 
         color: #eee; opacity: 1; padding: 0 20px; line-height: 1.4;
         @media screen and (max-width: 375px)  {
@@ -43,6 +43,16 @@
 //      br { line-height: 1.6; }
     }
   }
+
+  //centering content
+  .item__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    background-size: cover;
+  }
+
   &#home {
     background-image: url('/img/hero-home_5.jpg'); // fallback for OLD browsers
     background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)), url('/img/hero-home_5.jpg');
@@ -68,6 +78,11 @@
 //      line-height: 1.6;
       margin-bottom: 0.5em;
     }
+  } 
+
+  &#website .item__content { 
+//    background: $color-item-1;
+    background-image: url('/img/bg_hero_website.png'); // fallback for OLD browsers
   } 
   &#webdev .item__content { 
 //    background-color: $color-item-1;
@@ -132,6 +147,38 @@ article {
 //  }
 }
 
+article.page {
+  li {
+    color: #777;
+  }
+}
+
+ul.checklist {
+  list-style: none;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  padding-left: 0;
+  li {
+    margin: 3px 0;
+    // https://love2dev.com/blog/customize-bulleted-list/
+    &:before {
+      font-family: "Font Awesome 5 Free";
+  //      content: "\f00c"; // fas fa-check
+      content: "\f14a"; // far fa-check-square
+      padding-right: 1em;
+    }
+    strong { 
+      color: #fff; 
+      padding: 0 3px;
+      font-weight: normal; 
+      background-color: rgba(250, 128, 114, 0.9); // salmon
+      display: inline-block;
+    }
+    &:nth-child(odd) strong { transform: skew(-5deg, 3deg); }
+    &:nth-child(even) strong { transform: skew(5deg, -3deg); }
+  }
+}
+
 article.post, article.page {
   line-height: 1.6;
 }
@@ -171,6 +218,38 @@ article.post footer {
       }
   }
 }
+
+// features
+.features {
+  margin: 2em 0;
+  .feature {
+    display: flex;
+    @media screen and (max-width: 640px)  { display: block; }
+    color: #777;
+    &__title { 
+//      flex-basis: 35%;
+    }
+    &__description p {
+      font-size: 0.9em;
+//      flex-basis: 65%;
+    }  
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+#website-references {
+  display: flex;
+  flex-wrap: wrap;
+  @media screen and (max-width: 375px)  { display: block; }
+  .entry {
+    flex-basis: 50%;
+    text-align: center;
+    font-size: 0.9em;
+  }
+}
+
 
 //article footer p.gotop {
 //  margin-top: 10px;

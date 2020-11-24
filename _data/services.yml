@@ -3,8 +3,8 @@
 all: 
   - title: 웹사이트 구축 운영
     subtitle: Website Development & Operations
-    name: wordpress
-    link: /wordpress/
+    name: website
+    link: /website/
     icon: <i class="fab fa-wordpress-simple" aria-hidden="true"></i>
   - title: 웹 애플리케이션 개발 
     subtitle: Web Application Development
@@ -43,6 +43,30 @@ all:
 #     description: 머신러닝 NLP (Coming Soon!)
 #     color: '#85144b'
 #     link: '#'
+
+website:
+  references:
+  - title: LG전자 글로벌 뉴스룸 구축운영  
+    description: 2015 ~ 2020
+    screenshot: /img/screenshots/shot-lge.jpg
+  - title: LG CES 웹사이트 구축운영 
+    description: 2013 ~ 2018
+    screenshot: /img/screenshots/lg-ces2017.jpg
+  - title: COMPUTEX Taipei 웹사이트 구축
+    description: 2016
+    screenshot: /img/screenshots/computex-2016.jpg
+  - title: 페르노리카 코리아 웹사이트 구축
+    description: 2015
+    screenshot: /img/screenshots/pernod-ricard.jpg
+  - title: Oster Korea 공식몰 구축운영
+    description: 2014 ~ 2015
+    screenshot: /img/screenshots/oster-korea.jpg
+  - title: SKT 마케팅 웹사이트 구축운영
+    description: 2013 ~ 2014
+    screenshot: /img/screenshots/shot-skt.jpg
+  - title: 현대자동차 글로벌 마케팅 웹사이트
+    description: 2013
+    screenshot: /img/screenshots/discover-hyundai.jpg
 
 webdev:
   publications:
