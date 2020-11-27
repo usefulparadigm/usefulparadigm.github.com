@@ -168,13 +168,14 @@ ul.checklist {
       padding-right: 1em;
     }
     strong { 
-      color: #fff; 
       padding: 0 3px;
       font-weight: normal; 
-      background-color: rgba(250, 128, 114, 0.9); // salmon
+      //      color: #fff;
+//      background-color: rgba(250, 128, 114, 0.8); // salmon
+      color: red; // salmon
       display: inline-block;
     }
-    &:nth-child(odd) strong { transform: skew(-5deg, 3deg); }
+    &:nth-child(odd) strong { transform: skew(-5deg, 2deg); }
     &:nth-child(even) strong { transform: skew(5deg, -3deg); }
   }
 }
