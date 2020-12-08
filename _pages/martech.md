@@ -23,13 +23,11 @@ last_modified_at: 2017-06-01
 
 {% include cta.html %}
 
-<div class="page-header">
-  <h2>Works</h2>
-</div>
-
-{% include references.html name="martech" data=site.data.services.martech.references %}
-
 {% include resources.html name="martech" %}
+
+{% comment %}
+{% include references.html name="martech" data=site.data.services.martech.references %}
+{% endcomment %}
 
 {% comment %}
 {% include articles.html category="facebook" %}
