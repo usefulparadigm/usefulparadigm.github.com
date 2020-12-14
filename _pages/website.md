@@ -28,7 +28,7 @@ last_modified_at: 2020-11-23
   <h2>유스풀패러다임은</h2>
 </div>
 
-검증된 오픈소스 CMS 기반과 축적된 웹기술을 바탕으로 고객 니즈에 꼭 맞는 좋은 웹사이트를 합리적인 가격에 구축해 드립니다.
+검증된 오픈소스 CMS 기반과 축적된 웹기술을 바탕으로 고객 니즈에 꼭 맞는 웹사이트를 합리적인 가격에 구축해 드립니다.
 
 ![WordPress,CraftCMS,Jekyll,Gatsby,Hugo](/img/feature-website_1.jpg)
 
