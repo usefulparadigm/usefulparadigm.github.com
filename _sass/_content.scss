@@ -82,18 +82,21 @@
 
   &#website .item__content { 
 //    background: $color-item-1;
-    background-image: url('/img/bg_hero_website.png'); 
+    background-image: url('/img/bg_hero_website.jpg');
+//    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('/img/bg_hero_website.jpg');
+    background-size: auto;
   } 
   &#webdev .item__content { 
 //    background: $color-item-2;
-    background-color: #BD335D;
-    background-image: url('/img/bg_hero_webdev.png');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('/img/bg_hero_webdev.png');
+    background-image: url('/img/bg_hero_webdev.jpg');
+//    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('/img/bg_hero_webdev.jpg');
+    background-size: auto;
   } 
   &#martech .item__content { 
-//    background-color: $color-item-2;
-  background-image: url('/img/hero-martech.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('/img/hero-martech.jpg');
+//    background-color: $color-item-3;
+    background-image: url('/img/bg_hero_martech.jpg');
+//    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('/img/bg_hero_martech.jpg');
+    background-size: auto;
   } 
   &#wordpress .item__content { 
 //    background-color: $color-item-3;
