@@ -1,24 +1,23 @@
 ---
 layout: hero
-title: 웹 기술 개발 & 컨설팅
-description: 유스풀패러다임은 다양한 웹 표준 기술과 검증된 오픈소스 솔루션을 기반으로 웹서비스와 솔루션을 만들고 운영합니다.
+title: 웹서비스 개발 & 컨설팅
+description: 유스풀패러다임은 모던 웹 기술과 검증된 오픈소스 솔루션 기반으로 다양한 웹서비스와 솔루션을 제공합니다.
 permalink: /web-development/
 last_modified_at: 2017-06-01
 ---
 
 {% include hero_title.html name="webdev" %}
 
+{% include cta.html %}
+
 <div class="page-header">
   <h2>Service Areas</h2>
 </div>
 
 * 웹서비스 기획/구축/컨설팅
-* HTML5 웹앱 개발
-* REST API 서버 구축
+* API 서버 개발
+* HTML5 웹앱 제작
 * [오픈소스 솔루션 기술 지원](/easyoss/)
-<!-- * IT Infra(서버/클라우드 호스팅 운영) -->
-
-{% include cta.html %}
 
 <div class="page-header">
   <h2>Works</h2>

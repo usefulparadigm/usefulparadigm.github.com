@@ -85,9 +85,10 @@
     background-image: url('/img/bg_hero_website.png'); 
   } 
   &#webdev .item__content { 
-//    background-color: $color-item-1;
-    background-image: url('/img/hero-webdev.jpg');
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url('/img/hero-webdev.jpg');
+//    background: $color-item-2;
+    background-color: #BD335D;
+    background-image: url('/img/bg_hero_webdev.png');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)), url('/img/bg_hero_webdev.png');
   } 
   &#martech .item__content { 
 //    background-color: $color-item-2;
