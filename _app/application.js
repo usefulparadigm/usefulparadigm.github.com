@@ -129,7 +129,15 @@
 	};
 
 	init();
-
+  
+  // Rough Notation
+  // https://roughnotation.com
+  $('.rough-notation').each(function() {
+    $('em', this).each(function() { RoughNotation.annotate(this, {type: 'underline', color: 'red'}).show(); });
+    // $('strong', this).each(function() { RoughNotation.annotate(this, {type: 'highlight', color: 'yellow'}).show(); });
+    $('strong', this).each(function() { RoughNotation.annotate(this, {type: 'box', color: 'orange'}).show(); });
+  });
+  
   // Change grid color randomly
   // http://colormind.io/api-access/
   // (function() {
