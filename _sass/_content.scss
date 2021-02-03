@@ -249,4 +249,30 @@ article.post footer {
 //  text-align: left;
 //}
 
+// Prods
+.prods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; // horizontal
+  align-items: center; // vertical
+  margin-top: -1em;
+  margin-bottom: 1em;
+  figure {
+//    flex: 0 33%;
+    flex: 1;
+    img { filter: grayscale(100%); opacity: 0.8; }
+    figcaption { display: none; }
+  }
+  @media screen and (max-width: 414px)  {
+    margin-bottom: 2em;
+    figure { 
+      flex: 0 50%;
+    }
+  }
+}
 
+.rough-notation-x strong {
+  text-decoration: underline;
+  text-decoration-color: #ffe801;
+	text-decoration-thickness: 0.2em;
+}

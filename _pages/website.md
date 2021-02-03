@@ -18,22 +18,60 @@ last_modified_at: 2020-11-23
 하지만 어떤 방법으로 어떻게 만들든 고려할 점은 항상 있습니다.
 
 {:.rough-notation}
-1. 사용자가 **보기 편한 웹사이트** 인가?
-2. 향후 페이지 업데이트나 **콘텐츠의 추가변경** 이 쉬운가?
-3. 웹표준과 **최신 웹기술** 을 적절히 활용하고 있는가? 
-4. **웹사이트 속도**는 충분히 빠른가?
-5. 적정한 **보안 수준**을 갖추었는가?
-6. 다양한 기기에 맞춘 **반응형 디자인**을 적용 했는가?
-7. **검색엔진최적화(SEO)**는 잘 되어 있는가?
+1. 사용자가 _보기 편한 웹사이트_ 인가?
+2. 향후 페이지 업데이트나 _콘텐츠의 추가변경_ 이 쉬운가?
+3. 웹표준과 _최신 웹기술_ 을 적절히 활용하고 있는가? 
+4. _웹사이트 속도_ 는 충분히 빠른가?
+5. 적정한 _보안 수준_ 을 갖추었는가?
+6. 다양한 기기에 맞춘 _반응형 디자인_ 을 적용 했는가?
+7. _검색엔진최적화(SEO)_ 는 잘 되어 있는가?
 
 <div class="page-header">
-  <h2>검증된 CMS 솔루션</h2>
+  <h2>솔루션 기반</h2>
 </div>
 
-{:.rough-notation}
-유스풀패러다임은 _검증된 오픈소스 CMS 솔루션_ 기반으로 고객의 니즈에 꼭 맞는 웹사이트를 합리적 가격에 구축해 드립니다.
+유스풀패러다임은 검증된 오픈소스 솔루션 기반으로 고객의 니즈에 꼭 맞는 웹사이트를 합리적 가격에 구축해 드립니다.
 
-![WordPress,CraftCMS,Jekyll,Gatsby,Hugo](/img/feature-website_1.jpg)
+{:.rough-notation-x}
+**콘텐츠 관리 시스템(Content Management System)** 은 블로그나 매거진 사이트처럼 지속적인 콘텐츠의 업데이트와 관리가 필요한 웹사이트를 만들 때 주로 사용합니다.
+
+<div class="prods">
+    <figure>
+        <img src="/img/figures/wordpress.png" alt="WordPress">
+        <figcaption>WordPress</figcaption>    
+    </figure>
+    <figure>
+        <img src="/img/figures/craftcms.png" alt="CraftCMS">
+        <figcaption>CraftCMS</figcaption>    
+    </figure>
+    <figure>
+        <img src="/img/figures/mediawiki.jpg" alt="MediaWiki">
+        <figcaption>MediaWiki</figcaption>    
+    </figure>
+</div>    
+
+{:.rough-notation-x}
+**정적 웹사이트 생성기(Static Website Generator)** 는 회사 홈페이지나 랜딩페이지처럼 간단하고도 신속한 구축이 필요한 웹사이트를 만들 때 주로 사용합니다.
+
+<div class="prods">
+    <figure>
+        <img src="/img/figures/gatsby.jpg" alt="Gatsby">
+        <figcaption>Gatsby</figcaption>    
+    </figure>
+    <figure>
+        <img src="/img/figures/jekyll.jpg" alt="Jekyll">
+        <figcaption>MediaWiki</figcaption>    
+    </figure>
+    <figure>
+        <img src="/img/figures/11ty.jpg" alt="11ty">
+        <figcaption>11ty</figcaption>    
+    </figure>
+    <figure>
+        <img src="/img/figures/hugo.png" alt="Hugo">
+        <figcaption>Hugo</figcaption>    
+    </figure>
+</div>    
+
 
 <!--div class="features">
     <div class="feature">
