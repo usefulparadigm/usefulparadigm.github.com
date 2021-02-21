@@ -84,7 +84,7 @@ webdev:
     description: 차드 파울러 저 | 김석준 역 | 인사이트 | 2007
   references:
   - title: Pickcle
-    url: https://pickcle.co/
+    url: https://pickcle.co/about
     description: 골라보는 나만의 맞춤 콘텐츠, 픽클!
     # screenshot: https://usefulparadigm.s3.amazonaws.com/images/2018/Screenshot-pickcle_2018-12-21.jpg
     screenshot: /img/screenshots/pickcle.jpg
