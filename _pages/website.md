@@ -8,8 +8,7 @@ last_modified_at: 2020-11-23
 
 {% include hero_title.html name="website" %}
 
-{% include cta.html %}
-
+{% comment %}
 <div class="page-header">
   <h2>좋은 웹사이트를 만드는 방법</h2>
 </div>
@@ -25,9 +24,10 @@ last_modified_at: 2020-11-23
 5. 적정한 _보안 수준_ 을 갖추었는가?
 6. 다양한 기기에 맞춘 _반응형 디자인_ 을 적용 했는가?
 7. _검색엔진최적화(SEO)_ 는 잘 되어 있는가?
+{% endcomment %}
 
 <div class="page-header">
-  <h2>솔루션 기반</h2>
+  <h2>솔루션 베이스</h2>
 </div>
 
 유스풀패러다임은 검증된 오픈소스 솔루션 기반으로 고객의 니즈에 꼭 맞는 웹사이트를 합리적 가격에 구축해 드립니다.
@@ -72,6 +72,8 @@ last_modified_at: 2020-11-23
     </figure>
 </div>    
 
+{% include cta.html %}
+
 
 <!--div class="features">
     <div class="feature">
@@ -94,6 +96,7 @@ last_modified_at: 2020-11-23
     </div>        
 </div-->
 
+{% comment %}
 <div class="page-header">
   <h2>레퍼런스</h2>
 </div>
@@ -119,3 +122,4 @@ last_modified_at: 2020-11-23
 </div>
 
 문의 주시면 친절하게 상담해 드리겠습니다.
+{% endcomment %}
