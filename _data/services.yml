@@ -1,7 +1,7 @@
 ---
 # Services & Solutions
 all: 
-  - title: 웹사이트 구축 운영
+  - title: 웹사이트 제작 운영
     subtitle: Website Development & Operations
     name: website
     link: /website/

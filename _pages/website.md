@@ -1,9 +1,9 @@
 ---
 layout: hero
-title: 웹사이트 구축 운영
+title: 웹사이트 제작 운영
 description: 고객의 관심을 사로잡는 멋진 웹사이트를 구축하세요!
 permalink: /website/
-last_modified_at: 2020-11-23
+last_modified_at: 2021-03-23
 ---
 
 {% include hero_title.html name="website" %}
