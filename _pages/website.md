@@ -26,14 +26,11 @@ last_modified_at: 2020-11-23
 7. _검색엔진최적화(SEO)_ 는 잘 되어 있는가?
 {% endcomment %}
 
-<div class="page-header">
-  <h2>솔루션 베이스</h2>
-</div>
-
 유스풀패러다임은 검증된 오픈소스 솔루션 기반으로 고객의 니즈에 꼭 맞는 웹사이트를 합리적 가격에 구축해 드립니다.
 
-{:.rough-notation-x}
-**콘텐츠 관리 시스템(Content Management System)** 은 블로그나 매거진 사이트처럼 지속적인 콘텐츠의 업데이트와 관리가 필요한 웹사이트를 만들 때 주로 사용합니다.
+<div class="page-header">
+  <h2>콘텐츠 관리 시스템(CMS)</h2>
+</div>
 
 <div class="prods">
     <figure>
@@ -50,8 +47,20 @@ last_modified_at: 2020-11-23
     </figure>
 </div>    
 
+콘텐츠 관리 시스템(Content Management System)은 블로그나 매거진 사이트처럼 지속적인 콘텐츠의 업데이트와 관리가 필요한 웹사이트를 만들 때 주로 사용합니다.
+
+워드프레스(WordPress)는 전세계 웹사이트의 30% 이상을 차지하고 있는 대표적인 CMS 이며, 그 밖에도 다양한 CMS 솔루션들이 있습니다.
+
 {:.rough-notation-x}
-**정적 웹사이트 생성기(Static Website Generator)** 는 회사 홈페이지나 랜딩페이지처럼 간단하고도 신속한 구축이 필요한 웹사이트를 만들 때 주로 사용합니다.
+**레퍼런스:**
+* <a href="https://wpguide.usefulparadigm.com/" target="_blank" class="external">WordPress 가이드</a>
+
+{:.rough-notation-x}
+**제작비용:** 200만원 ~ (VAT별도)
+
+<div class="page-header">
+  <h2>정적인 웹사이트(Static Website)</h2>
+</div>
 
 <div class="prods">
     <figure>
@@ -71,6 +80,21 @@ last_modified_at: 2020-11-23
         <figcaption>Hugo</figcaption>    
     </figure>
 </div>    
+
+정적인 웹사이트는 PHP나 Java 같은 서버측 기술 없이 간단하게 HTML 코드만으로 만드는 웹사이트를 말합니다. 
+
+CMS에 비해 신속하게 제작할 수 있고 가볍고 빠르기 때문에 회사 홈페이지나 랜딩페이지(Landing Pages)처럼 한번 만들고 나면 콘텐츠 변경이 비교적 적은 웹사이트를 만들 때 주로 사용합니다.
+
+정적인 웹사이트는 신속한 개발과 지속적인 관리를 위해 주로 정적 웹사이트 생성기(Static Website Generator)를 사용하여 제작합니다.
+
+{:.rough-notation-x}
+**레퍼런스:**
+* <a href="https://landing-jekyll.usefulparadigm.com/" target="_blank" class="external">Landing Jekyll</a>
+* <a href="https://hello-gatsby.usefulparadigm.com/" target="_blank" class="external">Hello Gatsby</a>
+
+{:.rough-notation-x}
+**제작비용:** 50만원 ~ (VAT별도)
+
 
 {% include cta.html %}
 
