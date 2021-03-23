@@ -16,6 +16,7 @@
 
 .hero.grid {
   margin: 0;
+  margin-bottom: 2em;
   max-width: 100%;
   // /w waitForImages
   opacity: 0;
@@ -255,16 +256,17 @@ article.post footer {
   flex-wrap: wrap;
   justify-content: center; // horizontal
   align-items: center; // vertical
-  margin-top: -1em;
-  margin-bottom: 1em;
+//  margin-top: -1em;
+//  margin-bottom: 1em;
+  margin: 2em 0;
   figure {
 //    flex: 0 33%;
     flex: 1;
-    img { filter: grayscale(100%); opacity: 0.8; }
+//    img { filter: grayscale(100%); opacity: 0.8; }
     figcaption { display: none; }
   }
   @media screen and (max-width: 414px)  {
-    margin-bottom: 2em;
+//    margin-bottom: 2em;
     figure { 
       flex: 0 50%;
     }
