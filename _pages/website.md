@@ -52,7 +52,7 @@ last_modified_at: 2021-03-23
 워드프레스(WordPress)는 전세계 웹사이트의 30% 이상을 차지하고 있는 대표적인 CMS 이며, 그 밖에도 다양한 CMS 솔루션들이 있습니다.
 
 {:.rough-notation-x}
-**레퍼런스:**
+**데모(DEMO):**
 * <a href="https://wpguide.usefulparadigm.com/" target="_blank" class="external">WordPress 가이드</a>
 
 {:.rough-notation-x}
@@ -88,7 +88,7 @@ CMS에 비해 신속하게 제작할 수 있고 가볍고 빠르기 때문에 �
 정적인 웹사이트는 신속한 개발과 지속적인 관리를 위해 주로 정적 웹사이트 생성기(Static Website Generator)를 사용하여 제작합니다.
 
 {:.rough-notation-x}
-**레퍼런스:**
+**데모(DEMO):**
 * <a href="https://landing-jekyll.usefulparadigm.com/" target="_blank" class="external">Landing Jekyll</a>
 * <a href="https://hello-gatsby.usefulparadigm.com/" target="_blank" class="external">Hello Gatsby</a>
 
