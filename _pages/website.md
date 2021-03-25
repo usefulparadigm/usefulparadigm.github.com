@@ -55,8 +55,8 @@ last_modified_at: 2021-03-23
 **DEMO:**
 * <a href="https://wpguide.usefulparadigm.com/" target="_blank" class="external">WordPress 가이드</a>
 
-{:.rough-notation-x}
-**제작비용:** 200만원 ~ (VAT별도)
+<!-- {:.rough-notation-x}
+**제작비용:** 200만원 ~ (VAT별도) -->
 
 <div class="page-header">
   <h2>정적인 웹사이트(Static Website)</h2>
@@ -92,8 +92,8 @@ CMS에 비해 신속하게 제작할 수 있고 가볍고 빠르기 때문에 �
 * <a href="https://landing-jekyll.usefulparadigm.com/" target="_blank" class="external">Landing Jekyll</a>
 * <a href="https://hello-gatsby.usefulparadigm.com/" target="_blank" class="external">Hello Gatsby</a>
 
-{:.rough-notation-x}
-**제작비용:** 50만원 ~ (VAT별도)
+<!-- {:.rough-notation-x}
+**제작비용:** 50만원 ~ (VAT별도) -->
 
 
 {% include cta.html %}
