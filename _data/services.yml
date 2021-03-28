@@ -83,21 +83,16 @@ webdev:
     cover: https://image.aladin.co.kr/product/87/48/cover/8991268242_1.jpg
     description: 차드 파울러 저 | 김석준 역 | 인사이트 | 2007
   references:
-  - title: Pickcle
-    url: https://pickcle.co/
-    description: 골라보는 나만의 맞춤 콘텐츠, 픽클!
-    # screenshot: https://usefulparadigm.s3.amazonaws.com/images/2018/Screenshot-pickcle_2018-12-21.jpg
-    screenshot: /img/screenshots/pickcle.jpg
-  - title: Buzzmix
-    url: http://buzzmix.co/
-    description: 소셜미디어 콘텐츠 큐레이션 서비스
-    # screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-buzzmix_2018-12-21.jpg
-    screenshot: /img/screenshots/buzzmix.jpg
   - title: 플라타너스트리
     url: https://platanustree.com/
     description: 책 읽는 좋은 습관! 내 온라인 서재
     # screenshot: https://usefulparadigm.s3.amazonaws.com/images/2018/Screenshot-platanustree_2018-12-21.jpg
     screenshot: /img/screenshots/platanustree.jpg
+  - title: Buzzmix
+    url: http://buzzmix.co/
+    description: 소셜미디어 콘텐츠 큐레이션 서비스
+    # screenshot: https://usefulpa.s3.amazonaws.com/images/2018/Screenshot-buzzmix_2018-12-21.jpg
+    screenshot: /img/screenshots/buzzmix.jpg
         
 martech:
   resources:  
