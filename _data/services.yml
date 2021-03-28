@@ -18,11 +18,6 @@ all:
     icon: <i class="fa fa-line-chart" aria-hidden="true"></i>
 
 # solutions:
-#   - title: Pickcle
-#     name: pickcle
-#     description: 골라 보는 나만의 맞춤 콘텐츠
-#     color: '#593196'
-#     link: http://pickcle.co/
 #   - title: 플라타너스트리
 #     name: platanustree
 #     description: 책 읽는 좋은 습관! 내 온라인 서재
