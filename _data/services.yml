@@ -1,13 +1,18 @@
 ---
 # Services & Solutions
 all: 
-  - title: 웹사이트 제작 운영
-    subtitle: Website Development & Operations
-    name: website
-    link: /website/
-    icon: <i class="fab fa-wordpress-simple" aria-hidden="true"></i>
-  - title: 웹 애플리케이션 개발 
-    subtitle: Web Application Development
+  - title: 콘텐츠 관리 시스템
+    subtitle: Content Management Systems
+    name: cms
+    link: /content-management-systems/
+    icon: <i class="fas fa-splotch" aria-hidden="true"></i>
+  # - title: 웹사이트 제작 운영
+  #   subtitle: Website Development & Operations
+  #   name: website
+  #   link: /website/
+  #   icon: <i class="fab fa-wordpress-simple" aria-hidden="true"></i>
+  - title: 웹 서비스 개발 
+    subtitle: Web Development & Consultings
     name: webdev
     link: /web-development/
     icon: <i class="fa fa-rocket" aria-hidden="true"></i>
