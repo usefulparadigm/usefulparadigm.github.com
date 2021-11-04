@@ -3,6 +3,7 @@ layout: hero
 title: 콘텐츠 관리 시스템 구축
 description: 온라인 비즈니스에 꼭 필요한 다양한 콘텐츠 관리 시스템(Content Management Systems)을 구축 운영합니다. 
 permalink: /content-management-systems/
+image: /img/bg_hero_website.jpg
 last_modified_at: 2021-11-02
 ---
 
