@@ -8,9 +8,9 @@ last_modified_at: 2021-11-02
 
 {% include hero_title.html name="website" %}
 
-콘텐츠는 모든 온라인 비즈니스의 기본! 
+모든 온라인 비즈니스의 중심에는 콘텐츠가 있습니다! 
 
-유스풀패러다임은 다양한 콘텐츠 관리 시스템으로 고객 비즈니즈 니즈에 꼭 맞는 최상의 콘텐츠 관리 환경을 구축해 드립니다.
+유스풀패러다임은 다양한 콘텐츠 관리 시스템으로 고객 비즈니즈 니즈에 적합한 최상의 콘텐츠 관리 환경을 구축해 드립니다.
 
 <div class="page-header">
   <h2 id="classic"><a href="#classic">#</a>Classic CMS</h2>
