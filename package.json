@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/usefulparadigm/usefulparadigm.github.com#readme",
   "devDependencies": {
-    "babel-brunch": "^7.0.0",
+    "babel-brunch": "^7.0.1",
     "brunch": "^2",
     "javascript-brunch": "^2",
     "auto-reload-brunch": "^2",
